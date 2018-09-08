@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "github",
-    "url": "https://github.com/dota2wiki/dota2-wiki"
+    "url": "https://github.com/dota2wiki/dota2wiki"
   },
   "workspaces": [
     "packages/@dota2wiki/*",
