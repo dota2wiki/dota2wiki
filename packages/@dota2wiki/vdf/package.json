@@ -1,0 +1,26 @@
+{
+  "name": "@dota2wiki/vdf",
+  "version": "1.0.0",
+  "description": "VDF files reader libarary for dota2 wiki.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/dota2wiki/dota2-wiki"
+  },
+  "keywords": [
+    "dota2"
+  ],
+  "author": "duduluu <duduluu@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean:dist": "rimraf ./dist",
+    "build": "yarn clean:dist && tsc -p ./tsconfig.project.json",
+    "lint": "tslint -c ./tslint.project.json -p ./tsconfig.project.json",
+    "test:unit": "jest --maxWorkers=4"
+  },
+  "dependencies": {
+    "@node-steam/vdf": "^2.0.1",
+    "detect-character-encoding": "^0.6.0"
+  }
+}

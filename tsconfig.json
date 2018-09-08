@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["dom", "dom.iterable", "scripthost", "esnext"],
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types"],
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": false,
+    "rootDir": ".",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@void/*": ["packages/@void/*"]
+    }
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules"]
+}

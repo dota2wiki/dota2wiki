@@ -1,0 +1,37 @@
+{
+  "name": "dota2wiki",
+  "author": "duduluu <duduluu@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/dota2wiki/dota2-wiki"
+  },
+  "workspaces": [
+    "packages/@dota2wiki/*",
+    "packages/doat2wiki"
+  ],
+  "scripts": {
+    "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",
+    "test": "jest"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/globby": "^8.0.0",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.4",
+    "chalk": "^2.4.1",
+    "globby": "^8.0.1",
+    "jest": "^23.5.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.5.0",
+    "tslint": "^5.11.0",
+    "tslint-microsoft-contrib": "^5.2.1",
+    "typescript": "^3.0.3"
+  }
+}
