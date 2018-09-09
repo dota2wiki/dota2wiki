@@ -17,6 +17,7 @@ const backgournds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mod
 interface NavItem {
   key: string;
   name: string;
+  sub?: string[];
   children?: NavItem[];
 }
 
@@ -32,10 +33,12 @@ const navItems: NavItem[] = [
       {
         key: 'dota_hero',
         name: 'heroes',
+        sub: ['hero'],
       },
       {
         key: 'DOTA_SHOP_ITEMS',
         name: 'items',
+        sub: ['item'],
       },
       {
         key: 'heroes',
@@ -132,13 +135,16 @@ export class CNavbar extends Vue implements ThemeComponent {
 
   @Watch('$route', { immediate: true })
   private watchRoute(): void {
-    for (const record of this.$route.matched) {
-      if (record.name) {
+    for (const { name } of this.$route.matched) {
+      if (name) {
         const index: number = navItems.findIndex(
           item =>
-            item.name === record.name ||
+            item.name === name ||
+            (!!item.sub && item.sub.includes(name)) ||
             (!!item.children &&
-              !!item.children.find(child => child.name === record.name)),
+              !!item.children.find(
+                child => child.name === name || (!!child.sub && child.sub.includes(name)),
+              )),
         );
         if (index > -1) {
           this.selectedIndex = index;
