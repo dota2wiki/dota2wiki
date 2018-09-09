@@ -1,6 +1,6 @@
 {
   "name": "dota2wiki",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@dota2wiki/database": "1.0.0",
-    "@dota2wiki/i18n": "1.0.0",
+    "@dota2wiki/i18n": "1.0.1",
     "@huiji/vue-locale": "^1.0.0",
     "normalize.css": "^8.0.0",
     "register-service-worker": "^1.0.0",
