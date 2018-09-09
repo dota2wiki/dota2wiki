@@ -59,6 +59,7 @@
   &:hover {
     z-index: $z-index-float;
     transform: scale(2);
+    box-shadow: raise-shadow(4);
 
     @include elem('label') {
       opacity: 1;
