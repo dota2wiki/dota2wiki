@@ -9,7 +9,7 @@
   },
   "workspaces": [
     "packages/@dota2wiki/*",
-    "packages/doat2wiki"
+    "packages/dota2wiki"
   ],
   "scripts": {
     "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",

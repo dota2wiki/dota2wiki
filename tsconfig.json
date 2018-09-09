@@ -20,10 +20,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "baseUrl": ".",
-    "paths": {
-      "@void/*": ["packages/@void/*"]
-    }
+    "baseUrl": "."
   },
   "include": ["packages"],
   "exclude": ["node_modules"]
