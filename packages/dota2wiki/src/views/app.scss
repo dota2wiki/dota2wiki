@@ -14,7 +14,6 @@
 
   @include elem('content') {
     width: 100%;
-    padding: rem(gap('xlarge')) rem($gap-base);
   }
 
   @each $theme in $type-theme {
@@ -24,7 +23,7 @@
       )
     ) {
       color: theme($theme);
-      background-color: theme($theme, 'bg');
+      background-color: theme($theme, 'bg', 'lower');
     }
   }
 }

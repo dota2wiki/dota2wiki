@@ -4,6 +4,7 @@
 @include comp('heroes-wall') {
   position: relative;
   width: 100%;
+  padding: rem($swimlane-padding) rem($gap-base);
 
   @include elem('container') {
     position: relative;

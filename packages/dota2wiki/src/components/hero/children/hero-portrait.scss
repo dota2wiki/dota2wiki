@@ -1,0 +1,68 @@
+/**
+ * Component: HeroPortrait
+ */
+@include comp('hero-portrait') {
+  position: relative;
+
+  width: 100%;
+
+  @include elem('background-container') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  @include elem('background') {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  $avatar-height: rem($hero-video-size);
+  $avatar-width: rem($hero-video-size * $hero-avatar-v-width / $hero-avatar-v-height);
+
+  @include elem('avatar') {
+    position: relative;
+    width: $avatar-width;
+    height: $avatar-height;
+
+    box-shadow: raise-shadow(4);
+  }
+
+  @include elem('avatar-background', 'avatar-image', 'avatar-video') {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    font-size: $avatar-height;
+  }
+
+  @include elem('name', 'hype') {
+    padding: 0;
+    margin: 0;
+  }
+  @include elem('name') {
+    font-weight: normal;
+  }
+  @include elem('hype') {
+    //
+  }
+
+  // theme
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+
+      @include elem('name') {
+        color: theme($theme, 'fg', 'emphasize');
+      }
+    }
+  }
+}

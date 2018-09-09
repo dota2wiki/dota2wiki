@@ -8,13 +8,22 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { CHeroDetail } from '@src/components/hero/hero-detail';
 
 /**
  * Component: Hero
  */
-@Component
+@Component({
+  components: {
+    CHeroDetail,
+  },
+})
 export default class VHero extends Vue {
   private render(h: CreateElement): VNode {
-    return <div staticClass="v-hero">{this.$slots.default}</div>;
+    return (
+      <div staticClass="v-hero">
+        <c-hero-detail key={this.$route.params.name} name={this.$route.params.name} />
+      </div>
+    );
   }
 }

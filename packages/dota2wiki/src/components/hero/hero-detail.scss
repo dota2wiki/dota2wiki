@@ -1,0 +1,20 @@
+/**
+ * Component: HeroDetail
+ */
+@include comp('hero-detail') {
+  position: relative;
+  width: 100%;
+
+  // box-shadow: raise-shadow(4);
+
+  // @each $theme in $type-theme {
+  //   @include prop(
+  //     (
+  //       'theme': $theme,
+  //     )
+  //   ) {
+  //     color: theme($theme);
+  //     background-color: theme($theme, 'bg');
+  //   }
+  // }
+}

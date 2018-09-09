@@ -165,7 +165,10 @@ export class CNavbar extends Vue implements ThemeComponent {
                 >
                   <div staticClass="c-navbar_sub-background" />
                   {item.children.map(child => (
-                    <router-link staticClass="c-navbar_sub-item" to={child.name}>
+                    <router-link
+                      staticClass="c-navbar_sub-item"
+                      to={{ name: child.name }}
+                    >
                       {child.key}
                     </router-link>
                   ))}
