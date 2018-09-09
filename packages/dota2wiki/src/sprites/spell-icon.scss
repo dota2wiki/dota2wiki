@@ -1,0 +1,3443 @@
+/**
+ * CSS Sprites: spell-icon, total: 948
+ */
+
+$spell-icon-width: 128;
+$spell-icon-height: 128;
+
+@include comp('spell-icon') {
+  display: inline-block;
+  font-size: px($spell-icon-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $spell-icon-width / $spell-icon-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: ($spell-icon-width / $spell-icon-height * 1em) auto;
+  background-position-x: 1em;
+
+  &.npc_dota_hero_abaddon {
+    background-image: url('~@src/assets/sprites/spell-icon-abaddon.png');
+    
+    &.mistral_fiend_icons.abaddon_aphotic_shield {
+      background-position-x: -0em;
+    }
+    &.mistral_fiend_icons.abaddon_borrowed_time {
+      background-position-x: -1em;
+    }
+    &.mistral_fiend_icons.abaddon_death_coil {
+      background-position-x: -2em;
+    }
+    &.mistral_fiend_icons.abaddon_frostmourne {
+      background-position-x: -3em;
+    }
+    &.abaddon_aphotic_shield_alliance {
+      background-position-x: -4em;
+    }
+    &.abaddon_aphotic_shield {
+      background-position-x: -5em;
+    }
+    &.abaddon_borrowed_time_alliance {
+      background-position-x: -6em;
+    }
+    &.abaddon_borrowed_time {
+      background-position-x: -7em;
+    }
+    &.abaddon_death_coil_alliance {
+      background-position-x: -8em;
+    }
+    &.abaddon_death_coil {
+      background-position-x: -9em;
+    }
+    &.abaddon_frostmourne_alliance {
+      background-position-x: -10em;
+    }
+    &.abaddon_frostmourne {
+      background-position-x: -11em;
+    }
+  }
+
+  &.npc_dota_hero_abyssal_underlord {
+    background-image: url('~@src/assets/sprites/spell-icon-abyssal_underlord.png');
+    
+    &.ti8_immortal_weapon.abyssal_underlord_pit_of_malice_immortal_crimson {
+      background-position-x: -0em;
+    }
+    &.ti8_immortal_weapon.abyssal_underlord_pit_of_malice_immortal {
+      background-position-x: -1em;
+    }
+    &.abyssal_underlord_atrophy_aura {
+      background-position-x: -2em;
+    }
+    &.abyssal_underlord_cancel_dark_rift {
+      background-position-x: -3em;
+    }
+    &.abyssal_underlord_dark_rift {
+      background-position-x: -4em;
+    }
+    &.abyssal_underlord_firestorm {
+      background-position-x: -5em;
+    }
+    &.abyssal_underlord_pit_of_malice {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_alchemist {
+    background-image: url('~@src/assets/sprites/spell-icon-alchemist.png');
+    
+    &.midas_knuckles.alchemist_goblins_greed {
+      background-position-x: -0em;
+    }
+    &.alchemist_acid_spray {
+      background-position-x: -1em;
+    }
+    &.alchemist_chemical_rage {
+      background-position-x: -2em;
+    }
+    &.alchemist_goblins_greed {
+      background-position-x: -3em;
+    }
+    &.alchemist_unstable_concoction {
+      background-position-x: -4em;
+    }
+    &.alchemist_unstable_concoction_throw {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_ancient_apparition {
+    background-image: url('~@src/assets/sprites/spell-icon-ancient_apparition.png');
+    
+    &.shatterblast_crown.ancient_apparition_ice_blast {
+      background-position-x: -0em;
+    }
+    &.shatterblast_crown.ancient_apparition_ice_blast_release {
+      background-position-x: -1em;
+    }
+    &.ti8_immortal_back.ancient_apparition_ice_vortex_immortal {
+      background-position-x: -2em;
+    }
+    &.ancient_apparition_chilling_touch {
+      background-position-x: -3em;
+    }
+    &.ancient_apparition_cold_feet {
+      background-position-x: -4em;
+    }
+    &.ancient_apparition_ice_blast {
+      background-position-x: -5em;
+    }
+    &.ancient_apparition_ice_blast_release {
+      background-position-x: -6em;
+    }
+    &.ancient_apparition_ice_vortex {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_antimage {
+    background-image: url('~@src/assets/sprites/spell-icon-antimage.png');
+    
+    &.golden_basher_blades.antimage_mana_break {
+      background-position-x: -0em;
+    }
+    &.golden_basher_blades.antimage_mana_void {
+      background-position-x: -1em;
+    }
+    &.immortal.antimage_blink_gold {
+      background-position-x: -2em;
+    }
+    &.immortal.antimage_blink {
+      background-position-x: -3em;
+    }
+    &.the_basher_blades.antimage_mana_break {
+      background-position-x: -4em;
+    }
+    &.the_basher_blades.antimage_mana_void {
+      background-position-x: -5em;
+    }
+    &.antimage_blink {
+      background-position-x: -6em;
+    }
+    &.antimage_mana_break {
+      background-position-x: -7em;
+    }
+    &.antimage_mana_void {
+      background-position-x: -8em;
+    }
+    &.antimage_spell_shield {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_arc_warden {
+    background-image: url('~@src/assets/sprites/spell-icon-arc_warden.png');
+    
+    &.arc_warden_flux {
+      background-position-x: -0em;
+    }
+    &.arc_warden_magnetic_field {
+      background-position-x: -1em;
+    }
+    &.arc_warden_spark_wraith {
+      background-position-x: -2em;
+    }
+    &.arc_warden_tempest_double {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_axe {
+    background-image: url('~@src/assets/sprites/spell-icon-axe.png');
+    
+    &.mantle_of_the_cinder_baron.axe_battle_hunger {
+      background-position-x: -0em;
+    }
+    &.axe_battle_hunger {
+      background-position-x: -1em;
+    }
+    &.axe_berserkers_call {
+      background-position-x: -2em;
+    }
+    &.axe_berserkers_call_shoutmask {
+      background-position-x: -3em;
+    }
+    &.axe_counter_helix {
+      background-position-x: -4em;
+    }
+    &.axe_culling_blade {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_bane {
+    background-image: url('~@src/assets/sprites/spell-icon-bane.png');
+    
+    &.slumbering_terror.bane_nightmare_end {
+      background-position-x: -0em;
+    }
+    &.slumbering_terror.bane_nightmare {
+      background-position-x: -1em;
+    }
+    &.bane_brain_sap {
+      background-position-x: -2em;
+    }
+    &.bane_enfeeble {
+      background-position-x: -3em;
+    }
+    &.bane_fiends_grip {
+      background-position-x: -4em;
+    }
+    &.bane_nightmare_end {
+      background-position-x: -5em;
+    }
+    &.bane_nightmare {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_batrider {
+    background-image: url('~@src/assets/sprites/spell-icon-batrider.png');
+    
+    &.ti8_immortal_mount.batrider_firefly_immortal {
+      background-position-x: -0em;
+    }
+    &.batrider_firefly {
+      background-position-x: -1em;
+    }
+    &.batrider_flamebreak {
+      background-position-x: -2em;
+    }
+    &.batrider_flaming_lasso {
+      background-position-x: -3em;
+    }
+    &.batrider_sticky_napalm {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_beastmaster {
+    background-image: url('~@src/assets/sprites/spell-icon-beastmaster.png');
+    
+    &.immortal.beastmaster_primal_roar {
+      background-position-x: -0em;
+    }
+    &.beastmaster_call_of_the_wild_hawk {
+      background-position-x: -1em;
+    }
+    &.beastmaster_call_of_the_wild {
+      background-position-x: -2em;
+    }
+    &.beastmaster_inner_beast {
+      background-position-x: -3em;
+    }
+    &.beastmaster_primal_roar {
+      background-position-x: -4em;
+    }
+    &.beastmaster_wild_axes {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_bloodseeker {
+    background-image: url('~@src/assets/sprites/spell-icon-bloodseeker.png');
+    
+    &.bloodseeker_ti_immortal.bloodseeker_thirst_alt.png {
+      background-position-x: -0em;
+    }
+    &.bloodseeker_ti_immortal.bloodseeker_thirst_alt {
+      background-position-x: -1em;
+    }
+    &.thirst_of_eztshok.bloodseeker_bloodrage {
+      background-position-x: -2em;
+    }
+    &.bloodseeker_blood_bath {
+      background-position-x: -3em;
+    }
+    &.bloodseeker_bloodrage {
+      background-position-x: -4em;
+    }
+    &.bloodseeker_rupture {
+      background-position-x: -5em;
+    }
+    &.bloodseeker_thirst {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_bounty_hunter {
+    background-image: url('~@src/assets/sprites/spell-icon-bounty_hunter.png');
+    
+    &.hunters_hoard.bounty_hunter_track {
+      background-position-x: -0em;
+    }
+    &.bounty_hunter_jinada {
+      background-position-x: -1em;
+    }
+    &.bounty_hunter_shuriken_toss {
+      background-position-x: -2em;
+    }
+    &.bounty_hunter_track {
+      background-position-x: -3em;
+    }
+    &.bounty_hunter_wind_walk {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_brewmaster {
+    background-image: url('~@src/assets/sprites/spell-icon-brewmaster.png');
+    
+    &.brewmaster_drunken_brawler_active {
+      background-position-x: -0em;
+    }
+    &.brewmaster_drunken_brawler_crit {
+      background-position-x: -1em;
+    }
+    &.brewmaster_drunken_brawler_miss {
+      background-position-x: -2em;
+    }
+    &.brewmaster_drunken_brawler {
+      background-position-x: -3em;
+    }
+    &.brewmaster_drunken_haze {
+      background-position-x: -4em;
+    }
+    &.brewmaster_primal_split {
+      background-position-x: -5em;
+    }
+    &.brewmaster_thunder_clap {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_bristleback {
+    background-image: url('~@src/assets/sprites/spell-icon-bristleback.png');
+    
+    &.piston_impaler.bristleback_quill_spray {
+      background-position-x: -0em;
+    }
+    &.bristleback_bristleback {
+      background-position-x: -1em;
+    }
+    &.bristleback_quill_spray {
+      background-position-x: -2em;
+    }
+    &.bristleback_viscous_nasal_goo_crimson {
+      background-position-x: -3em;
+    }
+    &.bristleback_viscous_nasal_goo {
+      background-position-x: -4em;
+    }
+    &.bristleback_warpath {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_broodmother {
+    background-image: url('~@src/assets/sprites/spell-icon-broodmother.png');
+    
+    &.virulent_matriarch.broodmother_incapacitating_bite {
+      background-position-x: -0em;
+    }
+    &.virulent_matriarch.broodmother_insatiable_hunger {
+      background-position-x: -1em;
+    }
+    &.virulent_matriarch.broodmother_spawn_spiderlings {
+      background-position-x: -2em;
+    }
+    &.virulent_matriarch.broodmother_spin_web {
+      background-position-x: -3em;
+    }
+    &.broodmother_incapacitating_bite {
+      background-position-x: -4em;
+    }
+    &.broodmother_insatiable_hunger {
+      background-position-x: -5em;
+    }
+    &.broodmother_spawn_spiderlings_immortal {
+      background-position-x: -6em;
+    }
+    &.broodmother_spawn_spiderlings {
+      background-position-x: -7em;
+    }
+    &.broodmother_spin_web_destroy {
+      background-position-x: -8em;
+    }
+    &.broodmother_spin_web {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_centaur {
+    background-image: url('~@src/assets/sprites/spell-icon-centaur.png');
+    
+    &.berserkers_edge.centaur_double_edge {
+      background-position-x: -0em;
+    }
+    &.berserkers_edge.centaur_hoof_stomp {
+      background-position-x: -1em;
+    }
+    &.berserkers_edge.centaur_return {
+      background-position-x: -2em;
+    }
+    &.berserkers_edge.centaur_stampede {
+      background-position-x: -3em;
+    }
+    &.immortal.centaur_hoof_stomp {
+      background-position-x: -4em;
+    }
+    &.immortal_gold.centaur_hoof_stomp {
+      background-position-x: -5em;
+    }
+    &.centaur_double_edge {
+      background-position-x: -6em;
+    }
+    &.centaur_hoof_stomp {
+      background-position-x: -7em;
+    }
+    &.centaur_return {
+      background-position-x: -8em;
+    }
+    &.centaur_stampede {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_chaos_knight {
+    background-image: url('~@src/assets/sprites/spell-icon-chaos_knight.png');
+    
+    &.ck_ti7_immortal.chaos_knight_reality_rift_alt.png {
+      background-position-x: -0em;
+    }
+    &.ck_ti7_immortal.chaos_knight_reality_rift_alt {
+      background-position-x: -1em;
+    }
+    &.ck_ti7_immortal_gold.chaos_knight_reality_rift_alt2.png {
+      background-position-x: -2em;
+    }
+    &.ck_ti7_immortal_gold.chaos_knight_reality_rift_alt2 {
+      background-position-x: -3em;
+    }
+    &.chaos_knight_chaos_bolt {
+      background-position-x: -4em;
+    }
+    &.chaos_knight_chaos_strike {
+      background-position-x: -5em;
+    }
+    &.chaos_knight_phantasm {
+      background-position-x: -6em;
+    }
+    &.chaos_knight_reality_rift {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_chen {
+    background-image: url('~@src/assets/sprites/spell-icon-chen.png');
+    
+    &.chen_hand_of_god {
+      background-position-x: -0em;
+    }
+    &.chen_holy_persuasion {
+      background-position-x: -1em;
+    }
+    &.chen_penitence {
+      background-position-x: -2em;
+    }
+    &.chen_test_of_faith {
+      background-position-x: -3em;
+    }
+    &.chen_test_of_faith_teleport {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_clinkz {
+    background-image: url('~@src/assets/sprites/spell-icon-clinkz.png');
+    
+    &.clinkz_death_pact {
+      background-position-x: -0em;
+    }
+    &.clinkz_searing_arrows_immortal {
+      background-position-x: -1em;
+    }
+    &.clinkz_searing_arrows {
+      background-position-x: -2em;
+    }
+    &.clinkz_strafe {
+      background-position-x: -3em;
+    }
+    &.clinkz_wind_walk {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_crystal_maiden {
+    background-image: url('~@src/assets/sprites/spell-icon-crystal_maiden.png');
+    
+    &.crystal_maiden_brilliance_aura {
+      background-position-x: -0em;
+    }
+    &.crystal_maiden_crystal_nova_icecowl {
+      background-position-x: -1em;
+    }
+    &.crystal_maiden_crystal_nova {
+      background-position-x: -2em;
+    }
+    &.crystal_maiden_freezing_field_alt1 {
+      background-position-x: -3em;
+    }
+    &.crystal_maiden_freezing_field {
+      background-position-x: -4em;
+    }
+    &.crystal_maiden_frostbite_immortal {
+      background-position-x: -5em;
+    }
+    &.crystal_maiden_frostbite {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_dark_seer {
+    background-image: url('~@src/assets/sprites/spell-icon-dark_seer.png');
+    
+    &.ti8_immortal_arm.dark_seer_ion_shell_immortal_gold {
+      background-position-x: -0em;
+    }
+    &.ti8_immortal_arm.dark_seer_ion_shell_immortal {
+      background-position-x: -1em;
+    }
+    &.dark_seer_ion_shell {
+      background-position-x: -2em;
+    }
+    &.dark_seer_surge {
+      background-position-x: -3em;
+    }
+    &.dark_seer_vacuum {
+      background-position-x: -4em;
+    }
+    &.dark_seer_wall_of_replica {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_dark_willow {
+    background-image: url('~@src/assets/sprites/spell-icon-dark_willow.png');
+    
+    &.dark_willow_bedlam {
+      background-position-x: -0em;
+    }
+    &.dark_willow_bramble_maze {
+      background-position-x: -1em;
+    }
+    &.dark_willow_cursed_crown {
+      background-position-x: -2em;
+    }
+    &.dark_willow_cursed_crown_ti8_crimson {
+      background-position-x: -3em;
+    }
+    &.dark_willow_cursed_crown_ti8 {
+      background-position-x: -4em;
+    }
+    &.dark_willow_shadow_realm {
+      background-position-x: -5em;
+    }
+    &.dark_willow_terrorize {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_dazzle {
+    background-image: url('~@src/assets/sprites/spell-icon-dazzle.png');
+    
+    &.immortal.dazzle_shallow_grave {
+      background-position-x: -0em;
+    }
+    &.immortal_gold.dazzle_shallow_grave {
+      background-position-x: -1em;
+    }
+    &.dazzle_poison_touch {
+      background-position-x: -2em;
+    }
+    &.dazzle_shadow_wave {
+      background-position-x: -3em;
+    }
+    &.dazzle_shallow_grave {
+      background-position-x: -4em;
+    }
+    &.dazzle_weave {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_death_prophet {
+    background-image: url('~@src/assets/sprites/spell-icon-death_prophet.png');
+    
+    &.awakened_thirst_ult_bat_icon.death_prophet_exorcism {
+      background-position-x: -0em;
+    }
+    &.death_prophet_carrion_swarm_moth {
+      background-position-x: -1em;
+    }
+    &.death_prophet_carrion_swarm {
+      background-position-x: -2em;
+    }
+    &.death_prophet_exorcism {
+      background-position-x: -3em;
+    }
+    &.death_prophet_silence {
+      background-position-x: -4em;
+    }
+    &.death_prophet_spirit_siphon {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_disruptor {
+    background-image: url('~@src/assets/sprites/spell-icon-disruptor.png');
+    
+    &.resistive_pinfold.disruptor_kinetic_field {
+      background-position-x: -0em;
+    }
+    &.ti8_immortal_weapon.disruptor_thunder_strike_immortal {
+      background-position-x: -1em;
+    }
+    &.disruptor_glimpse {
+      background-position-x: -2em;
+    }
+    &.disruptor_kinetic_field {
+      background-position-x: -3em;
+    }
+    &.disruptor_static_storm {
+      background-position-x: -4em;
+    }
+    &.disruptor_thunder_strike {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_doom_bringer {
+    background-image: url('~@src/assets/sprites/spell-icon-doom_bringer.png');
+    
+    &.ti8_immortal_arm.doom_bringer_devour_immortal {
+      background-position-x: -0em;
+    }
+    &.doom_bringer_devour {
+      background-position-x: -1em;
+    }
+    &.doom_bringer_doom {
+      background-position-x: -2em;
+    }
+    &.doom_bringer_empty1 {
+      background-position-x: -3em;
+    }
+    &.doom_bringer_empty2 {
+      background-position-x: -4em;
+    }
+    &.doom_bringer_infernal_blade {
+      background-position-x: -5em;
+    }
+    &.doom_bringer_scorched_earth {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_dragon_knight {
+    background-image: url('~@src/assets/sprites/spell-icon-dragon_knight.png');
+    
+    &.fireborn_ability_icons.dragon_knight_breathe_fire {
+      background-position-x: -0em;
+    }
+    &.fireborn_ability_icons.dragon_knight_dragon_blood {
+      background-position-x: -1em;
+    }
+    &.fireborn_ability_icons.dragon_knight_dragon_tail {
+      background-position-x: -2em;
+    }
+    &.fireborn_ability_icons.dragon_knight_elder_dragon_form {
+      background-position-x: -3em;
+    }
+    &.dragon_knight_breathe_fire {
+      background-position-x: -4em;
+    }
+    &.dragon_knight_dragon_blood {
+      background-position-x: -5em;
+    }
+    &.dragon_knight_dragon_tail {
+      background-position-x: -6em;
+    }
+    &.dragon_knight_elder_dragon_form_iron_dragon {
+      background-position-x: -7em;
+    }
+    &.dragon_knight_elder_dragon_form {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_drow_ranger {
+    background-image: url('~@src/assets/sprites/spell-icon-drow_ranger.png');
+    
+    &.dragons_touch_ability_icons.drow_ranger_frost_arrows {
+      background-position-x: -0em;
+    }
+    &.dragons_touch_ability_icons.drow_ranger_marksmanship {
+      background-position-x: -1em;
+    }
+    &.dragons_touch_ability_icons.drow_ranger_trueshot {
+      background-position-x: -2em;
+    }
+    &.dragons_touch_ability_icons.drow_ranger_wave_of_silence {
+      background-position-x: -3em;
+    }
+    &.immortal.drow_ranger_wave_of_silence {
+      background-position-x: -4em;
+    }
+    &.immortal_gold.drow_ranger_wave_of_silence {
+      background-position-x: -5em;
+    }
+    &.drow_ranger_frost_arrows {
+      background-position-x: -6em;
+    }
+    &.drow_ranger_marksmanship {
+      background-position-x: -7em;
+    }
+    &.drow_ranger_trueshot {
+      background-position-x: -8em;
+    }
+    &.drow_ranger_wave_of_silence {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_earth_spirit {
+    background-image: url('~@src/assets/sprites/spell-icon-earth_spirit.png');
+    
+    &.jade_reckoning.earth_spirit_rolling_boulder {
+      background-position-x: -0em;
+    }
+    &.earth_spirit_boulder_smash {
+      background-position-x: -1em;
+    }
+    &.earth_spirit_geomagnetic_grip {
+      background-position-x: -2em;
+    }
+    &.earth_spirit_magnetize {
+      background-position-x: -3em;
+    }
+    &.earth_spirit_petrify {
+      background-position-x: -4em;
+    }
+    &.earth_spirit_rolling_boulder {
+      background-position-x: -5em;
+    }
+    &.earth_spirit_stone_caller {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_earthshaker {
+    background-image: url('~@src/assets/sprites/spell-icon-earthshaker.png');
+    
+    &.bracers_of_the_cavern_luminar.earthshaker_enchant_totem {
+      background-position-x: -0em;
+    }
+    &.sltv__earthshaker_ability_icons.earthshaker_aftershock {
+      background-position-x: -1em;
+    }
+    &.sltv__earthshaker_ability_icons.earthshaker_echo_slam {
+      background-position-x: -2em;
+    }
+    &.sltv__earthshaker_ability_icons.earthshaker_enchant_totem {
+      background-position-x: -3em;
+    }
+    &.sltv__earthshaker_ability_icons.earthshaker_fissure {
+      background-position-x: -4em;
+    }
+    &.earthshaker_aftershock_egset {
+      background-position-x: -5em;
+    }
+    &.earthshaker_aftershock {
+      background-position-x: -6em;
+    }
+    &.earthshaker_echo_slam_egset {
+      background-position-x: -7em;
+    }
+    &.earthshaker_echo_slam {
+      background-position-x: -8em;
+    }
+    &.earthshaker_enchant_totem_egset {
+      background-position-x: -9em;
+    }
+    &.earthshaker_enchant_totem {
+      background-position-x: -10em;
+    }
+    &.earthshaker_fissure_alt_gold {
+      background-position-x: -11em;
+    }
+    &.earthshaker_fissure_alt {
+      background-position-x: -12em;
+    }
+    &.earthshaker_fissure_egset {
+      background-position-x: -13em;
+    }
+    &.earthshaker_fissure {
+      background-position-x: -14em;
+    }
+  }
+
+  &.npc_dota_hero_elder_titan {
+    background-image: url('~@src/assets/sprites/spell-icon-elder_titan.png');
+    
+    &.elder_titan_ti7_immortal.elder_titan_echo_stomp_alt.png {
+      background-position-x: -0em;
+    }
+    &.elder_titan_ti7_immortal.elder_titan_echo_stomp_alt {
+      background-position-x: -1em;
+    }
+    &.elder_titan_ti7_immortal.elder_titan_echo_stomp_spirit_alt.png {
+      background-position-x: -2em;
+    }
+    &.elder_titan_ti7_immortal.elder_titan_echo_stomp_spirit_alt {
+      background-position-x: -3em;
+    }
+    &.elder_titan_ancestral_spirit {
+      background-position-x: -4em;
+    }
+    &.elder_titan_earth_splitter {
+      background-position-x: -5em;
+    }
+    &.elder_titan_echo_stomp {
+      background-position-x: -6em;
+    }
+    &.elder_titan_echo_stomp_spirit {
+      background-position-x: -7em;
+    }
+    &.elder_titan_natural_order {
+      background-position-x: -8em;
+    }
+    &.elder_titan_natural_order_spirit {
+      background-position-x: -9em;
+    }
+    &.elder_titan_return_spirit {
+      background-position-x: -10em;
+    }
+  }
+
+  &.npc_dota_hero_ember_spirit {
+    background-image: url('~@src/assets/sprites/spell-icon-ember_spirit.png');
+    
+    &.ember_spirit_activate_fire_remnant {
+      background-position-x: -0em;
+    }
+    &.ember_spirit_fire_remnant {
+      background-position-x: -1em;
+    }
+    &.ember_spirit_flame_guard {
+      background-position-x: -2em;
+    }
+    &.ember_spirit_searing_chains {
+      background-position-x: -3em;
+    }
+    &.ember_spirit_sleight_of_fist {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_enchantress {
+    background-image: url('~@src/assets/sprites/spell-icon-enchantress.png');
+    
+    &.virgas_arc.enchantress_impetus {
+      background-position-x: -0em;
+    }
+    &.enchantress_enchant {
+      background-position-x: -1em;
+    }
+    &.enchantress_impetus {
+      background-position-x: -2em;
+    }
+    &.enchantress_natures_attendants {
+      background-position-x: -3em;
+    }
+    &.enchantress_untouchable {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_enigma {
+    background-image: url('~@src/assets/sprites/spell-icon-enigma.png');
+    
+    &.worldchasm.enigma_black_hole_worldchasm {
+      background-position-x: -0em;
+    }
+    &.enigma_black_hole {
+      background-position-x: -1em;
+    }
+    &.enigma_demonic_conversion_alt {
+      background-position-x: -2em;
+    }
+    &.enigma_demonic_conversion {
+      background-position-x: -3em;
+    }
+    &.enigma_malefice {
+      background-position-x: -4em;
+    }
+    &.enigma_midnight_pulse {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_faceless_void {
+    background-image: url('~@src/assets/sprites/spell-icon-faceless_void.png');
+    
+    &.brancerofaeons.faceless_void_time_dilation_crimson {
+      background-position-x: -0em;
+    }
+    &.brancerofaeons.faceless_void_time_dilation {
+      background-position-x: -1em;
+    }
+    &.jewelofaeons.faceless_void_time_walk_1 {
+      background-position-x: -2em;
+    }
+    &.maceofaeons.faceless_void_chronosphere {
+      background-position-x: -3em;
+    }
+    &.faceless_void_chronosphere {
+      background-position-x: -4em;
+    }
+    &.faceless_void_time_dilation {
+      background-position-x: -5em;
+    }
+    &.faceless_void_time_lock {
+      background-position-x: -6em;
+    }
+    &.faceless_void_time_walk {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_furion {
+    background-image: url('~@src/assets/sprites/spell-icon-furion.png');
+    
+    &.furion_force_of_nature {
+      background-position-x: -0em;
+    }
+    &.furion_sprout {
+      background-position-x: -1em;
+    }
+    &.furion_teleportation {
+      background-position-x: -2em;
+    }
+    &.furion_wrath_of_nature {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_grimstroke {
+    background-image: url('~@src/assets/sprites/spell-icon-grimstroke.png');
+    
+    &.grimstroke_dark_artistry {
+      background-position-x: -0em;
+    }
+    &.grimstroke_ink_creature {
+      background-position-x: -1em;
+    }
+    &.grimstroke_soul_chain {
+      background-position-x: -2em;
+    }
+    &.grimstroke_spirit_walk {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_gyrocopter {
+    background-image: url('~@src/assets/sprites/spell-icon-gyrocopter.png');
+    
+    &.gyrocopter_call_down {
+      background-position-x: -0em;
+    }
+    &.gyrocopter_flak_cannon {
+      background-position-x: -1em;
+    }
+    &.gyrocopter_homing_missile {
+      background-position-x: -2em;
+    }
+    &.gyrocopter_rocket_barrage {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_huskar {
+    background-image: url('~@src/assets/sprites/spell-icon-huskar.png');
+    
+    &.ti8_immortal_shoulder.huskar_inner_vitality_immortal {
+      background-position-x: -0em;
+    }
+    &.huskar_berserkers_blood {
+      background-position-x: -1em;
+    }
+    &.huskar_burning_spear {
+      background-position-x: -2em;
+    }
+    &.huskar_inner_vitality {
+      background-position-x: -3em;
+    }
+    &.huskar_life_break_alt {
+      background-position-x: -4em;
+    }
+    &.huskar_life_break {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_invoker {
+    background-image: url('~@src/assets/sprites/spell-icon-invoker.png');
+    
+    &.dark_artistry.invoker_deafening_blast {
+      background-position-x: -0em;
+    }
+    &.dark_artistry.invoker_tornado {
+      background-position-x: -1em;
+    }
+    &.esl_ablityicons_relicsoftheilluminatedseer.invoker_forge_spirit {
+      background-position-x: -2em;
+    }
+    &.immortal.invoker_alacrity {
+      background-position-x: -3em;
+    }
+    &.magus_apex.invoker_exort {
+      background-position-x: -4em;
+    }
+    &.magus_apex.invoker_quas {
+      background-position-x: -5em;
+    }
+    &.magus_apex.invoker_sun_strike {
+      background-position-x: -6em;
+    }
+    &.magus_apex.invoker_wex {
+      background-position-x: -7em;
+    }
+    &.invoker_alacrity {
+      background-position-x: -8em;
+    }
+    &.invoker_chaos_meteor {
+      background-position-x: -9em;
+    }
+    &.invoker_cold_snap {
+      background-position-x: -10em;
+    }
+    &.invoker_deafening_blast {
+      background-position-x: -11em;
+    }
+    &.invoker_emp {
+      background-position-x: -12em;
+    }
+    &.invoker_empty1 {
+      background-position-x: -13em;
+    }
+    &.invoker_empty2 {
+      background-position-x: -14em;
+    }
+    &.invoker_exort {
+      background-position-x: -15em;
+    }
+    &.invoker_forge_spirit {
+      background-position-x: -16em;
+    }
+    &.invoker_ghost_walk {
+      background-position-x: -17em;
+    }
+    &.invoker_ice_wall {
+      background-position-x: -18em;
+    }
+    &.invoker_invoke {
+      background-position-x: -19em;
+    }
+    &.invoker_quas {
+      background-position-x: -20em;
+    }
+    &.invoker_sun_strike {
+      background-position-x: -21em;
+    }
+    &.invoker_tornado {
+      background-position-x: -22em;
+    }
+    &.invoker_wex {
+      background-position-x: -23em;
+    }
+  }
+
+  &.npc_dota_hero_jakiro {
+    background-image: url('~@src/assets/sprites/spell-icon-jakiro.png');
+    
+    &.immortal.jakiro_dual_breath {
+      background-position-x: -0em;
+    }
+    &.immortal.jakiro_ice_path {
+      background-position-x: -1em;
+    }
+    &.jakiro_dual_breath {
+      background-position-x: -2em;
+    }
+    &.jakiro_ice_path {
+      background-position-x: -3em;
+    }
+    &.jakiro_liquid_fire {
+      background-position-x: -4em;
+    }
+    &.jakiro_macropyre {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_juggernaut {
+    background-image: url('~@src/assets/sprites/spell-icon-juggernaut.png');
+    
+    &.bladekeeper.juggernaut_blade_dance {
+      background-position-x: -0em;
+    }
+    &.bladekeeper.juggernaut_blade_fury {
+      background-position-x: -1em;
+    }
+    &.bladekeeper.juggernaut_healing_ward {
+      background-position-x: -2em;
+    }
+    &.bladekeeper.juggernaut_omni_slash {
+      background-position-x: -3em;
+    }
+    &.fortunes_tout.juggernaut_healing_ward {
+      background-position-x: -4em;
+    }
+    &.fortunes_tout_gold.juggernaut_healing_ward {
+      background-position-x: -5em;
+    }
+    &.ti8_immortal_weapon.juggernaut_blade_fury_immortal_crimson {
+      background-position-x: -6em;
+    }
+    &.ti8_immortal_weapon.juggernaut_blade_fury_immortal_gold {
+      background-position-x: -7em;
+    }
+    &.ti8_immortal_weapon.juggernaut_blade_fury_immortal {
+      background-position-x: -8em;
+    }
+    &.juggernaut_blade_dance_arcana {
+      background-position-x: -9em;
+    }
+    &.juggernaut_blade_dance {
+      background-position-x: -10em;
+    }
+    &.juggernaut_blade_fury_arcana {
+      background-position-x: -11em;
+    }
+    &.juggernaut_blade_fury {
+      background-position-x: -12em;
+    }
+    &.juggernaut_healing_ward_arcana {
+      background-position-x: -13em;
+    }
+    &.juggernaut_healing_ward {
+      background-position-x: -14em;
+    }
+    &.juggernaut_omni_slash_arcana {
+      background-position-x: -15em;
+    }
+    &.juggernaut_omni_slash {
+      background-position-x: -16em;
+    }
+  }
+
+  &.npc_dota_hero_keeper_of_the_light {
+    background-image: url('~@src/assets/sprites/spell-icon-keeper_of_the_light.png');
+    
+    &.kotl_ti7_immortal.keeper_of_the_light_illuminate_alt.png {
+      background-position-x: -0em;
+    }
+    &.kotl_ti7_immortal.keeper_of_the_light_illuminate_alt {
+      background-position-x: -1em;
+    }
+    &.kotl_ti7_immortal.keeper_of_the_light_illuminate_end_alt.png {
+      background-position-x: -2em;
+    }
+    &.kotl_ti7_immortal.keeper_of_the_light_illuminate_end_alt {
+      background-position-x: -3em;
+    }
+    &.keeper_of_the_light_blinding_light {
+      background-position-x: -4em;
+    }
+    &.keeper_of_the_light_chakra_magic {
+      background-position-x: -5em;
+    }
+    &.keeper_of_the_light_illuminate_end {
+      background-position-x: -6em;
+    }
+    &.keeper_of_the_light_illuminate {
+      background-position-x: -7em;
+    }
+    &.keeper_of_the_light_mana_leak {
+      background-position-x: -8em;
+    }
+    &.keeper_of_the_light_recall {
+      background-position-x: -9em;
+    }
+    &.keeper_of_the_light_spirit_form_illuminate_end {
+      background-position-x: -10em;
+    }
+    &.keeper_of_the_light_spirit_form_illuminate {
+      background-position-x: -11em;
+    }
+    &.keeper_of_the_light_spirit_form {
+      background-position-x: -12em;
+    }
+  }
+
+  &.npc_dota_hero_kunkka {
+    background-image: url('~@src/assets/sprites/spell-icon-kunkka.png');
+    
+    &.ti8_immortal_weapon_retro.kunkka_torrent_immortal_retro {
+      background-position-x: -0em;
+    }
+    &.kunkka_ghostship_immortal {
+      background-position-x: -1em;
+    }
+    &.kunkka_ghostship {
+      background-position-x: -2em;
+    }
+    &.kunkka_return {
+      background-position-x: -3em;
+    }
+    &.kunkka_tidebringer {
+      background-position-x: -4em;
+    }
+    &.kunkka_torrent {
+      background-position-x: -5em;
+    }
+    &.kunkka_x_marks_the_spot {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_legion_commander {
+    background-image: url('~@src/assets/sprites/spell-icon-legion_commander.png');
+    
+    &.immortal.legion_commander_overwhelming_odds {
+      background-position-x: -0em;
+    }
+    &.legacy_of_the_fallen_legion.legion_commander_press_the_attack {
+      background-position-x: -1em;
+    }
+    &.legion_commander_duel_alt1 {
+      background-position-x: -2em;
+    }
+    &.legion_commander_duel {
+      background-position-x: -3em;
+    }
+    &.legion_commander_moment_of_courage {
+      background-position-x: -4em;
+    }
+    &.legion_commander_overwhelming_odds {
+      background-position-x: -5em;
+    }
+    &.legion_commander_press_the_attack {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_leshrac {
+    background-image: url('~@src/assets/sprites/spell-icon-leshrac.png');
+    
+    &.ti8_immortal_tormented_staff_retro.leshrac_split_earth_immortal_retro {
+      background-position-x: -0em;
+    }
+    &.tormented_staff.leshrac_split_earth {
+      background-position-x: -1em;
+    }
+    &.leshrac_diabolic_edict {
+      background-position-x: -2em;
+    }
+    &.leshrac_lightning_storm {
+      background-position-x: -3em;
+    }
+    &.leshrac_pulse_nova {
+      background-position-x: -4em;
+    }
+    &.leshrac_split_earth {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_lich {
+    background-image: url('~@src/assets/sprites/spell-icon-lich.png');
+    
+    &.shearing_deposition.lich_frost_nova {
+      background-position-x: -0em;
+    }
+    &.ti8_immortal_wrist.lich_chain_frost_immortal {
+      background-position-x: -1em;
+    }
+    &.lich_chain_frost {
+      background-position-x: -2em;
+    }
+    &.lich_dark_ritual {
+      background-position-x: -3em;
+    }
+    &.lich_frost_armor {
+      background-position-x: -4em;
+    }
+    &.lich_frost_nova {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_life_stealer {
+    background-image: url('~@src/assets/sprites/spell-icon-life_stealer.png');
+    
+    &.bloody_ripper_abilityicons.life_stealer_consume {
+      background-position-x: -0em;
+    }
+    &.bloody_ripper_abilityicons.life_stealer_feast {
+      background-position-x: -1em;
+    }
+    &.bloody_ripper_abilityicons.life_stealer_infest {
+      background-position-x: -2em;
+    }
+    &.bloody_ripper_abilityicons.life_stealer_open_wounds {
+      background-position-x: -3em;
+    }
+    &.bloody_ripper_abilityicons.life_stealer_rage {
+      background-position-x: -4em;
+    }
+    &.promo_bloody_ripper_abilityicons.life_stealer_consume {
+      background-position-x: -5em;
+    }
+    &.promo_bloody_ripper_abilityicons.life_stealer_feast {
+      background-position-x: -6em;
+    }
+    &.promo_bloody_ripper_abilityicons.life_stealer_infest {
+      background-position-x: -7em;
+    }
+    &.promo_bloody_ripper_abilityicons.life_stealer_open_wounds {
+      background-position-x: -8em;
+    }
+    &.promo_bloody_ripper_abilityicons.life_stealer_rage {
+      background-position-x: -9em;
+    }
+    &.life_stealer_assimilate_eject {
+      background-position-x: -10em;
+    }
+    &.life_stealer_assimilate {
+      background-position-x: -11em;
+    }
+    &.life_stealer_consume {
+      background-position-x: -12em;
+    }
+    &.life_stealer_control {
+      background-position-x: -13em;
+    }
+    &.life_stealer_feast {
+      background-position-x: -14em;
+    }
+    &.life_stealer_infest {
+      background-position-x: -15em;
+    }
+    &.life_stealer_open_wounds {
+      background-position-x: -16em;
+    }
+    &.life_stealer_rage_immortal_gold {
+      background-position-x: -17em;
+    }
+    &.life_stealer_rage_immortal {
+      background-position-x: -18em;
+    }
+    &.life_stealer_rage {
+      background-position-x: -19em;
+    }
+  }
+
+  &.npc_dota_hero_lina {
+    background-image: url('~@src/assets/sprites/spell-icon-lina.png');
+    
+    &.lina_ti6_immortal.lina_laguna_blade {
+      background-position-x: -0em;
+    }
+    &.lina_ti7_immortal.lina_light_strike_array.png {
+      background-position-x: -1em;
+    }
+    &.lina_ti7_immortal.lina_light_strike_array {
+      background-position-x: -2em;
+    }
+    &.lina_dragon_slave_alt1 {
+      background-position-x: -3em;
+    }
+    &.lina_dragon_slave {
+      background-position-x: -4em;
+    }
+    &.lina_fiery_soul_alt1 {
+      background-position-x: -5em;
+    }
+    &.lina_fiery_soul {
+      background-position-x: -6em;
+    }
+    &.lina_laguna_blade {
+      background-position-x: -7em;
+    }
+    &.lina_light_strike_array {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_lion {
+    background-image: url('~@src/assets/sprites/spell-icon-lion.png');
+    
+    &.demon_drain.lion_mana_drain {
+      background-position-x: -0em;
+    }
+    &.finger_of_death.lion_finger_of_death_immortal {
+      background-position-x: -1em;
+    }
+    &.lion_finger_of_death {
+      background-position-x: -2em;
+    }
+    &.lion_impale {
+      background-position-x: -3em;
+    }
+    &.lion_mana_drain {
+      background-position-x: -4em;
+    }
+    &.lion_voodoo_fish_green {
+      background-position-x: -5em;
+    }
+    &.lion_voodoo_fish {
+      background-position-x: -6em;
+    }
+    &.lion_voodoo {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_lone_druid {
+    background-image: url('~@src/assets/sprites/spell-icon-lone_druid.png');
+    
+    &.ti8_immortal_weapon.lone_druid_spirit_bear_entangle_immortal {
+      background-position-x: -0em;
+    }
+    &.lone_druid_rabid {
+      background-position-x: -1em;
+    }
+    &.lone_druid_savage_roar_bear {
+      background-position-x: -2em;
+    }
+    &.lone_druid_savage_roar {
+      background-position-x: -3em;
+    }
+    &.lone_druid_spirit_bear_demolish {
+      background-position-x: -4em;
+    }
+    &.lone_druid_spirit_bear_entangle {
+      background-position-x: -5em;
+    }
+    &.lone_druid_spirit_bear {
+      background-position-x: -6em;
+    }
+    &.lone_druid_spirit_bear_return {
+      background-position-x: -7em;
+    }
+    &.lone_druid_true_form_battle_cry {
+      background-position-x: -8em;
+    }
+    &.lone_druid_true_form_druid {
+      background-position-x: -9em;
+    }
+    &.lone_druid_true_form {
+      background-position-x: -10em;
+    }
+  }
+
+  &.npc_dota_hero_luna {
+    background-image: url('~@src/assets/sprites/spell-icon-luna.png');
+    
+    &.zodiac_sigils_skills.luna_eclipse {
+      background-position-x: -0em;
+    }
+    &.zodiac_sigils_skills.luna_lucent_beam {
+      background-position-x: -1em;
+    }
+    &.zodiac_sigils_skills.luna_lunar_blessing {
+      background-position-x: -2em;
+    }
+    &.zodiac_sigils_skills.luna_moon_glaive {
+      background-position-x: -3em;
+    }
+    &.luna_eclipse {
+      background-position-x: -4em;
+    }
+    &.luna_lucent_beam_alt2 {
+      background-position-x: -5em;
+    }
+    &.luna_lucent_beam_alt {
+      background-position-x: -6em;
+    }
+    &.luna_lucent_beam {
+      background-position-x: -7em;
+    }
+    &.luna_lunar_blessing {
+      background-position-x: -8em;
+    }
+    &.luna_moon_glaive {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_lycan {
+    background-image: url('~@src/assets/sprites/spell-icon-lycan.png');
+    
+    &.hunter_of_kings_ability_icons.lycan_feral_impulse {
+      background-position-x: -0em;
+    }
+    &.hunter_of_kings_ability_icons.lycan_howl {
+      background-position-x: -1em;
+    }
+    &.hunter_of_kings_ability_icons.lycan_shapeshift {
+      background-position-x: -2em;
+    }
+    &.hunter_of_kings_ability_icons.lycan_summon_wolves {
+      background-position-x: -3em;
+    }
+    &.lycan_feral_impulse {
+      background-position-x: -4em;
+    }
+    &.lycan_howl {
+      background-position-x: -5em;
+    }
+    &.lycan_shapeshift {
+      background-position-x: -6em;
+    }
+    &.lycan_summon_wolves_critical_strike {
+      background-position-x: -7em;
+    }
+    &.lycan_summon_wolves_invisibility {
+      background-position-x: -8em;
+    }
+    &.lycan_summon_wolves {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_magnataur {
+    background-image: url('~@src/assets/sprites/spell-icon-magnataur.png');
+    
+    &.forgemaster_icons.magnataur_empower {
+      background-position-x: -0em;
+    }
+    &.forgemaster_icons.magnataur_reverse_polarity {
+      background-position-x: -1em;
+    }
+    &.forgemaster_icons.magnataur_shockwave {
+      background-position-x: -2em;
+    }
+    &.forgemaster_icons.magnataur_skewer {
+      background-position-x: -3em;
+    }
+    &.magnataur_empower {
+      background-position-x: -4em;
+    }
+    &.magnataur_reverse_polarity {
+      background-position-x: -5em;
+    }
+    &.magnataur_shockwave_alt {
+      background-position-x: -6em;
+    }
+    &.magnataur_shockwave {
+      background-position-x: -7em;
+    }
+    &.magnataur_skewer {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_medusa {
+    background-image: url('~@src/assets/sprites/spell-icon-medusa.png');
+    
+    &.blueice_abilityicons.medusa_mana_shield {
+      background-position-x: -0em;
+    }
+    &.blueice_abilityicons.medusa_mystic_snake {
+      background-position-x: -1em;
+    }
+    &.blueice_abilityicons.medusa_split_shot {
+      background-position-x: -2em;
+    }
+    &.blueice_abilityicons.medusa_stone_gaze {
+      background-position-x: -3em;
+    }
+    &.daughters_of_hydrophiinae.medusa_mana_shield {
+      background-position-x: -4em;
+    }
+    &.emerald_ocean_icons.medusa_mana_shield {
+      background-position-x: -5em;
+    }
+    &.emerald_ocean_icons.medusa_mystic_snake {
+      background-position-x: -6em;
+    }
+    &.emerald_ocean_icons.medusa_split_shot {
+      background-position-x: -7em;
+    }
+    &.emerald_ocean_icons.medusa_stone_gaze {
+      background-position-x: -8em;
+    }
+    &.medusa_mana_shield {
+      background-position-x: -9em;
+    }
+    &.medusa_mystic_snake {
+      background-position-x: -10em;
+    }
+    &.medusa_split_shot {
+      background-position-x: -11em;
+    }
+    &.medusa_stone_gaze {
+      background-position-x: -12em;
+    }
+  }
+
+  &.npc_dota_hero_meepo {
+    background-image: url('~@src/assets/sprites/spell-icon-meepo.png');
+    
+    &.colossal_crystal_chorus.meepo_poof {
+      background-position-x: -0em;
+    }
+    &.meepo_divided_we_stand {
+      background-position-x: -1em;
+    }
+    &.meepo_divided_we_stand_scavenger {
+      background-position-x: -2em;
+    }
+    &.meepo_earthbind {
+      background-position-x: -3em;
+    }
+    &.meepo_geostrike {
+      background-position-x: -4em;
+    }
+    &.meepo_geostrike_scavenger {
+      background-position-x: -5em;
+    }
+    &.meepo_poof {
+      background-position-x: -6em;
+    }
+    &.meepo_poof_scavenger {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_mirana {
+    background-image: url('~@src/assets/sprites/spell-icon-mirana.png');
+    
+    &.pulsar_remnant.mirana_starfall {
+      background-position-x: -0em;
+    }
+    &.mirana_arrow {
+      background-position-x: -1em;
+    }
+    &.mirana_invis {
+      background-position-x: -2em;
+    }
+    &.mirana_leap {
+      background-position-x: -3em;
+    }
+    &.mirana_leap_ti8 {
+      background-position-x: -4em;
+    }
+    &.mirana_starfall {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_monkey_king {
+    background-image: url('~@src/assets/sprites/spell-icon-monkey_king.png');
+    
+    &.monkey_king_boundless_strike {
+      background-position-x: -0em;
+    }
+    &.monkey_king_jingu_mastery {
+      background-position-x: -1em;
+    }
+    &.monkey_king_mischief {
+      background-position-x: -2em;
+    }
+    &.monkey_king_primal_spring {
+      background-position-x: -3em;
+    }
+    &.monkey_king_tree_dance {
+      background-position-x: -4em;
+    }
+    &.monkey_king_untransform {
+      background-position-x: -5em;
+    }
+    &.monkey_king_wukongs_command {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_morphling {
+    background-image: url('~@src/assets/sprites/spell-icon-morphling.png');
+    
+    &.crown_of_tears.morphling_waveform {
+      background-position-x: -0em;
+    }
+    &.morphling_adaptive_strike_agi_ethereal_blade {
+      background-position-x: -1em;
+    }
+    &.morphling_adaptive_strike_agi {
+      background-position-x: -2em;
+    }
+    &.morphling_adaptive_strike_str {
+      background-position-x: -3em;
+    }
+    &.morphling_morph_agi {
+      background-position-x: -4em;
+    }
+    &.morphling_morph_replicate {
+      background-position-x: -5em;
+    }
+    &.morphling_morph_str {
+      background-position-x: -6em;
+    }
+    &.morphling_replicate {
+      background-position-x: -7em;
+    }
+    &.morphling_waveform {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_naga_siren {
+    background-image: url('~@src/assets/sprites/spell-icon-naga_siren.png');
+    
+    &.naga_siren_ensnare {
+      background-position-x: -0em;
+    }
+    &.naga_siren_mirror_image {
+      background-position-x: -1em;
+    }
+    &.naga_siren_rip_tide {
+      background-position-x: -2em;
+    }
+    &.naga_siren_rip_tide_ti8 {
+      background-position-x: -3em;
+    }
+    &.naga_siren_song_of_the_siren_cancel {
+      background-position-x: -4em;
+    }
+    &.naga_siren_song_of_the_siren {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_necrolyte {
+    background-image: url('~@src/assets/sprites/spell-icon-necrolyte.png');
+    
+    &.apostle_of_decay_icons.necrolyte_death_pulse {
+      background-position-x: -0em;
+    }
+    &.apostle_of_decay_icons.necrolyte_heartstopper_aura {
+      background-position-x: -1em;
+    }
+    &.apostle_of_decay_icons.necrolyte_reapers_scythe {
+      background-position-x: -2em;
+    }
+    &.apostle_of_decay_icons.necrolyte_sadist {
+      background-position-x: -3em;
+    }
+    &.necro_ti7_immortal.necrolyte_reapers_scythe.png {
+      background-position-x: -4em;
+    }
+    &.necro_ti7_immortal.necrolyte_reapers_scythe {
+      background-position-x: -5em;
+    }
+    &.necronub.necrolyte_death_pulse {
+      background-position-x: -6em;
+    }
+    &.necronub.necrolyte_heartstopper_aura {
+      background-position-x: -7em;
+    }
+    &.necronub.necrolyte_reapers_scythe {
+      background-position-x: -8em;
+    }
+    &.necronub.necrolyte_sadist {
+      background-position-x: -9em;
+    }
+    &.necrolyte_death_pulse {
+      background-position-x: -10em;
+    }
+    &.necrolyte_heartstopper_aura {
+      background-position-x: -11em;
+    }
+    &.necrolyte_reapers_scythe {
+      background-position-x: -12em;
+    }
+    &.necrolyte_sadist {
+      background-position-x: -13em;
+    }
+  }
+
+  &.npc_dota_hero_nevermore {
+    background-image: url('~@src/assets/sprites/spell-icon-nevermore.png');
+    
+    &.nevermore_dark_lord_demon {
+      background-position-x: -0em;
+    }
+    &.nevermore_dark_lord {
+      background-position-x: -1em;
+    }
+    &.nevermore_necromastery_demon {
+      background-position-x: -2em;
+    }
+    &.nevermore_necromastery {
+      background-position-x: -3em;
+    }
+    &.nevermore_requiem_demon {
+      background-position-x: -4em;
+    }
+    &.nevermore_requiem {
+      background-position-x: -5em;
+    }
+    &.nevermore_shadowraze1_demon {
+      background-position-x: -6em;
+    }
+    &.nevermore_shadowraze1 {
+      background-position-x: -7em;
+    }
+    &.nevermore_shadowraze2_demon {
+      background-position-x: -8em;
+    }
+    &.nevermore_shadowraze2 {
+      background-position-x: -9em;
+    }
+    &.nevermore_shadowraze3_demon {
+      background-position-x: -10em;
+    }
+    &.nevermore_shadowraze3 {
+      background-position-x: -11em;
+    }
+  }
+
+  &.npc_dota_hero_night_stalker {
+    background-image: url('~@src/assets/sprites/spell-icon-night_stalker.png');
+    
+    &.night_stalker_crippling_fear {
+      background-position-x: -0em;
+    }
+    &.night_stalker_darkness {
+      background-position-x: -1em;
+    }
+    &.night_stalker_hunter_in_the_night {
+      background-position-x: -2em;
+    }
+    &.night_stalker_void_alt {
+      background-position-x: -3em;
+    }
+    &.night_stalker_void {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_nyx_assassin {
+    background-image: url('~@src/assets/sprites/spell-icon-nyx_assassin.png');
+    
+    &.immortal.nyx_assassin_impale {
+      background-position-x: -0em;
+    }
+    &.immortal_gold.nyx_assassin_impale {
+      background-position-x: -1em;
+    }
+    &.nyx_assassin_burrow {
+      background-position-x: -2em;
+    }
+    &.nyx_assassin_impale {
+      background-position-x: -3em;
+    }
+    &.nyx_assassin_mana_burn {
+      background-position-x: -4em;
+    }
+    &.nyx_assassin_spiked_carapace {
+      background-position-x: -5em;
+    }
+    &.nyx_assassin_unburrow {
+      background-position-x: -6em;
+    }
+    &.nyx_assassin_vendetta {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_obsidian_destroyer {
+    background-image: url('~@src/assets/sprites/spell-icon-obsidian_destroyer.png');
+    
+    &.lucent_gate_icons.obsidian_destroyer_arcane_orb {
+      background-position-x: -0em;
+    }
+    &.lucent_gate_icons.obsidian_destroyer_astral_imprisonment {
+      background-position-x: -1em;
+    }
+    &.lucent_gate_icons.obsidian_destroyer_essence_aura {
+      background-position-x: -2em;
+    }
+    &.lucent_gate_icons.obsidian_destroyer_sanity_eclipse {
+      background-position-x: -3em;
+    }
+    &.shards_of_exile.obsidian_destroyer_astral_imprisonment {
+      background-position-x: -4em;
+    }
+    &.ti8_immortal_wings.obsidian_destroyer_sanity_eclipse_immortal {
+      background-position-x: -5em;
+    }
+    &.obsidian_destroyer_arcane_orb {
+      background-position-x: -6em;
+    }
+    &.obsidian_destroyer_astral_imprisonment {
+      background-position-x: -7em;
+    }
+    &.obsidian_destroyer_essence_aura {
+      background-position-x: -8em;
+    }
+    &.obsidian_destroyer_sanity_eclipse {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_ogre_magi {
+    background-image: url('~@src/assets/sprites/spell-icon-ogre_magi.png');
+    
+    &.antipodeanabilityicons.ogre_magi_bloodlust {
+      background-position-x: -0em;
+    }
+    &.antipodeanabilityicons.ogre_magi_fireblast {
+      background-position-x: -1em;
+    }
+    &.antipodeanabilityicons.ogre_magi_ignite {
+      background-position-x: -2em;
+    }
+    &.antipodeanabilityicons.ogre_magi_multicast {
+      background-position-x: -3em;
+    }
+    &.antipodeanabilityicons.ogre_magi_unrefined_fireblast {
+      background-position-x: -4em;
+    }
+    &.auspice_of_the_whyrlegyge.ogre_magi_multicast {
+      background-position-x: -5em;
+    }
+    &.ogre_magi_bloodlust {
+      background-position-x: -6em;
+    }
+    &.ogre_magi_bloodlust_ti8 {
+      background-position-x: -7em;
+    }
+    &.ogre_magi_fireblast {
+      background-position-x: -8em;
+    }
+    &.ogre_magi_ignite {
+      background-position-x: -9em;
+    }
+    &.ogre_magi_multicast {
+      background-position-x: -10em;
+    }
+    &.ogre_magi_unrefined_fireblast {
+      background-position-x: -11em;
+    }
+  }
+
+  &.npc_dota_hero_omniknight {
+    background-image: url('~@src/assets/sprites/spell-icon-omniknight.png');
+    
+    &.omniknight_degen_aura {
+      background-position-x: -0em;
+    }
+    &.omniknight_guardian_angel {
+      background-position-x: -1em;
+    }
+    &.omniknight_purification {
+      background-position-x: -2em;
+    }
+    &.omniknight_repel {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_oracle {
+    background-image: url('~@src/assets/sprites/spell-icon-oracle.png');
+    
+    &.immortal.oracle_fortunes_end {
+      background-position-x: -0em;
+    }
+    &.oracle_false_promise {
+      background-position-x: -1em;
+    }
+    &.oracle_fates_edict {
+      background-position-x: -2em;
+    }
+    &.oracle_fortunes_end {
+      background-position-x: -3em;
+    }
+    &.oracle_purifying_flames {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_pangolier {
+    background-image: url('~@src/assets/sprites/spell-icon-pangolier.png');
+    
+    &.pangolier_gyroshell {
+      background-position-x: -0em;
+    }
+    &.pangolier_gyroshell_stop {
+      background-position-x: -1em;
+    }
+    &.pangolier_heartpiercer {
+      background-position-x: -2em;
+    }
+    &.pangolier_shield_crash {
+      background-position-x: -3em;
+    }
+    &.pangolier_swashbuckle {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_phantom_assassin {
+    background-image: url('~@src/assets/sprites/spell-icon-phantom_assassin.png');
+    
+    &.ravening_ability_icons.phantom_assassin_blur {
+      background-position-x: -0em;
+    }
+    &.ravening_ability_icons.phantom_assassin_coup_de_grace {
+      background-position-x: -1em;
+    }
+    &.ravening_ability_icons.phantom_assassin_phantom_strike {
+      background-position-x: -2em;
+    }
+    &.ravening_ability_icons.phantom_assassin_stifling_dagger {
+      background-position-x: -3em;
+    }
+    &.ti8_immortal_helmet.phantom_assassin_stifling_dagger_immortal {
+      background-position-x: -4em;
+    }
+    &.phantom_assassin_blur {
+      background-position-x: -5em;
+    }
+    &.phantom_assassin_coup_de_grace {
+      background-position-x: -6em;
+    }
+    &.phantom_assassin_phantom_strike {
+      background-position-x: -7em;
+    }
+    &.phantom_assassin_stifling_dagger {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_phantom_lancer {
+    background-image: url('~@src/assets/sprites/spell-icon-phantom_lancer.png');
+    
+    &.immortal.phantom_lancer_phantom_edge {
+      background-position-x: -0em;
+    }
+    &.phantom_concord.phantom_lancer_spirit_lance {
+      background-position-x: -1em;
+    }
+    &.phantom_lancer_doppelwalk {
+      background-position-x: -2em;
+    }
+    &.phantom_lancer_juxtapose {
+      background-position-x: -3em;
+    }
+    &.phantom_lancer_phantom_edge {
+      background-position-x: -4em;
+    }
+    &.phantom_lancer_spirit_lance {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_phoenix {
+    background-image: url('~@src/assets/sprites/spell-icon-phoenix.png');
+    
+    &.solar_forge.phoenix_sun_ray {
+      background-position-x: -0em;
+    }
+    &.phoenix_fire_spirits {
+      background-position-x: -1em;
+    }
+    &.phoenix_icarus_dive {
+      background-position-x: -2em;
+    }
+    &.phoenix_icarus_dive_stop {
+      background-position-x: -3em;
+    }
+    &.phoenix_launch_fire_spirit {
+      background-position-x: -4em;
+    }
+    &.phoenix_sun_ray {
+      background-position-x: -5em;
+    }
+    &.phoenix_sun_ray_stop {
+      background-position-x: -6em;
+    }
+    &.phoenix_sun_ray_toggle_move {
+      background-position-x: -7em;
+    }
+    &.phoenix_supernova {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_puck {
+    background-image: url('~@src/assets/sprites/spell-icon-puck.png');
+    
+    &.puck_dream_coil {
+      background-position-x: -0em;
+    }
+    &.puck_ethereal_jaunt {
+      background-position-x: -1em;
+    }
+    &.puck_illusory_orb_merry {
+      background-position-x: -2em;
+    }
+    &.puck_illusory_orb {
+      background-position-x: -3em;
+    }
+    &.puck_phase_shift {
+      background-position-x: -4em;
+    }
+    &.puck_waning_rift {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_pudge {
+    background-image: url('~@src/assets/sprites/spell-icon-pudge.png');
+    
+    &.arcana.pudge_dismember_arcana {
+      background-position-x: -0em;
+    }
+    &.arcana.pudge_dismember_arcana_style1 {
+      background-position-x: -1em;
+    }
+    &.arcana.pudge_flesh_heap_arcana {
+      background-position-x: -2em;
+    }
+    &.arcana.pudge_flesh_heap_arcana_style1 {
+      background-position-x: -3em;
+    }
+    &.arcana.pudge_meat_hook_arcana {
+      background-position-x: -4em;
+    }
+    &.arcana.pudge_meat_hook_arcana_style1 {
+      background-position-x: -5em;
+    }
+    &.arcana.pudge_rot_arcana {
+      background-position-x: -6em;
+    }
+    &.arcana.pudge_rot_arcana_style1 {
+      background-position-x: -7em;
+    }
+    &.dotapit_s3_pudge.pudge_dismember {
+      background-position-x: -8em;
+    }
+    &.dotapit_s3_pudge.pudge_flesh_heap {
+      background-position-x: -9em;
+    }
+    &.dotapit_s3_pudge.pudge_meat_hook {
+      background-position-x: -10em;
+    }
+    &.dotapit_s3_pudge.pudge_rot {
+      background-position-x: -11em;
+    }
+    &.immortal.pudge_meat_hook {
+      background-position-x: -12em;
+    }
+    &.immortal_gold.pudge_meat_hook {
+      background-position-x: -13em;
+    }
+    &.scavenger_dragon_ability.pudge_dismember {
+      background-position-x: -14em;
+    }
+    &.scavenger_dragon_ability.pudge_flesh_heap {
+      background-position-x: -15em;
+    }
+    &.scavenger_dragon_ability.pudge_meat_hook {
+      background-position-x: -16em;
+    }
+    &.scavenger_dragon_ability.pudge_rot {
+      background-position-x: -17em;
+    }
+    &.ti7_pudge_immortal.pudge_rot_alt.png {
+      background-position-x: -18em;
+    }
+    &.ti7_pudge_immortal.pudge_rot_alt2 {
+      background-position-x: -19em;
+    }
+    &.ti7_pudge_immortal.pudge_rot_alt {
+      background-position-x: -20em;
+    }
+    &.pudge_dismember {
+      background-position-x: -21em;
+    }
+    &.pudge_flesh_heap {
+      background-position-x: -22em;
+    }
+    &.pudge_meat_hook {
+      background-position-x: -23em;
+    }
+    &.pudge_rot {
+      background-position-x: -24em;
+    }
+  }
+
+  &.npc_dota_hero_pugna {
+    background-image: url('~@src/assets/sprites/spell-icon-pugna.png');
+    
+    &.pugna_decrepify {
+      background-position-x: -0em;
+    }
+    &.pugna_life_drain {
+      background-position-x: -1em;
+    }
+    &.pugna_nether_blast {
+      background-position-x: -2em;
+    }
+    &.pugna_nether_ward_alt {
+      background-position-x: -3em;
+    }
+    &.pugna_nether_ward {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_queenofpain {
+    background-image: url('~@src/assets/sprites/spell-icon-queenofpain.png');
+    
+    &.queenofpain_blink {
+      background-position-x: -0em;
+    }
+    &.queenofpain_scream_of_pain {
+      background-position-x: -1em;
+    }
+    &.queenofpain_shadow_strike {
+      background-position-x: -2em;
+    }
+    &.queenofpain_sonic_wave {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_rattletrap {
+    background-image: url('~@src/assets/sprites/spell-icon-rattletrap.png');
+    
+    &.rattletrap_battery_assault {
+      background-position-x: -0em;
+    }
+    &.rattletrap_hookshot {
+      background-position-x: -1em;
+    }
+    &.rattletrap_power_cogs {
+      background-position-x: -2em;
+    }
+    &.rattletrap_rocket_flare {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_razor {
+    background-image: url('~@src/assets/sprites/spell-icon-razor.png');
+    
+    &.severing_lash.razor_plasma_field {
+      background-position-x: -0em;
+    }
+    &.razor_eye_of_the_storm {
+      background-position-x: -1em;
+    }
+    &.razor_plasma_field {
+      background-position-x: -2em;
+    }
+    &.razor_static_link_alt_gold {
+      background-position-x: -3em;
+    }
+    &.razor_static_link_alt {
+      background-position-x: -4em;
+    }
+    &.razor_static_link {
+      background-position-x: -5em;
+    }
+    &.razor_unstable_current {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_riki {
+    background-image: url('~@src/assets/sprites/spell-icon-riki.png');
+    
+    &.haze_atrocity_icons.riki_blink_strike {
+      background-position-x: -0em;
+    }
+    &.haze_atrocity_icons.riki_permanent_invisibility {
+      background-position-x: -1em;
+    }
+    &.haze_atrocity_icons.riki_smoke_screen {
+      background-position-x: -2em;
+    }
+    &.shadow_masquerade.riki_blink_strike {
+      background-position-x: -3em;
+    }
+    &.ti8_immortal_head.riki_smoke_screen_immortal_crimson {
+      background-position-x: -4em;
+    }
+    &.ti8_immortal_head.riki_smoke_screen_immortal_gold {
+      background-position-x: -5em;
+    }
+    &.ti8_immortal_head.riki_smoke_screen_immortal {
+      background-position-x: -6em;
+    }
+    &.riki_blink_strike {
+      background-position-x: -7em;
+    }
+    &.riki_permanent_invisibility {
+      background-position-x: -8em;
+    }
+    &.riki_smoke_screen {
+      background-position-x: -9em;
+    }
+    &.riki_tricks_of_the_trade {
+      background-position-x: -10em;
+    }
+  }
+
+  &.npc_dota_hero_rubick {
+    background-image: url('~@src/assets/sprites/spell-icon-rubick.png');
+    
+    &.fantoccinis_dilemma.rubick_telekinesis {
+      background-position-x: -0em;
+    }
+    &.harlequin_icons.rubick_fade_bolt {
+      background-position-x: -1em;
+    }
+    &.harlequin_icons.rubick_null_field {
+      background-position-x: -2em;
+    }
+    &.harlequin_icons.rubick_spell_steal {
+      background-position-x: -3em;
+    }
+    &.harlequin_icons.rubick_telekinesis_land {
+      background-position-x: -4em;
+    }
+    &.harlequin_icons.rubick_telekinesis {
+      background-position-x: -5em;
+    }
+    &.staff_of_perplex.rubick_telekinesis_gold {
+      background-position-x: -6em;
+    }
+    &.staff_of_perplex.rubick_telekinesis {
+      background-position-x: -7em;
+    }
+    &.ti8_immortal_shoulder.rubick_fade_bolt_immortal {
+      background-position-x: -8em;
+    }
+    &.rubick_empty1 {
+      background-position-x: -9em;
+    }
+    &.rubick_empty2 {
+      background-position-x: -10em;
+    }
+    &.rubick_fade_bolt {
+      background-position-x: -11em;
+    }
+    &.rubick_null_field_offensive {
+      background-position-x: -12em;
+    }
+    &.rubick_null_field {
+      background-position-x: -13em;
+    }
+    &.rubick_spell_steal {
+      background-position-x: -14em;
+    }
+    &.rubick_telekinesis_land {
+      background-position-x: -15em;
+    }
+    &.rubick_telekinesis {
+      background-position-x: -16em;
+    }
+  }
+
+  &.npc_dota_hero_sand_king {
+    background-image: url('~@src/assets/sprites/spell-icon-sand_king.png');
+    
+    &.immortal.sandking_caustic_finale {
+      background-position-x: -0em;
+    }
+    &.sandking_burrowstrike_alt {
+      background-position-x: -1em;
+    }
+    &.sandking_burrowstrike {
+      background-position-x: -2em;
+    }
+    &.sandking_caustic_finale {
+      background-position-x: -3em;
+    }
+    &.sandking_epicenter {
+      background-position-x: -4em;
+    }
+    &.sandking_sand_storm {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_shadow_demon {
+    background-image: url('~@src/assets/sprites/spell-icon-shadow_demon.png');
+    
+    &.immortal.shadow_demon_shadow_poison_gold {
+      background-position-x: -0em;
+    }
+    &.immortal.shadow_demon_shadow_poison {
+      background-position-x: -1em;
+    }
+    &.immortal.shadow_demon_shadow_poison_release_gold {
+      background-position-x: -2em;
+    }
+    &.immortal.shadow_demon_shadow_poison_release {
+      background-position-x: -3em;
+    }
+    &.shadow_demon_demonic_purge {
+      background-position-x: -4em;
+    }
+    &.shadow_demon_disruption {
+      background-position-x: -5em;
+    }
+    &.shadow_demon_shadow_poison {
+      background-position-x: -6em;
+    }
+    &.shadow_demon_shadow_poison_release {
+      background-position-x: -7em;
+    }
+    &.shadow_demon_soul_catcher {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_shadow_shaman {
+    background-image: url('~@src/assets/sprites/spell-icon-shadow_shaman.png');
+    
+    &.shadow_shaman_ether_shock {
+      background-position-x: -0em;
+    }
+    &.shadow_shaman_ether_shock_ti8_crimson {
+      background-position-x: -1em;
+    }
+    &.shadow_shaman_ether_shock_ti8 {
+      background-position-x: -2em;
+    }
+    &.shadow_shaman_mass_serpent_ward {
+      background-position-x: -3em;
+    }
+    &.shadow_shaman_shackles {
+      background-position-x: -4em;
+    }
+    &.shadow_shaman_voodoo_alt_gold {
+      background-position-x: -5em;
+    }
+    &.shadow_shaman_voodoo_alt {
+      background-position-x: -6em;
+    }
+    &.shadow_shaman_voodoo {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_shredder {
+    background-image: url('~@src/assets/sprites/spell-icon-shredder.png');
+    
+    &.controlled_burn.shredder_timber_chain {
+      background-position-x: -0em;
+    }
+    &.shredder_chakram_2 {
+      background-position-x: -1em;
+    }
+    &.shredder_chakram {
+      background-position-x: -2em;
+    }
+    &.shredder_reactive_armor {
+      background-position-x: -3em;
+    }
+    &.shredder_return_chakram_2 {
+      background-position-x: -4em;
+    }
+    &.shredder_return_chakram {
+      background-position-x: -5em;
+    }
+    &.shredder_timber_chain {
+      background-position-x: -6em;
+    }
+    &.shredder_whirling_death {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_silencer {
+    background-image: url('~@src/assets/sprites/spell-icon-silencer.png');
+    
+    &.bts_silencer_ability.silencer_curse_of_the_silent {
+      background-position-x: -0em;
+    }
+    &.bts_silencer_ability.silencer_glaives_of_wisdom {
+      background-position-x: -1em;
+    }
+    &.bts_silencer_ability.silencer_global_silence {
+      background-position-x: -2em;
+    }
+    &.bts_silencer_ability.silencer_last_word {
+      background-position-x: -3em;
+    }
+    &.immortal.silencer_last_word {
+      background-position-x: -4em;
+    }
+    &.ti8_immortal_weapon.silencer_glaives_of_wisdom_immortal {
+      background-position-x: -5em;
+    }
+    &.silencer_curse_of_the_silent {
+      background-position-x: -6em;
+    }
+    &.silencer_glaives_of_wisdom {
+      background-position-x: -7em;
+    }
+    &.silencer_global_silence {
+      background-position-x: -8em;
+    }
+    &.silencer_last_word {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_skeleton_king {
+    background-image: url('~@src/assets/sprites/spell-icon-skeleton_king.png');
+    
+    &.aspect_year_beast_icons.skeleton_king_hellfire_blast {
+      background-position-x: -0em;
+    }
+    &.aspect_year_beast_icons.skeleton_king_mortal_strike {
+      background-position-x: -1em;
+    }
+    &.aspect_year_beast_icons.skeleton_king_reincarnation {
+      background-position-x: -2em;
+    }
+    &.aspect_year_beast_icons.skeleton_king_vampiric_aura {
+      background-position-x: -3em;
+    }
+    &.blistering_shade.skeleton_king_hellfire_blast {
+      background-position-x: -4em;
+    }
+    &.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal_crimson {
+      background-position-x: -5em;
+    }
+    &.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal_gold {
+      background-position-x: -6em;
+    }
+    &.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal {
+      background-position-x: -7em;
+    }
+    &.skeleton_king_hellfire_blast {
+      background-position-x: -8em;
+    }
+    &.skeleton_king_mortal_strike {
+      background-position-x: -9em;
+    }
+    &.skeleton_king_reincarnation {
+      background-position-x: -10em;
+    }
+    &.skeleton_king_vampiric_aura {
+      background-position-x: -11em;
+    }
+  }
+
+  &.npc_dota_hero_skywrath_mage {
+    background-image: url('~@src/assets/sprites/spell-icon-skywrath_mage.png');
+    
+    &.crested_dawn_icons.skywrath_mage_ancient_seal {
+      background-position-x: -0em;
+    }
+    &.crested_dawn_icons.skywrath_mage_arcane_bolt {
+      background-position-x: -1em;
+    }
+    &.crested_dawn_icons.skywrath_mage_concussive_shot {
+      background-position-x: -2em;
+    }
+    &.crested_dawn_icons.skywrath_mage_mystic_flare {
+      background-position-x: -3em;
+    }
+    &.skywrath_mage_ancient_seal {
+      background-position-x: -4em;
+    }
+    &.skywrath_mage_arcane_bolt {
+      background-position-x: -5em;
+    }
+    &.skywrath_mage_concussive_shot {
+      background-position-x: -6em;
+    }
+    &.skywrath_mage_mystic_flare_alt_gold {
+      background-position-x: -7em;
+    }
+    &.skywrath_mage_mystic_flare_alt {
+      background-position-x: -8em;
+    }
+    &.skywrath_mage_mystic_flare {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_slardar {
+    background-image: url('~@src/assets/sprites/spell-icon-slardar.png');
+    
+    &.grasping_bludgeon.slardar_slithereen_crush {
+      background-position-x: -0em;
+    }
+    &.slardar_amplify_damage {
+      background-position-x: -1em;
+    }
+    &.slardar_bash {
+      background-position-x: -2em;
+    }
+    &.slardar_slithereen_crush {
+      background-position-x: -3em;
+    }
+    &.slardar_sprint {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_slark {
+    background-image: url('~@src/assets/sprites/spell-icon-slark.png');
+    
+    &.gold_hydrakan_latch.slark_pounce {
+      background-position-x: -0em;
+    }
+    &.hydrakan_latch.slark_pounce {
+      background-position-x: -1em;
+    }
+    &.slark_dark_pact_immortal {
+      background-position-x: -2em;
+    }
+    &.slark_dark_pact {
+      background-position-x: -3em;
+    }
+    &.slark_essence_shift {
+      background-position-x: -4em;
+    }
+    &.slark_pounce {
+      background-position-x: -5em;
+    }
+    &.slark_shadow_dance {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_sniper {
+    background-image: url('~@src/assets/sprites/spell-icon-sniper.png');
+    
+    &.sniper_assassinate_muh_keen_gun {
+      background-position-x: -0em;
+    }
+    &.sniper_assassinate {
+      background-position-x: -1em;
+    }
+    &.sniper_headshot_immortal_gold {
+      background-position-x: -2em;
+    }
+    &.sniper_headshot_immortal {
+      background-position-x: -3em;
+    }
+    &.sniper_headshot {
+      background-position-x: -4em;
+    }
+    &.sniper_shrapnel_muh_keen_gun {
+      background-position-x: -5em;
+    }
+    &.sniper_shrapnel {
+      background-position-x: -6em;
+    }
+    &.sniper_take_aim {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_spectre {
+    background-image: url('~@src/assets/sprites/spell-icon-spectre.png');
+    
+    &.immortal.spectre_spectral_dagger {
+      background-position-x: -0em;
+    }
+    &.spectre_desolate {
+      background-position-x: -1em;
+    }
+    &.spectre_dispersion {
+      background-position-x: -2em;
+    }
+    &.spectre_haunt {
+      background-position-x: -3em;
+    }
+    &.spectre_reality {
+      background-position-x: -4em;
+    }
+    &.spectre_spectral_dagger {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_spirit_breaker {
+    background-image: url('~@src/assets/sprites/spell-icon-spirit_breaker.png');
+    
+    &.spirit_breaker_charge_of_darkness_alt {
+      background-position-x: -0em;
+    }
+    &.spirit_breaker_charge_of_darkness {
+      background-position-x: -1em;
+    }
+    &.spirit_breaker_empowering_haste {
+      background-position-x: -2em;
+    }
+    &.spirit_breaker_greater_bash {
+      background-position-x: -3em;
+    }
+    &.spirit_breaker_nether_strike {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_storm_spirit {
+    background-image: url('~@src/assets/sprites/spell-icon-storm_spirit.png');
+    
+    &.ti8_retro_immortal.storm_spirit_ball_lightning_orchid_retro {
+      background-position-x: -0em;
+    }
+    &.storm_spirit_ball_lightning_orchid {
+      background-position-x: -1em;
+    }
+    &.storm_spirit_ball_lightning {
+      background-position-x: -2em;
+    }
+    &.storm_spirit_electric_vortex {
+      background-position-x: -3em;
+    }
+    &.storm_spirit_overload {
+      background-position-x: -4em;
+    }
+    &.storm_spirit_overload_ti8_golden {
+      background-position-x: -5em;
+    }
+    &.storm_spirit_overload_ti8 {
+      background-position-x: -6em;
+    }
+    &.storm_spirit_static_remnant {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_sven {
+    background-image: url('~@src/assets/sprites/spell-icon-sven.png');
+    
+    &.cyclopean_marauder_ability_icons.sven_gods_strength {
+      background-position-x: -0em;
+    }
+    &.cyclopean_marauder_ability_icons.sven_great_cleave {
+      background-position-x: -1em;
+    }
+    &.cyclopean_marauder_ability_icons.sven_storm_bolt {
+      background-position-x: -2em;
+    }
+    &.cyclopean_marauder_ability_icons.sven_warcry {
+      background-position-x: -3em;
+    }
+    &.fiend_cleaver_icons.sven_gods_strength {
+      background-position-x: -4em;
+    }
+    &.fiend_cleaver_icons.sven_great_cleave {
+      background-position-x: -5em;
+    }
+    &.fiend_cleaver_icons.sven_storm_bolt {
+      background-position-x: -6em;
+    }
+    &.fiend_cleaver_icons.sven_warcry {
+      background-position-x: -7em;
+    }
+    &.immortal.sven_great_cleave {
+      background-position-x: -8em;
+    }
+    &.vigil_signet.sven_warcry {
+      background-position-x: -9em;
+    }
+    &.sven_gods_strength {
+      background-position-x: -10em;
+    }
+    &.sven_great_cleave {
+      background-position-x: -11em;
+    }
+    &.sven_storm_bolt {
+      background-position-x: -12em;
+    }
+    &.sven_warcry {
+      background-position-x: -13em;
+    }
+  }
+
+  &.npc_dota_hero_techies {
+    background-image: url('~@src/assets/sprites/spell-icon-techies.png');
+    
+    &.techies_focused_detonate {
+      background-position-x: -0em;
+    }
+    &.techies_land_mines {
+      background-position-x: -1em;
+    }
+    &.techies_minefield_sign {
+      background-position-x: -2em;
+    }
+    &.techies_minefield_sign_swine {
+      background-position-x: -3em;
+    }
+    &.techies_remote_mines {
+      background-position-x: -4em;
+    }
+    &.techies_remote_mines_self_detonate {
+      background-position-x: -5em;
+    }
+    &.techies_stasis_trap {
+      background-position-x: -6em;
+    }
+    &.techies_suicide {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_templar_assassin {
+    background-image: url('~@src/assets/sprites/spell-icon-templar_assassin.png');
+    
+    &.focal_resonance.templar_assassin_meld {
+      background-position-x: -0em;
+    }
+    &.focal_resonance.templar_assassin_psi_blades {
+      background-position-x: -1em;
+    }
+    &.templar_assassin_meld {
+      background-position-x: -2em;
+    }
+    &.templar_assassin_psi_blades {
+      background-position-x: -3em;
+    }
+    &.templar_assassin_psionic_trap {
+      background-position-x: -4em;
+    }
+    &.templar_assassin_refraction_damage {
+      background-position-x: -5em;
+    }
+    &.templar_assassin_refraction {
+      background-position-x: -6em;
+    }
+    &.templar_assassin_trap {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_terrorblade {
+    background-image: url('~@src/assets/sprites/spell-icon-terrorblade.png');
+    
+    &.ti8_immortal_back.terrorblade_sunder_immortal {
+      background-position-x: -0em;
+    }
+    &.terrorblade_conjure_image_alt1 {
+      background-position-x: -1em;
+    }
+    &.terrorblade_conjure_image {
+      background-position-x: -2em;
+    }
+    &.terrorblade_metamorphosis_alt1 {
+      background-position-x: -3em;
+    }
+    &.terrorblade_metamorphosis {
+      background-position-x: -4em;
+    }
+    &.terrorblade_reflection_alt1 {
+      background-position-x: -5em;
+    }
+    &.terrorblade_reflection {
+      background-position-x: -6em;
+    }
+    &.terrorblade_sunder_alt1 {
+      background-position-x: -7em;
+    }
+    &.terrorblade_sunder {
+      background-position-x: -8em;
+    }
+  }
+
+  &.npc_dota_hero_tidehunter {
+    background-image: url('~@src/assets/sprites/spell-icon-tidehunter.png');
+    
+    &.diving_helmet.tidehunter_gush_gold {
+      background-position-x: -0em;
+    }
+    &.diving_helmet.tidehunter_gush {
+      background-position-x: -1em;
+    }
+    &.tidehunter_anchor_smash {
+      background-position-x: -2em;
+    }
+    &.tidehunter_gush {
+      background-position-x: -3em;
+    }
+    &.tidehunter_kraken_shell {
+      background-position-x: -4em;
+    }
+    &.tidehunter_ravage {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_tinker {
+    background-image: url('~@src/assets/sprites/spell-icon-tinker.png');
+    
+    &.rollermawster.tinker_march_of_the_machines_1 {
+      background-position-x: -0em;
+    }
+    &.tinker_heat_seeking_missile {
+      background-position-x: -1em;
+    }
+    &.tinker_laser {
+      background-position-x: -2em;
+    }
+    &.tinker_march_of_the_machines {
+      background-position-x: -3em;
+    }
+    &.tinker_rearm {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_tiny {
+    background-image: url('~@src/assets/sprites/spell-icon-tiny.png');
+    
+    &.tiny_avalanche {
+      background-position-x: -0em;
+    }
+    &.tiny_craggy_exterior {
+      background-position-x: -1em;
+    }
+    &.tiny_grow {
+      background-position-x: -2em;
+    }
+    &.tiny_toss {
+      background-position-x: -3em;
+    }
+    &.tiny_toss_tree {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_treant {
+    background-image: url('~@src/assets/sprites/spell-icon-treant.png');
+    
+    &.fungal_protector_icons.treant_eyes_in_the_forest {
+      background-position-x: -0em;
+    }
+    &.fungal_protector_icons.treant_leech_seed {
+      background-position-x: -1em;
+    }
+    &.fungal_protector_icons.treant_living_armor {
+      background-position-x: -2em;
+    }
+    &.fungal_protector_icons.treant_natures_guise {
+      background-position-x: -3em;
+    }
+    &.fungal_protector_icons.treant_overgrowth {
+      background-position-x: -4em;
+    }
+    &.treant_ti7_immortal.treant_living_armor.png {
+      background-position-x: -5em;
+    }
+    &.treant_ti7_immortal.treant_living_armor_crimson {
+      background-position-x: -6em;
+    }
+    &.treant_ti7_immortal.treant_living_armor {
+      background-position-x: -7em;
+    }
+    &.treant_eyes_in_the_forest {
+      background-position-x: -8em;
+    }
+    &.treant_leech_seed {
+      background-position-x: -9em;
+    }
+    &.treant_living_armor {
+      background-position-x: -10em;
+    }
+    &.treant_natures_guise {
+      background-position-x: -11em;
+    }
+    &.treant_overgrowth {
+      background-position-x: -12em;
+    }
+  }
+
+  &.npc_dota_hero_troll_warlord {
+    background-image: url('~@src/assets/sprites/spell-icon-troll_warlord.png');
+    
+    &.immortal.troll_warlord_berserkers_rage_active {
+      background-position-x: -0em;
+    }
+    &.immortal.troll_warlord_berserkers_rage {
+      background-position-x: -1em;
+    }
+    &.troll_warlord_battle_trance {
+      background-position-x: -2em;
+    }
+    &.troll_warlord_berserkers_rage_active {
+      background-position-x: -3em;
+    }
+    &.troll_warlord_berserkers_rage {
+      background-position-x: -4em;
+    }
+    &.troll_warlord_fervor {
+      background-position-x: -5em;
+    }
+    &.troll_warlord_whirling_axes_melee {
+      background-position-x: -6em;
+    }
+    &.troll_warlord_whirling_axes_ranged {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_tusk {
+    background-image: url('~@src/assets/sprites/spell-icon-tusk.png');
+    
+    &.glaciomarine_ability_icons.tusk_frozen_sigil {
+      background-position-x: -0em;
+    }
+    &.glaciomarine_ability_icons.tusk_ice_shards {
+      background-position-x: -1em;
+    }
+    &.glaciomarine_ability_icons.tusk_launch_snowball {
+      background-position-x: -2em;
+    }
+    &.glaciomarine_ability_icons.tusk_snowball {
+      background-position-x: -3em;
+    }
+    &.glaciomarine_ability_icons.tusk_walrus_kick {
+      background-position-x: -4em;
+    }
+    &.glaciomarine_ability_icons.tusk_walrus_punch {
+      background-position-x: -5em;
+    }
+    &.tusk_frozen_sigil {
+      background-position-x: -6em;
+    }
+    &.tusk_ice_shards {
+      background-position-x: -7em;
+    }
+    &.tusk_snowball {
+      background-position-x: -8em;
+    }
+    &.tusk_walrus_kick {
+      background-position-x: -9em;
+    }
+    &.tusk_walrus_punch {
+      background-position-x: -10em;
+    }
+  }
+
+  &.npc_dota_hero_undying {
+    background-image: url('~@src/assets/sprites/spell-icon-undying.png');
+    
+    &.pale_augur.undying_decay {
+      background-position-x: -0em;
+    }
+    &.undying_decay {
+      background-position-x: -1em;
+    }
+    &.undying_flesh_golem {
+      background-position-x: -2em;
+    }
+    &.undying_soul_rip {
+      background-position-x: -3em;
+    }
+    &.undying_tombstone_alt_gold {
+      background-position-x: -4em;
+    }
+    &.undying_tombstone_alt {
+      background-position-x: -5em;
+    }
+    &.undying_tombstone {
+      background-position-x: -6em;
+    }
+    &.undying_tombstone_zombie_deathstrike {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_ursa {
+    background-image: url('~@src/assets/sprites/spell-icon-ursa.png');
+    
+    &.ursa_earthshock {
+      background-position-x: -0em;
+    }
+    &.ursa_enrage {
+      background-position-x: -1em;
+    }
+    &.ursa_fury_swipes {
+      background-position-x: -2em;
+    }
+    &.ursa_overpower {
+      background-position-x: -3em;
+    }
+  }
+
+  &.npc_dota_hero_vengefulspirit {
+    background-image: url('~@src/assets/sprites/spell-icon-vengefulspirit.png');
+    
+    &.huangs_umbra_icons.vengefulspirit_command_aura {
+      background-position-x: -0em;
+    }
+    &.huangs_umbra_icons.vengefulspirit_magic_missile {
+      background-position-x: -1em;
+    }
+    &.huangs_umbra_icons.vengefulspirit_nether_swap {
+      background-position-x: -2em;
+    }
+    &.huangs_umbra_icons.vengefulspirit_wave_of_terror {
+      background-position-x: -3em;
+    }
+    &.ti8_immortal_back.vengefulspirit_magic_missile_immortal_crimson {
+      background-position-x: -4em;
+    }
+    &.ti8_immortal_back.vengefulspirit_magic_missile_immortal {
+      background-position-x: -5em;
+    }
+    &.vengefulspirit_command_aura {
+      background-position-x: -6em;
+    }
+    &.vengefulspirit_magic_missile {
+      background-position-x: -7em;
+    }
+    &.vengefulspirit_nether_swap {
+      background-position-x: -8em;
+    }
+    &.vengefulspirit_wave_of_terror {
+      background-position-x: -9em;
+    }
+  }
+
+  &.npc_dota_hero_venomancer {
+    background-image: url('~@src/assets/sprites/spell-icon-venomancer.png');
+    
+    &.venomancer_plague_ward_alt {
+      background-position-x: -0em;
+    }
+    &.venomancer_plague_ward {
+      background-position-x: -1em;
+    }
+    &.venomancer_poison_nova {
+      background-position-x: -2em;
+    }
+    &.venomancer_poison_sting {
+      background-position-x: -3em;
+    }
+    &.venomancer_venomous_gale {
+      background-position-x: -4em;
+    }
+    &.venomancer_venomous_gale_ti8 {
+      background-position-x: -5em;
+    }
+  }
+
+  &.npc_dota_hero_viper {
+    background-image: url('~@src/assets/sprites/spell-icon-viper.png');
+    
+    &.immortal.viper_poison_attack_crimson {
+      background-position-x: -0em;
+    }
+    &.immortal.viper_poison_attack {
+      background-position-x: -1em;
+    }
+    &.ti8_immortal_tail.viper_nethertoxin_immortal {
+      background-position-x: -2em;
+    }
+    &.viper_corrosive_skin {
+      background-position-x: -3em;
+    }
+    &.viper_nethertoxin {
+      background-position-x: -4em;
+    }
+    &.viper_poison_attack {
+      background-position-x: -5em;
+    }
+    &.viper_viper_strike {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_visage {
+    background-image: url('~@src/assets/sprites/spell-icon-visage.png');
+    
+    &.visage_grave_chill {
+      background-position-x: -0em;
+    }
+    &.visage_gravekeepers_cloak {
+      background-position-x: -1em;
+    }
+    &.visage_soul_assumption {
+      background-position-x: -2em;
+    }
+    &.visage_stone_form_self_cast {
+      background-position-x: -3em;
+    }
+    &.visage_summon_familiars_alt1 {
+      background-position-x: -4em;
+    }
+    &.visage_summon_familiars {
+      background-position-x: -5em;
+    }
+    &.visage_summon_familiars_stone_form_alt1 {
+      background-position-x: -6em;
+    }
+    &.visage_summon_familiars_stone_form {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_warlock {
+    background-image: url('~@src/assets/sprites/spell-icon-warlock.png');
+    
+    &.tools_hellsworn_icons.warlock_rain_of_chaos {
+      background-position-x: -0em;
+    }
+    &.warlock_fatal_bonds {
+      background-position-x: -1em;
+    }
+    &.warlock_rain_of_chaos {
+      background-position-x: -2em;
+    }
+    &.warlock_shadow_word {
+      background-position-x: -3em;
+    }
+    &.warlock_upheaval {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_weaver {
+    background-image: url('~@src/assets/sprites/spell-icon-weaver.png');
+    
+    &.crimson_pique.weaver_shukuchi {
+      background-position-x: -0em;
+    }
+    &.immortal.weaver_geminate_attack_gold {
+      background-position-x: -1em;
+    }
+    &.immortal.weaver_geminate_attack {
+      background-position-x: -2em;
+    }
+    &.weaver_geminate_attack {
+      background-position-x: -3em;
+    }
+    &.weaver_shukuchi {
+      background-position-x: -4em;
+    }
+    &.weaver_the_swarm {
+      background-position-x: -5em;
+    }
+    &.weaver_time_lapse {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_windrunner {
+    background-image: url('~@src/assets/sprites/spell-icon-windrunner.png');
+    
+    &.peregrine_flight.windrunner_powershot {
+      background-position-x: -0em;
+    }
+    &.windrunner_focusfire {
+      background-position-x: -1em;
+    }
+    &.windrunner_powershot {
+      background-position-x: -2em;
+    }
+    &.windrunner_shackleshot {
+      background-position-x: -3em;
+    }
+    &.windrunner_shackleshot_ti8immortal {
+      background-position-x: -4em;
+    }
+    &.windrunner_windrun {
+      background-position-x: -5em;
+    }
+    &.windrunner_windrun_sylvan {
+      background-position-x: -6em;
+    }
+  }
+
+  &.npc_dota_hero_winter_wyvern {
+    background-image: url('~@src/assets/sprites/spell-icon-winter_wyvern.png');
+    
+    &.immortal.winter_wyvern_cold_embrace {
+      background-position-x: -0em;
+    }
+    &.winter_wyvern_arctic_burn {
+      background-position-x: -1em;
+    }
+    &.winter_wyvern_cold_embrace {
+      background-position-x: -2em;
+    }
+    &.winter_wyvern_splinter_blast {
+      background-position-x: -3em;
+    }
+    &.winter_wyvern_winters_curse {
+      background-position-x: -4em;
+    }
+  }
+
+  &.npc_dota_hero_wisp {
+    background-image: url('~@src/assets/sprites/spell-icon-wisp.png');
+    
+    &.wisp_overcharge_alt {
+      background-position-x: -0em;
+    }
+    &.wisp_relocate_alt {
+      background-position-x: -1em;
+    }
+    &.wisp_spirits_alt {
+      background-position-x: -2em;
+    }
+    &.wisp_spirits_in_alt {
+      background-position-x: -3em;
+    }
+    &.wisp_spirits_out_alt {
+      background-position-x: -4em;
+    }
+    &.wisp_tether_alt {
+      background-position-x: -5em;
+    }
+    &.wisp_overcharge {
+      background-position-x: -6em;
+    }
+    &.wisp_relocate {
+      background-position-x: -7em;
+    }
+    &.wisp_spirits_in {
+      background-position-x: -8em;
+    }
+    &.wisp_spirits_out {
+      background-position-x: -9em;
+    }
+    &.wisp_spirits {
+      background-position-x: -10em;
+    }
+    &.wisp_tether_break {
+      background-position-x: -11em;
+    }
+    &.wisp_tether {
+      background-position-x: -12em;
+    }
+  }
+
+  &.npc_dota_hero_witch_doctor {
+    background-image: url('~@src/assets/sprites/spell-icon-witch_doctor.png');
+    
+    &.bonkers_the_mad.witch_doctor_paralyzing_cask {
+      background-position-x: -0em;
+    }
+    &.ribbitar_icon.witch_doctor_death_ward {
+      background-position-x: -1em;
+    }
+    &.ti8_bonkers_of_awaleb.witch_doctor_paralyzing_cask_immortal {
+      background-position-x: -2em;
+    }
+    &.ti8_immortal_head.witch_doctor_maledict_immortal {
+      background-position-x: -3em;
+    }
+    &.witch_doctor_death_ward {
+      background-position-x: -4em;
+    }
+    &.witch_doctor_maledict {
+      background-position-x: -5em;
+    }
+    &.witch_doctor_paralyzing_cask {
+      background-position-x: -6em;
+    }
+    &.witch_doctor_voodoo_restoration {
+      background-position-x: -7em;
+    }
+  }
+
+  &.npc_dota_hero_zuus {
+    background-image: url('~@src/assets/sprites/spell-icon-zuus.png');
+    
+    &.zuus_arc_lightning {
+      background-position-x: -0em;
+    }
+    &.zuus_cloud {
+      background-position-x: -1em;
+    }
+    &.zuus_lightning_bolt_immortal {
+      background-position-x: -2em;
+    }
+    &.zuus_lightning_bolt {
+      background-position-x: -3em;
+    }
+    &.zuus_static_field_alt1 {
+      background-position-x: -4em;
+    }
+    &.zuus_static_field {
+      background-position-x: -5em;
+    }
+    &.zuus_thundergods_wrath_alt1 {
+      background-position-x: -6em;
+    }
+    &.zuus_thundergods_wrath {
+      background-position-x: -7em;
+    }
+  }
+}

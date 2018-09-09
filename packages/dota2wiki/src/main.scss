@@ -1,5 +1,14 @@
 $root-font-size: 14;
 
-@import '../void-ui/void-ui.scss';
+@import './base/variables';
+
+@import '../void-ui/void-ui';
+
+$namespace: 'dt';
+@import './sprites/all';
+
+$namespace: 'c';
+@import './controls/all';
 
 $namespace: 'v';
+@import './views/app';

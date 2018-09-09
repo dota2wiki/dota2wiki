@@ -1,0 +1,34 @@
+/**
+ * CSS Sprites: attribute-icon, total: 4
+ */
+
+$attribute-icon-width: 45;
+$attribute-icon-height: 45;
+
+@include comp('attribute-icon') {
+  display: inline-block;
+  font-size: px($attribute-icon-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $attribute-icon-width / $attribute-icon-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: ($attribute-icon-width / $attribute-icon-height * 1em) auto;
+  background-position-x: 1em;
+
+  background-image: url('~@src/assets/sprites/attribute-icon.png');
+  
+  &.agility_colorblind {
+    background-position-x: -0em;
+  }
+  &.agility {
+    background-position-x: -1em;
+  }
+  &.intelligence {
+    background-position-x: -2em;
+  }
+  &.strength {
+    background-position-x: -3em;
+  }
+}

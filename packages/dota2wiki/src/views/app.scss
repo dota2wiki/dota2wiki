@@ -1,0 +1,21 @@
+/**
+ * Component: App
+ */
+@include comp('app') {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+      background-color: theme($theme, 'bg');
+    }
+  }
+}

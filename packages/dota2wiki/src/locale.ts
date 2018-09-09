@@ -1,4 +1,8 @@
+import Vue from 'vue';
 import VueLocale from '@huiji/vue-locale';
+import { allLanguages } from '@dota2wiki/i18n';
+
+Vue.use(VueLocale);
 
 /**
  * The main localization for dota2wiki
