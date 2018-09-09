@@ -28,3 +28,7 @@ dist/
 
 # Ignore test coverage directory
 coverage/
+
+# Project related
+void-ui/
+void-ui

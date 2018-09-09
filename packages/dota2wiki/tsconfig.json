@@ -13,10 +13,11 @@
     "baseUrl": ".",
     "types": ["node", "jest"],
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "void-ui": ["void-ui/void-ui.ts"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src", "void-ui"],
   "exclude": ["node_modules"]
 }

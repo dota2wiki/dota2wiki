@@ -4,7 +4,11 @@ module.exports = {
   chainWebpack(config) {
     const context = config.store.get('context');
     const resolve = (...paths) => path.resolve(context, ...paths);
-    config.resolve.alias.delete('@').set('@src', resolve('src'));
+
+    config.resolve.alias
+      .delete('@')
+      .set('@src', resolve('src'))
+      .set('void-ui$', resolve('void-ui/void-ui.ts'));
   },
 
   devServer: {
