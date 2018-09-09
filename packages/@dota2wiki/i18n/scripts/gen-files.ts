@@ -33,6 +33,8 @@ async function getAllLanguages(): Promise<string[]> {
     ),
   );
 
+  result.sort();
+
   allLanguage = result;
 
   const content: string = result.map(lang => `'${lang}'`).join(', ');
@@ -53,33 +55,29 @@ async function generateLocale(options: Options): Promise<void> {
     mkdirp.sync(output);
   }
 
-  const allFiles: string[] = options.files.reduce<string[]>((result, f) => {
-    result.push(
-      ...allLanguage.map(lang =>
-        resolve(`assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`),
-      ),
-    );
-
-    return result;
-  }, []);
-  allFiles.sort();
-
   const map: Record<string, Record<string, string>> = {};
 
-  await Promise.all(
-    allFiles.map(f => {
-      return (async () => {
-        const raw: any = await load(f);
-        const language: string = raw.lang.Language;
-        map[language] = map[language]
-          ? {
-              ...map[language],
-              ...raw.lang.Tokens,
-            }
-          : raw.lang.Tokens;
-      })();
-    }),
+  const allPromise: Promise<void>[] = [];
+
+  allLanguage.forEach(lang =>
+    options.files.forEach(f =>
+      allPromise.push(
+        (async () => {
+          const raw: any = await load(
+            resolve(`assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`),
+          );
+          map[lang] = map[lang]
+            ? {
+                ...map[lang],
+                ...raw.lang.Tokens,
+              }
+            : raw.lang.Tokens;
+        })(),
+      ),
+    ),
   );
+
+  await Promise.all(allPromise);
 
   await Promise.all(
     Object.entries(map).map(
