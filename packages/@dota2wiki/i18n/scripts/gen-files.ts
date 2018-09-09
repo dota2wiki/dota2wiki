@@ -1,3 +1,5 @@
+// tslint:disable:no-any
+
 import * as fs from 'fs';
 import * as path from 'path';
 import * as mkdirp from 'mkdirp';
@@ -16,6 +18,32 @@ interface Options {
   excludes: (string | RegExp)[];
 }
 
+let allLanguage: string[];
+
+async function getAllLanguages(): Promise<string[]> {
+  const files: string[] = await globby(resolve('assets/dota_*.txt'));
+
+  const result: string[] = await Promise.all(
+    files.map(f =>
+      (async (): Promise<string> => {
+        const raw: any = await load(f);
+
+        return (raw.lang.Language as string).toLowerCase();
+      })(),
+    ),
+  );
+
+  allLanguage = result;
+
+  const content: string = result.map(lang => `'${lang}'`).join(', ');
+  fs.writeFileSync(
+    resolve('../src/languages.ts'),
+    `// tslint:disable\n\nexport const allLanguages: string[] = [${content}]`,
+  );
+
+  return result;
+}
+
 /**
  * Generate Localization files
  */
@@ -25,58 +53,64 @@ async function generateLocale(options: Options): Promise<void> {
     mkdirp.sync(output);
   }
 
-  const allFiles: string[] = await globby(
-    options.files.map(f => resolve(`assets/${f}_*.txt`)),
-  );
+  const allFiles: string[] = options.files.reduce<string[]>((result, f) => {
+    result.push(
+      ...allLanguage.map(lang =>
+        resolve(`assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`),
+      ),
+    );
+
+    return result;
+  }, []);
   allFiles.sort();
 
-  const map: Record<string, string[]> = {};
-  allFiles.forEach(f => {
-    const parts: string[] = f
-      .replace(resolve('assets'), '')
-      .replace('.txt', '')
-      .split(/[_\/]/);
-    const language: string = parts[parts.length - 1];
-    (map[language] || (map[language] = [])).push(f);
-  });
+  const map: Record<string, Record<string, string>> = {};
+
+  await Promise.all(
+    allFiles.map(f => {
+      return (async () => {
+        const raw: any = await load(f);
+        const language: string = raw.lang.Language;
+        map[language] = map[language]
+          ? {
+              ...map[language],
+              ...raw.lang.Tokens,
+            }
+          : raw.lang.Tokens;
+      })();
+    }),
+  );
 
   await Promise.all(
     Object.entries(map).map(
-      ([language, files]): Promise<void> => {
+      ([language, rawDict]): Promise<void> => {
         return (async () => {
           const dict: Record<string, string> = {};
 
-          // tslint:disable-next-line:no-any
-          const raws: any[] = await Promise.all(files.map(f => load(f)));
-
-          raws.forEach(raw =>
-            Object.entries(raw.lang.Tokens as Record<string, string>).forEach(
-              ([key, content]) => {
-                for (const p of options.excludes) {
-                  if (typeof p === 'string') {
-                    if (p === key) {
-                      return;
-                    }
-                  } else {
-                    if (p.test(key)) {
-                      return;
-                    }
-                  }
+          Object.entries(rawDict).forEach(([key, text]) => {
+            for (const p of options.excludes) {
+              if (typeof p === 'string') {
+                if (p === key) {
+                  return;
                 }
-                for (const p of options.includes) {
-                  if (typeof p === 'string') {
-                    if (p === key) {
-                      return (dict[key] = content);
-                    }
-                  } else {
-                    if (p.test(key)) {
-                      return (dict[key] = content);
-                    }
-                  }
+              } else {
+                if (p.test(key)) {
+                  return;
                 }
-              },
-            ),
-          );
+              }
+            }
+            for (const p of options.includes) {
+              if (typeof p === 'string') {
+                if (p === key) {
+                  return (dict[key] = text);
+                }
+              } else {
+                if (p.test(key)) {
+                  return (dict[key] = text);
+                }
+              }
+            }
+          });
 
           const content: string = JSON.stringify(dict, undefined, '  ');
 
@@ -104,4 +138,7 @@ const optionsList: Options[] = [
   },
 ];
 
-Promise.all(optionsList.map(generateLocale)).catch(console.error);
+getAllLanguages()
+  .then(result => console.info(result))
+  .then(() => Promise.all(optionsList.map(generateLocale)))
+  .catch(console.error);
