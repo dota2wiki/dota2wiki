@@ -18,7 +18,7 @@ export default class VIndex extends Vue {
     return (
       <div staticClass="v-index">
         <c-navbar />
-        <router-view />
+        <router-view staticClass="v-app_content" />
       </div>
     );
   }

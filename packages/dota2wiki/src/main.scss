@@ -9,6 +9,7 @@ $namespace: 'dt';
 
 $namespace: 'c';
 @import './controls/all';
+@import './components/all';
 
 $namespace: 'v';
 @import './views/app';

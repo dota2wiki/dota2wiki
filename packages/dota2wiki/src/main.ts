@@ -8,6 +8,9 @@ Vue.use(VoidUI, {
   defaultTheme: 'dark',
 });
 
+import Resources from '@src/assets';
+Vue.use(Resources);
+
 import { installComponents } from '@src/utils/vue-utils';
 
 import * as components from '@src/controls/all';

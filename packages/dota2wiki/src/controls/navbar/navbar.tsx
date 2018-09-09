@@ -10,8 +10,6 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-
-import assets from '@src/assets';
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
 
 const backgournds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mods'];
@@ -180,13 +178,13 @@ export class CNavbar extends Vue implements ThemeComponent {
         <div staticClass="c-navbar_background-wrapper">
           <img
             staticClass="c-navbar_background is-selected"
-            src={assets['images/topbar/topbar_small_png.png']}
+            src={this.$resources['images/topbar/topbar_small_png.png']}
           />
           {backgournds.map((bg, index) => (
             <img
               staticClass="c-navbar_background"
               class={{ 'is-selected': index === this.selectedIndex }}
-              src={assets[`images/topbar/topbar_${bg}_small_png.png`]}
+              src={this.$resources[`images/topbar/topbar_${bg}_small_png.png`]}
             />
           ))}
         </div>
@@ -200,7 +198,7 @@ export class CNavbar extends Vue implements ThemeComponent {
             >
               <img
                 staticClass="c-navbar_home-logo"
-                src={assets['images/topbar/home_logo_hover_png.png']}
+                src={this.$resources['images/topbar/home_logo_hover_png.png']}
               />
             </router-link>
             {navItems.slice(1).map((item, index) => (

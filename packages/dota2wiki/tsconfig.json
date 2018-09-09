@@ -3,6 +3,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "declaration": false,
+    "declarationMap": false,
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],

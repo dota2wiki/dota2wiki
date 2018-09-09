@@ -28,7 +28,7 @@ export default class VApp extends Vue implements ThemeComponent {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-app" class={this.classes}>
-        <router-view />
+        <router-view staticClass="v-app_wrapper" />
       </div>
     );
   }

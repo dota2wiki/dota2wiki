@@ -8,6 +8,15 @@
 
   overflow-x: hidden;
 
+  @include elem('wrapper') {
+    width: 100%;
+  }
+
+  @include elem('content') {
+    width: 100%;
+    padding: rem(gap('xlarge')) rem($gap-base);
+  }
+
   @each $theme in $type-theme {
     @include prop(
       (

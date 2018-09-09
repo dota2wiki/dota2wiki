@@ -1,0 +1,14 @@
+/**
+ * Component: HeroesWall
+ */
+@include comp('heroes-wall') {
+  position: relative;
+  width: 100%;
+
+  @include elem('container') {
+    position: relative;
+    max-width: 100%;
+    width: rem(($hero-avatar-v-width + gap('small')) * 21 - gap('small'));
+    margin: 0 auto;
+  }
+}
