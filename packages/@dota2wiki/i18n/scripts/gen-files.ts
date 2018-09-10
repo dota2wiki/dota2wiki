@@ -159,8 +159,16 @@ const optionsList: Options[] = [
     files: ['dota', 'hero_lore', 'abilities'],
     output: '../src/dota',
     includes: [
-      /^DOTA_Hero_Selection_/,
       /^npc_dota_hero_/,
+
+      /^DOTA_Hero_Selection_/,
+      /^DOTA_HeroRole_/,
+      /^DOTA_HeroGrid_/,
+      /^DOTA_HeroStats_/,
+      /^DOTA_HeroLoadout_/,
+      /^DOTA_HeroGuide_/,
+      /^DOTA_HeroGuideViewer_/,
+
       /^DOTA_Tooltip_ability/,
       /^DOTA_Tooltip_modifier_/,
       /^dota_ability_variable_/,
