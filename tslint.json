@@ -12,6 +12,7 @@
     "no-null-keyword": false,
     "no-any": true,
     "no-unsafe-any": true,
+    "no-string-literal": false,
     "strict-boolean-expressions": false,
     "prefer-type-cast": false,
     "no-angle-bracket-type-assertion": true,
