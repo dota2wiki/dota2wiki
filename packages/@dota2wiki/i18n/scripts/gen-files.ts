@@ -165,7 +165,7 @@ const optionsList: Options[] = [
       /^DOTA_Tooltip_modifier_/,
       /^dota_ability_variable_/,
     ],
-    excludes: [],
+    excludes: [/_cny_/, /_cny2015_/, /_winter_/],
   },
 ];
 

@@ -67,6 +67,9 @@ export class CHeroPortrait extends Vue implements ThemeComponent {
               <p staticClass="c-hero-portrait_hype">
                 {this.$locale.dict[`${this.name}_hype`]}
               </p>
+              <p staticClass="c-hero-portrait_hype">
+                {this.$locale.dict[`${this.name}_bio`]}
+              </p>
             </vd-flexbox>
           </vd-flexbox>
         </vd-container>
