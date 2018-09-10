@@ -162,6 +162,7 @@ const optionsList: Options[] = [
       /^npc_dota_hero_/,
 
       /^DOTA_Hero_Selection_/,
+      /^DOTA_HeroComplexity/,
       /^DOTA_HeroRole_/,
       /^DOTA_AttackCapability_/,
       /^DOTA_HeroGrid_/,

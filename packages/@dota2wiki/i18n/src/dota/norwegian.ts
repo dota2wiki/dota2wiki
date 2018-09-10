@@ -258,6 +258,7 @@ const dict: Record<string, string> = {
   "DOTA_HeroLoadout_Instructions": "Hold over for å se, trykk for å utstyre",
   "DOTA_HeroLoadout_BaseSet": "Standard",
   "npc_dota_hero_target_dummy": "Treningsfigur",
+  "DOTA_HeroComplexity": "Kompleksitet",
   "DOTA_HeroLoadout_OwnedItems": "Eid",
   "DOTA_HeroLoadout_AvailableItems": "Tilgjengelig",
   "DOTA_HeroLoadout_ViewOnStore": "(vis i butikken)",

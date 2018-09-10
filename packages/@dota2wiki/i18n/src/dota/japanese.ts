@@ -395,6 +395,7 @@ const dict: Record<string, string> = {
   "DOTA_HeroLoadout_ArcanaFilterName": "アルカナ",
   "DOTA_HeroLoadout_Stats": "統計",
   "DOTA_HeroLoadout_BaseSet": "デフォルト",
+  "DOTA_HeroComplexity": "複雑性",
   "DOTA_HeroLoadout_AvailableItems": "使用可能",
   "DOTA_HeroLoadout_ViewOnStore": "(ストアで表示)",
   "DOTA_HeroLoadout_UnknownSet": "セットをカスタマイズ",
