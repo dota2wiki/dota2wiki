@@ -40,15 +40,39 @@
     font-size: $avatar-height;
   }
 
+  $name-font-size: 32;
+  $hype-font-size: 14;
+  $role-font-size: 16;
+
   @include elem('name', 'hype') {
+    line-height: 1.6;
     padding: 0;
     margin: 0;
   }
   @include elem('name') {
     font-weight: normal;
+    font-size: rem($name-font-size);
   }
   @include elem('hype') {
-    //
+    font-size: rem($hype-font-size);
+  }
+
+  @include elem('roles') {
+    white-space: nowrap;
+    font-size: rem($role-font-size);
+  }
+
+  @include elem('role-level', 'role-level-empty') {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    height: 1em;
+    width: 0.5em;
+    margin-left: 0.25em;
+    border: rem(1) solid currentColor;
+  }
+  @include elem('role-level') {
+    background-color: currentColor;
   }
 
   // theme
@@ -62,6 +86,9 @@
 
       @include elem('name') {
         color: theme($theme, 'fg', 'emphasize');
+      }
+      @include elem('hype') {
+        color: theme($theme, 'fg', 'sub');
       }
     }
   }
