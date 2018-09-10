@@ -24,10 +24,10 @@ export interface Database {
 
 const compareId: (a: { id: number }, b: { id: number }) => number = (a, b) => a.id - b.id;
 
-const heroMap: Readonly<Record<string, Hero>> = heroes;
-const heroList: Hero[] = Object.values(heroMap).sort(compareId);
-const heroNames: string[] = heroList.map(h => h.name);
-const heroGroups: HeroGroup[] = [
+export const heroMap: Readonly<Record<string, Hero>> = heroes;
+export const heroList: Hero[] = Object.values(heroMap).sort(compareId);
+export const heroNames: string[] = heroList.map(h => h.name);
+export const heroGroups: HeroGroup[] = [
   Attribute.strength,
   Attribute.agility,
   Attribute.intelligence,
@@ -36,9 +36,9 @@ const heroGroups: HeroGroup[] = [
   heroes: heroList.filter(h => h.attributes.primary === primary),
 }));
 
-const abilityMap: Readonly<Record<string, Ability>> = abilities;
-const abilityList: Ability[] = Object.values(abilityMap).sort(compareId);
-const abilityNames: string[] = abilityList.map(a => a.name);
+export const abilityMap: Readonly<Record<string, Ability>> = abilities;
+export const abilityList: Ability[] = Object.values(abilityMap).sort(compareId);
+export const abilityNames: string[] = abilityList.map(a => a.name);
 
 const db: Database = {
   heroMap,

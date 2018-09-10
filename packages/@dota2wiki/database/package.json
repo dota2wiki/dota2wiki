@@ -1,9 +1,10 @@
 {
   "name": "@dota2wiki/database",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "DOTA2 built-in data for dota2wiki.",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "dist/common/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/esm/index.d.ts",
   "repository": {
     "type": "github",
     "url": "https://github.com/dota2wiki/dota2wiki"
@@ -17,7 +18,7 @@
     "ts": "ts-node -r tsconfig-paths/register -P ../../../tsconfig.scripts.json",
     "gen-files": "yarn ts scripts/gen-files.ts",
     "clean:dist": "rimraf ./dist",
-    "build": "yarn clean:dist && tsc -p ./tsconfig.project.json",
+    "build": "yarn clean:dist && tsc -p ./tsconfig.cjs.json && tsc -p ./tsconfig.esm.json",
     "lint": "tslint -c ./tslint.project.json -p ./tsconfig.project.json",
     "test:unit": "jest --maxWorkers=4"
   },

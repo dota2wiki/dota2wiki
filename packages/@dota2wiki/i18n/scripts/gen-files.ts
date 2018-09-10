@@ -4,8 +4,9 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as mkdirp from 'mkdirp';
 import * as globby from 'globby';
-import { load, save } from '@dota2wiki/vdf';
 import chalk from 'chalk';
+import * as database from '@dota2wiki/database';
+import { load, save } from '@dota2wiki/vdf';
 
 function resolve(...paths: string[]): string {
   return path.resolve(__dirname, ...paths);
@@ -63,15 +64,28 @@ async function generateLocale(options: Options): Promise<void> {
     options.files.forEach(f =>
       allPromise.push(
         (async () => {
-          const raw: any = await load(
-            resolve(`assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`),
-          );
-          map[lang] = map[lang]
-            ? {
-                ...map[lang],
-                ...raw.lang.Tokens,
-              }
-            : raw.lang.Tokens;
+          try {
+            const filePath: string = resolve(
+              `assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`,
+            );
+            const raw: any = await load(
+              fs.existsSync(filePath) ? filePath : resolve(`assets/${f}_english.txt`),
+            );
+
+            const rawDict: Record<string, string> =
+              f === 'hero_lore' ? raw.hero_lore : raw.lang.Tokens;
+            map[lang] = map[lang]
+              ? {
+                  ...map[lang],
+                  ...rawDict,
+                }
+              : rawDict;
+          } catch (error) {
+            if (error) {
+              console.error(chalk.redBright(`${f} ${lang}`));
+              throw error;
+            }
+          }
         })(),
       ),
     ),
@@ -110,6 +124,13 @@ async function generateLocale(options: Options): Promise<void> {
             }
           });
 
+          Object.entries(dict).forEach(([key, value]) => {
+            if (typeof value !== 'string') {
+              console.warn(chalk.yellowBright(`Non-String value: [${key}]: ${value}`));
+              dict[key] = (value as any).toString();
+            }
+          });
+
           const content: string = JSON.stringify(dict, undefined, '  ');
 
           fs.writeFileSync(
@@ -127,11 +148,22 @@ async function generateLocale(options: Options): Promise<void> {
   );
 }
 
+function flat(result: string[], cur: string[]): string[] {
+  result.push(...cur);
+
+  return result;
+}
+
 const optionsList: Options[] = [
   {
-    files: ['dota'],
+    files: ['dota', 'hero_lore', 'abilities'],
     output: '../src/dota',
-    includes: [/^npc_dota_hero_/, /^DOTA_Tooltip_ability_/],
+    includes: [
+      /^npc_dota_hero_/,
+      /^DOTA_Tooltip_ability_/,
+      /^dota_ability_variable_/,
+      /^dota_ability_variable_/,
+    ],
     excludes: [],
   },
 ];
