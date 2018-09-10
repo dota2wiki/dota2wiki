@@ -8,8 +8,9 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-import { CHeroPortrait } from './children/hero-portrait';
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
+import { CHeroPortrait } from './children/hero-portrait';
+import { CHeroStats } from './children/hero-stats';
 
 /**
  * Component: HeroDetail
@@ -17,6 +18,7 @@ import { ClassName, Theme, ThemeComponent } from 'void-ui';
 @Component({
   components: {
     CHeroPortrait,
+    CHeroStats,
   },
 })
 export class CHeroDetail extends Vue implements ThemeComponent {
@@ -37,6 +39,7 @@ export class CHeroDetail extends Vue implements ThemeComponent {
     return (
       <div staticClass="c-hero-detail" class={this.classes}>
         <c-hero-portrait name={this.name} />
+        <c-hero-stats name={this.name} />
       </div>
     );
   }
