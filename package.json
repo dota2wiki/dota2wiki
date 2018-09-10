@@ -13,7 +13,11 @@
   ],
   "scripts": {
     "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",
-    "test": "jest"
+    "test": "jest",
+    "build:vdf": "yarn --cwd packages/@dota2wiki/vdf build",
+    "build:database": "yarn --cwd packages/@dota2wiki/database build",
+    "build:i18n": "yarn --cwd packages/@dota2wiki/i18n build",
+    "build": "yarn build:vdf && yarn build:database && yarn build:i18n"
   },
   "dependencies": {
     "vue": "^2.5.17"
