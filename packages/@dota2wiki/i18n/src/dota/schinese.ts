@@ -511,6 +511,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "巫医可以为团队提供所需的一切。持续的治疗、眩晕和诅咒保证了团队每个人头，强大的终极技能则让他自己在舞蹈中毁灭敌人，他技能的全面实在是少有匹敌。",
   "npc_dota_hero_skeleton_king_hype": "无所畏惧地向敌人大步走去，冥魂大帝击晕敌人，用他的大刀阔剑让他们心悦诚服。就算敌人稍占上风，他的终极技能可以使他再度崛起，保证他还有机会挥起宝剑。",
   "npc_dota_hero_zuus_hype": "宙斯面前所有人都无处遁形，他召唤的一道惊雷会让周围的英雄暴露无遗，放出的弧形闪电可以游遍附近的敌人，而号令的可怕霹雳将打击一切仇敌。无论敌人何在，宙斯都将找到他们。",
+  "DOTA_AttackCapability_Melee": "近战",
+  "DOTA_AttackCapability_Ranged": "远程",
   "DOTA_HeroRole_Carry": "核心",
   "DOTA_HeroRole_Support": "辅助",
   "DOTA_HeroRole_Nuker": "爆发",

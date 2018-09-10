@@ -7999,6 +7999,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor er, hvad end et hold har brug for, at han er. Om han så assisterer sit hold med gradvis heling, lammer og forbander fjender for at sikre, at de dør, eller selv slår fjender ihjel med en mægtig ultimate-dans, så kan kun få modsvare Witch Doctors alsidighed.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King, der frygtløst går mod sine fjender, kan lamme sine modstandere og hugge dem til underkastelse. Hvis hans fjender får overhånd, sørger hans selvgenoplivende ultimate-evne for, at han får endnu en chance for at svinge sit sværd.",
   "npc_dota_hero_zuus_hype": "Om han så nedkalder et lyn til at afsløre omgivelserne, sender en lysbue strømmende gennem nærværende fjender eller hidkalder en frygtelig salve af lyn mod alle fjender, så kan ingen skjule sig fra Zeus. Lige meget hvor Zeus' fjender er, så finder ham dem.",
+  "DOTA_AttackCapability_Melee": "Nærkamp",
+  "DOTA_AttackCapability_Ranged": "Afstandskamp",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

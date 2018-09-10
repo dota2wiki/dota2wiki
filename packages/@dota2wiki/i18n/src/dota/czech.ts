@@ -8207,6 +8207,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctorova univerzálnost nezná mezí, jelikož je schopen v jednu chvíli jak léčit své spojence, tak proklínat a omračovat nepřátele, kterým následně předvede svůj tanec vyvolávající smrtící wardu.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King neohroženě kráčí bojištěm a když se jej někdo pokusí zastavit, je omráčen spektrálním ohněm, aby byl následně sražen k zemi a donucen pokleknout před svým králem. A když náhodou král v lítém boji zemře, nezbude než provolat: „Král je mrtev, ať žije král!“",
   "npc_dota_hero_zuus_hype": "Před Zeusem, pánem nebes, se jen tak někdo neschová. I kdyby se někomu podařilo vyhnout jeho blesku odhalujícímu okolí nebo blesku přeskakujícímu mezi jednotkami, před hněvem nebes neuteče žádný hrdina.",
+  "DOTA_AttackCapability_Melee": "Na blízko",
+  "DOTA_AttackCapability_Ranged": "Na dálku",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

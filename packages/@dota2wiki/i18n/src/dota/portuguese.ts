@@ -8160,6 +8160,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor é o que a sua equipa precisar que ele seja. Seja ajudando a equipa com cura gradual, atordoando/amaldiçoando inimigos para serem mortos facilmente ou destruindo-os com a sua habilidade Ultimate, poucos podem igualar a versatilidade do Witch Doctor.",
   "npc_dota_hero_skeleton_king_hype": "Caminhando sem medo em direção aos seus inimigos, Wraith King atordoa e esquarteja os seus adversários. Se os seus inimigos conseguirem matá-lo, a sua habilidade Ultimate permite-lhe ressuscitar e ter outra oportunidade de eliminá-los com a sua espada.",
   "npc_dota_hero_zuus_hype": "Zeus pode usar os seus raios para revelar as redondezas, para ressaltar através dos alvos mais próximos ou invocar uma aterradora descarga elétrica em todos os seus inimigos - onde quer que os oponentes de Zeus estejam, ele irá encontrá-los.",
+  "DOTA_AttackCapability_Melee": "Melee",
+  "DOTA_AttackCapability_Ranged": "Ranged",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

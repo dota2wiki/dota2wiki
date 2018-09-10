@@ -8364,6 +8364,8 @@ const dict: Record<string, string> = {
   "DOTA_HeroGuide_Role_Jungle": "Jungle",
   "DOTA_HeroGuide_Role_Roamer": "Roamer",
   "DOTA_HeroLoadout_Progression": "Progression",
+  "DOTA_AttackCapability_Melee": "Melee",
+  "DOTA_AttackCapability_Ranged": "Ranged",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

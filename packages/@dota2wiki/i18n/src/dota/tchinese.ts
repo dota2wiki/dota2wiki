@@ -401,6 +401,8 @@ const dict: Record<string, string> = {
   "DOTA_Hero_Selection_TT_HeroChallenge_Title": "有英雄挑戰可用",
   "DOTA_Hero_Selection_TT_HeroChallenge_Text": "您在本英雄身上有著一項挑戰可進行。開啟挑戰介面以檢視細節。",
   "npc_dota_hero_beastmaster_hype": "獸王在戰場奔馳向來都是準備萬全。他可以召喚噴毒的野豬和刺探敵情的戰鷹協助狩獵，揮舞雙斧劈開叢林中的樹木，他震耳欲聾的咆哮將為盟友開出一條滅敵之路。",
+  "DOTA_AttackCapability_Melee": "近戰",
+  "DOTA_AttackCapability_Ranged": "遠程",
   "DOTA_HeroRole_Carry": "核心",
   "DOTA_HeroRole_Support": "輔助",
   "DOTA_HeroRole_Nuker": "爆發",

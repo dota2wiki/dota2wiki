@@ -8159,6 +8159,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor gör vad som krävs för sitt lag. Kapabel att hela sina allierade, bedöva och förbanna fiender för att säkra deras undergång, eller själv förgöra sina fiender med sin ultimata förmåga, är det få som kan matcha Witch Doctors mångsidighet.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King går in i striden utan fruktan för att bedöva sina fiender och sedan hugga dem till underkastelse. Skulle hans fiender få övertaget kommer hans återupplivande ultimata förmåga att se till att han får en till chans att svinga sitt svärd.",
   "npc_dota_hero_zuus_hype": "Ingen kan gömma sig för Zeus, oavsett när han kallar ned en blixt för att få uppsyn över omgivningen, skickar en kedjeblixt som går igenom hans närmsta fiender, eller framkallar ett mäktigt blixtregn som träffar alla fiender. Det spelar ingen roll var hans fiender är, för Zeus kommer hitta dem.",
+  "DOTA_AttackCapability_Melee": "Närstrid",
+  "DOTA_AttackCapability_Ranged": "Avstånd",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

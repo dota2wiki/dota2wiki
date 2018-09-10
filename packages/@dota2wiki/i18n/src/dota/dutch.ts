@@ -506,6 +506,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor kan alles zijn wat zijn team nodig heeft. Of hij zijn team nou helpt met geleidelijke genezing, vijanden verlamt en vervloekt om een dood te garanderen, of zelf vijanden vernietigt met een dans van zijn machtige ultimate, er zijn er maar weinig die aan de veelzijdigheid van Witch Doctor kunnen tippen.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King stapt zonder angst op zijn vijanden af, verlamt ze en hakt daarna op ze in tot ze zich overgeven. Als zijn vijanden in het voordeel weten te komen kan zijn levenschenkende ultimate verzekeren dat hij nog een kans krijgt om met zijn zwaard rond te zwaaien.",
   "npc_dota_hero_zuus_hype": "Niemand kan zich verstoppen voor Zeus, of hij nou een schicht oproept om de omgeving te onthullen, een straal van vijand naar vijand stuurt, of een schrikwekkende bliksembui op alle vijanden oproept. Waar zijn vijanden ook zijn, Zeus zal ze vinden.",
+  "DOTA_AttackCapability_Melee": "Melee",
+  "DOTA_AttackCapability_Ranged": "Afstand",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

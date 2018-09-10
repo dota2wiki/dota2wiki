@@ -8160,6 +8160,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor takımın isteği her neye ihtiyacı varsa o olur. Eğer takımının yardıma ihtiyacı varsa onları kademeli bir şekilde iyileştirir, düşmanlarını öldürmeyi garantilemek için onları sersemletir ve lanetler ya muazzam son yeteneği ile düşmanlarını bir dans ile yok eder. Witch Doctor kadar becerikli birkaç kahraman vardır.",
   "npc_dota_hero_skeleton_king_hype": "Düşmanlarına uzun adımlarla korkusuzca ilerleyen Wraith King, düşmanlarını sersemletir ve teslim olana kadar onlara kılıcıyla vurur. Olur da düşmanları ona karşı üstünlük sağlarsa, Wraith King'in kendini yeniden diriltme son yeteneği ona kılıcını savurması için başka bir şans daha tanır.",
   "npc_dota_hero_zuus_hype": "Hiç kimse Zeus'tan saklanamaz. Çevresindekileri açığa çıkarmak için bir yıldırım indirir, en yakınındaki düşmanları arasında seken bir şimşek gönderir ya da tüm düşmanlarının üzerine korkunç yıldırımlar düşürür. Düşmanları her nerede olursa olsun Zeus, onları bulacaktır.",
+  "DOTA_AttackCapability_Melee": "Yakın Dövüşçü",
+  "DOTA_AttackCapability_Ranged": "Menzilli",
   "DOTA_HeroRole_Carry": "Sırtlayıcı",
   "DOTA_HeroRole_Support": "Destek",
   "DOTA_HeroRole_Nuker": "Ani Hasarcı",

@@ -8161,6 +8161,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor là những gì mà phe ngài cần. Hồi máu, làm choáng, nguyền rủa chết chóc lên kẻ thù hay tự mình diệt sạch kẻ địch với cái tuyệt kỹ vũ điệu, ít kẻ nào so được với sự đa năng của Witch Doctor.",
   "npc_dota_hero_skeleton_king_hype": "Lao vào chiến trận, chém, chém, chém một cách không sợ hãi, Wraith King làm choáng kẻ địch và vung kiếm chém. Khi kẻ địch tưởng mình đang chiếm thế thượng phong, ngài hồi sinh trở lại là tiếp tục chém, chém và chém.",
   "npc_dota_hero_zuus_hype": "Không ai có thể ẩn mình khỏi Zeus, dù cho ngài gọi sét để làm lộ hình để địch xung quanh, phóng ra những tia sét nhỏ lan tới những kẻ địch gần nhất hay tạo ra một đợt sấm sét hãi hùng giật mọi kẻ địch. Dù cho ngươi ở đâu, Zeus cũng sẽ tìm ra ngươi.",
+  "DOTA_AttackCapability_Melee": "Cận chiến",
+  "DOTA_AttackCapability_Ranged": "Đánh xa",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Hỗ trợ",
   "DOTA_HeroRole_Nuker": "Nuker",

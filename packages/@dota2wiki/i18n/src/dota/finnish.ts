@@ -508,6 +508,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor on aina sitä, mitä hänen tiiminsä tarvitsee. Hän voi parantaa liittolaistensa haavat, tainnuttaa ja kirota vihollisensa, tai tuhota viholliset pelkästään tanssimalla ultimate-kykynsä turvin. Ei ole montaa, joka voittaa Witch Doctorin monipuolisuudessa.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King marssii pelottomasti kohti vihollisiaan, tainnuttaa vastustajat ja sivaltaa heidät halki, poikki ja pinoon. Ja vaikka viholliset pääsisivätkin yllättämään, hänen henkiin herättävä ultimate-kykynsä varmistaa, että hän saa toisenkin mahdollisuuden riehua miekkansa kanssa.",
   "npc_dota_hero_zuus_hype": "Kukaan ei voi piiloutua Zeukselta, joka valaisee ympäristönsä salamaniskuilla, johtaa valokaaria vihollistensa läpi, ja lähettää salamaryöpyn jokaisen vihollisensa niskaan. Missä tahansa viholliset ovatkaan, Zeus löytää heidät.",
+  "DOTA_AttackCapability_Melee": "Lähitaistelu",
+  "DOTA_AttackCapability_Ranged": "Kaukotaistelu",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

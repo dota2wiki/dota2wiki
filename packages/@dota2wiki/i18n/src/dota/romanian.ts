@@ -508,6 +508,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor e orice vrea echipa lui. Fie că-și ajuta echipa cu vindecare în timp, năuciri și blesteme pentru adversari ca să asigure moartea acestora, sau chiar distrugerea inamicilor cu un dans lângă abilitatea sa ultimate, puțini pot face versatilității lui Witch Doctor.",
   "npc_dota_hero_skeleton_king_hype": "Mergând cu pasul mărit către inamicii săi, Wraith King îi năucește și-i taie până când aceștia capitulează. Iar, dacă inamicii îl surprind și-l doboară, activitatea acestuia ultimate de auto-înviere va asigura că Wraith King va mai avea o șansă de a-și ridica sabia.",
   "npc_dota_hero_zuus_hype": "Nimeni nu se poate ascunde de Zeus, fie că invocă un fulger pentru a dezvălui împrejurimile, sau că trimite un curent ce sare dintr-un inamic apropiat în altul, sau că invocă un voleu terifiant de fulgere asupra tuturor inamicilor, puțini mai scapă de mânia acestuia.",
+  "DOTA_AttackCapability_Melee": "Melee",
+  "DOTA_AttackCapability_Ranged": "Ranged",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

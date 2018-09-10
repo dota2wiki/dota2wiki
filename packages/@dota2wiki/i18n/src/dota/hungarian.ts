@@ -8196,6 +8196,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor mindaz, amire csapatának szüksége van. Akár fokozatos gyógyítással segíti csapatát, akár bénítja és átkozza az ellenfeleket egy ölés biztosításáért, akár saját maga pusztítja el az ellenséget rendkívüli ultimate-ja táncával, kevesen képesek felvenni a versenyt Witch Doctor sokoldalúságával.",
   "npc_dota_hero_skeleton_king_hype": "Bátran lépdelve ellenségei felé, Wraith King megbénítja ellenfeleit és engedelmességre suhintja őket. Ha ellenségei felülkerekednének rajta, önfeltámasztó ultimate-ja biztosítja, hogy legyen még egy esélye meglendíteni kardját.",
   "npc_dota_hero_zuus_hype": "Senki sem rejtőzhet Zeus elől, akár villámot hív, hogy felfedje környezetét, akár elektromos ívet húz legközelebbi ellenségei közt, akár rettentő villámsortüzet idéz minden ellenségre. Bárhol vannak is ellenségei, Zeus megtalálja őket.",
+  "DOTA_AttackCapability_Melee": "Közelharci",
+  "DOTA_AttackCapability_Ranged": "Távolsági",
   "DOTA_HeroRole_Carry": "Végjátékos",
   "DOTA_HeroRole_Support": "Támogató",
   "DOTA_HeroRole_Nuker": "Zúzó",

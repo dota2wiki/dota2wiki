@@ -8160,6 +8160,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor est tout ce dont son équipe a besoin qu'il soit. Qu'il s'agisse d'aider son équipe en les soignant progressivement, d'étourdir et de maudire ses adversaires pour sécuriser un kill ou alors, de détruire lui-même ses ennemis avec la danse de son formidable sort ultime, peu peuvent égaler la polyvalence du Witch Doctor.",
   "npc_dota_hero_skeleton_king_hype": "Marchant sans peur à la rencontre de l'ennemi, le Wraith King étourdit ses adversaires et les découpe sur place. Si ses ennemis en viennent à bout, ils auront la surprise de le voir revenir pour une seconde manche.",
   "npc_dota_hero_zuus_hype": "Personne n'échappe à Zeus : il foudroie et électrocute tout ce qui bouge. Aucune pitié pour les ennemis : où qu'ils soient, Zeus les trouvera.",
+  "DOTA_AttackCapability_Melee": "CÀC",
+  "DOTA_AttackCapability_Ranged": "À dist.",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

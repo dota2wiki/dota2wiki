@@ -8158,6 +8158,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor può ricoprire vari ruoli: aiutare i compagni con le cure nel tempo, stordire e maledire i nemici per assicurarne la sconfitta o distruggerli lui stesso ballando per evocare la sua ultimate. Pochi sono versatili come Witch Doctor.",
   "npc_dota_hero_skeleton_king_hype": "Avvicinandosi a grandi falcate intrepidamente ai suoi nemici, Wraith King li stordisce e li sottomette a colpi di fendente. E se per qualche motivo loro dovessero avere la meglio su di lui, la sua capacità di risorgere gli garantirà un'altra possibilità per brandire la sua spada.",
   "npc_dota_hero_zuus_hype": "Nessuno può nascondersi da Zeus, che stia evocando un fulmine per rivelare l'ambiente circostante, percorrendo con una corrente elettrica tutti gli avversari nelle vicinanze o fulminando contemporaneamente in una grande raffica di saette tutti i suoi nemici. Ovunque siano i suoi avversari, Zeus li troverà.",
+  "DOTA_AttackCapability_Melee": "Da mischia",
+  "DOTA_AttackCapability_Ranged": "A distanza",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

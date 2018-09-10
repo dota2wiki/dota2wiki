@@ -511,6 +511,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "저주술사는 팀에 필요한 모든 능력을 갖추었습니다. 점진적인 치유 능력으로 아군을 치료할 뿐만 아니라 적을 기절시키고 저주를 내려 죽음을 유도합니다. 또한, 춤을 추면서 강력한 궁극기를 터뜨릴 수 있습니다. 저주술사의 다재다능한 면모는 어떤 다른 영웅에게도 뒤지지 않습니다.",
   "npc_dota_hero_skeleton_king_hype": "망령 제왕은 거침없이 적에게 다가가 기절시킨 다음 검을 휘두르며 자신에게 굴복시킵니다. 만일 적이 승리를 거둔다고 해도 망령 제왕은 궁극기로 부활하여 다시 한 번 검을 휘두를 기회를 얻습니다.",
   "npc_dota_hero_zuus_hype": "누구도 제우스의 분노에서 몸을 피할 수 없습니다. 제우스는 번갯불을 내려 주위를 밝히고 번개를 날려 가까이 있는 적들을 차례로 공격합니다. 또한 모든 적에게 무시무시한 번개를 내릴 수 있습니다. 적이 어디에 있든지 제우스는 반드시 찾아내고 맙니다.",
+  "DOTA_AttackCapability_Melee": "근접",
+  "DOTA_AttackCapability_Ranged": "원거리",
   "DOTA_HeroRole_Carry": "캐리",
   "DOTA_HeroRole_Support": "지원",
   "DOTA_HeroRole_Nuker": "누커",

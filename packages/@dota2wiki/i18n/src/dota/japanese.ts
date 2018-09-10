@@ -361,6 +361,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_shredder_hype": "掴みどころがなく、予測不可能。Timbersaw は森を切り抜け敵に対峙する。敵を切り刻む刃を解き放ち、チェーンに飛び乗って近くの木々に移って進路上の敵を破壊する。",
   "npc_dota_hero_tinker_hype": "Tinker は大量のマシーン群や恐ろしい仕掛け使って敵を破壊する。必要な材料を集めることが出来れば、アビリティを即座をリフレッシュするパワーが彼を全ての前線で味方を導くことを可能にする。",
   "npc_dota_hero_venomancer_hype": "Venomancer は敵にゆっくりと死をもたらす。毒を吐き出す無数の見張りを発生させて自分の領域を守り、敵が一線を越えてきたら長引く毒を大量に撒き散らして敵を弱らせる。",
+  "DOTA_AttackCapability_Melee": "近接",
+  "DOTA_AttackCapability_Ranged": "レンジ",
   "DOTA_HeroRole_Carry": "キャリー",
   "DOTA_HeroRole_Support": "サポート",
   "DOTA_HeroRole_Nuker": "ヌーカー",

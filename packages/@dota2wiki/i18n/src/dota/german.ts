@@ -8159,6 +8159,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor erfüllt genau die Rolle, die sein Team gerade braucht. Er heilt seine Verbündeten über die Zeit, betäubt Gegner und verflucht diese, um einen Kill zu sichern. Wenn es sein muss, zerstört er seine Feinde auch selbst mit einem mächtigen Beschwörungstanz.",
   "npc_dota_hero_skeleton_king_hype": "Wraith King zieht furchtlos in den Kampf, um seine Feinde zu betäuben und in die Unterwerfung zu prügeln. Sollten seine Gegner die Oberhand gewinnen, ermöglicht es ihm sein Wiederbelebungs-Ultimate, sein Schwert noch einmal zu schwingen.",
   "npc_dota_hero_zuus_hype": "Vor Zeus kann sich niemand verstecken. Er ruft Blitze vom Himmel herab, um Unsichtbares zu enthüllen oder verschießt welche aus seinen Händen, um mehrere Gegner nacheinander zu treffen. Wenn er dann noch mit einem mächtigen Schlag alle gegnerischen Helden gleichzeitig trifft, wird klar: Vor Zeus kann man sich wirklich nicht verstecken.",
+  "DOTA_AttackCapability_Melee": "Nahkampf",
+  "DOTA_AttackCapability_Ranged": "Fernkampf",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",

@@ -8210,6 +8210,8 @@ const dict: Record<string, string> = {
   "npc_dota_hero_witch_doctor_hype": "Witch Doctor przyjmie taką rolę, jakiej potrzeba jego drużynie. Czy to stopniowo lecząc towarzyszy, ogłuszając i przeklinając wrogów, by przypieczętować ich śmierć, czy samodzielnie siejąc zniszczenie, tańcząc wokół totemu tworzonego przez jego umiejętność ostateczną. Niewielu bohaterów może się z nim równać pod względem wszechstronności.",
   "npc_dota_hero_skeleton_king_hype": "Krocząc bez strachu ku wrogom, Wraith King ogłusza ich i dominuje potężnymi ciosami miecza. Jeśli nawet zdobędą przewagę, jego umiejętność ostateczna, samowskrzeszenie, pozwoli mu raz jeszcze unieść ku nim miecz.",
   "npc_dota_hero_zuus_hype": "Nikt nie skryje się przed Zeusem. Nieważne czy akurat przyzywa piorun, by rozświetlić otoczenie, razi pobliskich wrogów wyładowaniem łukowym, czy zsyła na wszystkich przeciwników przerażającą serię błyskawic. Gdziekolwiek by nie byli, Zeus ich znajdzie.",
+  "DOTA_AttackCapability_Melee": "Wręcz",
+  "DOTA_AttackCapability_Ranged": "Zasięgowy",
   "DOTA_HeroRole_Carry": "Carry",
   "DOTA_HeroRole_Support": "Support",
   "DOTA_HeroRole_Nuker": "Nuker",
