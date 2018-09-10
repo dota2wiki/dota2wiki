@@ -1,6 +1,6 @@
 {
   "name": "@dota2wiki/i18n",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "DOTA2 built-in data for dota2wiki.",
   "main": "dist/common/index.js",
   "module": "dist/esm/index.js",
