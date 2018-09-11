@@ -36,7 +36,7 @@ async function getAllLanguages(): Promise<string[]> {
 
   result.sort();
 
-  allLanguage = result;
+  allLanguage = [...new Set(['english', ...result])];
 
   const content: string = result.map(lang => `'${lang}'`).join(', ');
   fs.writeFileSync(
@@ -50,6 +50,7 @@ async function getAllLanguages(): Promise<string[]> {
 /**
  * Generate Localization files
  */
+// tslint:disable-next-line:max-func-body-length
 async function generateLocale(options: Options): Promise<void> {
   const output: string = resolve(options.output);
   if (!fs.existsSync(output)) {
@@ -57,94 +58,115 @@ async function generateLocale(options: Options): Promise<void> {
   }
 
   const map: Record<string, Record<string, string>> = {};
+  async function loadVdf(filePrefix: string, language: string) {
+    try {
+      const filePath: string = resolve(
+        `assets/${filePrefix}_${language === 'korean' ? 'koreana' : language}.txt`,
+      );
 
-  const allPromise: Promise<void>[] = [];
+      if (!fs.existsSync(filePath)) {
+        return;
+      }
 
-  allLanguage.forEach(lang =>
-    options.files.forEach(f =>
-      allPromise.push(
-        (async () => {
-          try {
-            const filePath: string = resolve(
-              `assets/${f}_${lang === 'korean' ? 'koreana' : lang}.txt`,
-            );
-            const raw: any = await load(
-              fs.existsSync(filePath) ? filePath : resolve(`assets/${f}_english.txt`),
-            );
+      const raw: any = await load(filePath);
 
-            const rawDict: Record<string, string> =
-              f === 'hero_lore' ? raw.hero_lore : raw.lang.Tokens;
-            map[lang] = map[lang]
-              ? {
-                  ...map[lang],
-                  ...rawDict,
-                }
-              : rawDict;
-          } catch (error) {
-            if (error) {
-              console.error(chalk.redBright(`${f} ${lang}`));
-              throw error;
-            }
+      const rawDict: Record<string, string> =
+        filePrefix === 'hero_lore' ? raw.hero_lore : raw.lang.Tokens;
+      map[language] = map[language]
+        ? {
+            ...map[language],
+            ...rawDict,
           }
-        })(),
-      ),
-    ),
-  );
-
-  await Promise.all(allPromise);
+        : rawDict;
+    } catch (error) {
+      if (error) {
+        console.error(chalk.redBright(`${filePrefix} ${language}`));
+        throw error;
+      }
+    }
+  }
 
   await Promise.all(
-    Object.entries(map).map(
-      ([language, rawDict]): Promise<void> => {
-        return (async () => {
-          const dict: Record<string, string> = {};
+    allLanguage
+      .map(lang => options.files.map(prefix => loadVdf(prefix, lang)))
+      .reduce<Promise<void>[]>((result, cur) => {
+        result.push(...cur);
 
-          Object.entries(rawDict).forEach(([key, text]) => {
-            for (const p of options.excludes) {
-              if (typeof p === 'string') {
-                if (p === key) {
-                  return;
-                }
-              } else {
-                if (p.test(key)) {
-                  return;
-                }
-              }
-            }
-            for (const p of options.includes) {
-              if (typeof p === 'string') {
-                if (p === key) {
-                  return (dict[key] = text);
-                }
-              } else {
-                if (p.test(key)) {
-                  return (dict[key] = text);
-                }
-              }
-            }
-          });
+        return result;
+      }, []),
+  );
 
-          Object.entries(dict).forEach(([key, value]) => {
-            if (typeof value !== 'string') {
-              console.warn(chalk.yellowBright(`Non-String value: [${key}]: ${value}`));
-              dict[key] = (value as any).toString();
-            }
-          });
+  let englishDict: Record<string, string> = {};
 
-          const content: string = JSON.stringify(dict, undefined, '  ');
+  async function outputSrc(
+    language: string,
+    rawDict: Record<string, string>,
+  ): Promise<void> {
+    let dict: Record<string, string> = {};
 
-          fs.writeFileSync(
-            `${output}/${language}.ts`,
-            `// tslint:disable\n\nconst dict: Record<string, string> = ${content}\n\n export default dict`,
-          );
+    Object.entries(rawDict).forEach(([key, text]) => {
+      for (const p of options.excludes) {
+        if (typeof p === 'string') {
+          if (p === key) {
+            return;
+          }
+        } else {
+          if (p.test(key)) {
+            return;
+          }
+        }
+      }
+      for (const p of options.includes) {
+        if (typeof p === 'string') {
+          if (p === key) {
+            return (dict[key] = text);
+          }
+        } else {
+          if (p.test(key)) {
+            return (dict[key] = text);
+          }
+        }
+      }
+    });
 
-          console.info(
-            chalk.cyanBright('Output:'),
-            chalk.greenBright(`${output}/${language}.ts`),
-          );
-        })();
-      },
-    ),
+    Object.entries(dict).forEach(([key, value]) => {
+      if (typeof value !== 'string') {
+        console.warn(chalk.yellowBright(`Non-String value: [${key}]: ${value}`));
+        dict[key] = (value as any).toString();
+      }
+    });
+
+    if (language === 'english') {
+      englishDict = dict;
+    } else {
+      dict = {
+        ...englishDict,
+        ...dict,
+      };
+    }
+
+    const content: string = JSON.stringify(dict, undefined, '  ');
+
+    fs.writeFileSync(
+      `${output}/${language}.ts`,
+      `// tslint:disable\n\nconst dict: Record<string, string> = ${content}\n\n export default dict`,
+    );
+
+    console.info(
+      chalk.cyanBright('Output:'),
+      chalk.greenBright(`${output}/${language}.ts`),
+    );
+  }
+
+  await outputSrc('english', map['english']);
+  await Promise.all(
+    Object.entries(map)
+      .filter(([lang]) => lang !== 'english')
+      .map(
+        ([language, rawDict]): Promise<void> => {
+          return outputSrc(language, rawDict);
+        },
+      ),
   );
 }
 
@@ -167,6 +189,9 @@ const optionsList: Options[] = [
       /^DOTA_AttackCapability_/,
       /^DOTA_HUD_/,
       /^TimeOfDay_/,
+      'dota_hero',
+      'DOTA_StatBranch_TooltipTitle',
+
       /^DOTA_HeroGrid_/,
       /^DOTA_HeroStats_/,
       /^DOTA_HeroLoadout_/,
@@ -176,6 +201,8 @@ const optionsList: Options[] = [
       /^DOTA_Tooltip_ability/,
       /^DOTA_Tooltip_modifier_/,
       /^dota_ability_variable_/,
+
+      /^DOTA_SHOP/,
     ],
     excludes: [/_cny_/, /_cny2015_/, /_winter_/],
   },
