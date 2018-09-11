@@ -11,110 +11,43 @@ import {
   Watch,
 } from 'vue-property-decorator';
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
+import { Location } from 'vue-router';
 
 const backgournds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mods'];
 
 interface NavItem {
   key: string;
-  name: string;
+  to: Location;
   sub?: string[];
   children?: NavItem[];
 }
 
 const navItems: NavItem[] = [
   {
-    key: 'home',
-    name: 'home',
+    key: 'DOTA_HUD_BackToDashboard',
+    to: {
+      name: 'home',
+    },
   },
   {
-    key: 'heroes',
-    name: 'heroes',
+    key: 'dota_hero',
+    to: {
+      name: 'heroes',
+    },
     children: [
       {
         key: 'dota_hero',
-        name: 'heroes',
+        to: {
+          name: 'heroes',
+        },
         sub: ['hero'],
       },
       {
         key: 'DOTA_SHOP_ITEMS',
-        name: 'items',
+        to: {
+          name: 'items',
+        },
         sub: ['item'],
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-    ],
-  },
-  {
-    key: 'heroes',
-    name: 'heroes',
-    children: [
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-    ],
-  },
-  {
-    key: 'heroes',
-    name: 'heroes',
-    children: [
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-    ],
-  },
-  {
-    key: 'heroes',
-    name: 'heroes',
-    children: [
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-    ],
-  },
-  {
-    key: 'heroes',
-    name: 'heroes',
-    children: [
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
-      },
-      {
-        key: 'heroes',
-        name: 'heroes',
       },
     ],
   },
@@ -131,19 +64,25 @@ export class CNavbar extends Vue implements ThemeComponent {
     return this.theme || this.$vd_theme.theme;
   }
 
+  private language: string = '';
+
   private selectedIndex: number = 0;
 
   @Watch('$route', { immediate: true })
   private watchRoute(): void {
+    this.language = this.$route.params.language;
+    this.$locale.selectLanguage(this.language);
+
     for (const { name } of this.$route.matched) {
       if (name) {
         const index: number = navItems.findIndex(
           item =>
-            item.name === name ||
+            item.to.name === name ||
             (!!item.sub && item.sub.includes(name)) ||
             (!!item.children &&
               !!item.children.find(
-                child => child.name === name || (!!child.sub && child.sub.includes(name)),
+                child =>
+                  child.to.name === name || (!!child.sub && child.sub.includes(name)),
               )),
         );
         if (index > -1) {
@@ -173,9 +112,10 @@ export class CNavbar extends Vue implements ThemeComponent {
                   {item.children.map(child => (
                     <router-link
                       staticClass="c-navbar_sub-item"
-                      to={{ name: child.name }}
+                      active-class="is-selected"
+                      to={child.to}
                     >
-                      {child.key}
+                      {this.$locale.dict[child.key]}
                     </router-link>
                   ))}
                 </div>
@@ -198,12 +138,13 @@ export class CNavbar extends Vue implements ThemeComponent {
           ))}
         </div>
         <div staticClass="c-navbar_main">
-          <div staticClass="c-navbar_left" />
+          <div staticClass="c-navbar_left">{this.language}</div>
           <div staticClass="c-navbar_center">
             <router-link
               staticClass="c-navbar_item-home"
               class={{ 'is-selected': 0 === this.selectedIndex }}
-              to={{ name: 'home' }}
+              to={navItems[0].to}
+              title={this.$locale.dict['DOTA_HUD_BackToDashboard']}
             >
               <img
                 staticClass="c-navbar_home-logo"
@@ -214,13 +155,18 @@ export class CNavbar extends Vue implements ThemeComponent {
               <router-link
                 staticClass="c-navbar_item"
                 class={{ 'is-selected': index + 1 === this.selectedIndex }}
-                to={{ name: item.name }}
+                to={item.to}
               >
-                {item.key}
+                {this.$locale.dict[item.key]}
               </router-link>
             ))}
           </div>
-          <div staticClass="c-navbar_right" />
+          <div staticClass="c-navbar_right">
+            <router-link to={{ params: { language: 'english' } }}>english</router-link>/
+            <router-link to={{ params: { language: 'schinese' } }}>schinese</router-link>/
+            <router-link to={{ params: { language: 'tchinese' } }}>tchinese</router-link>/
+            <router-link to={{ params: { language: 'japanese' } }}>japanese</router-link>
+          </div>
         </div>
       </header>
     );

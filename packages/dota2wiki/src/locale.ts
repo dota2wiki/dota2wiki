@@ -12,5 +12,6 @@ export const dotaLocale: VueLocale = new VueLocale({
     en: async () => import('@dota2wiki/i18n/dist/esm/dota/english'),
     schinese: async () => import('@dota2wiki/i18n/dist/esm/dota/schinese'),
     tchinese: async () => import('@dota2wiki/i18n/dist/esm/dota/tchinese'),
+    japanese: async () => import('@dota2wiki/i18n/dist/esm/dota/japanese'),
   },
 });

@@ -13,7 +13,7 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/zh-CN',
+      redirect: '/schinese',
     },
     {
       path: '/:language',
@@ -33,6 +33,16 @@ export default new VueRouter({
           path: 'hero/:name',
           name: 'hero',
           component: async () => import('@src/views/hero'),
+        },
+        {
+          path: 'items',
+          name: 'items',
+          component: async () => import('@src/views/items'),
+        },
+        {
+          path: 'item/:name',
+          name: 'item',
+          component: async () => import('@src/views/item'),
         },
       ],
     },
