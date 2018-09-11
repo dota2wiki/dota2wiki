@@ -15,14 +15,41 @@ import {
   Attribute,
   AttackData,
   AttackCapability,
-  ArmorData,
+  DefenseData,
+  MobilityData,
 } from '@dota2wiki/database';
+import { toPercentage } from '@src/utils/filters';
+import {
+  VisionData,
+  StatusData,
+} from '../../../../../@dota2wiki/database/dist/common/models/hero';
 
 const levelMin: number = 0;
 const levelMax: number = 24;
 
+const spellAmpBonusPrimary: number = 0.000875;
+const spellAmpBonusSecondary: number = 0.0007;
+
 const armorBonusPrimary: number = 0.2;
 const armorBonusSecondary: number = 0.16;
+
+const magicResistBonusPrimary: number = 0.001;
+const magicResistBonusSecondary: number = 0.0008;
+
+const movementSpeedBonusPrimary: number = 0.000625;
+const movementSpeedBonusSecondary: number = 0.0005;
+
+const healthBonusPrimary: number = 22.5;
+const healthBonusSecondary: number = 18;
+
+const healthRegenBonusPrimary: number = 0.006875;
+const healthRegenBonusSecondary: number = 0.0055;
+
+const manaBonusPrimary: number = 15;
+const manaBonusSecondary: number = 12;
+
+const manaRegenBonusPrimary: number = 0.0225;
+const manaRegenBonusSecondary: number = 0.018;
 
 /**
  * Component: HeroStats
@@ -46,9 +73,39 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return this.$db.heroMap[this.name];
   }
 
-  private level: number = 1;
+  private level: number = 0;
   private onLevelChange(event: Event): void {
     this.level = parseInt((event.target as HTMLInputElement).value, 10);
+  }
+
+  private renderLevel(): VNode {
+    return (
+      <vd-flexbox flex={100} gap>
+        <vd-flexbox flex="none">
+          <vd-button shape="square" onClick={() => (this.level = 0)}>
+            min
+          </vd-button>
+        </vd-flexbox>
+        <vd-flexbox flex="none">
+          <vd-button shape="square" onClick={() => this.level--}>
+            -
+          </vd-button>
+        </vd-flexbox>
+
+        <vd-flexbox flex="none">Level: {this.level + 1}</vd-flexbox>
+
+        <vd-flexbox flex="none">
+          <vd-button shape="square" onClick={() => this.level++}>
+            +
+          </vd-button>
+        </vd-flexbox>
+        <vd-flexbox flex="none">
+          <vd-button shape="square" onClick={() => (this.level = 24)}>
+            max
+          </vd-button>
+        </vd-flexbox>
+      </vd-flexbox>
+    );
   }
 
   public get attributes(): AttributeData {
@@ -119,7 +176,7 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return 1 / this.attackPerSecond;
   }
 
-  public get attackDamageBonus(): number {
+  public get damageBonus(): number {
     switch (this.attributes.primary) {
       case Attribute.strength:
         return this.attributeStrength;
@@ -131,19 +188,28 @@ export class CHeroStats extends Vue implements ThemeComponent {
         return 0;
     }
   }
-  public get attackDamageMin(): number {
-    return this.attack.damage.min + this.attackDamageBonus;
+  public get damageMin(): number {
+    return this.attack.damage.min + this.damageBonus;
   }
-  public get attackDamageMax(): number {
-    return this.attack.damage.max + this.attackDamageBonus;
+  public get damageMax(): number {
+    return this.attack.damage.max + this.damageBonus;
   }
 
   public get attackRange(): number {
     return this.attack.range;
   }
 
-  public get attackProjectileSpeed(): number {
+  public get projectileSpeed(): number {
     return this.attack.projectileSpeed;
+  }
+
+  public get spellAmp(): number {
+    return (
+      this.attributeIntelligence *
+      (this.attributes.primary === Attribute.intelligence
+        ? spellAmpBonusPrimary
+        : spellAmpBonusSecondary)
+    );
   }
 
   private renderAttack(): VNode {
@@ -166,7 +232,7 @@ export class CHeroStats extends Vue implements ThemeComponent {
         <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Damage_Desc']}>
           <span>{this.$locale.dict['DOTA_HeroStats_Damage_Name']}:</span>
           <span>
-            {this.attackDamageMin.toFixed(2)}-{this.attackDamageMax.toFixed(2)}
+            {this.damageMin.toFixed(2)}-{this.damageMax.toFixed(2)}
           </span>
         </vd-flexbox>
         <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_AttackRange_Desc']}>
@@ -176,30 +242,59 @@ export class CHeroStats extends Vue implements ThemeComponent {
         {this.hero.attack.capability === AttackCapability.DOTA_UNIT_CAP_RANGED_ATTACK ? (
           <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Desc']}>
             <span>{this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Name']}:</span>
-            <span>{this.attackProjectileSpeed}</span>
+            <span>{this.projectileSpeed}</span>
           </vd-flexbox>
         ) : (
           h()
         )}
+        <vd-flexbox>
+          <span>{this.$locale.dict['DOTA_HUD_SpellAmp']}:</span>
+          <span>{toPercentage(this.spellAmp)}</span>
+        </vd-flexbox>
       </vd-flexbox>
     );
   }
 
   // Defense
-  public get armor(): ArmorData {
-    return this.hero.armor;
+  public get defense(): DefenseData {
+    return this.hero.defense;
   }
 
-  public get armorPhysicalBonus(): number {
+  public get armorBonus(): number {
     return (
+      this.attributeAgility *
       (this.attributes.primary === Attribute.agility
         ? armorBonusPrimary
-        : armorBonusSecondary) * this.attributeAgility
+        : armorBonusSecondary)
     );
   }
+  public get armor(): number {
+    return this.defense.armorPhysical + this.armorBonus;
+  }
 
-  public get armorPhysical(): number {
-    return this.armor.armorPhysical + this.armorPhysicalBonus;
+  public get physicalResist(): number {
+    return (0.05 * this.armor) / (1 + 0.05 * Math.abs(this.armor));
+  }
+
+  public get magicResistBonus(): number {
+    return (
+      1 -
+      this.attributeStrength *
+        (this.attributes.primary === Attribute.strength
+          ? magicResistBonusPrimary
+          : magicResistBonusSecondary)
+    );
+  }
+  public get magicResist(): number {
+    return 1 - (1 - this.defense.magicalResistance / 100) * this.magicResistBonus;
+  }
+
+  public get statusResist(): number {
+    return 0;
+  }
+
+  public get evasion(): number {
+    return 0;
   }
 
   private renderDefense(): VNode {
@@ -210,7 +305,165 @@ export class CHeroStats extends Vue implements ThemeComponent {
         </vd-flexbox>
         <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Armor_Desc']}>
           <span>{this.$locale.dict['DOTA_HeroStats_Armor_Name']}:</span>
-          <span>{this.armorPhysical.toFixed(2)}</span>
+          <span>{this.armor.toFixed(2)}</span>
+        </vd-flexbox>
+        <vd-flexbox>
+          <span>{this.$locale.dict['DOTA_HUD_PhysicalResist']}:</span>
+          <span>{toPercentage(this.physicalResist)}</span>
+        </vd-flexbox>
+        <vd-flexbox>
+          <span>{this.$locale.dict['DOTA_HUD_MagicResist']}:</span>
+          <span>{toPercentage(this.magicResist)}</span>
+        </vd-flexbox>
+        <vd-flexbox>
+          <span>{this.$locale.dict['DOTA_HUD_StatusResist']}:</span>
+          <span>{toPercentage(this.statusResist)}</span>
+        </vd-flexbox>
+        <vd-flexbox>
+          <span>{this.$locale.dict['DOTA_HUD_Evasion']}:</span>
+          <span>{toPercentage(this.evasion)}</span>
+        </vd-flexbox>
+      </vd-flexbox>
+    );
+  }
+
+  public get mobility(): MobilityData {
+    return this.hero.mobility;
+  }
+
+  public get movementSpeed(): number {
+    return (
+      this.mobility.speed *
+      (1 +
+        this.attributeAgility *
+          (this.attributes.primary === Attribute.agility
+            ? movementSpeedBonusPrimary
+            : movementSpeedBonusSecondary))
+    );
+  }
+
+  public get turnRate(): number {
+    return this.mobility.turnRate;
+  }
+
+  public get vision(): VisionData {
+    return this.hero.vision;
+  }
+
+  public get visionDay(): number {
+    return this.vision.day;
+  }
+  public get visionNight(): number {
+    return this.vision.night;
+  }
+
+  private renderMobility(): VNode {
+    return (
+      <vd-flexbox gap direction="column">
+        <vd-flexbox tag="h3">
+          {this.$locale.dict['DOTA_HeroStats_Castegory_Mobility']}
+        </vd-flexbox>
+        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_MovementSpeed_Desc']}>
+          <span>{this.$locale.dict['DOTA_HeroStats_MovementSpeed_Name']}:</span>
+          <span>{this.movementSpeed.toFixed(2)}</span>
+        </vd-flexbox>
+        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_TurnRate_Desc']}>
+          <span>{this.$locale.dict['DOTA_HeroStats_TurnRate_Name']}:</span>
+          <span>{this.turnRate.toFixed(2)}</span>
+        </vd-flexbox>
+        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_SightRange_Desc']}>
+          <span>{this.$locale.dict['DOTA_HeroStats_SightRange_Name']}:</span>
+          <span>
+            {this.$locale.dict['TimeOfDay_Day']}
+            {this.visionDay}/{this.$locale.dict['TimeOfDay_Night']}
+            {this.visionNight}
+          </span>
+        </vd-flexbox>
+      </vd-flexbox>
+    );
+  }
+
+  public get status(): StatusData {
+    return this.hero.status;
+  }
+
+  public get healthBonus(): number {
+    return (
+      this.attributeStrength *
+      (this.attributes.primary === Attribute.strength
+        ? healthBonusPrimary
+        : healthBonusSecondary)
+    );
+  }
+  public get health(): number {
+    return this.status.health + this.healthBonus;
+  }
+  public get healthRegenBonus(): number {
+    return (
+      this.status.healthRegen *
+      this.attributeStrength *
+      (this.attributes.primary === Attribute.strength
+        ? healthRegenBonusPrimary
+        : healthRegenBonusSecondary)
+    );
+  }
+  public get healthRegen(): number {
+    return this.status.healthRegen + this.healthRegenBonus;
+  }
+
+  public get manaBonus(): number {
+    return (
+      this.attributeIntelligence *
+      (this.attributes.primary === Attribute.intelligence
+        ? manaBonusPrimary
+        : manaBonusSecondary)
+    );
+  }
+  public get mana(): number {
+    return this.status.mana + this.manaBonus;
+  }
+  public get manaRegenBonus(): number {
+    return (
+      this.status.manaRegen *
+      this.attributeIntelligence *
+      (this.attributes.primary === Attribute.intelligence
+        ? manaRegenBonusPrimary
+        : manaRegenBonusSecondary)
+    );
+  }
+  public get manaRegen(): number {
+    return this.status.manaRegen + this.manaRegenBonus;
+  }
+
+  private renderStatus(): VNode {
+    return (
+      <vd-flexbox gap direction="column">
+        <vd-flexbox tag="h3">
+          {this.$locale.dict['DOTA_HeroStats_Castegory_HealthMana']}
+        </vd-flexbox>
+        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Health_Desc']}>
+          <span>
+            {this.$locale.dict['DOTA_HeroStats_MaxHealth_Name']}(
+            {this.$locale.dict['DOTA_HeroStats_HealthRegen_Name']}
+            ):
+          </span>
+          <span>
+            {this.health.toFixed(2)}
+            (+
+            {this.healthRegen.toFixed(2)})
+          </span>
+        </vd-flexbox>
+        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Mana_Desc']}>
+          <span>
+            {this.$locale.dict['DOTA_HeroStats_MaxMana_Name']}(
+            {this.$locale.dict['DOTA_HeroStats_ManaRegen_Name']}
+            ):
+          </span>
+          <span>
+            {this.mana.toFixed(2)}
+            (+
+            {this.manaRegen.toFixed(2)})
+          </span>
         </vd-flexbox>
       </vd-flexbox>
     );
@@ -221,22 +474,12 @@ export class CHeroStats extends Vue implements ThemeComponent {
       <vd-swimlane staticClass="c-hero-stats">
         <vd-container>
           <vd-flexbox gap>
-            <vd-flexbox flex={100}>
-              {/* tslint:disable-next-line:react-a11y-role-has-required-aria-props */}
-              <input
-                type="number"
-                value={this.level}
-                min={levelMin}
-                max={levelMax}
-                step={1}
-                onChange={this.onLevelChange}
-              />
-              level: {this.level + 1}
-            </vd-flexbox>
-
+            {this.renderLevel()}
             {this.renderAttributes()}
             {this.renderAttack()}
             {this.renderDefense()}
+            {this.renderMobility()}
+            {this.renderStatus()}
           </vd-flexbox>
         </vd-container>
       </vd-swimlane>
