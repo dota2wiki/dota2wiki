@@ -80,7 +80,7 @@ export interface RoleData {
 /**
  * Armor data.
  */
-export interface ArmorData {
+export interface DefenseData {
   readonly armorPhysical: number;
   readonly magicalResistance: number;
 }
@@ -172,7 +172,7 @@ export enum MovementCapability {
 /**
  * Movement data.
  */
-export interface MovementData {
+export interface MobilityData {
   readonly capabilities: MovementCapability;
   readonly speed: number;
   readonly turnRate: number;
@@ -248,10 +248,10 @@ export interface Hero {
   readonly abilities: string[];
   readonly talents: string[];
 
-  readonly armor: ArmorData;
+  readonly defense: DefenseData;
   readonly attack: AttackData;
   readonly attributes: AttributeData;
-  readonly movement: MovementData;
+  readonly mobility: MobilityData;
   readonly status: StatusData;
   readonly vision: VisionData;
 

@@ -7,7 +7,7 @@ import {
   Team,
   enumMapTeam,
   RoleData,
-  ArmorData,
+  DefenseData,
   AttackDamageType,
   AttackCapability,
   AttackData,
@@ -15,7 +15,7 @@ import {
   enumMapAttribute,
   AttributeData,
   MovementCapability,
-  MovementData,
+  MobilityData,
   StatusData,
   VisionData,
   GameModeData,
@@ -87,8 +87,8 @@ function getTalents(data: ValveData): string[] {
 // Armor
 // ------------------------------------------------------------
 
-function getArmorData(data: ValveData): ArmorData {
-  return data.mapGet<ArmorData>({
+function getDefenseData(data: ValveData): DefenseData {
+  return data.mapGet<DefenseData>({
     armorPhysical: {
       type: 'number',
       field: 'ArmorPhysical',
@@ -214,15 +214,15 @@ function getAttributeData(data: ValveData): AttributeData {
 // Movement
 // ------------------------------------------------------------
 
-function getMovementData(data: ValveData): MovementData {
-  const result: MovementData = {
+function getMobilityData(data: ValveData): MobilityData {
+  const result: MobilityData = {
     capabilities: MovementCapability.DOTA_UNIT_CAP_MOVE_GROUND,
     speed: 300,
     turnRate: 0.5,
     hasAggressiveStance: false,
   };
 
-  data.mapInject<MovementData>(result, {
+  data.mapInject<MobilityData>(result, {
     capabilities: {
       type: 'enum',
       field: 'MovementCapabilities',
@@ -356,10 +356,10 @@ export default async function genHeros(path: string): Promise<Record<string, Her
       abilities: () => getAbilities(data),
       talents: () => getTalents(data),
 
-      armor: () => getArmorData(data),
+      defense: () => getDefenseData(data),
       attack: () => getAttackData(data),
       attributes: () => getAttributeData(data),
-      movement: () => getMovementData(data),
+      mobility: () => getMobilityData(data),
       status: () => getStatusData(data),
       vision: () => getVisionData(data),
 

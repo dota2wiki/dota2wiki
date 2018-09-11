@@ -35,7 +35,7 @@ export default {
       "special_bonus_unique_antimage_4",
       "special_bonus_unique_antimage_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -67,7 +67,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.5,
@@ -130,7 +130,7 @@ export default {
       "special_bonus_unique_axe_2",
       "special_bonus_unique_axe"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -162,7 +162,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.6,
@@ -226,7 +226,7 @@ export default {
       "special_bonus_unique_bane_2",
       "special_bonus_unique_bane_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -258,7 +258,7 @@ export default {
         "gain": 2.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.6,
@@ -324,7 +324,7 @@ export default {
       "special_bonus_unique_bloodseeker",
       "special_bonus_unique_bloodseeker_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -356,7 +356,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -422,7 +422,7 @@ export default {
       "special_bonus_unique_crystal_maiden_1",
       "special_bonus_unique_crystal_maiden_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -454,7 +454,7 @@ export default {
         "gain": 2.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.5,
@@ -517,7 +517,7 @@ export default {
       "special_bonus_unique_drow_ranger_1",
       "special_bonus_cooldown_reduction_50"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -3,
       "magicalResistance": 25
     },
@@ -549,7 +549,7 @@ export default {
         "gain": 1.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.7,
@@ -612,7 +612,7 @@ export default {
       "special_bonus_magic_resistance_50",
       "special_bonus_unique_earthshaker"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -644,7 +644,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.9,
@@ -707,7 +707,7 @@ export default {
       "special_bonus_hp_600",
       "special_bonus_unique_juggernaut_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -739,7 +739,7 @@ export default {
         "gain": 1.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -802,7 +802,7 @@ export default {
       "special_bonus_unique_mirana_2",
       "special_bonus_unique_mirana_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -834,7 +834,7 @@ export default {
         "gain": 1.65
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -901,7 +901,7 @@ export default {
       "special_bonus_unique_nevermore_5",
       "special_bonus_cooldown_reduction_40"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -933,7 +933,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 1,
@@ -1001,7 +1001,7 @@ export default {
       "special_bonus_unique_morphling_6",
       "special_bonus_unique_morphling_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -1033,7 +1033,7 @@ export default {
         "gain": 1.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.6,
@@ -1099,7 +1099,7 @@ export default {
       "special_bonus_unique_phantom_lancer_4",
       "special_bonus_30_crit_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -1131,7 +1131,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -1194,7 +1194,7 @@ export default {
       "special_bonus_gold_income_70",
       "special_bonus_unique_puck_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -1226,7 +1226,7 @@ export default {
         "gain": 2.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -1289,7 +1289,7 @@ export default {
       "special_bonus_unique_pudge_3",
       "special_bonus_unique_pudge_1"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -1321,7 +1321,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.7,
@@ -1384,7 +1384,7 @@ export default {
       "special_bonus_attack_speed_100",
       "special_bonus_unique_razor_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -1416,7 +1416,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -1481,7 +1481,7 @@ export default {
       "special_bonus_hp_regen_35",
       "special_bonus_unique_sand_king_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -1513,7 +1513,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -1579,7 +1579,7 @@ export default {
       "special_bonus_unique_storm_spirit_3",
       "special_bonus_unique_storm_spirit_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -1611,7 +1611,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.8,
@@ -1674,7 +1674,7 @@ export default {
       "special_bonus_unique_sven_2",
       "special_bonus_unique_sven_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -1706,7 +1706,7 @@ export default {
         "gain": 1.3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -1770,7 +1770,7 @@ export default {
       "special_bonus_unique_tiny_3",
       "special_bonus_unique_tiny_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -1802,7 +1802,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -1867,7 +1867,7 @@ export default {
       "special_bonus_unique_vengeful_spirit_1",
       "special_bonus_unique_vengeful_spirit_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -1899,7 +1899,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -1965,7 +1965,7 @@ export default {
       "special_bonus_unique_windranger_4",
       "special_bonus_cooldown_reduction_30"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -1997,7 +1997,7 @@ export default {
         "gain": 2.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.8,
@@ -2061,7 +2061,7 @@ export default {
       "special_bonus_cast_range_275",
       "special_bonus_unique_zeus_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -2093,7 +2093,7 @@ export default {
         "gain": 2.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.6,
@@ -2157,7 +2157,7 @@ export default {
       "special_bonus_unique_kunkka_3",
       "special_bonus_unique_kunkka_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -2189,7 +2189,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -2252,7 +2252,7 @@ export default {
       "special_bonus_unique_lina_1",
       "special_bonus_attack_range_175"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -2284,7 +2284,7 @@ export default {
         "gain": 3.2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -2347,7 +2347,7 @@ export default {
       "special_bonus_unique_lich_1",
       "special_bonus_unique_lich_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -2379,7 +2379,7 @@ export default {
         "gain": 3.25
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 315,
       "turnRate": 0.5,
@@ -2442,7 +2442,7 @@ export default {
       "special_bonus_unique_lion_2",
       "special_bonus_unique_lion_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -2474,7 +2474,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.5,
@@ -2539,7 +2539,7 @@ export default {
       "special_bonus_unique_shadow_shaman_3",
       "special_bonus_unique_shadow_shaman_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -2571,7 +2571,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -2634,7 +2634,7 @@ export default {
       "special_bonus_unique_slardar",
       "special_bonus_unique_slardar_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -2666,7 +2666,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -2729,7 +2729,7 @@ export default {
       "special_bonus_cooldown_reduction_25",
       "special_bonus_attack_damage_250"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -2761,7 +2761,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.5,
@@ -2826,7 +2826,7 @@ export default {
       "special_bonus_unique_witch_doctor_2",
       "special_bonus_unique_witch_doctor_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -2858,7 +2858,7 @@ export default {
         "gain": 2.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.5,
@@ -2921,7 +2921,7 @@ export default {
       "special_bonus_unique_riki_4",
       "special_bonus_unique_riki_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -2953,7 +2953,7 @@ export default {
         "gain": 1.3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.6,
@@ -3016,7 +3016,7 @@ export default {
       "special_bonus_unique_enigma_2",
       "special_bonus_unique_enigma"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -3048,7 +3048,7 @@ export default {
         "gain": 3.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.5,
@@ -3112,7 +3112,7 @@ export default {
       "special_bonus_unique_tinker",
       "special_bonus_unique_tinker_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -3144,7 +3144,7 @@ export default {
         "gain": 2.2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.6,
@@ -3207,7 +3207,7 @@ export default {
       "special_bonus_attack_range_125",
       "special_bonus_unique_sniper_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -3239,7 +3239,7 @@ export default {
         "gain": 2.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.7,
@@ -3302,7 +3302,7 @@ export default {
       "special_bonus_unique_necrophos_2",
       "special_bonus_unique_necrophos"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -3334,7 +3334,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.5,
@@ -3398,7 +3398,7 @@ export default {
       "special_bonus_unique_warlock_2",
       "special_bonus_unique_warlock_1"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -3430,7 +3430,7 @@ export default {
         "gain": 2.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -3495,7 +3495,7 @@ export default {
       "special_bonus_unique_beastmaster_4",
       "special_bonus_unique_beastmaster_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -3527,7 +3527,7 @@ export default {
         "gain": 1.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.5,
@@ -3592,7 +3592,7 @@ export default {
       "special_bonus_unique_queen_of_pain_2",
       "special_bonus_spell_block_15"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -3624,7 +3624,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -3687,7 +3687,7 @@ export default {
       "special_bonus_unique_venomancer_6",
       "special_bonus_unique_venomancer"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -3719,7 +3719,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.5,
@@ -3785,7 +3785,7 @@ export default {
       "special_bonus_unique_faceless_void_4",
       "special_bonus_unique_faceless_void_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -3817,7 +3817,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 1,
@@ -3884,7 +3884,7 @@ export default {
       "special_bonus_unique_wraith_king_2",
       "special_bonus_unique_wraith_king_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -3916,7 +3916,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -3982,7 +3982,7 @@ export default {
       "special_bonus_unique_death_prophet_4",
       "special_bonus_unique_death_prophet"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -4014,7 +4014,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.5,
@@ -4081,7 +4081,7 @@ export default {
       "special_bonus_unique_phantom_assassin_2",
       "special_bonus_unique_phantom_assassin_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -4113,7 +4113,7 @@ export default {
         "gain": 1.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.6,
@@ -4176,7 +4176,7 @@ export default {
       "special_bonus_unique_pugna_2",
       "special_bonus_unique_pugna_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -4208,7 +4208,7 @@ export default {
         "gain": 4.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 335,
       "turnRate": 0.5,
@@ -4274,7 +4274,7 @@ export default {
       "special_bonus_unique_templar_assassin_5",
       "special_bonus_unique_templar_assassin"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -4306,7 +4306,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.7,
@@ -4369,7 +4369,7 @@ export default {
       "special_bonus_unique_viper_3",
       "special_bonus_attack_damage_120"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -4401,7 +4401,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.5,
@@ -4465,7 +4465,7 @@ export default {
       "special_bonus_lifesteal_25",
       "special_bonus_unique_luna_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -4497,7 +4497,7 @@ export default {
         "gain": 1.85
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 330,
       "turnRate": 0.6,
@@ -4561,7 +4561,7 @@ export default {
       "special_bonus_strength_40",
       "special_bonus_unique_dragon_knight_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -4593,7 +4593,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.6,
@@ -4656,7 +4656,7 @@ export default {
       "special_bonus_unique_dazzle_1",
       "special_bonus_unique_dazzle_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -4688,7 +4688,7 @@ export default {
         "gain": 3.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.6,
@@ -4751,7 +4751,7 @@ export default {
       "special_bonus_unique_clockwerk_4",
       "special_bonus_unique_clockwerk"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -4783,7 +4783,7 @@ export default {
         "gain": 1.3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.6,
@@ -4846,7 +4846,7 @@ export default {
       "special_bonus_unique_leshrac_1",
       "special_bonus_unique_leshrac_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -4878,7 +4878,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 330,
       "turnRate": 0.5,
@@ -4943,7 +4943,7 @@ export default {
       "special_bonus_unique_furion_3",
       "special_bonus_unique_furion"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -4975,7 +4975,7 @@ export default {
         "gain": 2.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.6,
@@ -5042,7 +5042,7 @@ export default {
       "special_bonus_unique_lifestealer_3",
       "special_bonus_unique_lifestealer"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -5074,7 +5074,7 @@ export default {
         "gain": 1.75
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 1,
@@ -5139,7 +5139,7 @@ export default {
       "special_bonus_unique_dark_seer_4",
       "special_bonus_unique_dark_seer"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 5,
       "magicalResistance": 25
     },
@@ -5171,7 +5171,7 @@ export default {
         "gain": 2.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -5234,7 +5234,7 @@ export default {
       "special_bonus_unique_clinkz_2",
       "special_bonus_unique_clinkz_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -5266,7 +5266,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -5329,7 +5329,7 @@ export default {
       "special_bonus_unique_omniknight_1",
       "special_bonus_unique_omniknight_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -5361,7 +5361,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.6,
@@ -5424,7 +5424,7 @@ export default {
       "special_bonus_unique_enchantress_4",
       "special_bonus_unique_enchantress_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -5456,7 +5456,7 @@ export default {
         "gain": 3.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 325,
       "turnRate": 0.5,
@@ -5519,7 +5519,7 @@ export default {
       "special_bonus_attack_range_150",
       "special_bonus_unique_huskar_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -5551,7 +5551,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.5,
@@ -5616,7 +5616,7 @@ export default {
       "special_bonus_unique_night_stalker_2",
       "special_bonus_unique_night_stalker"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -5648,7 +5648,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -5713,7 +5713,7 @@ export default {
       "special_bonus_unique_broodmother_1",
       "special_bonus_unique_broodmother_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -5745,7 +5745,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 270,
       "turnRate": 0.5,
@@ -5811,7 +5811,7 @@ export default {
       "special_bonus_evasion_50",
       "special_bonus_unique_bounty_hunter_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 3,
       "magicalResistance": 25
     },
@@ -5843,7 +5843,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 315,
       "turnRate": 0.6,
@@ -5906,7 +5906,7 @@ export default {
       "special_bonus_unique_weaver_2",
       "special_bonus_unique_weaver_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -5938,7 +5938,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.5,
@@ -6001,7 +6001,7 @@ export default {
       "special_bonus_unique_jakiro_3",
       "special_bonus_unique_jakiro"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -6033,7 +6033,7 @@ export default {
         "gain": 2.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.5,
@@ -6098,7 +6098,7 @@ export default {
       "special_bonus_unique_batrider_1",
       "special_bonus_unique_batrider_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -6130,7 +6130,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 1,
@@ -6193,7 +6193,7 @@ export default {
       "special_bonus_unique_chen_1",
       "special_bonus_unique_chen_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -6225,7 +6225,7 @@ export default {
         "gain": 2.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.6,
@@ -6289,7 +6289,7 @@ export default {
       "special_bonus_unique_spectre_4",
       "special_bonus_unique_spectre_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -6321,7 +6321,7 @@ export default {
         "gain": 1.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -6389,7 +6389,7 @@ export default {
       "special_bonus_unique_doom_1",
       "special_bonus_cleave_100"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -6421,7 +6421,7 @@ export default {
         "gain": 2.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.5,
@@ -6487,7 +6487,7 @@ export default {
       "special_bonus_unique_ancient_apparition_6",
       "special_bonus_unique_ancient_apparition_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -6519,7 +6519,7 @@ export default {
         "gain": 2.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -6582,7 +6582,7 @@ export default {
       "special_bonus_unique_ursa_5",
       "special_bonus_unique_ursa_6"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 5,
       "magicalResistance": 25
     },
@@ -6614,7 +6614,7 @@ export default {
         "gain": 1.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.5,
@@ -6679,7 +6679,7 @@ export default {
       "special_bonus_unique_spirit_breaker_1",
       "special_bonus_hp_800"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -6711,7 +6711,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.5,
@@ -6775,7 +6775,7 @@ export default {
       "special_bonus_unique_gyrocopter_1",
       "special_bonus_unique_gyrocopter_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -6807,7 +6807,7 @@ export default {
         "gain": 2.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 320,
       "turnRate": 0.6,
@@ -6870,7 +6870,7 @@ export default {
       "special_bonus_unique_alchemist_3",
       "special_bonus_unique_alchemist_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -6902,7 +6902,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.6,
@@ -6976,7 +6976,7 @@ export default {
       "special_bonus_unique_invoker_2",
       "special_bonus_unique_invoker_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -7008,7 +7008,7 @@ export default {
         "gain": 4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.5,
@@ -7070,7 +7070,7 @@ export default {
       "special_bonus_unique_silencer_3",
       "special_bonus_unique_silencer_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -7102,7 +7102,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -7166,7 +7166,7 @@ export default {
       "special_bonus_unique_outworld_devourer",
       "special_bonus_spell_lifesteal_15"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0.5,
       "magicalResistance": 25
     },
@@ -7198,7 +7198,7 @@ export default {
         "gain": 2.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 315,
       "turnRate": 0.5,
@@ -7261,7 +7261,7 @@ export default {
       "special_bonus_unique_lycan_5",
       "special_bonus_unique_lycan_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -7293,7 +7293,7 @@ export default {
         "gain": 1.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.5,
@@ -7358,7 +7358,7 @@ export default {
       "special_bonus_unique_brewmaster_2",
       "special_bonus_unique_brewmaster_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -7390,7 +7390,7 @@ export default {
         "gain": 1.25
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -7456,7 +7456,7 @@ export default {
       "special_bonus_unique_shadow_demon_1",
       "special_bonus_unique_shadow_demon_7"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -7488,7 +7488,7 @@ export default {
         "gain": 2.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -7556,7 +7556,7 @@ export default {
       "special_bonus_unique_lone_druid_9",
       "special_bonus_unique_lone_druid_7"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -7588,7 +7588,7 @@ export default {
         "gain": 1.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 320,
       "turnRate": 0.5,
@@ -7652,7 +7652,7 @@ export default {
       "special_bonus_unique_chaos_knight_2",
       "special_bonus_unique_chaos_knight_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -7684,7 +7684,7 @@ export default {
         "gain": 1.2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 320,
       "turnRate": 0.5,
@@ -7750,7 +7750,7 @@ export default {
       "special_bonus_hp_600",
       "special_bonus_unique_meepo"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 3,
       "magicalResistance": 25
     },
@@ -7782,7 +7782,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.65,
@@ -7845,7 +7845,7 @@ export default {
       "special_bonus_unique_treant_5",
       "special_bonus_unique_treant_7"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -7877,7 +7877,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 265,
       "turnRate": 0.5,
@@ -7943,7 +7943,7 @@ export default {
       "special_bonus_movement_speed_90",
       "special_bonus_unique_ogre_magi_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 6,
       "magicalResistance": 25
     },
@@ -7975,7 +7975,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -8039,7 +8039,7 @@ export default {
       "special_bonus_reincarnation_200",
       "special_bonus_unique_undying_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 2,
       "magicalResistance": 25
     },
@@ -8071,7 +8071,7 @@ export default {
         "gain": 2.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.6,
@@ -8142,7 +8142,7 @@ export default {
       "special_bonus_unique_rubick_4",
       "special_bonus_unique_rubick_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -8174,7 +8174,7 @@ export default {
         "gain": 2.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 290,
       "turnRate": 0.7,
@@ -8238,7 +8238,7 @@ export default {
       "special_bonus_unique_disruptor_4",
       "special_bonus_unique_disruptor_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -8270,7 +8270,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.5,
@@ -8336,7 +8336,7 @@ export default {
       "special_bonus_agility_100",
       "special_bonus_unique_nyx_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -8368,7 +8368,7 @@ export default {
         "gain": 2.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -8434,7 +8434,7 @@ export default {
       "special_bonus_evasion_30",
       "special_bonus_unique_naga_siren_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 3,
       "magicalResistance": 25
     },
@@ -8466,7 +8466,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 315,
       "turnRate": 0.5,
@@ -8538,7 +8538,7 @@ export default {
       "special_bonus_unique_keeper_of_the_light_3",
       "special_bonus_unique_keeper_of_the_light"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -8570,7 +8570,7 @@ export default {
         "gain": 2.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 335,
       "turnRate": 0.5,
@@ -8636,7 +8636,7 @@ export default {
       "special_bonus_unique_wisp_6",
       "special_bonus_unique_wisp_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -8668,7 +8668,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.7,
@@ -8734,7 +8734,7 @@ export default {
       "special_bonus_unique_visage_5",
       "special_bonus_unique_visage_6"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 10
     },
@@ -8766,7 +8766,7 @@ export default {
         "gain": 2.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -8831,7 +8831,7 @@ export default {
       "special_bonus_unique_slark_3",
       "special_bonus_unique_slark_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -8863,7 +8863,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
@@ -8928,7 +8928,7 @@ export default {
       "special_bonus_unique_medusa_2",
       "special_bonus_unique_medusa_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -8960,7 +8960,7 @@ export default {
         "gain": 2.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 275,
       "turnRate": 0.5,
@@ -9026,7 +9026,7 @@ export default {
       "special_bonus_unique_troll_warlord",
       "special_bonus_unique_troll_warlord_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -9058,7 +9058,7 @@ export default {
         "gain": 1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -9122,7 +9122,7 @@ export default {
       "special_bonus_unique_centaur_1",
       "special_bonus_unique_centaur_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -9154,7 +9154,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.5,
@@ -9219,7 +9219,7 @@ export default {
       "special_bonus_unique_magnus_2",
       "special_bonus_unique_magnus_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -9251,7 +9251,7 @@ export default {
         "gain": 1.65
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.8,
@@ -9320,7 +9320,7 @@ export default {
       "special_bonus_unique_timbersaw",
       "special_bonus_unique_timbersaw_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -9352,7 +9352,7 @@ export default {
         "gain": 2.4
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -9417,7 +9417,7 @@ export default {
       "special_bonus_spell_lifesteal_15",
       "special_bonus_unique_bristleback_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -9449,7 +9449,7 @@ export default {
         "gain": 2.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 1,
@@ -9516,7 +9516,7 @@ export default {
       "special_bonus_unique_tusk_4",
       "special_bonus_unique_tusk_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -9548,7 +9548,7 @@ export default {
         "gain": 1.7
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.7,
@@ -9612,7 +9612,7 @@ export default {
       "special_bonus_gold_income_50",
       "special_bonus_unique_skywrath_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -9644,7 +9644,7 @@ export default {
         "gain": 3.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 330,
       "turnRate": 0.5,
@@ -9709,7 +9709,7 @@ export default {
       "special_bonus_unique_abaddon",
       "special_bonus_unique_abaddon_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -9741,7 +9741,7 @@ export default {
         "gain": 2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.5,
@@ -9808,7 +9808,7 @@ export default {
       "special_bonus_unique_elder_titan_3",
       "special_bonus_lifesteal_100"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -9840,7 +9840,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.5,
@@ -9905,7 +9905,7 @@ export default {
       "special_bonus_unique_legion_commander",
       "special_bonus_unique_legion_commander_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -9937,7 +9937,7 @@ export default {
         "gain": 2.2
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 315,
       "turnRate": 0.5,
@@ -10003,7 +10003,7 @@ export default {
       "special_bonus_unique_ember_spirit_4",
       "special_bonus_unique_ember_spirit_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -10035,7 +10035,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.5,
@@ -10102,7 +10102,7 @@ export default {
       "special_bonus_unique_earth_spirit_2",
       "special_bonus_unique_earth_spirit_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -10134,7 +10134,7 @@ export default {
         "gain": 2.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -10198,7 +10198,7 @@ export default {
       "special_bonus_unique_terrorblade",
       "special_bonus_unique_terrorblade_3"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 7,
       "magicalResistance": 25
     },
@@ -10230,7 +10230,7 @@ export default {
         "gain": 1.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 310,
       "turnRate": 0.5,
@@ -10299,7 +10299,7 @@ export default {
       "special_bonus_unique_phoenix_1",
       "special_bonus_unique_phoenix_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -10331,7 +10331,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 1,
@@ -10395,7 +10395,7 @@ export default {
       "special_bonus_unique_oracle_3",
       "special_bonus_unique_oracle"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -10427,7 +10427,7 @@ export default {
         "gain": 3.5
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 0.7,
@@ -10491,7 +10491,7 @@ export default {
       "special_bonus_attack_damage_251",
       "special_bonus_unique_techies_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 5,
       "magicalResistance": 25
     },
@@ -10523,7 +10523,7 @@ export default {
         "gain": 2.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 270,
       "turnRate": 0.5,
@@ -10585,7 +10585,7 @@ export default {
       "special_bonus_unique_winter_wyvern_3",
       "special_bonus_unique_winter_wyvern_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -10617,7 +10617,7 @@ export default {
         "gain": 3.1
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.5,
@@ -10681,7 +10681,7 @@ export default {
       "special_bonus_lifesteal_30",
       "special_bonus_unique_arc_warden"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -2,
       "magicalResistance": 25
     },
@@ -10713,7 +10713,7 @@ export default {
         "gain": 2.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 280,
       "turnRate": 0.6,
@@ -10781,7 +10781,7 @@ export default {
       "special_bonus_unique_underlord",
       "special_bonus_unique_underlord_4"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -10813,7 +10813,7 @@ export default {
         "gain": 2.6
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 285,
       "turnRate": 0.6,
@@ -10881,7 +10881,7 @@ export default {
       "special_bonus_unique_monkey_king_4",
       "special_bonus_unique_monkey_king_6"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -3,
       "magicalResistance": 25
     },
@@ -10913,7 +10913,7 @@ export default {
         "gain": 1.8
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 300,
       "turnRate": 0.6,
@@ -10978,7 +10978,7 @@ export default {
       "special_bonus_unique_pangolier_4",
       "special_bonus_unique_pangolier_5"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 1,
       "magicalResistance": 25
     },
@@ -11010,7 +11010,7 @@ export default {
         "gain": 1.9
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 305,
       "turnRate": 1,
@@ -11074,7 +11074,7 @@ export default {
       "special_bonus_attack_speed_200",
       "special_bonus_unique_dark_willow_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": -1,
       "magicalResistance": 25
     },
@@ -11106,7 +11106,7 @@ export default {
         "gain": 3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.7,
@@ -11171,7 +11171,7 @@ export default {
       "special_bonus_unique_grimstroke_1",
       "special_bonus_unique_grimstroke_2"
     ],
-    "armor": {
+    "defense": {
       "armorPhysical": 0,
       "magicalResistance": 25
     },
@@ -11203,7 +11203,7 @@ export default {
         "gain": 3.3
       }
     },
-    "movement": {
+    "mobility": {
       "capabilities": 1,
       "speed": 295,
       "turnRate": 0.6,
