@@ -1,0 +1,37 @@
+$color-map-theme: (
+  lite-fg-emphasize:       #222222,
+  lite-fg-normal:          #333333,
+  lite-fg-sub:             #888888,
+  lite-fg-placeholder:     #999999,
+  lite-fg-disabled:        #bbbbbb,
+
+  lite-bg-higher:          #f5f5f5,
+  lite-bg-high:            #fafafa,
+  lite-bg-normal:          #ffffff,
+  lite-bg-low:             #fafafa,
+  lite-bg-lower:           #f5f5f5,
+  lite-bg-hover:           #eeeeee,
+  lite-bg-disabled:        #efefef,
+
+  lite-bd-normal:          #eeeeee, // same as bg-hover
+  lite-bd-disabled:        #bbbbbb, // same as fg-disabled
+  lite-bd-focus:           #888888,
+
+  dark-fg-emphasize:       #ffffff,
+  dark-fg-normal:          #e1e1e1,
+  dark-fg-sub:             #a4b5ba,
+  dark-fg-placeholder:     #849093,
+  dark-fg-disabled:        #676e70,
+
+  dark-bg-higher:          #43474a,
+  dark-bg-high:            #313436,
+  dark-bg-normal:          #282b2d,
+  dark-bg-low:             #202224,
+  dark-bg-lower:           #161719,
+  dark-bg-hover:           #353b42,
+  dark-bg-disabled:        #525659,
+
+  dark-bd-normal:          #353b42, // same as bg-hover
+  dark-bd-disabled:        #676e70, // same as fg-disabled
+  dark-bd-focus:           #43484b,
+) !default;

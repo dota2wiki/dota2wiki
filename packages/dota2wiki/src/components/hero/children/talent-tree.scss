@@ -1,0 +1,137 @@
+/**
+ * Component: TalentTree
+ */
+@include comp('talent-tree') {
+  position: relative;
+  flex: 1;
+  padding: rem($gap-base * 2);
+
+  text-shadow: 0 rem(2) rem(2) $color-black;
+
+  @include elem('container') {
+    position: relative;
+  }
+
+  @include elem('background') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: rem($border-base * 2) solid transparent;
+  }
+
+  @include elem('wrapper', 'title', 'item', 'item-inner', 'level') {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  @include elem('wrapper') {
+    position: relative;
+    margin: 0 rem(-$gap-base);
+    padding: rem(gap('small')) 0;
+  }
+
+  @include elem('title', 'item', 'level') {
+    position: relative;
+    flex: 1 1 100%;
+    margin: rem(gap('small')) 0;
+  }
+
+  @include elem('title') {
+    z-index: 1;
+    order: -50;
+  }
+
+  @include elem('item') {
+    cursor: pointer;
+
+    z-index: 1;
+    max-width: 50%;
+    border-style: solid;
+    border-color: transparent;
+    border-top: rem($border-base * 2) rem($border-base);
+
+    @for $i from 0 through 15 {
+      @include when('#{$i}') {
+        order: (-$i * 2);
+      }
+    }
+  }
+
+  @include elem('item-inner') {
+    flex: 1;
+    align-content: center;
+    padding: rem($gap-base / 2) rem($gap-base);
+    margin: rem(-$border-base * 2);
+  }
+
+  @include elem('level') {
+    z-index: 2;
+    align-content: center;
+    max-width: 0;
+
+    @include when('10') {
+      order: -1;
+    }
+    @include when('15') {
+      order: -5;
+    }
+    @include when('20') {
+      order: -9;
+    }
+    @include when('25') {
+      order: -13;
+    }
+  }
+  @include elem('level-inner') {
+    margin: rem(-$level-size / 2);
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+
+      @include elem('background') {
+        background-color: theme($theme, 'bg', 'lower');
+        border-color: theme($theme, 'bg', 'high') theme($theme, 'bg', 'low')
+          theme($theme, 'bg', 'lower');
+      }
+      @include elem('item') {
+        color: theme($theme, 'fg', 'sub');
+        background: linear-gradient(theme($theme, 'bg', 'high'), theme($theme, 'bg'));
+        border-color: theme($theme, 'bg', 'higher') theme($theme, 'bg', 'low')
+          theme($theme, 'bg', 'lower');
+        @include when('selected') {
+          color: theme($theme, 'fg', 'emphasize');
+        }
+      }
+      @include elem('item-inner') {
+        border-color: theme($theme, 'bg', 'higher');
+      }
+    }
+  }
+
+  @include elem('item') {
+    @include when('selected') {
+      @each $position in ('left', 'right') {
+        @include when($position) {
+          @include elem('item-inner') {
+            background: radial-gradient(
+              circle at if($position == 'left', 80%, 20%),
+              rgba($highlight-color, 0.5) 10%,
+              rgba($glow-color, 0.3) 70%
+            );
+          }
+        }
+      }
+    }
+  }
+}

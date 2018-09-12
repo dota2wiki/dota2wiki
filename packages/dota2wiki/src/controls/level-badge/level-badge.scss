@@ -1,0 +1,58 @@
+/**
+ * Component: LevelBadge
+ */
+@include comp('level-badge') {
+  width: rem($level-size);
+  height: rem($level-size);
+
+  display: inline-flex;
+  vertical-align: middle;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: rem($border-base * 1);
+
+  border-radius: 50%;
+
+  color: $highlight-color;
+
+  font-weight: bold;
+  font-size: rem($level-size / 2.5);
+  line-height: 1;
+  text-shadow: (
+    0 0 rem(12) $glow-color,
+    0 0 rem(12) $glow-color,
+    0 0 rem(8) $glow-color,
+    0 0 rem(4) $glow-color
+  );
+
+  @include elem('inner') {
+    width: 100%;
+    height: 100%;
+
+    display: inline-flex;
+    vertical-align: middle;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      background-color: theme($theme, 'bg');
+
+      @include elem('inner') {
+        background: theme($theme, 'bg', 'lower');
+        border: rem($border-base * 4) solid theme($theme, 'bd');
+      }
+    }
+  }
+}

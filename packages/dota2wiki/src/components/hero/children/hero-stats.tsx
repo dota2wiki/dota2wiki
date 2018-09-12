@@ -17,12 +17,12 @@ import {
   AttackCapability,
   DefenseData,
   MobilityData,
-} from '@dota2wiki/database';
-import { toPercentage } from '@src/utils/filters';
-import {
   VisionData,
   StatusData,
-} from '../../../../../@dota2wiki/database/dist/common/models/hero';
+} from '@dota2wiki/database';
+import { toPercentage } from '@src/utils/filters';
+
+import { CTalentTree } from './talent-tree';
 
 const levelMin: number = 0;
 const levelMax: number = 24;
@@ -54,7 +54,11 @@ const manaRegenBonusSecondary: number = 0.018;
 /**
  * Component: HeroStats
  */
-@Component
+@Component({
+  components: {
+    CTalentTree,
+  },
+})
 export class CHeroStats extends Vue implements ThemeComponent {
   @Prop({ type: String })
   public readonly theme!: Theme;
@@ -71,6 +75,11 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   public get hero(): Hero {
     return this.$db.heroMap[this.name];
+  }
+
+  private selectedTalents: string[] = [];
+  private onTalentsChange(value: string[]): void {
+    this.selectedTalents = value;
   }
 
   private level: number = 0;
@@ -473,6 +482,9 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return (
       <vd-swimlane staticClass="c-hero-stats">
         <vd-container>
+          {this.selectedTalents
+            .map(t => this.$locale.dict[`DOTA_Tooltip_ability_${t}`])
+            .join(', ')}
           <vd-flexbox gap>
             {this.renderLevel()}
             {this.renderAttributes()}
@@ -480,6 +492,14 @@ export class CHeroStats extends Vue implements ThemeComponent {
             {this.renderDefense()}
             {this.renderMobility()}
             {this.renderStatus()}
+          </vd-flexbox>
+          <vd-flexbox gap>
+            <vd-flexbox flex={{ staticValue: 50, ltLg: 100 }}>
+              <c-talent-tree
+                talents={this.hero.talents}
+                onChange={this.onTalentsChange}
+              />
+            </vd-flexbox>
           </vd-flexbox>
         </vd-container>
       </vd-swimlane>
