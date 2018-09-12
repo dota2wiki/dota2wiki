@@ -11,11 +11,13 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: rem($border-base * 1);
+  padding: rem(4);
+  border: rem(1) solid transparent;
 
   border-radius: 50%;
 
   color: $highlight-color;
+  box-shadow: raise-shadow();
 
   font-weight: bold;
   font-size: rem($level-size / 2.5);
@@ -47,11 +49,15 @@
         'theme': $theme,
       )
     ) {
-      background-color: theme($theme, 'bg');
+      background: linear-gradient(
+        to bottom,
+        theme($theme, 'bg', 'higher'),
+        theme($theme, 'bg', 'normal')
+      );
+      border-color: theme($theme, 'bg', 'lower');
 
       @include elem('inner') {
         background: theme($theme, 'bg', 'lower');
-        border: rem($border-base * 4) solid theme($theme, 'bd');
       }
     }
   }
