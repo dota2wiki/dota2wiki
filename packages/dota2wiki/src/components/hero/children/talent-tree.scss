@@ -1,3 +1,5 @@
+$talent-tree-badge-transition-duration: 240ms;
+
 /**
  * Component: TalentTree
  */
@@ -30,12 +32,13 @@
   }
 
   @include elem('wrapper') {
+    justify-content: space-between;
     position: relative;
     margin: 0 rem(-$gap-base);
     padding: rem(gap('small')) 0;
   }
 
-  @include elem('title', 'item', 'level') {
+  @include elem('title', 'item', 'level', 'badge-wrapper') {
     position: relative;
     flex: 1 1 100%;
     margin: rem(gap('small')) 0;
@@ -50,12 +53,12 @@
     cursor: pointer;
 
     z-index: 1;
-    max-width: 50%;
+    max-width: 48%;
     border-style: solid;
     border-color: transparent;
     border-top: rem($border-base * 2) rem($border-base);
 
-    @for $i from 0 through 15 {
+    @for $i from 0 through 7 {
       @include when('#{$i}') {
         order: (-$i * 2);
       }
@@ -89,6 +92,84 @@
   }
   @include elem('level-inner') {
     margin: rem(-$level-size / 2);
+  }
+
+  $badge-size: 96;
+  @include elem('badge-wrapper') {
+    position: relative;
+    height: rem($badge-size);
+  }
+  @include elem('badge-background') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: rem($badge-size);
+    height: rem($badge-size);
+    background: center contain no-repeat;
+    background-image: resources('images/hud/reborn/statbranch_button_bg_psd.png');
+
+    @include when('levelup') {
+      background-image: resources('images/hud/reborn/statbranch_button_lvlup_psd.png');
+
+      @keyframes talent-tree-badge-breath {
+        from {
+          opacity: 0.3;
+        }
+        to {
+          opacity: 0.9;
+        }
+      }
+      animation: talent-tree-badge-breath 1s ease infinite alternate;
+    }
+
+    @each $level in (10, 15, 20, 25) {
+      @include when($level) {
+        opacity: 0;
+        background-image: resources(
+          'images/hud/reborn/statbranch_button_pip#{$level}_psd.png'
+        );
+      }
+      @include when-or('left', 'right') {
+        opacity: 1;
+      }
+      @include when('left') {
+        transform: rotateY(180deg);
+      }
+    }
+
+    transition: ease $talent-tree-badge-transition-duration;
+    transition-property: opacity transform;
+  }
+
+  @include elem('badge-progress') {
+    position: absolute;
+    bottom: rem(6);
+    left: 0;
+    right: 0;
+    width: rem(2);
+    margin: auto;
+    background: linear-gradient(to top, $highlight-color, $glow-color);
+
+    @for $count from 0 through 4 {
+      @include when($count) {
+        height: rem($count * 56 / 4);
+      }
+    }
+
+    @keyframes talent-tree-badge-progress-breath {
+      from {
+        box-shadow: (0 0 rem(2) rgba($glow-color, 1), 0 0 rem(3) rgba($glow-color, 1));
+      }
+      to {
+        box-shadow: (0 0 rem(4) rgba($glow-color, 1), 0 0 rem(6) rgba($glow-color, 1));
+      }
+    }
+    animation: talent-tree-badge-progress-breath 1s ease infinite alternate;
+
+    transition: height ease $talent-tree-badge-transition-duration;
   }
 
   @each $theme in $type-theme {

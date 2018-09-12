@@ -8,12 +8,6 @@
  */
 
 export default {
-  'hud/reborn/statbranch_button_bg_psd.png'                    : require('./hud/reborn/statbranch_button_bg_psd.png'),
-  'hud/reborn/statbranch_button_lvlup_psd.png'                 : require('./hud/reborn/statbranch_button_lvlup_psd.png'),
-  'hud/reborn/statbranch_button_pip10_psd.png'                 : require('./hud/reborn/statbranch_button_pip10_psd.png'),
-  'hud/reborn/statbranch_button_pip15_psd.png'                 : require('./hud/reborn/statbranch_button_pip15_psd.png'),
-  'hud/reborn/statbranch_button_pip20_psd.png'                 : require('./hud/reborn/statbranch_button_pip20_psd.png'),
-  'hud/reborn/statbranch_button_pip25_psd.png'                 : require('./hud/reborn/statbranch_button_pip25_psd.png'),
   'images/backgrounds/background_play_button_2x_png.png'       : require('./images/backgrounds/background_play_button_2x_png.png'),
   'images/backgrounds/background_play_button_large_2x_png.png' : require('./images/backgrounds/background_play_button_large_2x_png.png'),
   'images/hero_selection/allhero_overlay_psd.png'              : require('./images/hero_selection/allhero_overlay_psd.png'),
@@ -21,6 +15,12 @@ export default {
   'images/hero_selection/empty_hero_card_png.png'              : require('./images/hero_selection/empty_hero_card_png.png'),
   'images/hero_selection/suggested_ban_overlay_psd.png'        : require('./images/hero_selection/suggested_ban_overlay_psd.png'),
   'images/hero_selection/suggested_overlay_psd.png'            : require('./images/hero_selection/suggested_overlay_psd.png'),
+  'images/hud/reborn/statbranch_button_bg_psd.png'             : require('./images/hud/reborn/statbranch_button_bg_psd.png'),
+  'images/hud/reborn/statbranch_button_lvlup_psd.png'          : require('./images/hud/reborn/statbranch_button_lvlup_psd.png'),
+  'images/hud/reborn/statbranch_button_pip10_psd.png'          : require('./images/hud/reborn/statbranch_button_pip10_psd.png'),
+  'images/hud/reborn/statbranch_button_pip15_psd.png'          : require('./images/hud/reborn/statbranch_button_pip15_psd.png'),
+  'images/hud/reborn/statbranch_button_pip20_psd.png'          : require('./images/hud/reborn/statbranch_button_pip20_psd.png'),
+  'images/hud/reborn/statbranch_button_pip25_psd.png'          : require('./images/hud/reborn/statbranch_button_pip25_psd.png'),
   'images/topbar/home_logo_hover_halloween_png.png'            : require('./images/topbar/home_logo_hover_halloween_png.png'),
   'images/topbar/home_logo_hover_png.png'                      : require('./images/topbar/home_logo_hover_png.png'),
   'images/topbar/topbar_heroes_png.png'                        : require('./images/topbar/topbar_heroes_png.png'),

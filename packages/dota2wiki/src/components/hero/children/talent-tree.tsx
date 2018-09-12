@@ -28,23 +28,29 @@ export class CTalentTree extends Vue implements ThemeComponent {
   @Prop({ type: Array, required: true })
   public readonly talents!: string[];
 
-  private selectedTalents: Record<number, boolean> = {};
+  private selectedTalents: string[] = [];
+  private selectedTalentMap: Record<number, boolean> = {};
 
   @Watch('talents', { immediate: true })
-  private watchTalents(): void {
+  private resetSelectedTalents(): void {
     const map: Record<number, boolean> = {};
     this.talents.forEach((value, index) => (map[index] = false));
-    this.selectedTalents = map;
+    this.selectedTalentMap = map;
   }
 
   private onSelect(index: number): (event: MouseEvent) => void {
     return event => {
+      if (index >= (this.selectedTalents.length + 1) * 2) {
+        return;
+      }
+
       const conflictIndex: number = index % 2 === 0 ? index + 1 : index - 1;
 
-      this.selectedTalents[conflictIndex] = false;
-      this.selectedTalents[index] = true;
+      this.selectedTalentMap[conflictIndex] = false;
+      this.selectedTalentMap[index] = true;
 
-      this.$emit('change', this.talents.filter((t, i) => this.selectedTalents[i]));
+      this.selectedTalents = this.talents.filter((t, i) => this.selectedTalentMap[i]);
+      this.$emit('change', this.selectedTalents);
     };
   }
 
@@ -63,7 +69,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
                   index % 2 === 0 ? 'right' : 'left'
                 }`}
                 class={{
-                  'is-selected': this.selectedTalents[index],
+                  'is-selected': this.selectedTalentMap[index],
                 }}
                 role="button"
                 onClick={this.onSelect(index)}
@@ -92,6 +98,49 @@ export class CTalentTree extends Vue implements ThemeComponent {
               <div staticClass="c-talent-tree_level-inner">
                 <c-level-badge level={25} />
               </div>
+            </div>
+            <div staticClass="c-talent-tree_badge-wrapper">
+              <div staticClass="c-talent-tree_badge-background" />
+              <div
+                staticClass="c-talent-tree_badge-background"
+                class={{
+                  'is-levelup':
+                    (this.selectedTalentMap[0] || this.selectedTalentMap[1]) &&
+                    (!this.selectedTalentMap[6] && !this.selectedTalentMap[7]),
+                }}
+              />
+              <div
+                staticClass="c-talent-tree_badge-background is-10"
+                class={{
+                  'is-right': this.selectedTalentMap[0],
+                  'is-left': this.selectedTalentMap[1],
+                }}
+              />
+              <div
+                staticClass="c-talent-tree_badge-background is-15"
+                class={{
+                  'is-right': this.selectedTalentMap[2],
+                  'is-left': this.selectedTalentMap[3],
+                }}
+              />
+              <div
+                staticClass="c-talent-tree_badge-background is-20"
+                class={{
+                  'is-right': this.selectedTalentMap[4],
+                  'is-left': this.selectedTalentMap[5],
+                }}
+              />
+              <div
+                staticClass="c-talent-tree_badge-background is-25"
+                class={{
+                  'is-right': this.selectedTalentMap[6],
+                  'is-left': this.selectedTalentMap[7],
+                }}
+              />
+              <div
+                staticClass="c-talent-tree_badge-progress"
+                class={`is-${this.selectedTalents.length}`}
+              />
             </div>
           </div>
         </div>

@@ -178,11 +178,11 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
     background-position: 0 0;
     background-size: rem($navbar-bg-width) rem($navbar-bg-height);
     background-repeat: no-repeat;
-    background-image: resource('images/topbar/topbar_small_png.png');
+    background-image: resources('images/topbar/topbar_small_png.png');
 
     @each $bg in $navbar-backgrounds {
       @include when($bg) {
-        background-image: resource('images/topbar/topbar_#{$bg}_small_png.png');
+        background-image: resources('images/topbar/topbar_#{$bg}_small_png.png');
       }
     }
 

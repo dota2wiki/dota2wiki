@@ -1,6 +1,6 @@
 @import './all';
 
-@function resource($key) {
+@function resources($key) {
   $result: map-get($assets-map, $key);
 
   @if $result {
