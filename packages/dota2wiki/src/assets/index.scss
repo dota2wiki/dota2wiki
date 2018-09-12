@@ -1,0 +1,11 @@
+@import './all';
+
+@function resource($key) {
+  $result: map-get($assets-map, $key);
+
+  @if $result {
+    @return $result;
+  } @else {
+    @error 'Resource not found: #{$key}';
+  }
+}

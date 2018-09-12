@@ -174,7 +174,13 @@ please provide a resolver function.
 const optionsList: GenerateOptions[] = [
   // assets
   {
-    patterns: ['src/assets/**/*'],
+    patterns: [
+      'src/assets/**/*',
+      '!src/assets/all.ts',
+      '!src/assets/index.ts',
+      '!src/assets/all.scss',
+      '!src/assets/index.scss',
+    ],
     output: 'src/assets/all.ts',
     comments: ['All assets'],
     header: 'export default {',
@@ -195,6 +201,35 @@ const optionsList: GenerateOptions[] = [
         .join('\n');
     },
   },
+  {
+    patterns: [
+      'src/assets/**/*.png',
+      '!src/assets/all.ts',
+      '!src/assets/index.ts',
+      '!src/assets/all.scss',
+      '!src/assets/index.scss',
+    ],
+    output: 'src/assets/all.scss',
+    comments: ['All assets'],
+    header: '$assets-map: (',
+    footer: ');',
+    body: files => {
+      const items: { key: string; path: string }[] = files.map(f => ({
+        key: `'${f.path.replace(/^\.\//, '')}'`,
+        path: f.path.replace(/^\.\//, './assets/'),
+      }));
+
+      let maxLength: number = 0;
+      items.forEach(
+        item => (maxLength = maxLength < item.key.length ? item.key.length : maxLength),
+      );
+
+      return items
+        .map(item => `  ${item.key.padEnd(maxLength, ' ')} : url('${item.path}'),`)
+        .join('\n');
+    },
+  },
+
   // controls and components
   {
     patterns: ['src/controls/**/*.(tsx|ts)'],

@@ -13,7 +13,7 @@ import {
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
 import { Location } from 'vue-router';
 
-const backgournds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mods'];
+const backgrounds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mods'];
 
 interface NavItem {
   key: string;
@@ -125,15 +125,11 @@ export class CNavbar extends Vue implements ThemeComponent {
           )}
         </div>
         <div staticClass="c-navbar_background-wrapper">
-          <img
-            staticClass="c-navbar_background is-selected"
-            src={this.$resources['images/topbar/topbar_small_png.png']}
-          />
-          {backgournds.map((bg, index) => (
-            <img
-              staticClass="c-navbar_background"
+          <div staticClass="c-navbar_background is-selected" />
+          {backgrounds.map((bg, index) => (
+            <div
+              staticClass={`c-navbar_background is-${bg}`}
               class={{ 'is-selected': index === this.selectedIndex }}
-              src={this.$resources[`images/topbar/topbar_${bg}_small_png.png`]}
             />
           ))}
         </div>

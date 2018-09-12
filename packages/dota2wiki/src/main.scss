@@ -4,6 +4,8 @@ $root-font-size: 14;
 
 @import '../void-ui/void-ui';
 
+@import './assets/index';
+
 $namespace: 'dt';
 @import './sprites/all';
 

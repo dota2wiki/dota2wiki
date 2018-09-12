@@ -31,7 +31,6 @@ export default {
   'images/topbar/topbar_store_small_png.png'                   : require('./images/topbar/topbar_store_small_png.png'),
   'images/topbar/topbar_watch_png.png'                         : require('./images/topbar/topbar_watch_png.png'),
   'images/topbar/topbar_watch_small_png.png'                   : require('./images/topbar/topbar_watch_small_png.png'),
-  'index.ts'                                                   : require('./index.ts'),
   'sprites/attribute-icon.png'                                 : require('./sprites/attribute-icon.png'),
   'sprites/hero-avatar-h.png'                                  : require('./sprites/hero-avatar-h.png'),
   'sprites/hero-avatar-v.png'                                  : require('./sprites/hero-avatar-v.png'),
