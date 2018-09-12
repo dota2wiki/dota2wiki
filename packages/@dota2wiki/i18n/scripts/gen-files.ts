@@ -58,7 +58,7 @@ async function generateLocale(options: Options): Promise<void> {
   }
 
   const map: Record<string, Record<string, string>> = {};
-  async function loadVdf(filePrefix: string, language: string) {
+  async function loadVdf(filePrefix: string, language: string): Promise<void> {
     try {
       const filePath: string = resolve(
         `assets/${filePrefix}_${language === 'korean' ? 'koreana' : language}.txt`,
