@@ -22,7 +22,7 @@ $talent-tree-badge-transition-duration: 240ms;
     bottom: 0;
     left: 0;
     right: 0;
-    border: rem($border-base * 2) solid transparent;
+    border: rem($border-base) solid transparent;
 
     background: center / cover no-repeat
       resources('images/backgrounds/background_play_button_large_2x_png.png');
@@ -61,9 +61,7 @@ $talent-tree-badge-transition-duration: 240ms;
     z-index: 1;
     max-width: 48%;
 
-    border-style: solid;
-    border-color: transparent;
-    border-top: rem($border-base * 2) rem($border-base);
+    border: rem($border-base) solid transparent;
 
     box-shadow: raise-shadow();
 
@@ -78,7 +76,6 @@ $talent-tree-badge-transition-duration: 240ms;
     flex: 1;
     align-content: center;
     padding: rem($gap-base / 2) rem($gap-base);
-    margin: rem(-$border-base * 2);
   }
 
   @include elem('level') {
@@ -144,18 +141,37 @@ $talent-tree-badge-transition-duration: 240ms;
       animation: talent-tree-badge-breath 1s ease infinite alternate;
     }
 
+    @keyframes talent-tree-badge-leaf-breath {
+      from {
+        filter: drop-shadow(0 0 rem(2) $glow-color);
+      }
+      to {
+        filter: drop-shadow(0 0 rem(3) $glow-color);
+      }
+    }
+
     @each $level in (10, 15, 20, 25) {
       @include when($level) {
         opacity: 0;
         background-image: resources(
           'images/hud/reborn/statbranch_button_pip#{$level}_psd.png'
         );
+
+        animation: talent-tree-badge-leaf-breath 1s ease infinite alternate;
       }
       @include when-or('left', 'right') {
         opacity: 1;
       }
       @include when('left') {
         transform: rotateY(180deg);
+      }
+    }
+
+    @each $level in (10, 15, 20, 25) {
+      @include when($level) {
+        background-image: resources(
+          'images/hud/reborn/statbranch_button_pip#{$level}_psd.png'
+        );
       }
     }
 
@@ -180,10 +196,10 @@ $talent-tree-badge-transition-duration: 240ms;
 
     @keyframes talent-tree-badge-progress-breath {
       from {
-        box-shadow: (0 0 rem(2) rgba($glow-color, 1), 0 0 rem(3) rgba($glow-color, 1));
+        box-shadow: (0 0 rem(2) $glow-color, 0 0 rem(3) rgba($glow-color, 0.5));
       }
       to {
-        box-shadow: (0 0 rem(4) rgba($glow-color, 1), 0 0 rem(6) rgba($glow-color, 1));
+        box-shadow: (0 0 rem(4) $glow-color, 0 0 rem(6) rgba($glow-color, 0.5));
       }
     }
     animation: talent-tree-badge-progress-breath 1s ease infinite alternate;
@@ -201,20 +217,17 @@ $talent-tree-badge-transition-duration: 240ms;
 
       @include elem('container') {
         background-color: theme($theme, 'bg', 'low');
-        border-color: theme($theme, 'bg', 'high') theme($theme, 'bg', 'low')
-          theme($theme, 'bg', 'lower');
+      }
+      @include elem('background') {
+        border-color: theme($theme, 'bg', 'lower');
       }
       @include elem('item') {
         color: theme($theme, 'fg', 'sub');
-        background: linear-gradient(theme($theme, 'bg', 'high'), theme($theme, 'bg'));
-        border-color: theme($theme, 'bg', 'higher') theme($theme, 'bg', 'low')
-          theme($theme, 'bg', 'lower');
+        background: theme($theme, 'bg');
+        border-color: theme($theme, 'bg', 'lower');
         @include when('selected') {
           color: theme($theme, 'fg', 'emphasize');
         }
-      }
-      @include elem('item-inner') {
-        border-color: theme($theme, 'bg', 'higher');
       }
     }
   }

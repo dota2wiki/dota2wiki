@@ -22,12 +22,7 @@
   font-weight: bold;
   font-size: rem($level-size / 2.5);
   line-height: 1;
-  text-shadow: (
-    0 0 rem(12) $glow-color,
-    0 0 rem(12) $glow-color,
-    0 0 rem(8) $glow-color,
-    0 0 rem(4) $glow-color
-  );
+  text-shadow: (0 0 rem(12) $glow-color, 0 0 rem(8) $glow-color, 0 0 rem(4) $glow-color);
 
   @include elem('inner') {
     width: 100%;
@@ -49,11 +44,7 @@
         'theme': $theme,
       )
     ) {
-      background: linear-gradient(
-        to bottom,
-        theme($theme, 'bg', 'higher'),
-        theme($theme, 'bg', 'normal')
-      );
+      background-color: theme($theme, 'bg', 'high');
       border-color: theme($theme, 'bg', 'lower');
 
       @include elem('inner') {
