@@ -2,16 +2,17 @@
  * Component: Info
  */
 @include comp('info') {
-  position: relative;
-  flex: 1;
-  width: 100%;
   height: 100%;
 
-  $font-size: 14;
-  $line-height: 22;
+  @include elem('background') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-  font-size: rem($font-size);
-  line-height: rem($line-height);
+    opacity: $opacity-background;
+  }
 
   @include elem('wrapper') {
     display: flex;
@@ -19,6 +20,12 @@
     justify-content: flex-start;
     align-content: stretch;
     align-items: stretch;
+
+    $font-size: 14;
+    $line-height: 22;
+
+    font-size: rem($font-size);
+    line-height: rem($line-height);
 
     margin: rem(-($line-height - $font-size) / 2) 0;
   }
@@ -63,6 +70,9 @@
         'theme': $theme,
       )
     ) {
+      @include elem('background') {
+        background-color: theme($theme, 'bg', 'lower');
+      }
       @include elem('label') {
         color: theme($theme, 'fg', 'sub');
       }

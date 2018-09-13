@@ -6,27 +6,33 @@ $talent-tree-badge-transition-duration: 240ms;
 @include comp('talent-tree') {
   position: relative;
   flex: 1;
-  padding: 0 rem($gap-base * 2);
+  padding: 0 rem($gap-base);
 
   text-shadow: 0 rem(2) rem(2) $color-black;
 
   @include elem('container') {
     position: relative;
+    border: rem($border-base) solid transparent;
 
     box-shadow: raise-shadow();
   }
 
-  @include elem('background') {
+  @include elem('background', 'background-texture') {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    border: rem($border-base) solid transparent;
+  }
 
-    background: center / cover no-repeat
-      resources('images/backgrounds/background_play_button_large_2x_png.png');
-    mix-blend-mode: multiply;
+  @include elem('background') {
+    opacity: $opacity-background;
+  }
+
+  @include elem('background-texture') {
+    // background: center / cover no-repeat
+    //   resources('images/backgrounds/background_play_button_large_2x_png.png');
+    background-blend-mode: multiply;
   }
 
   @include elem('wrapper', 'title', 'item', 'item-inner', 'level') {
@@ -53,6 +59,8 @@ $talent-tree-badge-transition-duration: 240ms;
   @include elem('title') {
     z-index: 1;
     order: -50;
+
+    font-weight: normal;
   }
 
   @include elem('item') {
@@ -102,6 +110,8 @@ $talent-tree-badge-transition-duration: 240ms;
 
   $badge-size: 96;
   @include elem('badge-wrapper') {
+    cursor: pointer;
+
     position: relative;
     max-width: rem($badge-size);
     height: rem($badge-size);
@@ -216,10 +226,10 @@ $talent-tree-badge-transition-duration: 240ms;
       color: theme($theme);
 
       @include elem('container') {
-        background-color: theme($theme, 'bg', 'low');
+        border-color: theme($theme, 'bd');
       }
       @include elem('background') {
-        border-color: theme($theme, 'bg', 'lower');
+        background-color: theme($theme, 'bg', 'lower');
       }
       @include elem('item') {
         color: theme($theme, 'fg', 'sub');

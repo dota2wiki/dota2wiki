@@ -17,6 +17,7 @@ export default class VIndex extends Vue {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-index">
+        <c-background />
         <c-navbar />
         <router-view staticClass="v-app_content" />
       </div>

@@ -27,6 +27,8 @@ import { CTalentTree } from './talent-tree';
 const levelMin: number = 0;
 const levelMax: number = 24;
 
+const attackRateBase: number = 1.7;
+
 const spellAmpBonusPrimary: number = 0.000875;
 const spellAmpBonusSecondary: number = 0.0007;
 
@@ -173,10 +175,11 @@ export class CHeroStats extends Vue implements ThemeComponent {
   public get attackSpeed(): number {
     return 100 + this.attributeAgility;
   }
+  public get hasFakeAttackSpeed(): boolean {
+    return this.attack.rate !== attackRateBase;
+  }
   public get attackSpeedFake(): number {
-    return this.attackRate === 1.7
-      ? this.attackSpeed
-      : (1.7 / this.attackRate) * (100 + this.attributeAgility);
+    return (attackRateBase / this.attackRate) * (100 + this.attributeAgility);
   }
   public get attackPerSecond(): number {
     return this.attackSpeed / 100 / this.attackRate;
@@ -225,7 +228,11 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return (
       <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_Attack']}>
         <c-info-row label={this.$locale.dict['dota_ability_variable_attack']}>
-          <c-info-value float fake value={this.attackSpeedFake} />
+          {this.hasFakeAttackSpeed ? (
+            <c-info-value float fake value={this.attackSpeedFake} />
+          ) : (
+            h()
+          )}
           <c-info-value float value={this.attackSpeed} />
         </c-info-row>
         <c-info-row label={this.$locale.dict['DOTA_HeroStats_AttackRate_Name']}>

@@ -8,6 +8,11 @@
  */
 
 export default {
+  'bg/direancient_loadingscreen.jpg'                           : require('./bg/direancient_loadingscreen.jpg'),
+  'bg/fall_major_2016_loadscreen_1.jpg'                        : require('./bg/fall_major_2016_loadscreen_1.jpg'),
+  'bg/jollyroger_loading.jpg'                                  : require('./bg/jollyroger_loading.jpg'),
+  'bg/pyxl_ancients.jpg'                                       : require('./bg/pyxl_ancients.jpg'),
+  'bg/radiantancient_loadingscreen.jpg'                        : require('./bg/radiantancient_loadingscreen.jpg'),
   'images/backgrounds/background_play_button_2x_png.png'       : require('./images/backgrounds/background_play_button_2x_png.png'),
   'images/backgrounds/background_play_button_large_2x_png.png' : require('./images/backgrounds/background_play_button_large_2x_png.png'),
   'images/hero_selection/allhero_overlay_psd.png'              : require('./images/hero_selection/allhero_overlay_psd.png'),

@@ -1,0 +1,71 @@
+/**
+ * Component: Background
+ */
+@include comp('background') {
+  $blur-amount: 8;
+
+  position: absolute;
+  top: rem($navbar-main-height);
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  overflow: hidden;
+
+  @include elem('image') {
+    position: absolute;
+    top: rem(-$blur-amount);
+    bottom: rem(-$blur-amount);
+    left: rem(-$blur-amount);
+    right: rem(-$blur-amount);
+
+    background: center / cover repeat;
+  }
+
+  @each $token,
+    $key
+      in (
+        default: 'bg/pyxl_ancients.jpg',
+        good: 'bg/radiantancient_loadingscreen.jpg',
+        bad: 'bg/direancient_loadingscreen.jpg'
+      )
+  {
+    @include prop(
+      (
+        'token': $token,
+      )
+    ) {
+      @include elem('image') {
+        background-image: resources($key);
+      }
+    }
+  }
+
+  @include elem('multiply') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0.1;
+
+    background-blend-mode: multiply;
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      @include elem('image') {
+        filter: blur(rem($blur-amount)) saturate(0.9)
+          brightness(if($theme == 'dark', 0.8, 1.2));
+      }
+      @include elem('multiply') {
+        background-color: theme($theme, 'bg');
+      }
+    }
+  }
+}

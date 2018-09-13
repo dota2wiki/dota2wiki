@@ -8,6 +8,7 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { Team } from '@dota2wiki/database';
 import { CHeroDetail } from '@src/components/hero/hero-detail';
 
 /**
@@ -19,6 +20,11 @@ import { CHeroDetail } from '@src/components/hero/hero-detail';
   },
 })
 export default class VHero extends Vue {
+  private mounted(): void {
+    this.$dt_background.token =
+      this.$db.heroMap[this.$route.params.name].team === Team.good ? 'good' : 'bad';
+  }
+
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-hero">

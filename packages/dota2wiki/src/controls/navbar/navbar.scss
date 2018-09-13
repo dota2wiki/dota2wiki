@@ -216,11 +216,11 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
   @include elem('sub') {
     background: linear-gradient(
       to right,
-      rgba($color-black, 0.75),
-      rgba($color-black, 0.75)
+      rgba($color-black, 0.5),
+      rgba($color-black, 0.5)
         rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 5),
       transparent
-        rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 6)
+        rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 7)
     );
   }
 }

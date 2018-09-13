@@ -204,6 +204,7 @@ const optionsList: GenerateOptions[] = [
   {
     patterns: [
       'src/assets/**/*.png',
+      'src/assets/**/*.jpg',
       '!src/assets/all.ts',
       '!src/assets/index.ts',
       '!src/assets/all.scss',

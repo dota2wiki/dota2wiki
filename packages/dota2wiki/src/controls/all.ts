@@ -7,6 +7,7 @@
  * All controls.
  */
 
+export * from './background/background';
 export * from './layout/info/info';
 export * from './navbar/navbar';
 export * from './widget/level-badge/level-badge';

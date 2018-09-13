@@ -36,6 +36,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
     const map: Record<number, boolean> = {};
     this.talents.forEach((value, index) => (map[index] = false));
     this.selectedTalentMap = map;
+    this.selectedTalents = [];
   }
 
   private onSelect(index: number): (event: MouseEvent) => void {
@@ -59,6 +60,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
       <div staticClass="c-talent-tree" class={this.classes}>
         <div staticClass="c-talent-tree_container">
           <div staticClass="c-talent-tree_background" />
+          <div staticClass="c-talent-tree_background-texture" />
           <div staticClass="c-talent-tree_wrapper">
             <h3 staticClass="c-talent-tree_title">
               {this.$locale.dict['DOTA_StatBranch_TooltipTitle']}
@@ -99,7 +101,12 @@ export class CTalentTree extends Vue implements ThemeComponent {
                 <c-level-badge level={25} />
               </div>
             </div>
-            <div staticClass="c-talent-tree_badge-wrapper">
+            <div
+              staticClass="c-talent-tree_badge-wrapper"
+              role="button"
+              onClick={this.resetSelectedTalents}
+              title={this.$locale.dict['dota_settings_help_tips_reset']}
+            >
               <div staticClass="c-talent-tree_badge is-background" />
               <div
                 staticClass="c-talent-tree_badge"

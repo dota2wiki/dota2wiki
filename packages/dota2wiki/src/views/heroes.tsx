@@ -19,6 +19,10 @@ import { CHeroesWall } from '@src/components/heroes/heroes-wall';
   },
 })
 export default class VHeroes extends Vue {
+  private mounted(): void {
+    this.$dt_background.token = 'default';
+  }
+
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-heroes">
