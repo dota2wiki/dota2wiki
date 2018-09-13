@@ -17,94 +17,90 @@ const backgrounds: string[] = ['home', 'heroes', 'store', 'watch', 'learn', 'mod
 
 interface NavItem {
   key: string;
-  to: Location;
-  sub?: string[];
+  to: string;
+  matched: boolean;
+  expected?: string[];
   children?: NavItem[];
 }
-
-const navItems: NavItem[] = [
-  {
-    key: 'DOTA_HUD_BackToDashboard',
-    to: {
-      name: 'home',
-    },
-  },
-  {
-    key: 'dota_hero',
-    to: {
-      name: 'heroes',
-    },
-    children: [
-      {
-        key: 'dota_hero',
-        to: {
-          name: 'heroes',
-        },
-        sub: ['hero'],
-      },
-      {
-        key: 'DOTA_SHOP_ITEMS',
-        to: {
-          name: 'items',
-        },
-        sub: ['item'],
-      },
-    ],
-  },
-];
 
 /**
  * Component: Navbar
  */
 @Component
 export class CNavbar extends Vue {
-
-  private language: string = '';
-
   private selectedIndex: number = 0;
+
+  private navItems: NavItem[] = [
+    {
+      key: 'DOTA_HUD_BackToDashboard',
+      to: '',
+      matched: false,
+      expected: ['home'],
+    },
+    {
+      key: 'dota_hero',
+      to: '/heroes',
+      matched: false,
+      children: [
+        {
+          key: 'dota_hero',
+          to: '/heroes',
+          matched: false,
+          expected: ['heroes', 'hero'],
+        },
+        {
+          key: 'DOTA_SHOP_ITEMS',
+          to: '/items',
+          matched: false,
+          expected: ['items', 'item'],
+        },
+      ],
+    },
+  ];
 
   @Watch('$route', { immediate: true })
   private watchRoute(): void {
-    this.language = this.$route.params.language;
-    this.$locale.selectLanguage(this.language);
+    this.navItems.forEach(item => {
+      const expected: string[] = [
+        ...(item.expected ? item.expected : []),
+        ...(item.children
+          ? item.children.reduce<string[]>((r, c) => {
+              r.push(...(c.expected || []));
 
-    for (const { name } of this.$route.matched) {
-      if (name) {
-        const index: number = navItems.findIndex(
-          item =>
-            item.to.name === name ||
-            (!!item.sub && item.sub.includes(name)) ||
-            (!!item.children &&
-              !!item.children.find(
-                child =>
-                  child.to.name === name || (!!child.sub && child.sub.includes(name)),
-              )),
+              return r;
+            }, [])
+          : []),
+      ];
+
+      item.matched = !!expected.find(e => !!this.$route.matched.find(m => m.name === e));
+
+      if (item.children) {
+        item.children.forEach(
+          child =>
+            (child.matched =
+              !!child.expected &&
+              !!child.expected.find(e => !!this.$route.matched.find(m => m.name === e))),
         );
-        if (index > -1) {
-          this.selectedIndex = index;
-          break;
-        }
       }
-    }
+    });
+
+    this.selectedIndex = this.navItems.findIndex(item => item.matched);
   }
 
   private render(h: CreateElement): VNode {
     return (
       <header role="banner" staticClass="c-navbar">
         <div staticClass="c-navbar_sub-wrapper">
-          {navItems.slice(1).map(
-            (item, index) =>
+          {this.navItems.slice(1).map(
+            item =>
               item.children ? (
-                <div
-                  staticClass="c-navbar_sub"
-                  class={{ 'is-selected': index + 1 === this.selectedIndex }}
-                >
+                <div staticClass="c-navbar_sub" class={{ 'is-matched': item.matched }}>
                   <div staticClass="c-navbar_sub-background" />
                   {item.children.map(child => (
                     <router-link
                       staticClass="c-navbar_sub-item"
-                      active-class="is-selected"
-                      to={child.to}
+                      class={{ 'is-matched': child.matched }}
+                      to={`/${this.$locale.language}${child.to}`}
                     >
                       {this.$locale.dict[child.key]}
                     </router-link>
@@ -120,17 +116,17 @@ export class CNavbar extends Vue {
           {backgrounds.map((bg, index) => (
             <div
               staticClass={`c-navbar_background is-${bg}`}
-              class={{ 'is-selected': index === this.selectedIndex }}
+              class={{ 'is-matched': index === this.selectedIndex }}
             />
           ))}
         </div>
         <div staticClass="c-navbar_main">
-          <div staticClass="c-navbar_left">{this.language}</div>
+          <div staticClass="c-navbar_left">{this.$locale.language}</div>
           <div staticClass="c-navbar_center">
             <router-link
               staticClass="c-navbar_item-home"
-              class={{ 'is-selected': 0 === this.selectedIndex }}
-              to={navItems[0].to}
+              class={{ 'is-matched': this.navItems[0].matched }}
+              to={`/${this.$locale.language}${this.navItems[0].to}`}
               title={this.$locale.dict['DOTA_HUD_BackToDashboard']}
             >
               <img
@@ -138,11 +134,11 @@ export class CNavbar extends Vue {
                 src={this.$resources['images/topbar/home_logo_hover_png.png']}
               />
             </router-link>
-            {navItems.slice(1).map((item, index) => (
+            {this.navItems.slice(1).map(item => (
               <router-link
                 staticClass="c-navbar_item"
-                class={{ 'is-selected': index + 1 === this.selectedIndex }}
-                to={item.to}
+                class={{ 'is-matched': item.matched }}
+                to={`/${this.$locale.language}${item.to}`}
               >
                 {this.$locale.dict[item.key]}
               </router-link>

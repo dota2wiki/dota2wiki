@@ -129,7 +129,7 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
     bottom: rem($navbar-sub-height);
     opacity: 0;
 
-    @include when('selected') {
+    @include when('matched') {
       bottom: 0;
       opacity: 1;
     }
@@ -187,7 +187,7 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
     }
 
     opacity: 0;
-    @include when('selected') {
+    @include when('matched') {
       opacity: 1;
     }
     transition: opacity ease-in-out $navbar-transition-duration;
@@ -206,7 +206,7 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
     &:hover {
       color: theme('dark', 'fg', 'emphasize');
     }
-    @include when('selected') {
+    @include when('matched') {
       color: theme('dark', 'fg', 'emphasize');
     }
   }
