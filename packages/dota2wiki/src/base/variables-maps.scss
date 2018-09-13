@@ -1,3 +1,5 @@
+// theme
+
 $color-map-theme-dark: (
   fg-emphasize:       #ffffff,
   fg-normal:          #e1e1e1,
@@ -16,4 +18,22 @@ $color-map-theme-dark: (
   bd-normal:          #353b42, // same as bg-hover
   bd-disabled:        #676e70, // same as fg-disabled
   bd-focus:           #43484b,
+);
+
+// tone
+
+$color-map-tone-primary: (
+  darkener:   #bc270d,
+  darken:     #c7290e,
+  standard:   #d52c0f,
+  lighten:    #e83010,
+  lightener:  #f43211,
+);
+
+$color-map-tone-secondary: (
+  darkener:   #0d80bc,
+  darken:     #0e89c7,
+  standard:   #0f94d6,
+  lighten:    #10a0e8,
+  lightener:  #11a9f5,
 );
