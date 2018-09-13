@@ -9,8 +9,8 @@ import {
   Watch,
 } from 'vue-property-decorator';
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
-import { CHeroPortrait } from './children/hero-portrait';
-import { CHeroStats } from './children/hero-stats';
+import { CHeroPortrait } from './dashboard/hero-portrait';
+import { CHeroStats } from './dashboard/hero-stats';
 
 /**
  * Component: HeroDetail

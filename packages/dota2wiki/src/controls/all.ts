@@ -7,5 +7,5 @@
  * All controls.
  */
 
-export * from './level-badge/level-badge';
 export * from './navbar/navbar';
+export * from './widget/level-badge/level-badge';

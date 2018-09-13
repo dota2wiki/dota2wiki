@@ -91,12 +91,12 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return (
       <vd-flexbox flex={100} gap>
         <vd-flexbox flex="none">
-          <vd-button shape="square" onClick={() => (this.level = 0)}>
+          <vd-button shape="square" tone="secondary" onClick={() => (this.level = 0)}>
             min
           </vd-button>
         </vd-flexbox>
         <vd-flexbox flex="none">
-          <vd-button shape="square" onClick={() => this.level--}>
+          <vd-button shape="square" tone="secondary" onClick={() => this.level--}>
             -
           </vd-button>
         </vd-flexbox>
@@ -104,12 +104,12 @@ export class CHeroStats extends Vue implements ThemeComponent {
         <vd-flexbox flex="none">Level: {this.level + 1}</vd-flexbox>
 
         <vd-flexbox flex="none">
-          <vd-button shape="square" onClick={() => this.level++}>
+          <vd-button shape="square" tone="secondary" onClick={() => this.level++}>
             +
           </vd-button>
         </vd-flexbox>
         <vd-flexbox flex="none">
-          <vd-button shape="square" onClick={() => (this.level = 24)}>
+          <vd-button shape="square" tone="secondary" onClick={() => (this.level = 24)}>
             max
           </vd-button>
         </vd-flexbox>

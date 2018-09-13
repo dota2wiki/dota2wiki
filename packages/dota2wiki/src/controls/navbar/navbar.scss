@@ -21,7 +21,7 @@ $navbar-bg-width: 1920;
 $navbar-bg-height: 164;
 
 $navbar-main-font-size: 24;
-$navbar-sub-font-size: 15;
+$navbar-sub-font-size: 16;
 
 $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
 
@@ -34,6 +34,8 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
   height: rem($navbar-main-height + $navbar-sub-height);
   width: 100%;
   overflow: hidden;
+
+  line-height: 1;
 
   // main
 
@@ -214,8 +216,8 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
   @include elem('sub') {
     background: linear-gradient(
       to right,
-      theme('dark', 'bg', 'lower'),
-      theme('dark', 'bg', 'lower')
+      rgba($color-black, 0.75),
+      rgba($color-black, 0.75)
         rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 5),
       transparent
         rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 6)
