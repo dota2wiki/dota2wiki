@@ -57,12 +57,7 @@ const navItems: NavItem[] = [
  * Component: Navbar
  */
 @Component
-export class CNavbar extends Vue implements ThemeComponent {
-  @Prop({ type: String })
-  public readonly theme?: Theme;
-  public get themeValue(): Theme {
-    return this.theme || this.$vd_theme.theme;
-  }
+export class CNavbar extends Vue {
 
   private language: string = '';
 
@@ -93,13 +88,9 @@ export class CNavbar extends Vue implements ThemeComponent {
     }
   }
 
-  public get classes(): ClassName {
-    return [`cp-theme_${this.themeValue}`];
-  }
-
   private render(h: CreateElement): VNode {
     return (
-      <header role="banner" staticClass="c-navbar" class={this.classes}>
+      <header role="banner" staticClass="c-navbar">
         <div staticClass="c-navbar_sub-wrapper">
           {navItems.slice(1).map(
             (item, index) =>

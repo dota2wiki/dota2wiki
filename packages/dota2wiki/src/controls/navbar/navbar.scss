@@ -199,33 +199,26 @@ $navbar-backgrounds: 'home', 'heroes', 'store', 'watch', 'learn', 'mods';
     transition: color ease-in-out $navbar-transition-duration;
   }
 
-  @each $theme in $type-theme {
-    @include prop(
-      (
-        'theme': $theme,
-      )
-    ) {
-      color: theme($theme);
+  color: theme('dark');
 
-      @include elem('item', 'sub-item') {
-        color: theme($theme, 'fg', 'sub');
-        &:hover {
-          color: theme($theme, 'fg', 'emphasize');
-        }
-        @include when('selected') {
-          color: theme($theme, 'fg', 'emphasize');
-        }
-      }
-
-      @include elem('sub') {
-        background: linear-gradient(
-          to right,
-          theme($theme, 'bg', 'lower'),
-          theme($theme, 'bg', 'lower')
-            rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 5),
-          transparent
-        );
-      }
+  @include elem('item', 'sub-item') {
+    color: theme('dark', 'fg', 'sub');
+    &:hover {
+      color: theme('dark', 'fg', 'emphasize');
     }
+    @include when('selected') {
+      color: theme('dark', 'fg', 'emphasize');
+    }
+  }
+
+  @include elem('sub') {
+    background: linear-gradient(
+      to right,
+      theme('dark', 'bg', 'lower'),
+      theme('dark', 'bg', 'lower')
+        rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 5),
+      transparent
+        rem($navbar-left-width + $navbar-item-width_home + $navbar-item-width * 6)
+    );
   }
 }
