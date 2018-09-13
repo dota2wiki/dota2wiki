@@ -223,44 +223,43 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   private renderAttack(): VNode {
     return (
-      <vd-flexbox gap direction="column">
-        <vd-flexbox tag="h3">
-          {this.$locale.dict['DOTA_HeroStats_Castegory_Attack']}
-        </vd-flexbox>
-        <vd-flexbox>
-          <span>
-            {this.$locale.dict['DOTA_HeroStats_AttackRate_Name']}/
-            {this.$locale.dict['dota_ability_variable_attack']}:
-          </span>
-          <span>
-            {this.attackRate.toFixed(2)}|{this.attackSpeed.toFixed(2)}(
-            {this.attackSpeedFake.toFixed(2)}) |{this.attackPerSecond.toFixed(2)}
-            /s |{this.attackInterval.toFixed(2)}s
-          </span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Damage_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_Damage_Name']}:</span>
-          <span>
-            {this.damageMin.toFixed(2)}-{this.damageMax.toFixed(2)}
-          </span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_AttackRange_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_AttackRange_Name']}:</span>
-          <span>{this.attackRange}</span>
-        </vd-flexbox>
+      <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_Attack']}>
+        <c-info-row label={this.$locale.dict['dota_ability_variable_attack']}>
+          <c-info-value float fake value={this.attackSpeedFake} />
+          <c-info-value float value={this.attackSpeed} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HeroStats_AttackRate_Name']}>
+          <c-info-value float value={this.attackPerSecond} right="/s" />
+          <c-info-value float value={this.attackInterval} right="s" />
+        </c-info-row>
+
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_Damage_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Damage_Desc']}
+        >
+          <c-info-value float value={this.damageMin} />-
+          <c-info-value float value={this.damageMax} />
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_AttackRange_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_AttackRange_Desc']}
+        >
+          <c-info-value value={this.attackRange} />
+        </c-info-row>
         {this.hero.attack.capability === AttackCapability.DOTA_UNIT_CAP_RANGED_ATTACK ? (
-          <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Desc']}>
-            <span>{this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Name']}:</span>
-            <span>{this.projectileSpeed}</span>
-          </vd-flexbox>
+          <c-info-row
+            label={this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Name']}
+            title={this.$locale.dict['DOTA_HeroStats_ProjectileSpeed_Desc']}
+          >
+            <c-info-value value={this.projectileSpeed} />
+          </c-info-row>
         ) : (
           h()
         )}
-        <vd-flexbox>
-          <span>{this.$locale.dict['DOTA_HUD_SpellAmp']}:</span>
-          <span>{toPercentage(this.spellAmp)}</span>
-        </vd-flexbox>
-      </vd-flexbox>
+        <c-info-row label={this.$locale.dict['DOTA_HUD_SpellAmp']}>
+          <c-info-value percentage value={this.spellAmp} />
+        </c-info-row>
+      </c-info>
     );
   }
 
@@ -308,31 +307,26 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   private renderDefense(): VNode {
     return (
-      <vd-flexbox gap direction="column">
-        <vd-flexbox tag="h3">
-          {this.$locale.dict['DOTA_HeroStats_Castegory_Defense']}
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Armor_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_Armor_Name']}:</span>
-          <span>{this.armor.toFixed(2)}</span>
-        </vd-flexbox>
-        <vd-flexbox>
-          <span>{this.$locale.dict['DOTA_HUD_PhysicalResist']}:</span>
-          <span>{toPercentage(this.physicalResist)}</span>
-        </vd-flexbox>
-        <vd-flexbox>
-          <span>{this.$locale.dict['DOTA_HUD_MagicResist']}:</span>
-          <span>{toPercentage(this.magicResist)}</span>
-        </vd-flexbox>
-        <vd-flexbox>
-          <span>{this.$locale.dict['DOTA_HUD_StatusResist']}:</span>
-          <span>{toPercentage(this.statusResist)}</span>
-        </vd-flexbox>
-        <vd-flexbox>
-          <span>{this.$locale.dict['DOTA_HUD_Evasion']}:</span>
-          <span>{toPercentage(this.evasion)}</span>
-        </vd-flexbox>
-      </vd-flexbox>
+      <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_Defense']}>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_Armor_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Armor_Desc']}
+        >
+          <c-info-value float value={this.armor} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HUD_PhysicalResist']}>
+          <c-info-value percentage value={this.physicalResist} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HUD_MagicResist']}>
+          <c-info-value percentage value={this.magicResist} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HUD_StatusResist']}>
+          <c-info-value percentage value={this.statusResist} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HUD_Evasion']}>
+          <c-info-value percentage value={this.evasion} />
+        </c-info-row>
+      </c-info>
     );
   }
 
@@ -368,27 +362,27 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   private renderMobility(): VNode {
     return (
-      <vd-flexbox gap direction="column">
-        <vd-flexbox tag="h3">
-          {this.$locale.dict['DOTA_HeroStats_Castegory_Mobility']}
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_MovementSpeed_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_MovementSpeed_Name']}:</span>
-          <span>{this.movementSpeed.toFixed(2)}</span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_TurnRate_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_TurnRate_Name']}:</span>
-          <span>{this.turnRate.toFixed(2)}</span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_SightRange_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_SightRange_Name']}:</span>
-          <span>
-            {this.$locale.dict['TimeOfDay_Day']}
-            {this.visionDay}/{this.$locale.dict['TimeOfDay_Night']}
-            {this.visionNight}
-          </span>
-        </vd-flexbox>
-      </vd-flexbox>
+      <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_Mobility']}>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_MovementSpeed_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_MovementSpeed_Desc']}
+        >
+          <c-info-value float value={this.movementSpeed} />
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_TurnRate_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_TurnRate_Desc']}
+        >
+          <c-info-value float value={this.turnRate} />
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_SightRange_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_SightRange_Desc']}
+        >
+          <c-info-value value={this.visionDay} />/
+          <c-info-value value={this.visionNight} />
+        </c-info-row>
+      </c-info>
     );
   }
 
@@ -446,7 +440,7 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   private renderStatus(): VNode {
     return (
-      <vd-flexbox gap direction="column">
+      <vd-flexbox gap="small" direction="column">
         <vd-flexbox tag="h3">
           {this.$locale.dict['DOTA_HeroStats_Castegory_HealthMana']}
         </vd-flexbox>
@@ -482,13 +476,19 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return (
       <vd-swimlane staticClass="c-hero-stats">
         <vd-container>
-          <vd-flexbox gap>
-            {this.renderLevel()}
-            {this.renderAttributes()}
-            {this.renderAttack()}
-            {this.renderDefense()}
-            {this.renderMobility()}
-            {this.renderStatus()}
+          <vd-flexbox gap align="stretch">
+            <vd-flexbox flex={100}>{this.renderLevel()}</vd-flexbox>
+            <vd-flexbox flex={100}>{this.renderAttributes()}</vd-flexbox>
+            <vd-flexbox flex={100}>{this.renderStatus()}</vd-flexbox>
+            {[this.renderAttack, this.renderDefense, this.renderMobility].map(r => (
+              <vd-flexbox
+                flex={{
+                  ltMd: 100,
+                }}
+              >
+                {r()}
+              </vd-flexbox>
+            ))}
           </vd-flexbox>
           <vd-flexbox gap>
             <vd-flexbox flex={{ staticValue: 50, ltLg: 100 }}>

@@ -1,0 +1,71 @@
+/**
+ * Component: Info
+ */
+@include comp('info') {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  $font-size: 14;
+  $line-height: 22;
+
+  font-size: rem($font-size);
+  line-height: rem($line-height);
+
+  @include elem('wrapper') {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+
+    margin: rem(-($line-height - $font-size) / 2) 0;
+  }
+
+  @include elem('row') {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  @include elem('label') {
+    flex: none;
+    width: rem(96);
+  }
+
+  @include elem('value-wrapper') {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    margin: 0 rem(-1 * gap('xsmall'));
+  }
+
+  @include elem('value') {
+    padding: 0 rem(gap('xsmall'));
+
+    white-space: nowrap;
+
+    @include when('fake') {
+      text-decoration: line-through;
+    }
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      @include elem('label') {
+        color: theme($theme, 'fg', 'sub');
+      }
+    }
+  }
+}
