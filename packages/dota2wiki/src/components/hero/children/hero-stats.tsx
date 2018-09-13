@@ -482,9 +482,6 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return (
       <vd-swimlane staticClass="c-hero-stats">
         <vd-container>
-          {this.selectedTalents
-            .map(t => this.$locale.dict[`DOTA_Tooltip_ability_${t}`])
-            .join(', ')}
           <vd-flexbox gap>
             {this.renderLevel()}
             {this.renderAttributes()}

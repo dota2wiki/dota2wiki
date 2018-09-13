@@ -26,6 +26,7 @@ $talent-tree-badge-transition-duration: 240ms;
 
     background: center / cover no-repeat
       resources('images/backgrounds/background_play_button_large_2x_png.png');
+    mix-blend-mode: multiply;
   }
 
   @include elem('wrapper', 'title', 'item', 'item-inner', 'level') {
@@ -113,7 +114,8 @@ $talent-tree-badge-transition-duration: 240ms;
 
     box-shadow: raise-shadow();
   }
-  @include elem('badge-background') {
+
+  @include elem('badge') {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -122,8 +124,11 @@ $talent-tree-badge-transition-duration: 240ms;
     margin: auto;
     width: rem($badge-size);
     height: rem($badge-size);
-    background: center / contain no-repeat
-      resources('images/hud/reborn/statbranch_button_bg_psd.png');
+    background: center / contain no-repeat;
+
+    @include when('background') {
+      background-image: resources('images/hud/reborn/statbranch_button_bg_psd.png');
+    }
 
     @include when('levelup') {
       background-image: resources('images/hud/reborn/statbranch_button_lvlup_psd.png');
@@ -194,9 +199,9 @@ $talent-tree-badge-transition-duration: 240ms;
     ) {
       color: theme($theme);
 
-      @include elem('background') {
+      @include elem('container') {
         background-color: theme($theme, 'bg', 'low');
-        border-color: theme($theme, 'bg', 'normal') theme($theme, 'bg', 'low')
+        border-color: theme($theme, 'bg', 'high') theme($theme, 'bg', 'low')
           theme($theme, 'bg', 'lower');
       }
       @include elem('item') {

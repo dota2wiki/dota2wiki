@@ -100,9 +100,9 @@ export class CTalentTree extends Vue implements ThemeComponent {
               </div>
             </div>
             <div staticClass="c-talent-tree_badge-wrapper">
-              <div staticClass="c-talent-tree_badge-background" />
+              <div staticClass="c-talent-tree_badge is-background" />
               <div
-                staticClass="c-talent-tree_badge-background"
+                staticClass="c-talent-tree_badge"
                 class={{
                   'is-levelup':
                     (this.selectedTalentMap[0] || this.selectedTalentMap[1]) &&
@@ -110,28 +110,28 @@ export class CTalentTree extends Vue implements ThemeComponent {
                 }}
               />
               <div
-                staticClass="c-talent-tree_badge-background is-10"
+                staticClass="c-talent-tree_badge is-10"
                 class={{
                   'is-right': this.selectedTalentMap[0],
                   'is-left': this.selectedTalentMap[1],
                 }}
               />
               <div
-                staticClass="c-talent-tree_badge-background is-15"
+                staticClass="c-talent-tree_badge is-15"
                 class={{
                   'is-right': this.selectedTalentMap[2],
                   'is-left': this.selectedTalentMap[3],
                 }}
               />
               <div
-                staticClass="c-talent-tree_badge-background is-20"
+                staticClass="c-talent-tree_badge is-20"
                 class={{
                   'is-right': this.selectedTalentMap[4],
                   'is-left': this.selectedTalentMap[5],
                 }}
               />
               <div
-                staticClass="c-talent-tree_badge-background is-25"
+                staticClass="c-talent-tree_badge is-25"
                 class={{
                   'is-right': this.selectedTalentMap[6],
                   'is-left': this.selectedTalentMap[7],
