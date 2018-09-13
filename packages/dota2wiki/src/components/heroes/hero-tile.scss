@@ -4,10 +4,12 @@
 @include comp('hero-tile') {
   position: relative;
   display: block;
-  width: rem($hero-avatar-v-width);
-  height: rem($hero-avatar-v-height);
+  width: rem($hero-avatar-v-width + $border-base * 2);
+  height: rem($hero-avatar-v-height + $border-base * 2);
+  border: rem($border-base) solid $color-black;
 
-  box-shadow: raise-shadow(2);
+  background: center / cover no-repeat
+    resources('images/hero_selection/empty_hero_card_png.png');
 
   @include elem('image', 'video') {
     position: absolute;
@@ -54,12 +56,18 @@
     transform: scale(0.5);
   }
 
-  transition: transform ease 180ms;
+  // transition
+
+  box-shadow: raise-shadow(2);
+  filter: saturate(70%);
+
+  transition: ease 180ms;
+  transition-property: filter transform;
 
   &:hover {
     z-index: $z-index-float;
+    filter: saturate(100%);
     transform: scale(2);
-    box-shadow: raise-shadow(4);
 
     @include elem('label') {
       opacity: 1;
