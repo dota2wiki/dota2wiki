@@ -120,7 +120,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
               <div
                 staticClass="c-talent-tree_badge"
                 class={{
-                  'is-levelup': this.level >= 10 && this.selectedTalents.length < 4,
+                  'is-levelup': this.level >= 9 && this.selectedTalents.length < 4,
                 }}
               />
               <div
