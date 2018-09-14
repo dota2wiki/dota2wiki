@@ -204,7 +204,7 @@ const optionsList: Options[] = [
 
       /^DOTA_SHOP/,
     ],
-    excludes: [/_cny_/, /_cny2015_/, /_winter_/],
+    excludes: [/_cny_/, /_cny2015_/],
   },
 ];
 
