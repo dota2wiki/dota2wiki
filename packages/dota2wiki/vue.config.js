@@ -2,6 +2,8 @@ const path = require('path');
 
 module.exports = {
   chainWebpack(config) {
+    config.resolve.symlinks(false);
+
     const context = config.store.get('context');
     const resolve = (...paths) => path.resolve(context, ...paths);
 

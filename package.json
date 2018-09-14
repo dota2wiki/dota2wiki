@@ -14,6 +14,7 @@
   "scripts": {
     "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",
     "test": "jest",
+    "serve": "yarn --cwd packages/dota2wiki serve",
     "build:vdf": "yarn --cwd packages/@dota2wiki/vdf build",
     "build:database": "yarn --cwd packages/@dota2wiki/database build",
     "build:i18n": "yarn --cwd packages/@dota2wiki/i18n build",
