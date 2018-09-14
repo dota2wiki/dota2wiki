@@ -1,0 +1,75 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-hero-avatar-h.agility {
+  $total:       43;
+  $cols:        16;
+  $rows:        3;
+  $item-width:  128;
+  $item-height: 72;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/hero-avatar-h-agility.png');
+
+  @each $index, $item-selector in (
+    0: '.npc_dota_hero_antimage',
+    1: '.npc_dota_hero_arc_warden',
+    2: '.npc_dota_hero_bloodseeker',
+    3: '.npc_dota_hero_bounty_hunter',
+    4: '.npc_dota_hero_broodmother',
+    5: '.npc_dota_hero_clinkz',
+    6: '.npc_dota_hero_drow_ranger',
+    7: '.npc_dota_hero_ember_spirit',
+    8: '.npc_dota_hero_faceless_void',
+    9: '.npc_dota_hero_gyrocopter',
+    10: '.npc_dota_hero_juggernaut_alt1',
+    11: '.npc_dota_hero_juggernaut_alt2',
+    12: '.npc_dota_hero_juggernaut',
+    13: '.npc_dota_hero_lone_druid',
+    14: '.npc_dota_hero_luna',
+    15: '.npc_dota_hero_medusa',
+    16: '.npc_dota_hero_meepo',
+    17: '.npc_dota_hero_mirana',
+    18: '.npc_dota_hero_monkey_king_alt1',
+    19: '.npc_dota_hero_monkey_king',
+    20: '.npc_dota_hero_morphling',
+    21: '.npc_dota_hero_naga_siren',
+    22: '.npc_dota_hero_nevermore_alt1',
+    23: '.npc_dota_hero_nevermore',
+    24: '.npc_dota_hero_nyx_assassin',
+    25: '.npc_dota_hero_pangolier',
+    26: '.npc_dota_hero_phantom_assassin_alt1',
+    27: '.npc_dota_hero_phantom_assassin',
+    28: '.npc_dota_hero_phantom_lancer',
+    29: '.npc_dota_hero_razor',
+    30: '.npc_dota_hero_riki',
+    31: '.npc_dota_hero_slark',
+    32: '.npc_dota_hero_sniper',
+    33: '.npc_dota_hero_spectre',
+    34: '.npc_dota_hero_templar_assassin',
+    35: '.npc_dota_hero_terrorblade_alt1',
+    36: '.npc_dota_hero_terrorblade',
+    37: '.npc_dota_hero_troll_warlord',
+    38: '.npc_dota_hero_ursa',
+    39: '.npc_dota_hero_vengefulspirit',
+    40: '.npc_dota_hero_venomancer',
+    41: '.npc_dota_hero_viper',
+    42: '.npc_dota_hero_weaver',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

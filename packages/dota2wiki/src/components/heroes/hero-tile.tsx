@@ -16,6 +16,9 @@ import { ClassName } from 'void-ui';
 @Component
 export class CHeroTile extends Vue {
   @Prop({ type: String, required: true })
+  public readonly group!: string;
+
+  @Prop({ type: String, required: true })
   public readonly name!: string;
 
   public showVideo: boolean = false;
@@ -38,7 +41,10 @@ export class CHeroTile extends Vue {
         nativeOnMouseenter={this.onMouseEnter}
         nativeOnMouseleave={this.onMouseLeave}
       >
-        <i staticClass="c-hero-tile_image dt-hero-avatar-v" class={this.name} />
+        <i
+          staticClass="c-hero-tile_image dt-hero-avatar-v"
+          class={[this.group, this.name]}
+        />
         {this.showVideo ? (
           <video staticClass="c-hero-tile_video" muted autoplay loop>
             <source

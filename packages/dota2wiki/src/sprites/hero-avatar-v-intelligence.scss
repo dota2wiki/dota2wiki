@@ -1,0 +1,74 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-hero-avatar-v.intelligence {
+  $total:       42;
+  $cols:        16;
+  $rows:        3;
+  $item-width:  71;
+  $item-height: 94;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/hero-avatar-v-intelligence.png');
+
+  @each $index, $item-selector in (
+    0: '.npc_dota_hero_ancient_apparition',
+    1: '.npc_dota_hero_bane',
+    2: '.npc_dota_hero_batrider',
+    3: '.npc_dota_hero_chen',
+    4: '.npc_dota_hero_crystal_maiden',
+    5: '.npc_dota_hero_dark_seer',
+    6: '.npc_dota_hero_dark_willow',
+    7: '.npc_dota_hero_dazzle',
+    8: '.npc_dota_hero_death_prophet',
+    9: '.npc_dota_hero_disruptor',
+    10: '.npc_dota_hero_enchantress',
+    11: '.npc_dota_hero_enigma',
+    12: '.npc_dota_hero_furion',
+    13: '.npc_dota_hero_grimstroke',
+    14: '.npc_dota_hero_invoker',
+    15: '.npc_dota_hero_jakiro',
+    16: '.npc_dota_hero_keeper_of_the_light',
+    17: '.npc_dota_hero_leshrac',
+    18: '.npc_dota_hero_lich',
+    19: '.npc_dota_hero_lina',
+    20: '.npc_dota_hero_lion',
+    21: '.npc_dota_hero_necrolyte',
+    22: '.npc_dota_hero_obsidian_destroyer',
+    23: '.npc_dota_hero_ogre_magi',
+    24: '.npc_dota_hero_oracle',
+    25: '.npc_dota_hero_puck',
+    26: '.npc_dota_hero_pugna',
+    27: '.npc_dota_hero_queenofpain',
+    28: '.npc_dota_hero_rubick',
+    29: '.npc_dota_hero_shadow_demon',
+    30: '.npc_dota_hero_shadow_shaman',
+    31: '.npc_dota_hero_silencer',
+    32: '.npc_dota_hero_skywrath_mage',
+    33: '.npc_dota_hero_storm_spirit',
+    34: '.npc_dota_hero_techies',
+    35: '.npc_dota_hero_tinker',
+    36: '.npc_dota_hero_visage',
+    37: '.npc_dota_hero_warlock',
+    38: '.npc_dota_hero_windrunner',
+    39: '.npc_dota_hero_winter_wyvern',
+    40: '.npc_dota_hero_witch_doctor',
+    41: '.npc_dota_hero_zuus',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -188,7 +188,7 @@ const optionsList: GenerateOptions[] = [
     body: files => {
       const items: { key: string; path: string }[] = files.map(f => ({
         key: `'${f.path.replace(/^\.\//, '')}'`,
-        path: f.path,
+        path: f.path.replace(/^\.\//, '@src/assets/'),
       }));
 
       let maxLength: number = 0;
@@ -217,7 +217,7 @@ const optionsList: GenerateOptions[] = [
     body: files => {
       const items: { key: string; path: string }[] = files.map(f => ({
         key: `'${f.path.replace(/^\.\//, '')}'`,
-        path: f.path.replace(/^\.\//, './assets/'),
+        path: f.path.replace(/^\.\//, '~@src/assets/'),
       }));
 
       let maxLength: number = 0;

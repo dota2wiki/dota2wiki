@@ -1,0 +1,74 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-hero-avatar-h.strength {
+  $total:       42;
+  $cols:        16;
+  $rows:        3;
+  $item-width:  128;
+  $item-height: 72;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/hero-avatar-h-strength.png');
+
+  @each $index, $item-selector in (
+    0: '.npc_dota_hero_abaddon',
+    1: '.npc_dota_hero_abyssal_underlord',
+    2: '.npc_dota_hero_alchemist',
+    3: '.npc_dota_hero_axe',
+    4: '.npc_dota_hero_beastmaster',
+    5: '.npc_dota_hero_brewmaster',
+    6: '.npc_dota_hero_bristleback',
+    7: '.npc_dota_hero_centaur',
+    8: '.npc_dota_hero_chaos_knight',
+    9: '.npc_dota_hero_doom_bringer',
+    10: '.npc_dota_hero_dragon_knight',
+    11: '.npc_dota_hero_earth_spirit',
+    12: '.npc_dota_hero_earthshaker',
+    13: '.npc_dota_hero_elder_titan',
+    14: '.npc_dota_hero_huskar',
+    15: '.npc_dota_hero_kunkka',
+    16: '.npc_dota_hero_legion_commander_alt1',
+    17: '.npc_dota_hero_legion_commander',
+    18: '.npc_dota_hero_life_stealer',
+    19: '.npc_dota_hero_lycan',
+    20: '.npc_dota_hero_magnataur',
+    21: '.npc_dota_hero_night_stalker',
+    22: '.npc_dota_hero_omniknight',
+    23: '.npc_dota_hero_phoenix',
+    24: '.npc_dota_hero_pudge_alt1',
+    25: '.npc_dota_hero_pudge_alt2',
+    26: '.npc_dota_hero_pudge_alt',
+    27: '.npc_dota_hero_pudge',
+    28: '.npc_dota_hero_rattletrap',
+    29: '.npc_dota_hero_sand_king',
+    30: '.npc_dota_hero_shredder',
+    31: '.npc_dota_hero_skeleton_king',
+    32: '.npc_dota_hero_slardar',
+    33: '.npc_dota_hero_spirit_breaker',
+    34: '.npc_dota_hero_sven',
+    35: '.npc_dota_hero_tidehunter',
+    36: '.npc_dota_hero_tiny',
+    37: '.npc_dota_hero_treant',
+    38: '.npc_dota_hero_tusk',
+    39: '.npc_dota_hero_undying',
+    40: '.npc_dota_hero_wisp_alt',
+    41: '.npc_dota_hero_wisp',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -27,7 +27,8 @@
       in (
         default: 'bg/pyxl_ancients.jpg',
         good: 'bg/radiantancient_loadingscreen.jpg',
-        bad: 'bg/direancient_loadingscreen.jpg'
+        bad: 'bg/direancient_loadingscreen.jpg',
+        fall: 'bg/fall_major_2016_loadscreen_1.jpg'
       )
   {
     @include prop(

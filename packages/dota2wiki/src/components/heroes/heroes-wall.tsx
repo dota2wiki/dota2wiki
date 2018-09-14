@@ -29,7 +29,7 @@ export class CHeroesWall extends Vue {
                 <vd-flexbox gap="small">
                   {group.heroes.map(hero => (
                     <vd-flexbox flex="none">
-                      <c-hero-tile name={hero.name} />
+                      <c-hero-tile group={group.primary} name={hero.name} />
                     </vd-flexbox>
                   ))}
                 </vd-flexbox>

@@ -92,14 +92,6 @@ export class CHeroPortrait extends Vue implements ThemeComponent {
           <vd-flexbox gap align="stretch">
             <vd-flexbox flex="none">
               <div staticClass="c-hero-portrait_avatar">
-                <img
-                  staticClass="c-hero-portrait_avatar-background"
-                  src={this.$resources['images/hero_selection/empty_hero_card_png.png']}
-                />
-                <i
-                  staticClass="c-hero-portrait_avatar-image dt-hero-avatar-v"
-                  class={this.name}
-                />
                 <video staticClass="c-hero-portrait_avatar-video" muted autoplay loop>
                   <source
                     src={this.$resources[`videos/heroes/${this.name}.webm`]}

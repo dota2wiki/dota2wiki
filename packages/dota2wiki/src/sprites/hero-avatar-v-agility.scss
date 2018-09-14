@@ -1,0 +1,69 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-hero-avatar-v.agility {
+  $total:       37;
+  $cols:        16;
+  $rows:        3;
+  $item-width:  71;
+  $item-height: 94;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/hero-avatar-v-agility.png');
+
+  @each $index, $item-selector in (
+    0: '.npc_dota_hero_antimage',
+    1: '.npc_dota_hero_arc_warden',
+    2: '.npc_dota_hero_bloodseeker',
+    3: '.npc_dota_hero_bounty_hunter',
+    4: '.npc_dota_hero_broodmother',
+    5: '.npc_dota_hero_clinkz',
+    6: '.npc_dota_hero_drow_ranger',
+    7: '.npc_dota_hero_ember_spirit',
+    8: '.npc_dota_hero_faceless_void',
+    9: '.npc_dota_hero_gyrocopter',
+    10: '.npc_dota_hero_juggernaut',
+    11: '.npc_dota_hero_lone_druid',
+    12: '.npc_dota_hero_luna',
+    13: '.npc_dota_hero_medusa',
+    14: '.npc_dota_hero_meepo',
+    15: '.npc_dota_hero_mirana',
+    16: '.npc_dota_hero_monkey_king',
+    17: '.npc_dota_hero_morphling',
+    18: '.npc_dota_hero_naga_siren',
+    19: '.npc_dota_hero_nevermore',
+    20: '.npc_dota_hero_nyx_assassin',
+    21: '.npc_dota_hero_pangolier',
+    22: '.npc_dota_hero_phantom_assassin',
+    23: '.npc_dota_hero_phantom_lancer',
+    24: '.npc_dota_hero_razor',
+    25: '.npc_dota_hero_riki',
+    26: '.npc_dota_hero_slark',
+    27: '.npc_dota_hero_sniper',
+    28: '.npc_dota_hero_spectre',
+    29: '.npc_dota_hero_templar_assassin',
+    30: '.npc_dota_hero_terrorblade',
+    31: '.npc_dota_hero_troll_warlord',
+    32: '.npc_dota_hero_ursa',
+    33: '.npc_dota_hero_vengefulspirit',
+    34: '.npc_dota_hero_venomancer',
+    35: '.npc_dota_hero_viper',
+    36: '.npc_dota_hero_weaver',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}
