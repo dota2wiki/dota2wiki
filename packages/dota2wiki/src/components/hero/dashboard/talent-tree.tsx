@@ -25,18 +25,28 @@ export class CTalentTree extends Vue implements ThemeComponent {
     return [`cp-theme_${this.themeValue}`];
   }
 
-  @Prop({ type: Array, required: true })
-  public readonly talents!: string[];
+  @Prop({ type: String, required: true })
+  public readonly name!: string;
 
-  private selectedTalents: string[] = [];
+  @Prop({ type: Number, required: true })
+  public readonly level!: number;
+
+  @Model('change', { type: Array, required: true })
+  public readonly selectedTalents!: string[];
+
+  public get talents(): string[] {
+    return this.$db.heroMap[this.name].talents;
+  }
+
   private selectedTalentMap: Record<number, boolean> = {};
 
-  @Watch('talents', { immediate: true })
+  @Watch('name', { immediate: true })
   private resetSelectedTalents(): void {
     const map: Record<number, boolean> = {};
     this.talents.forEach((value, index) => (map[index] = false));
     this.selectedTalentMap = map;
-    this.selectedTalents = [];
+
+    this.$emit('change', []);
   }
 
   private onSelect(index: number): (event: MouseEvent) => void {
@@ -50,8 +60,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
       this.selectedTalentMap[conflictIndex] = false;
       this.selectedTalentMap[index] = true;
 
-      this.selectedTalents = this.talents.filter((t, i) => this.selectedTalentMap[i]);
-      this.$emit('change', this.selectedTalents);
+      this.$emit('change', this.talents.filter((t, i) => this.selectedTalentMap[i]));
     };
   }
 
@@ -111,9 +120,7 @@ export class CTalentTree extends Vue implements ThemeComponent {
               <div
                 staticClass="c-talent-tree_badge"
                 class={{
-                  'is-levelup':
-                    (this.selectedTalentMap[0] || this.selectedTalentMap[1]) &&
-                    (!this.selectedTalentMap[6] && !this.selectedTalentMap[7]),
+                  'is-levelup': this.level >= 10 && this.selectedTalents.length < 4,
                 }}
               />
               <div

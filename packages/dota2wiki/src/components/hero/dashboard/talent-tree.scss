@@ -26,7 +26,7 @@ $talent-tree-badge-transition-duration: 240ms;
   }
 
   @include elem('background') {
-    opacity: $opacity-background;
+    opacity: $opacity-half;
   }
 
   @include elem('background-texture') {

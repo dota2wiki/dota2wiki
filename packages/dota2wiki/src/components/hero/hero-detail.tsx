@@ -10,7 +10,7 @@ import {
 } from 'vue-property-decorator';
 import { ClassName, Theme, ThemeComponent } from 'void-ui';
 import { CHeroPortrait } from './dashboard/hero-portrait';
-import { CHeroStats } from './dashboard/hero-stats';
+import { CHeroDashboard } from './dashboard/hero-dashboard';
 
 /**
  * Component: HeroDetail
@@ -18,7 +18,7 @@ import { CHeroStats } from './dashboard/hero-stats';
 @Component({
   components: {
     CHeroPortrait,
-    CHeroStats,
+    CHeroDashboard,
   },
 })
 export class CHeroDetail extends Vue implements ThemeComponent {
@@ -39,7 +39,7 @@ export class CHeroDetail extends Vue implements ThemeComponent {
     return (
       <div staticClass="c-hero-detail" class={this.classes}>
         <c-hero-portrait name={this.name} />
-        <c-hero-stats name={this.name} />
+        <c-hero-dashboard name={this.name} />
       </div>
     );
   }

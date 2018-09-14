@@ -4,16 +4,6 @@
 @include comp('info') {
   height: 100%;
 
-  @include elem('background') {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    opacity: $opacity-background;
-  }
-
   @include elem('wrapper') {
     display: flex;
     flex-flow: column nowrap;
@@ -70,9 +60,6 @@
         'theme': $theme,
       )
     ) {
-      @include elem('background') {
-        background-color: theme($theme, 'bg', 'lower');
-      }
       @include elem('label') {
         color: theme($theme, 'fg', 'sub');
       }

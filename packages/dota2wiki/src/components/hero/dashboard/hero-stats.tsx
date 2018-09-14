@@ -24,9 +24,6 @@ import { toPercentage } from '@src/utils/filters';
 
 import { CTalentTree } from './talent-tree';
 
-const levelMin: number = 0;
-const levelMax: number = 24;
-
 const attackRateBase: number = 1.7;
 
 const spellAmpBonusPrimary: number = 0.000875;
@@ -75,48 +72,14 @@ export class CHeroStats extends Vue implements ThemeComponent {
   @Prop({ type: String, required: true })
   public readonly name!: string;
 
+  @Prop({ type: Number, required: true })
+  public readonly level!: number;
+
+  @Prop({ type: Array, required: true })
+  public readonly selectedTalents!: string[];
+
   public get hero(): Hero {
     return this.$db.heroMap[this.name];
-  }
-
-  private selectedTalents: string[] = [];
-  private onTalentsChange(value: string[]): void {
-    this.selectedTalents = value;
-  }
-
-  private level: number = 0;
-  private onLevelChange(event: Event): void {
-    this.level = parseInt((event.target as HTMLInputElement).value, 10);
-  }
-
-  private renderLevel(): VNode {
-    return (
-      <vd-flexbox flex={100} gap>
-        <vd-flexbox flex="none">
-          <vd-button shape="square" tone="secondary" onClick={() => (this.level = 0)}>
-            min
-          </vd-button>
-        </vd-flexbox>
-        <vd-flexbox flex="none">
-          <vd-button shape="square" tone="secondary" onClick={() => this.level--}>
-            -
-          </vd-button>
-        </vd-flexbox>
-
-        <vd-flexbox flex="none">Level: {this.level + 1}</vd-flexbox>
-
-        <vd-flexbox flex="none">
-          <vd-button shape="square" tone="secondary" onClick={() => this.level++}>
-            +
-          </vd-button>
-        </vd-flexbox>
-        <vd-flexbox flex="none">
-          <vd-button shape="square" tone="secondary" onClick={() => (this.level = 24)}>
-            max
-          </vd-button>
-        </vd-flexbox>
-      </vd-flexbox>
-    );
   }
 
   public get attributes(): AttributeData {
@@ -136,32 +99,32 @@ export class CHeroStats extends Vue implements ThemeComponent {
 
   private renderAttributes(): VNode {
     return (
-      <vd-flexbox gap direction="column">
-        <vd-flexbox tag="h3">
-          {this.$locale.dict['DOTA_HeroStats_Castegory_Attributes']}
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Strength_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_Strength_Name']}:</span>
-          <span>
-            {this.attributeStrength.toFixed(2)}({this.attributes.strength.base}+
-            {this.attributes.strength.gain} /lv)
-          </span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Agility_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_Agility_Name']}: </span>
-          <span>
-            {this.attributeAgility.toFixed(2)}({this.attributes.agility.base}+
-            {this.attributes.agility.gain} /lv)
-          </span>
-        </vd-flexbox>
-        <vd-flexbox title={this.$locale.dict['DOTA_HeroStats_Intelligence_Desc']}>
-          <span>{this.$locale.dict['DOTA_HeroStats_Intelligence_Name']}: </span>
-          <span>
-            {this.attributeIntelligence.toFixed(2)}({this.attributes.intelligence.base}+
-            {this.attributes.intelligence.gain} /lv)
-          </span>
-        </vd-flexbox>
-      </vd-flexbox>
+      <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_Attributes']}>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_Strength_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Strength_Desc']}
+        >
+          <c-info-value float value={this.attributeStrength} />(
+          <c-info-value value={this.attributes.strength.base} />+
+          <c-info-value float value={this.attributes.strength.gain} right="/lv" />)
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_Agility_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Agility_Desc']}
+        >
+          <c-info-value float value={this.attributeAgility} />(
+          <c-info-value value={this.attributes.agility.base} />+
+          <c-info-value float value={this.attributes.agility.gain} right="/lv" />)
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_Intelligence_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Intelligence_Desc']}
+        >
+          <c-info-value float value={this.attributeIntelligence} />(
+          <c-info-value value={this.attributes.intelligence.base} />+
+          <c-info-value float value={this.attributes.intelligence.gain} right="/lv" />)
+        </c-info-row>
+      </c-info>
     );
   }
 
@@ -445,7 +408,7 @@ export class CHeroStats extends Vue implements ThemeComponent {
     return this.status.manaRegen + this.manaRegenBonus;
   }
 
-  private renderStatus(): VNode {
+  private renderStatusBak(): VNode {
     return (
       <vd-flexbox gap="small" direction="column">
         <vd-flexbox tag="h3">
@@ -479,34 +442,46 @@ export class CHeroStats extends Vue implements ThemeComponent {
     );
   }
 
+  private renderStatus(): VNode {
+    return (
+      <c-info title={this.$locale.dict['DOTA_HeroStats_Castegory_HealthMana']}>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_MaxHealth_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Health_Desc']}
+        >
+          <c-info-value float value={this.health} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HeroStats_HealthRegen_Name']}>
+          <c-info-value float value={this.healthRegen} />
+        </c-info-row>
+        <c-info-row
+          label={this.$locale.dict['DOTA_HeroStats_MaxMana_Name']}
+          title={this.$locale.dict['DOTA_HeroStats_Mana_Desc']}
+        >
+          <c-info-value float value={this.mana} />
+        </c-info-row>
+        <c-info-row label={this.$locale.dict['DOTA_HeroStats_ManaRegen_Name']}>
+          <c-info-value float value={this.manaRegen} />
+        </c-info-row>
+      </c-info>
+    );
+  }
+
   private render(h: CreateElement): VNode {
     return (
-      <vd-swimlane staticClass="c-hero-stats">
-        <vd-container>
-          <vd-flexbox gap align="stretch">
-            <vd-flexbox flex={100}>{this.renderLevel()}</vd-flexbox>
-            <vd-flexbox flex={100}>{this.renderAttributes()}</vd-flexbox>
-            <vd-flexbox flex={100}>{this.renderStatus()}</vd-flexbox>
-            {[this.renderAttack, this.renderDefense, this.renderMobility].map(r => (
-              <vd-flexbox
-                flex={{
-                  ltMd: 100,
-                }}
-              >
-                {r()}
-              </vd-flexbox>
-            ))}
+      <div staticClass="c-hero-stats">
+        <vd-flexbox gap align="stretch">
+          <vd-flexbox flex={{ staticValue: 1 / 3, ltMd: 100 }}>
+            {this.renderAttributes()}
           </vd-flexbox>
-          <vd-flexbox gap>
-            <vd-flexbox flex={{ staticValue: 50, ltLg: 100 }}>
-              <c-talent-tree
-                talents={this.hero.talents}
-                onChange={this.onTalentsChange}
-              />
-            </vd-flexbox>
+          <vd-flexbox flex={{ staticValue: 2 / 3, ltMd: 100 }}>
+            {this.renderStatus()}
           </vd-flexbox>
-        </vd-container>
-      </vd-swimlane>
+          {[this.renderAttack, this.renderDefense, this.renderMobility].map(r => (
+            <vd-flexbox flex={{ ltMd: 100 }}>{r()}</vd-flexbox>
+          ))}
+        </vd-flexbox>
+      </div>
     );
   }
 }

@@ -30,8 +30,7 @@ export class CInfo extends Vue implements ThemeComponent {
 
   private render(h: CreateElement): VNode {
     return (
-      <vd-card staticClass="c-info" class={this.classes} bordered raise transparent>
-        <div staticClass="c-info_background" />
+      <vd-card staticClass="c-info" class={this.classes} bordered raise half-transparent>
         {this.title ? <vd-card-header tag="h3">{this.title}</vd-card-header> : h()}
         <vd-card-content>
           <div staticClass="c-info_wrapper">{this.$slots.default}</div>
