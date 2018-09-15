@@ -7,7 +7,7 @@ Vue.use(VueLocale);
 /**
  * The main localization for dota2wiki
  */
-export const dotaLocale: VueLocale = new VueLocale({
+export default new VueLocale({
   dicts: {
     english: async () => import('@dota2wiki/i18n/dist/esm/dota/english'),
     schinese: async () => import('@dota2wiki/i18n/dist/esm/dota/schinese'),

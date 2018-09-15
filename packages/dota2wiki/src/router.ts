@@ -22,27 +22,32 @@ export default new VueRouter({
         {
           path: '',
           name: 'home',
-          component: async () => import('@src/views/home'),
+          component: async () =>
+            import(/* webpackChunkName: "view-home" */ '@src/views/home'),
         },
         {
           path: 'heroes',
           name: 'heroes',
-          component: async () => import('@src/views/heroes'),
+          component: async () =>
+            import(/* webpackChunkName: "view-hero" */ '@src/views/heroes'),
         },
         {
           path: 'hero/:name',
           name: 'hero',
-          component: async () => import('@src/views/hero'),
+          component: async () =>
+            import(/* webpackChunkName: "view-hero" */ '@src/views/hero'),
         },
         {
           path: 'items',
           name: 'items',
-          component: async () => import('@src/views/items'),
+          component: async () =>
+            import(/* webpackChunkName: "view-item" */ '@src/views/items'),
         },
         {
           path: 'item/:name',
           name: 'item',
-          component: async () => import('@src/views/item'),
+          component: async () =>
+            import(/* webpackChunkName: "view-item" */ '@src/views/item'),
         },
       ],
     },

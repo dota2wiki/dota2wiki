@@ -8,17 +8,15 @@ Vue.use(VoidUI, {
   defaultTheme: 'dark',
 });
 
-import Resources from '@src/assets';
-Vue.use(Resources);
-
 import { installComponents } from '@src/utils/vue-utils';
 
 import * as components from '@src/controls/all';
 installComponents(Vue, components);
 
-import { dotaLocale } from '@src/locale';
+import locale from '@src/locale';
 import router from './router';
 import store from './store';
+
 import VApp from '@src/views/app';
 
 Vue.config.productionTip = false;
@@ -27,12 +25,17 @@ Vue.config.productionTip = false;
  * App
  */
 Promise.all([
-  dotaLocale.selectLanguage('schinese'),
-  import('@dota2wiki/database').then(({ default: database }) => Vue.use(database)),
+  locale.selectLanguage('schinese'),
+  import(/* webpackChunkName: "assets" */ '@src/assets').then(({ default: assets }) =>
+    Vue.use(assets),
+  ),
+  import(/* webpackChunkName: "database" */ '@dota2wiki/database').then(
+    ({ default: database }) => Vue.use(database),
+  ),
 ])
   .then(() => {
     new Vue({
-      locale: dotaLocale,
+      locale,
       router,
       store,
       render: h => h(VApp),
