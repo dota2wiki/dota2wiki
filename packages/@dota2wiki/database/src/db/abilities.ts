@@ -4245,6 +4245,7 @@ export default {
   "morphling_adaptive_strike_agi": {
     "id": 5053,
     "name": "morphling_adaptive_strike_agi",
+    "linkedAbility": "morphling_adaptive_strike_str",
     "type": 0,
     "behavior": 8,
     "targetTeam": 2,
@@ -4344,6 +4345,7 @@ export default {
   "morphling_adaptive_strike_str": {
     "id": 7000,
     "name": "morphling_adaptive_strike_str",
+    "linkedAbility": "morphling_adaptive_strike_agi",
     "type": 0,
     "behavior": 8,
     "targetTeam": 2,
@@ -4521,6 +4523,7 @@ export default {
   "morphling_morph_agi": {
     "id": 5055,
     "name": "morphling_morph_agi",
+    "linkedAbility": "morphling_morph_str",
     "type": 0,
     "behavior": 516,
     "targetTeam": 0,
@@ -4614,6 +4617,7 @@ export default {
   "morphling_morph_str": {
     "id": 5056,
     "name": "morphling_morph_str",
+    "linkedAbility": "morphling_morph_agi",
     "type": 0,
     "behavior": 516,
     "targetTeam": 0,
@@ -4823,6 +4827,7 @@ export default {
   "nevermore_shadowraze1": {
     "id": 5059,
     "name": "nevermore_shadowraze1",
+    "linkedAbility": "nevermore_shadowraze2",
     "type": 0,
     "behavior": 33554436,
     "targetTeam": 0,
@@ -4920,6 +4925,7 @@ export default {
   "nevermore_shadowraze2": {
     "id": 5060,
     "name": "nevermore_shadowraze2",
+    "linkedAbility": "nevermore_shadowraze3",
     "type": 0,
     "behavior": 33554436,
     "targetTeam": 0,
@@ -5017,6 +5023,7 @@ export default {
   "nevermore_shadowraze3": {
     "id": 5061,
     "name": "nevermore_shadowraze3",
+    "linkedAbility": "nevermore_shadowraze1",
     "type": 0,
     "behavior": 33554436,
     "targetTeam": 0,
@@ -9752,6 +9759,7 @@ export default {
   "tiny_craggy_exterior": {
     "id": 5108,
     "name": "tiny_craggy_exterior",
+    "linkedAbility": "tiny_toss_tree",
     "type": 0,
     "behavior": 8,
     "targetTeam": 8,
@@ -9860,6 +9868,7 @@ export default {
   "tiny_toss_tree": {
     "id": 6937,
     "name": "tiny_toss_tree",
+    "linkedAbility": "tiny_craggy_exterior",
     "type": 0,
     "behavior": 268435481,
     "targetTeam": 2,
@@ -34297,6 +34306,7 @@ export default {
     "spellDispellableType": 0,
     "damageType": 0,
     "maxLevel": 0,
+    "levelsBetweenUpgrades": 7,
     "requiredLevel": 3,
     "fightRecapLevel": 0,
     "isGrantedByScepter": true,
@@ -37340,6 +37350,7 @@ export default {
   "nyx_assassin_burrow": {
     "id": 5666,
     "name": "nyx_assassin_burrow",
+    "linkedAbility": "nyx_assassin_unburrow",
     "type": 0,
     "behavior": 268435461,
     "targetTeam": 0,
@@ -37448,6 +37459,7 @@ export default {
   "nyx_assassin_unburrow": {
     "id": 5673,
     "name": "nyx_assassin_unburrow",
+    "linkedAbility": "nyx_assassin_burrow",
     "type": 0,
     "behavior": 33554437,
     "targetTeam": 0,
@@ -49786,6 +49798,7 @@ export default {
   "dark_willow_bedlam": {
     "id": 6340,
     "name": "dark_willow_bedlam",
+    "linkedAbility": "dark_willow_terrorize",
     "type": 1,
     "behavior": 2052,
     "targetTeam": 2,
@@ -49889,6 +49902,7 @@ export default {
   "dark_willow_terrorize": {
     "id": 8340,
     "name": "dark_willow_terrorize",
+    "linkedAbility": "dark_willow_bedlam",
     "type": 1,
     "behavior": 16777264,
     "targetTeam": 2,

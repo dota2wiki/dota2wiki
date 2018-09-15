@@ -161,10 +161,15 @@ export interface SpecialItem {
 
 import { ModelBase } from './base';
 
+export const ULTIMATE_REQUIRED_LEVEL: 6 = 6;
+export const ULTIMATE_LEVELS_BETWEEN_UPGRADES: 6 = 6;
+
 /**
  * Data structure for abilities.
  */
 export interface Ability extends ModelBase {
+  readonly linkedAbility?: string;
+
   readonly type: AbilityType;
   readonly behavior: AbilityBehavior;
   readonly hotKeyOverride?: string;
@@ -180,6 +185,7 @@ export interface Ability extends ModelBase {
 
   readonly maxLevel: number;
   readonly requiredLevel?: number;
+  readonly levelsBetweenUpgrades?: number;
   readonly fightRecapLevel: number;
 
   readonly isGrantedByScepter: boolean;

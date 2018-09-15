@@ -84,6 +84,10 @@ export default async function genAbilities(
       id: ['number', 'ID'],
       name: () => name,
 
+      linkedAbility: valveData.has('LinkedAbility')
+        ? ['string', 'LinkedAbility']
+        : 'skip',
+
       type: ['enum', 'AbilityType', AbilityType],
       behavior: [
         'enum',
@@ -107,6 +111,9 @@ export default async function genAbilities(
       damageType: ['enum', 'AbilityUnitDamageType', AbilityUnitDamageType],
 
       maxLevel: ['number', 'MaxLevel'],
+      levelsBetweenUpgrades: valveData.has('LevelsBetweenUpgrades')
+        ? ['number', 'LevelsBetweenUpgrades']
+        : 'skip',
       requiredLevel: valveData.has('RequiredLevel')
         ? ['number', 'RequiredLevel']
         : 'skip',
