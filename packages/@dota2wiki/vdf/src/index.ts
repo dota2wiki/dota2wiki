@@ -1,3 +1,5 @@
+// tslint:disable:no-reserved-keywords no-any
+
 import * as fs from 'fs';
 import * as icu from 'detect-character-encoding';
 import * as vdf from '@node-steam/vdf';
@@ -254,6 +256,11 @@ export class ValveData {
 
   public mapInject<T extends { [key: string]: any }>(target: T, schema: Schema<T>): this {
     Object.entries(schema).forEach(([key, schemaItem]) => {
+      if (schemaItem === undefined) {
+        throw new Error(
+          'Schema item can not be undefined, if need to get value for a optional property, use "skip" to instead.',
+        );
+      }
       if (schemaItem === 'skip') {
         return;
       }
