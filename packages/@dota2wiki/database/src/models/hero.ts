@@ -233,12 +233,12 @@ export interface OtherData {
 // Aggregation
 // ------------------------------------------------------------
 
+import { ModelBase } from './base';
+
 /**
  * Data structure for heroes.
  */
-export interface Hero {
-  readonly id: number;
-  readonly name: string;
+export interface Hero extends ModelBase {
   readonly team: Team;
 
   readonly alias: string[];

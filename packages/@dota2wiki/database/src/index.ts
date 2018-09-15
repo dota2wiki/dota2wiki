@@ -4,6 +4,7 @@
 
 export * from './models/hero';
 export * from './models/ability';
+export * from './models/talent';
 
 import { Hero, HeroGroup, Attribute } from './models/hero';
 import { Ability } from './models/ability';

@@ -1,6 +1,5 @@
 // tslint:disable:no-reference no-relative-imports no-any no-unsafe-any no-reserved-keywords
 
-import * as fs from 'fs';
 import { load, save, ValveData, TypeMap, EnumSpider } from '@dota2wiki/vdf';
 import {
   Hero,

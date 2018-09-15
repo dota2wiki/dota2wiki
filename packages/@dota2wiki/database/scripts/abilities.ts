@@ -1,6 +1,6 @@
 // tslint:disable:no-reference no-relative-imports no-any no-unsafe-any no-reserved-keywords
 
-import * as fs from 'fs';
+import chalk from 'chalk';
 import {
   load,
   save,
@@ -11,6 +11,7 @@ import {
   toBoolean,
 } from '@dota2wiki/vdf';
 import { Hero } from '../src/models/hero';
+import { Talent } from '../src/models/talent';
 import {
   Ability,
   AbilityType,
@@ -34,14 +35,21 @@ import {
  * Generate abilities data
  */
 // tslint:disable:max-func-body-length
-export default async function getAbilities(
+export default async function genAbilities(
   path: string,
   heroes: Record<string, Hero>,
-): Promise<Record<string, Ability>> {
+): Promise<[Record<string, Ability>, Record<string, Talent>]> {
   const DOTAAbilities: any = (await load(path)).DOTAAbilities;
   const allHeroAbilityNames: Set<string> = new Set(
     Object.values(heroes).reduce<string[]>((abilities, hero) => {
-      abilities.push(...hero.abilities, ...hero.talents);
+      abilities.push(...hero.abilities);
+
+      return abilities;
+    }, []),
+  );
+  const allHeroTalentNames: Set<string> = new Set(
+    Object.values(heroes).reduce<string[]>((abilities, hero) => {
+      abilities.push(...hero.talents);
 
       return abilities;
     }, []),
@@ -61,15 +69,18 @@ export default async function getAbilities(
   spider.print();
 
   const base: any = DOTAAbilities.ability_base;
-  const result: Record<string, Ability> = {};
+
+  const abilities: Record<string, Ability> = {};
+  const talents: Record<string, Talent> = {};
 
   Object.entries(DOTAAbilities).forEach(([name, raw]: [string, any]) => {
-    if (!allHeroAbilityNames.has(name)) {
+    if (!allHeroAbilityNames.has(name) && !allHeroTalentNames.has(name)) {
       return;
     }
 
-    const data: ValveData = new ValveData({ ...base, ...raw });
-    result[name] = data.mapGet<Ability>({
+    const valveData: ValveData = new ValveData({ ...base, ...raw });
+
+    const data: Ability = valveData.mapGet<Ability>({
       id: ['number', 'ID'],
       name: () => name,
 
@@ -99,7 +110,7 @@ export default async function getAbilities(
       hasScepterUpgrade: ['boolean', 'HasScepterUpgrade'],
 
       stats: () =>
-        data.mapGet<StatsData>({
+        valveData.mapGet<StatsData>({
           castRange: ['number[]', 'AbilityCastRange'],
           castRangeBuffer: ['number', 'AbilityCastRangeBuffer'],
           castPoint: ['number[]', 'AbilityCastPoint'],
@@ -145,7 +156,10 @@ export default async function getAbilities(
                     return toBoolean(valueRaw);
                   default:
                     if (key) {
-                      console.info(key, keyRaw);
+                      // this means that there are multi key value pair in special
+                      console.info(
+                        chalk.yellowBright(`Unknown key in ability special: ${keyRaw}`),
+                      );
                     }
                     key = keyRaw;
                     value = toNumberArray(valueRaw);
@@ -165,7 +179,18 @@ export default async function getAbilities(
         return special;
       },
     });
+
+    if (allHeroAbilityNames.has(name)) {
+      abilities[name] = data;
+    }
+    if (allHeroTalentNames.has(name)) {
+      talents[name] = {
+        id: data.id,
+        name: data.name,
+        special: data.special,
+      };
+    }
   });
 
-  return result;
+  return [abilities, talents];
 }

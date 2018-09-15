@@ -159,13 +159,12 @@ export interface SpecialItem {
 // Aggregation
 // ------------------------------------------------------------
 
+import { ModelBase } from './base';
+
 /**
  * Data structure for abilities.
  */
-export interface Ability {
-  readonly id: number;
-  readonly name: string;
-
+export interface Ability extends ModelBase {
   readonly type: AbilityType;
   readonly behavior: AbilityBehavior;
 

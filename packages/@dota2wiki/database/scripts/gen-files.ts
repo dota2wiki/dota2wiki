@@ -18,10 +18,10 @@ function resolve(...paths: string[]): string {
 
 async function generate(): Promise<void> {
   const heroes: Record<string, Hero> = await genHeroes(
-    resolve('./assets/npc_heroes.txt'),
+    resolve('./assets/npc/npc_heroes.txt'),
   );
-  const abilities: Record<string, Ability> = await genAbilities(
-    resolve('./assets/npc_abilities.txt'),
+  const [abilities, talents] = await genAbilities(
+    resolve('./assets/npc/npc_abilities.txt'),
     heroes,
   );
 
@@ -29,6 +29,7 @@ async function generate(): Promise<void> {
     ([
       [resolve('../src/db/heroes.ts'), heroes],
       [resolve('../src/db/abilities.ts'), abilities],
+      [resolve('../src/db/talents.ts'), talents],
     ] as [string, any][]).map(async ([output, data]) => {
       try {
         await save(output, data);
