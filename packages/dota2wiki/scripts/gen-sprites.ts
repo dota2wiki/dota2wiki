@@ -178,9 +178,9 @@ const optionsArray: (CombineOptions)[] = [
         }
 
         itemSelector += '.';
-        itemSelector += parts[parts.length - 1].replace(`${heroName}_`, '');
+        itemSelector += parts[parts.length - 1].replace(/\_png.png/, '');
 
-        return itemSelector.replace(/\_png.png/, '');
+        return itemSelector;
       },
       resourcesKey: `sprites/spell-icon-${heroName}.png`,
       outputScss: `src/sprites/spell-icon-${heroName}.scss`,

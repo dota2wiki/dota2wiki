@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-chaos_knight.png');
 
   @each $index, $item-selector in (
-    0: '.chaos_bolt',
-    1: '.chaos_strike',
-    2: '.phantasm',
-    3: '.reality_rift',
-    4: '.ck_ti7_immortal.reality_rift_alt.png',
-    5: '.ck_ti7_immortal.reality_rift_alt',
-    6: '.ck_ti7_immortal_gold.reality_rift_alt2.png',
-    7: '.ck_ti7_immortal_gold.reality_rift_alt2',
+    0: '.chaos_knight_chaos_bolt',
+    1: '.chaos_knight_chaos_strike',
+    2: '.chaos_knight_phantasm',
+    3: '.chaos_knight_reality_rift',
+    4: '.ck_ti7_immortal.chaos_knight_reality_rift_alt.png',
+    5: '.ck_ti7_immortal.chaos_knight_reality_rift_alt',
+    6: '.ck_ti7_immortal_gold.chaos_knight_reality_rift_alt2.png',
+    7: '.ck_ti7_immortal_gold.chaos_knight_reality_rift_alt2',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

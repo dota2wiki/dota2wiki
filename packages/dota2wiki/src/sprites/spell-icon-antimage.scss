@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-antimage.png');
 
   @each $index, $item-selector in (
-    0: '.blink',
-    1: '.mana_break',
-    2: '.mana_void',
-    3: '.spell_shield',
-    4: '.golden_basher_blades.mana_break',
-    5: '.golden_basher_blades.mana_void',
-    6: '.immortal.blink_gold',
-    7: '.immortal.blink',
-    8: '.the_basher_blades.mana_break',
-    9: '.the_basher_blades.mana_void',
+    0: '.antimage_blink',
+    1: '.antimage_mana_break',
+    2: '.antimage_mana_void',
+    3: '.antimage_spell_shield',
+    4: '.golden_basher_blades.antimage_mana_break',
+    5: '.golden_basher_blades.antimage_mana_void',
+    6: '.immortal.antimage_blink_gold',
+    7: '.immortal.antimage_blink',
+    8: '.the_basher_blades.antimage_mana_break',
+    9: '.the_basher_blades.antimage_mana_void',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

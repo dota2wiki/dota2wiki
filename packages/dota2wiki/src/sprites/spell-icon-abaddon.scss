@@ -23,18 +23,18 @@
   background-image: resources('sprites/spell-icon-abaddon.png');
 
   @each $index, $item-selector in (
-    0: '.aphotic_shield_alliance',
-    1: '.aphotic_shield',
-    2: '.borrowed_time_alliance',
-    3: '.borrowed_time',
-    4: '.death_coil_alliance',
-    5: '.death_coil',
-    6: '.frostmourne_alliance',
-    7: '.frostmourne',
-    8: '.mistral_fiend_icons.aphotic_shield',
-    9: '.mistral_fiend_icons.borrowed_time',
-    10: '.mistral_fiend_icons.death_coil',
-    11: '.mistral_fiend_icons.frostmourne',
+    0: '.abaddon_aphotic_shield_alliance',
+    1: '.abaddon_aphotic_shield',
+    2: '.abaddon_borrowed_time_alliance',
+    3: '.abaddon_borrowed_time',
+    4: '.abaddon_death_coil_alliance',
+    5: '.abaddon_death_coil',
+    6: '.abaddon_frostmourne_alliance',
+    7: '.abaddon_frostmourne',
+    8: '.mistral_fiend_icons.abaddon_aphotic_shield',
+    9: '.mistral_fiend_icons.abaddon_borrowed_time',
+    10: '.mistral_fiend_icons.abaddon_death_coil',
+    11: '.mistral_fiend_icons.abaddon_frostmourne',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-axe.png');
 
   @each $index, $item-selector in (
-    0: '.battle_hunger',
-    1: '.berserkers_call',
-    2: '.berserkers_call_shoutmask',
-    3: '.counter_helix',
-    4: '.culling_blade',
-    5: '.mantle_of_the_cinder_baron.battle_hunger',
+    0: '.axe_battle_hunger',
+    1: '.axe_berserkers_call',
+    2: '.axe_berserkers_call_shoutmask',
+    3: '.axe_counter_helix',
+    4: '.axe_culling_blade',
+    5: '.mantle_of_the_cinder_baron.axe_battle_hunger',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

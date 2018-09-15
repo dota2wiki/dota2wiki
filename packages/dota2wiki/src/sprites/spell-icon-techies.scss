@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-techies.png');
 
   @each $index, $item-selector in (
-    0: '.focused_detonate',
-    1: '.land_mines',
-    2: '.minefield_sign',
-    3: '.minefield_sign_swine',
-    4: '.remote_mines',
-    5: '.remote_mines_self_detonate',
-    6: '.remote_swines',
-    7: '.stasis_trap',
-    8: '.suicide',
+    0: '.techies_focused_detonate',
+    1: '.techies_land_mines',
+    2: '.techies_minefield_sign',
+    3: '.techies_minefield_sign_swine',
+    4: '.techies_remote_mines',
+    5: '.techies_remote_mines_self_detonate',
+    6: '.techies_remote_swines',
+    7: '.techies_stasis_trap',
+    8: '.techies_suicide',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-oracle.png');
 
   @each $index, $item-selector in (
-    0: '.false_promise',
-    1: '.fates_edict',
-    2: '.fortunes_end',
-    3: '.purifying_flames',
-    4: '.immortal.fortunes_end',
+    0: '.oracle_false_promise',
+    1: '.oracle_fates_edict',
+    2: '.oracle_fortunes_end',
+    3: '.oracle_purifying_flames',
+    4: '.immortal.oracle_fortunes_end',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

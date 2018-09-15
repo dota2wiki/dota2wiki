@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-lone_druid.png');
 
   @each $index, $item-selector in (
-    0: '.rabid',
-    1: '.savage_roar_bear',
-    2: '.savage_roar',
-    3: '.spirit_bear_demolish',
-    4: '.spirit_bear_entangle',
-    5: '.spirit_bear',
-    6: '.spirit_bear_return',
-    7: '.true_form_battle_cry',
-    8: '.true_form_druid',
-    9: '.true_form',
-    10: '.ti8_immortal_weapon.spirit_bear_entangle_immortal',
+    0: '.lone_druid_rabid',
+    1: '.lone_druid_savage_roar_bear',
+    2: '.lone_druid_savage_roar',
+    3: '.lone_druid_spirit_bear_demolish',
+    4: '.lone_druid_spirit_bear_entangle',
+    5: '.lone_druid_spirit_bear',
+    6: '.lone_druid_spirit_bear_return',
+    7: '.lone_druid_true_form_battle_cry',
+    8: '.lone_druid_true_form_druid',
+    9: '.lone_druid_true_form',
+    10: '.ti8_immortal_weapon.lone_druid_spirit_bear_entangle_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

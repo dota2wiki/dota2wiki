@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-venomancer.png');
 
   @each $index, $item-selector in (
-    0: '.plague_ward_alt',
-    1: '.plague_ward',
-    2: '.poison_nova',
-    3: '.poison_sting',
-    4: '.venomous_gale',
-    5: '.venomous_gale_ti8',
+    0: '.venomancer_plague_ward_alt',
+    1: '.venomancer_plague_ward',
+    2: '.venomancer_poison_nova',
+    3: '.venomancer_poison_sting',
+    4: '.venomancer_venomous_gale',
+    5: '.venomancer_venomous_gale_ti8',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,10 +23,10 @@
   background-image: resources('sprites/spell-icon-grimstroke.png');
 
   @each $index, $item-selector in (
-    0: '.dark_artistry',
-    1: '.ink_creature',
-    2: '.soul_chain',
-    3: '.spirit_walk',
+    0: '.grimstroke_dark_artistry',
+    1: '.grimstroke_ink_creature',
+    2: '.grimstroke_soul_chain',
+    3: '.grimstroke_spirit_walk',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

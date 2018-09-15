@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-puck.png');
 
   @each $index, $item-selector in (
-    0: '.dream_coil',
-    1: '.ethereal_jaunt',
-    2: '.illusory_orb_merry',
-    3: '.illusory_orb',
-    4: '.phase_shift',
-    5: '.waning_rift',
+    0: '.puck_dream_coil',
+    1: '.puck_ethereal_jaunt',
+    2: '.puck_illusory_orb_merry',
+    3: '.puck_illusory_orb',
+    4: '.puck_phase_shift',
+    5: '.puck_waning_rift',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-winter_wyvern.png');
 
   @each $index, $item-selector in (
-    0: '.arctic_burn',
-    1: '.cold_embrace',
-    2: '.splinter_blast',
-    3: '.winters_curse',
-    4: '.immortal.cold_embrace',
+    0: '.winter_wyvern_arctic_burn',
+    1: '.winter_wyvern_cold_embrace',
+    2: '.winter_wyvern_splinter_blast',
+    3: '.winter_wyvern_winters_curse',
+    4: '.immortal.winter_wyvern_cold_embrace',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

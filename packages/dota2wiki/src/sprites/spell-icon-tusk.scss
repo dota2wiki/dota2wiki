@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-tusk.png');
 
   @each $index, $item-selector in (
-    0: '.frozen_sigil',
-    1: '.ice_shards',
-    2: '.snowball',
-    3: '.walrus_kick',
-    4: '.walrus_punch',
-    5: '.glaciomarine_ability_icons.frozen_sigil',
-    6: '.glaciomarine_ability_icons.ice_shards',
-    7: '.glaciomarine_ability_icons.launch_snowball',
-    8: '.glaciomarine_ability_icons.snowball',
-    9: '.glaciomarine_ability_icons.walrus_kick',
-    10: '.glaciomarine_ability_icons.walrus_punch',
+    0: '.tusk_frozen_sigil',
+    1: '.tusk_ice_shards',
+    2: '.tusk_snowball',
+    3: '.tusk_walrus_kick',
+    4: '.tusk_walrus_punch',
+    5: '.glaciomarine_ability_icons.tusk_frozen_sigil',
+    6: '.glaciomarine_ability_icons.tusk_ice_shards',
+    7: '.glaciomarine_ability_icons.tusk_launch_snowball',
+    8: '.glaciomarine_ability_icons.tusk_snowball',
+    9: '.glaciomarine_ability_icons.tusk_walrus_kick',
+    10: '.glaciomarine_ability_icons.tusk_walrus_punch',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

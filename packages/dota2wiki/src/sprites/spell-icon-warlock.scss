@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-warlock.png');
 
   @each $index, $item-selector in (
-    0: '.fatal_bonds',
-    1: '.golem_flaming_fists',
-    2: '.golem_permanent_immolation',
-    3: '.hellborn_upheaval',
-    4: '.rain_of_chaos',
-    5: '.shadow_word',
-    6: '.upheaval',
-    7: '.tools_hellsworn_icons.golem_flaming_fists',
-    8: '.tools_hellsworn_icons.golem_permanent_immolation',
-    9: '.tools_hellsworn_icons.rain_of_chaos',
+    0: '.warlock_fatal_bonds',
+    1: '.warlock_golem_flaming_fists',
+    2: '.warlock_golem_permanent_immolation',
+    3: '.warlock_hellborn_upheaval',
+    4: '.warlock_rain_of_chaos',
+    5: '.warlock_shadow_word',
+    6: '.warlock_upheaval',
+    7: '.tools_hellsworn_icons.warlock_golem_flaming_fists',
+    8: '.tools_hellsworn_icons.warlock_golem_permanent_immolation',
+    9: '.tools_hellsworn_icons.warlock_rain_of_chaos',
     10: '.wailing_inferno_icons.wailing_inferno_rain_of_chaos',
   ) {
     &#{$item-selector} {

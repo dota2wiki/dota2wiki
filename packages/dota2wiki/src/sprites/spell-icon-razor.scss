@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-razor.png');
 
   @each $index, $item-selector in (
-    0: '.eye_of_the_storm',
-    1: '.plasma_field',
-    2: '.static_link_alt_gold',
-    3: '.static_link_alt',
-    4: '.static_link',
-    5: '.unstable_current',
-    6: '.severing_lash.plasma_field',
+    0: '.razor_eye_of_the_storm',
+    1: '.razor_plasma_field',
+    2: '.razor_static_link_alt_gold',
+    3: '.razor_static_link_alt',
+    4: '.razor_static_link',
+    5: '.razor_unstable_current',
+    6: '.severing_lash.razor_plasma_field',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-furion.png');
 
   @each $index, $item-selector in (
-    0: '.force_of_nature',
-    1: '.sprout',
-    2: '.teleportation',
-    3: '.wrath_of_nature',
-    4: '.sufferwood_sapling.sufferwood_sapling_tp',
+    0: '.furion_force_of_nature',
+    1: '.furion_sprout',
+    2: '.furion_teleportation',
+    3: '.furion_wrath_of_nature',
+    4: '.sufferwood_sapling.furion_sufferwood_sapling_tp',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

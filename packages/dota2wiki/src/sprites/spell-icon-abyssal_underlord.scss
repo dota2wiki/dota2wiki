@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-abyssal_underlord.png');
 
   @each $index, $item-selector in (
-    0: '.atrophy_aura',
-    1: '.cancel_dark_rift',
-    2: '.dark_rift',
-    3: '.firestorm',
-    4: '.pit_of_malice',
-    5: '.ti8_immortal_weapon.pit_of_malice_immortal_crimson',
-    6: '.ti8_immortal_weapon.pit_of_malice_immortal',
+    0: '.abyssal_underlord_atrophy_aura',
+    1: '.abyssal_underlord_cancel_dark_rift',
+    2: '.abyssal_underlord_dark_rift',
+    3: '.abyssal_underlord_firestorm',
+    4: '.abyssal_underlord_pit_of_malice',
+    5: '.ti8_immortal_weapon.abyssal_underlord_pit_of_malice_immortal_crimson',
+    6: '.ti8_immortal_weapon.abyssal_underlord_pit_of_malice_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

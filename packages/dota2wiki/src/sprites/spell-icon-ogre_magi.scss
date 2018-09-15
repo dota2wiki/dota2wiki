@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-ogre_magi.png');
 
   @each $index, $item-selector in (
-    0: '.bloodlust',
-    1: '.bloodlust_ti8',
-    2: '.fireblast',
-    3: '.frost_armor',
-    4: '.ignite',
-    5: '.multicast',
-    6: '.unrefined_fireblast',
-    7: '.antipodeanabilityicons.bloodlust',
-    8: '.antipodeanabilityicons.fireblast',
-    9: '.antipodeanabilityicons.ignite',
-    10: '.antipodeanabilityicons.multicast',
-    11: '.antipodeanabilityicons.unrefined_fireblast',
-    12: '.auspice_of_the_whyrlegyge.multicast',
+    0: '.ogre_magi_bloodlust',
+    1: '.ogre_magi_bloodlust_ti8',
+    2: '.ogre_magi_fireblast',
+    3: '.ogre_magi_frost_armor',
+    4: '.ogre_magi_ignite',
+    5: '.ogre_magi_multicast',
+    6: '.ogre_magi_unrefined_fireblast',
+    7: '.antipodeanabilityicons.ogre_magi_bloodlust',
+    8: '.antipodeanabilityicons.ogre_magi_fireblast',
+    9: '.antipodeanabilityicons.ogre_magi_ignite',
+    10: '.antipodeanabilityicons.ogre_magi_multicast',
+    11: '.antipodeanabilityicons.ogre_magi_unrefined_fireblast',
+    12: '.auspice_of_the_whyrlegyge.ogre_magi_multicast',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

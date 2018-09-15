@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-witch_doctor.png');
 
   @each $index, $item-selector in (
-    0: '.death_ward',
-    1: '.maledict',
-    2: '.paralyzing_cask',
-    3: '.voodoo_restoration',
-    4: '.bonkers_the_mad.paralyzing_cask',
-    5: '.ribbitar_icon.death_ward',
-    6: '.ti8_bonkers_of_awaleb.paralyzing_cask_immortal',
-    7: '.ti8_immortal_head.maledict_immortal',
+    0: '.witch_doctor_death_ward',
+    1: '.witch_doctor_maledict',
+    2: '.witch_doctor_paralyzing_cask',
+    3: '.witch_doctor_voodoo_restoration',
+    4: '.bonkers_the_mad.witch_doctor_paralyzing_cask',
+    5: '.ribbitar_icon.witch_doctor_death_ward',
+    6: '.ti8_bonkers_of_awaleb.witch_doctor_paralyzing_cask_immortal',
+    7: '.ti8_immortal_head.witch_doctor_maledict_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-slark.png');
 
   @each $index, $item-selector in (
-    0: '.dark_pact_immortal',
-    1: '.dark_pact',
-    2: '.essence_shift',
-    3: '.pounce',
-    4: '.shadow_dance',
-    5: '.gold_hydrakan_latch.pounce',
-    6: '.hydrakan_latch.pounce',
+    0: '.slark_dark_pact_immortal',
+    1: '.slark_dark_pact',
+    2: '.slark_essence_shift',
+    3: '.slark_pounce',
+    4: '.slark_shadow_dance',
+    5: '.gold_hydrakan_latch.slark_pounce',
+    6: '.hydrakan_latch.slark_pounce',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-huskar.png');
 
   @each $index, $item-selector in (
-    0: '.berserkers_blood',
-    1: '.burning_spear',
-    2: '.inner_vitality',
-    3: '.life_break_alt',
-    4: '.life_break',
-    5: '.ti8_immortal_shoulder.inner_vitality_immortal',
+    0: '.huskar_berserkers_blood',
+    1: '.huskar_burning_spear',
+    2: '.huskar_inner_vitality',
+    3: '.huskar_life_break_alt',
+    4: '.huskar_life_break',
+    5: '.ti8_immortal_shoulder.huskar_inner_vitality_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

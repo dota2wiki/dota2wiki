@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-jakiro.png');
 
   @each $index, $item-selector in (
-    0: '.dual_breath',
-    1: '.ice_path',
-    2: '.liquid_fire',
-    3: '.macropyre',
-    4: '.immortal.dual_breath',
-    5: '.immortal.ice_path',
+    0: '.jakiro_dual_breath',
+    1: '.jakiro_ice_path',
+    2: '.jakiro_liquid_fire',
+    3: '.jakiro_macropyre',
+    4: '.immortal.jakiro_dual_breath',
+    5: '.immortal.jakiro_ice_path',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

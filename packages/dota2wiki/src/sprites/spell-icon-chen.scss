@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-chen.png');
 
   @each $index, $item-selector in (
-    0: '.hand_of_god',
-    1: '.holy_persuasion',
-    2: '.penitence',
-    3: '.test_of_faith',
-    4: '.test_of_faith_teleport',
+    0: '.chen_hand_of_god',
+    1: '.chen_holy_persuasion',
+    2: '.chen_penitence',
+    3: '.chen_test_of_faith',
+    4: '.chen_test_of_faith_teleport',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

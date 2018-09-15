@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-bristleback.png');
 
   @each $index, $item-selector in (
-    0: '.bristleback',
-    1: '.quill_spray',
-    2: '.viscous_nasal_goo_crimson',
-    3: '.viscous_nasal_goo',
-    4: '.viscous_nasal_oo_immortal',
-    5: '.warpath',
-    6: '.piston_impaler.quill_spray',
+    0: '.bristleback_bristleback',
+    1: '.bristleback_quill_spray',
+    2: '.bristleback_viscous_nasal_goo_crimson',
+    3: '.bristleback_viscous_nasal_goo',
+    4: '.bristleback_viscous_nasal_oo_immortal',
+    5: '.bristleback_warpath',
+    6: '.piston_impaler.bristleback_quill_spray',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

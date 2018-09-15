@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-riki.png');
 
   @each $index, $item-selector in (
-    0: '.blink_strike',
-    1: '.permanent_invisibility',
-    2: '.smoke_screen',
-    3: '.tricks_of_the_trade',
-    4: '.haze_atrocity_icons.backstab',
-    5: '.haze_atrocity_icons.blink_strike',
-    6: '.haze_atrocity_icons.permanent_invisibility',
-    7: '.haze_atrocity_icons.smoke_screen',
-    8: '.shadow_masquerade.blink_strike',
-    9: '.shadow_masquerade.gold_blink_strike',
-    10: '.ti8_immortal_head.smoke_screen_immortal_crimson',
-    11: '.ti8_immortal_head.smoke_screen_immortal_gold',
-    12: '.ti8_immortal_head.smoke_screen_immortal',
+    0: '.riki_blink_strike',
+    1: '.riki_permanent_invisibility',
+    2: '.riki_smoke_screen',
+    3: '.riki_tricks_of_the_trade',
+    4: '.haze_atrocity_icons.riki_backstab',
+    5: '.haze_atrocity_icons.riki_blink_strike',
+    6: '.haze_atrocity_icons.riki_permanent_invisibility',
+    7: '.haze_atrocity_icons.riki_smoke_screen',
+    8: '.shadow_masquerade.riki_blink_strike',
+    9: '.shadow_masquerade.riki_gold_blink_strike',
+    10: '.ti8_immortal_head.riki_smoke_screen_immortal_crimson',
+    11: '.ti8_immortal_head.riki_smoke_screen_immortal_gold',
+    12: '.ti8_immortal_head.riki_smoke_screen_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

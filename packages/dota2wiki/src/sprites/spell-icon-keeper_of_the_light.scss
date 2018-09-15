@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-keeper_of_the_light.png');
 
   @each $index, $item-selector in (
-    0: '.blinding_light',
-    1: '.chakra_magic',
-    2: '.illuminate_end',
-    3: '.illuminate',
-    4: '.mana_leak',
-    5: '.recall',
-    6: '.spirit_form_illuminate_end',
-    7: '.spirit_form_illuminate',
-    8: '.spirit_form',
-    9: '.kotl_ti7_immortal.illuminate_alt.png',
-    10: '.kotl_ti7_immortal.illuminate_alt',
-    11: '.kotl_ti7_immortal.illuminate_end_alt.png',
-    12: '.kotl_ti7_immortal.illuminate_end_alt',
+    0: '.keeper_of_the_light_blinding_light',
+    1: '.keeper_of_the_light_chakra_magic',
+    2: '.keeper_of_the_light_illuminate_end',
+    3: '.keeper_of_the_light_illuminate',
+    4: '.keeper_of_the_light_mana_leak',
+    5: '.keeper_of_the_light_recall',
+    6: '.keeper_of_the_light_spirit_form_illuminate_end',
+    7: '.keeper_of_the_light_spirit_form_illuminate',
+    8: '.keeper_of_the_light_spirit_form',
+    9: '.kotl_ti7_immortal.keeper_of_the_light_illuminate_alt.png',
+    10: '.kotl_ti7_immortal.keeper_of_the_light_illuminate_alt',
+    11: '.kotl_ti7_immortal.keeper_of_the_light_illuminate_end_alt.png',
+    12: '.kotl_ti7_immortal.keeper_of_the_light_illuminate_end_alt',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

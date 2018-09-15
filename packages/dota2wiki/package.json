@@ -6,6 +6,7 @@
     "link": "ln -s ../../../../huiji/void-ui/lib/ void-ui",
     "ts": "ts-node -r tsconfig-paths/register -P ../../tsconfig.scripts.json",
     "gen-files": "yarn ts scripts/gen-files.ts",
+    "gen-sprites": "yarn ts scripts/gen-sprites.ts",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",

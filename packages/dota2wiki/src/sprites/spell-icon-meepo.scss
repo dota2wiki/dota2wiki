@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-meepo.png');
 
   @each $index, $item-selector in (
-    0: '.divided_we_stand',
-    1: '.divided_we_stand_scavenger',
-    2: '.earthbind',
-    3: '.geostrike',
-    4: '.geostrike_scavenger',
-    5: '.poof',
-    6: '.poof_scavenger',
-    7: '.colossal_crystal_chorus.poof',
+    0: '.meepo_divided_we_stand',
+    1: '.meepo_divided_we_stand_scavenger',
+    2: '.meepo_earthbind',
+    3: '.meepo_geostrike',
+    4: '.meepo_geostrike_scavenger',
+    5: '.meepo_poof',
+    6: '.meepo_poof_scavenger',
+    7: '.colossal_crystal_chorus.meepo_poof',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

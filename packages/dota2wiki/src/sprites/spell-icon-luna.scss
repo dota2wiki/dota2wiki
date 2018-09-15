@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-luna.png');
 
   @each $index, $item-selector in (
-    0: '.eclipse',
-    1: '.lucent_beam_alt2',
-    2: '.lucent_beam_alt',
-    3: '.lucent_beam',
-    4: '.lunar_blessing',
-    5: '.moon_glaive',
-    6: '.zodiac_sigils_skills.eclipse',
-    7: '.zodiac_sigils_skills.lucent_beam',
-    8: '.zodiac_sigils_skills.lunar_blessing',
-    9: '.zodiac_sigils_skills.moon_glaive',
+    0: '.luna_eclipse',
+    1: '.luna_lucent_beam_alt2',
+    2: '.luna_lucent_beam_alt',
+    3: '.luna_lucent_beam',
+    4: '.luna_lunar_blessing',
+    5: '.luna_moon_glaive',
+    6: '.zodiac_sigils_skills.luna_eclipse',
+    7: '.zodiac_sigils_skills.luna_lucent_beam',
+    8: '.zodiac_sigils_skills.luna_lunar_blessing',
+    9: '.zodiac_sigils_skills.luna_moon_glaive',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

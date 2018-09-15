@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-enchantress.png');
 
   @each $index, $item-selector in (
-    0: '.enchant',
-    1: '.impetus',
-    2: '.natures_attendants',
-    3: '.untouchable',
-    4: '.virgas_arc.impetus',
+    0: '.enchantress_enchant',
+    1: '.enchantress_impetus',
+    2: '.enchantress_natures_attendants',
+    3: '.enchantress_untouchable',
+    4: '.virgas_arc.enchantress_impetus',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

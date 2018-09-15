@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-lina.png');
 
   @each $index, $item-selector in (
-    0: '.dragon_slave_alt1',
-    1: '.dragon_slave',
-    2: '.fiery_soul_alt1',
-    3: '.fiery_soul',
-    4: '.laguna_blade',
-    5: '.light_strike_array',
-    6: '.lina_ti6_immortal.laguna_blade',
-    7: '.lina_ti7_immortal.light_strike_array.png',
-    8: '.lina_ti7_immortal.light_strike_array',
-    9: '.lina_ti7_immortal.lightstrike_array_gold.png',
-    10: '.lina_ti7_immortal.lightstrike_array_gold',
+    0: '.lina_dragon_slave_alt1',
+    1: '.lina_dragon_slave',
+    2: '.lina_fiery_soul_alt1',
+    3: '.lina_fiery_soul',
+    4: '.lina_laguna_blade',
+    5: '.lina_light_strike_array',
+    6: '.lina_ti6_immortal.lina_laguna_blade',
+    7: '.lina_ti7_immortal.lina_light_strike_array.png',
+    8: '.lina_ti7_immortal.lina_light_strike_array',
+    9: '.lina_ti7_immortal.lina_lightstrike_array_gold.png',
+    10: '.lina_ti7_immortal.lina_lightstrike_array_gold',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

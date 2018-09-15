@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-spectre.png');
 
   @each $index, $item-selector in (
-    0: '.desolate',
-    1: '.dispersion',
-    2: '.haunt',
-    3: '.reality',
-    4: '.spectral_dagger',
-    5: '.immortal.crimson_spectral_dagger',
-    6: '.immortal.spectral_dagger',
+    0: '.spectre_desolate',
+    1: '.spectre_dispersion',
+    2: '.spectre_haunt',
+    3: '.spectre_reality',
+    4: '.spectre_spectral_dagger',
+    5: '.immortal.spectre_crimson_spectral_dagger',
+    6: '.immortal.spectre_spectral_dagger',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

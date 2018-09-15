@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-slardar.png');
 
   @each $index, $item-selector in (
-    0: '.amplify_damage',
-    1: '.bash',
-    2: '.slithereen_crush',
-    3: '.sprint',
-    4: '.grasping_bludgeon.gold_slithereen_crush',
-    5: '.grasping_bludgeon.slithereen_crush',
+    0: '.slardar_amplify_damage',
+    1: '.slardar_bash',
+    2: '.slardar_slithereen_crush',
+    3: '.slardar_sprint',
+    4: '.grasping_bludgeon.slardar_gold_slithereen_crush',
+    5: '.grasping_bludgeon.slardar_slithereen_crush',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

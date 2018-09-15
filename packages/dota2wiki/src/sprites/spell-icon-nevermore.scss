@@ -23,18 +23,18 @@
   background-image: resources('sprites/spell-icon-nevermore.png');
 
   @each $index, $item-selector in (
-    0: '.dark_lord_demon',
-    1: '.dark_lord',
-    2: '.necromastery_demon',
-    3: '.necromastery',
-    4: '.requiem_demon',
-    5: '.requiem',
-    6: '.shadowraze1_demon',
-    7: '.shadowraze1',
-    8: '.shadowraze2_demon',
-    9: '.shadowraze2',
-    10: '.shadowraze3_demon',
-    11: '.shadowraze3',
+    0: '.nevermore_dark_lord_demon',
+    1: '.nevermore_dark_lord',
+    2: '.nevermore_necromastery_demon',
+    3: '.nevermore_necromastery',
+    4: '.nevermore_requiem_demon',
+    5: '.nevermore_requiem',
+    6: '.nevermore_shadowraze1_demon',
+    7: '.nevermore_shadowraze1',
+    8: '.nevermore_shadowraze2_demon',
+    9: '.nevermore_shadowraze2',
+    10: '.nevermore_shadowraze3_demon',
+    11: '.nevermore_shadowraze3',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

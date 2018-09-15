@@ -23,18 +23,18 @@
   background-image: resources('sprites/spell-icon-monkey_king.png');
 
   @each $index, $item-selector in (
-    0: '.boundless_strike',
-    1: '.jingu_mastery',
-    2: '.mischief',
-    3: '.primal_spring',
-    4: '.strike_crimson',
-    5: '.strike_immortal_gold',
-    6: '.strike_immortal',
-    7: '.tree_dance',
-    8: '.untransform',
-    9: '.wukongs_command',
-    10: '.great_sages_reckoning.spring',
-    11: '.great_sages_reckoning.tree_jump',
+    0: '.monkey_king_boundless_strike',
+    1: '.monkey_king_jingu_mastery',
+    2: '.monkey_king_mischief',
+    3: '.monkey_king_primal_spring',
+    4: '.monkey_king_strike_crimson',
+    5: '.monkey_king_strike_immortal_gold',
+    6: '.monkey_king_strike_immortal',
+    7: '.monkey_king_tree_dance',
+    8: '.monkey_king_untransform',
+    9: '.monkey_king_wukongs_command',
+    10: '.great_sages_reckoning.monkey_king_spring',
+    11: '.great_sages_reckoning.monkey_king_tree_jump',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

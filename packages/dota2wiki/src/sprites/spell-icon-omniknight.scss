@@ -23,10 +23,10 @@
   background-image: resources('sprites/spell-icon-omniknight.png');
 
   @each $index, $item-selector in (
-    0: '.degen_aura',
-    1: '.guardian_angel',
-    2: '.purification',
-    3: '.repel',
+    0: '.omniknight_degen_aura',
+    1: '.omniknight_guardian_angel',
+    2: '.omniknight_purification',
+    3: '.omniknight_repel',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

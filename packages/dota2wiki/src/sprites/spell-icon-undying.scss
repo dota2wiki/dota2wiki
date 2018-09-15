@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-undying.png');
 
   @each $index, $item-selector in (
-    0: '.decay',
-    1: '.flesh_golem',
-    2: '.soul_rip',
-    3: '.tombstone_alt_gold',
-    4: '.tombstone_alt',
-    5: '.tombstone',
-    6: '.tombstone_zombie_deathstrike',
-    7: '.pale_augur.decay',
+    0: '.undying_decay',
+    1: '.undying_flesh_golem',
+    2: '.undying_soul_rip',
+    3: '.undying_tombstone_alt_gold',
+    4: '.undying_tombstone_alt',
+    5: '.undying_tombstone',
+    6: '.undying_tombstone_zombie_deathstrike',
+    7: '.pale_augur.undying_decay',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

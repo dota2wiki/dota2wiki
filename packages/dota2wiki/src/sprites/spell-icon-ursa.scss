@@ -23,10 +23,10 @@
   background-image: resources('sprites/spell-icon-ursa.png');
 
   @each $index, $item-selector in (
-    0: '.earthshock',
-    1: '.enrage',
-    2: '.fury_swipes',
-    3: '.overpower',
+    0: '.ursa_earthshock',
+    1: '.ursa_enrage',
+    2: '.ursa_fury_swipes',
+    3: '.ursa_overpower',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

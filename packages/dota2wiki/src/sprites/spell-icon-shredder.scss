@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-shredder.png');
 
   @each $index, $item-selector in (
-    0: '.chakram_2',
-    1: '.chakram',
-    2: '.reactive_armor',
-    3: '.return_chakram_2',
-    4: '.return_chakram',
-    5: '.timber_chain',
-    6: '.whirling_death',
-    7: '.controlled_burn.timber_chain',
+    0: '.shredder_chakram_2',
+    1: '.shredder_chakram',
+    2: '.shredder_reactive_armor',
+    3: '.shredder_return_chakram_2',
+    4: '.shredder_return_chakram',
+    5: '.shredder_timber_chain',
+    6: '.shredder_whirling_death',
+    7: '.controlled_burn.shredder_timber_chain',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

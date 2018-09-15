@@ -23,18 +23,18 @@
   background-image: resources('sprites/spell-icon-skeleton_king.png');
 
   @each $index, $item-selector in (
-    0: '.hellfire_blast',
-    1: '.mortal_strike',
-    2: '.reincarnation',
-    3: '.vampiric_aura',
-    4: '.aspect_year_beast_icons.hellfire_blast',
-    5: '.aspect_year_beast_icons.mortal_strike',
-    6: '.aspect_year_beast_icons.reincarnation',
-    7: '.aspect_year_beast_icons.vampiric_aura',
-    8: '.blistering_shade.hellfire_blast',
-    9: '.ti8_immortal_weapon.mortal_strike_immortal_crimson',
-    10: '.ti8_immortal_weapon.mortal_strike_immortal_gold',
-    11: '.ti8_immortal_weapon.mortal_strike_immortal',
+    0: '.skeleton_king_hellfire_blast',
+    1: '.skeleton_king_mortal_strike',
+    2: '.skeleton_king_reincarnation',
+    3: '.skeleton_king_vampiric_aura',
+    4: '.aspect_year_beast_icons.skeleton_king_hellfire_blast',
+    5: '.aspect_year_beast_icons.skeleton_king_mortal_strike',
+    6: '.aspect_year_beast_icons.skeleton_king_reincarnation',
+    7: '.aspect_year_beast_icons.skeleton_king_vampiric_aura',
+    8: '.blistering_shade.skeleton_king_hellfire_blast',
+    9: '.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal_crimson',
+    10: '.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal_gold',
+    11: '.ti8_immortal_weapon.skeleton_king_mortal_strike_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

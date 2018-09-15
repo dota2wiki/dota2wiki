@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-medusa.png');
 
   @each $index, $item-selector in (
-    0: '.mana_shield',
-    1: '.mystic_snake',
-    2: '.split_shot',
-    3: '.stone_gaze',
-    4: '.blueice_abilityicons.mana_shield',
-    5: '.blueice_abilityicons.mystic_snake',
-    6: '.blueice_abilityicons.split_shot',
-    7: '.blueice_abilityicons.stone_gaze',
-    8: '.daughters_of_hydrophiinae.mana_shield',
-    9: '.emerald_ocean_icons.mana_shield',
-    10: '.emerald_ocean_icons.mystic_snake',
-    11: '.emerald_ocean_icons.split_shot',
-    12: '.emerald_ocean_icons.stone_gaze',
+    0: '.medusa_mana_shield',
+    1: '.medusa_mystic_snake',
+    2: '.medusa_split_shot',
+    3: '.medusa_stone_gaze',
+    4: '.blueice_abilityicons.medusa_mana_shield',
+    5: '.blueice_abilityicons.medusa_mystic_snake',
+    6: '.blueice_abilityicons.medusa_split_shot',
+    7: '.blueice_abilityicons.medusa_stone_gaze',
+    8: '.daughters_of_hydrophiinae.medusa_mana_shield',
+    9: '.emerald_ocean_icons.medusa_mana_shield',
+    10: '.emerald_ocean_icons.medusa_mystic_snake',
+    11: '.emerald_ocean_icons.medusa_split_shot',
+    12: '.emerald_ocean_icons.medusa_stone_gaze',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

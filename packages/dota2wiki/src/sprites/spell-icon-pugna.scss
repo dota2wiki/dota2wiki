@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-pugna.png');
 
   @each $index, $item-selector in (
-    0: '.decrepify',
-    1: '.life_drain',
-    2: '.nether_blast',
-    3: '.nether_ward_alt',
-    4: '.nether_ward',
+    0: '.pugna_decrepify',
+    1: '.pugna_life_drain',
+    2: '.pugna_nether_blast',
+    3: '.pugna_nether_ward_alt',
+    4: '.pugna_nether_ward',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-bane.png');
 
   @each $index, $item-selector in (
-    0: '.brain_sap',
-    1: '.enfeeble',
-    2: '.fiends_grip',
-    3: '.nightmare_end',
-    4: '.nightmare',
-    5: '.slumbering_terror.nightmare_end',
-    6: '.slumbering_terror.nightmare',
+    0: '.bane_brain_sap',
+    1: '.bane_enfeeble',
+    2: '.bane_fiends_grip',
+    3: '.bane_nightmare_end',
+    4: '.bane_nightmare',
+    5: '.slumbering_terror.bane_nightmare_end',
+    6: '.slumbering_terror.bane_nightmare',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

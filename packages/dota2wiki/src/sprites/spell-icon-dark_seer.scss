@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-dark_seer.png');
 
   @each $index, $item-selector in (
-    0: '.ion_shell',
-    1: '.surge',
-    2: '.vacuum',
-    3: '.wall_of_replica',
-    4: '.ti8_immortal_arm.ion_shell_immortal_gold',
-    5: '.ti8_immortal_arm.ion_shell_immortal',
+    0: '.dark_seer_ion_shell',
+    1: '.dark_seer_surge',
+    2: '.dark_seer_vacuum',
+    3: '.dark_seer_wall_of_replica',
+    4: '.ti8_immortal_arm.dark_seer_ion_shell_immortal_gold',
+    5: '.ti8_immortal_arm.dark_seer_ion_shell_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

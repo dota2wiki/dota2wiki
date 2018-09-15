@@ -23,20 +23,20 @@
   background-image: resources('sprites/spell-icon-sven.png');
 
   @each $index, $item-selector in (
-    0: '.gods_strength',
-    1: '.great_cleave',
-    2: '.storm_bolt',
-    3: '.warcry',
-    4: '.cyclopean_marauder_ability_icons.gods_strength',
-    5: '.cyclopean_marauder_ability_icons.great_cleave',
-    6: '.cyclopean_marauder_ability_icons.storm_bolt',
-    7: '.cyclopean_marauder_ability_icons.warcry',
-    8: '.fiend_cleaver_icons.gods_strength',
-    9: '.fiend_cleaver_icons.great_cleave',
-    10: '.fiend_cleaver_icons.storm_bolt',
-    11: '.fiend_cleaver_icons.warcry',
-    12: '.immortal.great_cleave',
-    13: '.vigil_signet.warcry',
+    0: '.sven_gods_strength',
+    1: '.sven_great_cleave',
+    2: '.sven_storm_bolt',
+    3: '.sven_warcry',
+    4: '.cyclopean_marauder_ability_icons.sven_gods_strength',
+    5: '.cyclopean_marauder_ability_icons.sven_great_cleave',
+    6: '.cyclopean_marauder_ability_icons.sven_storm_bolt',
+    7: '.cyclopean_marauder_ability_icons.sven_warcry',
+    8: '.fiend_cleaver_icons.sven_gods_strength',
+    9: '.fiend_cleaver_icons.sven_great_cleave',
+    10: '.fiend_cleaver_icons.sven_storm_bolt',
+    11: '.fiend_cleaver_icons.sven_warcry',
+    12: '.immortal.sven_great_cleave',
+    13: '.vigil_signet.sven_warcry',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

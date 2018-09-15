@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-alchemist.png');
 
   @each $index, $item-selector in (
-    0: '.acid_spray',
-    1: '.chemical_rage',
-    2: '.goblins_greed',
-    3: '.unstable_concoction',
-    4: '.unstable_concoction_throw',
-    5: '.midas_knuckles.goblins_greed',
+    0: '.alchemist_acid_spray',
+    1: '.alchemist_chemical_rage',
+    2: '.alchemist_goblins_greed',
+    3: '.alchemist_unstable_concoction',
+    4: '.alchemist_unstable_concoction_throw',
+    5: '.midas_knuckles.alchemist_goblins_greed',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

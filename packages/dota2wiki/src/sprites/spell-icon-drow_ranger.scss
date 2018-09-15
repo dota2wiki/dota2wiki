@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-drow_ranger.png');
 
   @each $index, $item-selector in (
-    0: '.frost_arrows',
-    1: '.marksmanship',
-    2: '.silence',
-    3: '.trueshot',
-    4: '.wave_of_silence',
-    5: '.dragons_touch_ability_icons.frost_arrows',
-    6: '.dragons_touch_ability_icons.marksmanship',
-    7: '.dragons_touch_ability_icons.trueshot',
-    8: '.dragons_touch_ability_icons.wave_of_silence',
-    9: '.immortal.wave_of_silence',
-    10: '.immortal_gold.wave_of_silence',
+    0: '.drow_ranger_frost_arrows',
+    1: '.drow_ranger_marksmanship',
+    2: '.drow_ranger_silence',
+    3: '.drow_ranger_trueshot',
+    4: '.drow_ranger_wave_of_silence',
+    5: '.dragons_touch_ability_icons.drow_ranger_frost_arrows',
+    6: '.dragons_touch_ability_icons.drow_ranger_marksmanship',
+    7: '.dragons_touch_ability_icons.drow_ranger_trueshot',
+    8: '.dragons_touch_ability_icons.drow_ranger_wave_of_silence',
+    9: '.immortal.drow_ranger_wave_of_silence',
+    10: '.immortal_gold.drow_ranger_wave_of_silence',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

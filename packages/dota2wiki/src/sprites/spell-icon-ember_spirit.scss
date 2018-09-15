@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-ember_spirit.png');
 
   @each $index, $item-selector in (
-    0: '.activate_fire_remnant',
-    1: '.fire_remnant',
-    2: '.flame_guard',
-    3: '.searing_chains',
-    4: '.sleight_of_fist',
+    0: '.ember_spirit_activate_fire_remnant',
+    1: '.ember_spirit_fire_remnant',
+    2: '.ember_spirit_flame_guard',
+    3: '.ember_spirit_searing_chains',
+    4: '.ember_spirit_sleight_of_fist',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

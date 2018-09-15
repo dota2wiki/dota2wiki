@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-shadow_shaman.png');
 
   @each $index, $item-selector in (
-    0: '.ether_shock',
-    1: '.ether_shock_ti8_crimson',
-    2: '.ether_shock_ti8',
-    3: '.mass_serpent_ward',
-    4: '.shackles',
-    5: '.voodoo_alt_gold',
-    6: '.voodoo_alt',
-    7: '.voodoo',
+    0: '.shadow_shaman_ether_shock',
+    1: '.shadow_shaman_ether_shock_ti8_crimson',
+    2: '.shadow_shaman_ether_shock_ti8',
+    3: '.shadow_shaman_mass_serpent_ward',
+    4: '.shadow_shaman_shackles',
+    5: '.shadow_shaman_voodoo_alt_gold',
+    6: '.shadow_shaman_voodoo_alt',
+    7: '.shadow_shaman_voodoo',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

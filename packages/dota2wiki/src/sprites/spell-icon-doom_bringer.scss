@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-doom_bringer.png');
 
   @each $index, $item-selector in (
-    0: '.devour',
-    1: '.doom',
-    2: '.empty1',
-    3: '.empty2',
-    4: '.infernal_blade',
-    5: '.scorched_earth',
-    6: '.ti8_immortal_arm.devour_immortal',
+    0: '.doom_bringer_devour',
+    1: '.doom_bringer_doom',
+    2: '.doom_bringer_empty1',
+    3: '.doom_bringer_empty2',
+    4: '.doom_bringer_infernal_blade',
+    5: '.doom_bringer_scorched_earth',
+    6: '.ti8_immortal_arm.doom_bringer_devour_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

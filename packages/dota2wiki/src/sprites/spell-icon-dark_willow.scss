@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-dark_willow.png');
 
   @each $index, $item-selector in (
-    0: '.bedlam',
-    1: '.bramble_maze',
-    2: '.cursed_crown',
-    3: '.cursed_crown_ti8_crimson',
-    4: '.cursed_crown_ti8',
-    5: '.shadow_realm',
-    6: '.terrorize',
+    0: '.dark_willow_bedlam',
+    1: '.dark_willow_bramble_maze',
+    2: '.dark_willow_cursed_crown',
+    3: '.dark_willow_cursed_crown_ti8_crimson',
+    4: '.dark_willow_cursed_crown_ti8',
+    5: '.dark_willow_shadow_realm',
+    6: '.dark_willow_terrorize',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

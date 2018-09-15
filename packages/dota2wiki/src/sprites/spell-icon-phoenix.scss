@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-phoenix.png');
 
   @each $index, $item-selector in (
-    0: '.fire_spirits',
-    1: '.icarus_dive',
-    2: '.icarus_dive_stop',
-    3: '.launch_fire_spirit',
-    4: '.sun_ray',
-    5: '.sun_ray_stop',
-    6: '.sun_ray_toggle_move',
-    7: '.supernova',
-    8: '.solar_forge.sun_ray',
+    0: '.phoenix_fire_spirits',
+    1: '.phoenix_icarus_dive',
+    2: '.phoenix_icarus_dive_stop',
+    3: '.phoenix_launch_fire_spirit',
+    4: '.phoenix_sun_ray',
+    5: '.phoenix_sun_ray_stop',
+    6: '.phoenix_sun_ray_toggle_move',
+    7: '.phoenix_supernova',
+    8: '.solar_forge.phoenix_sun_ray',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

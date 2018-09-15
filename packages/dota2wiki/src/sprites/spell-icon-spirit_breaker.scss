@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-spirit_breaker.png');
 
   @each $index, $item-selector in (
-    0: '.charge_of_darkness_alt',
-    1: '.charge_of_darkness',
-    2: '.empowering_haste',
-    3: '.greater_bash',
-    4: '.nether_strike',
+    0: '.spirit_breaker_charge_of_darkness_alt',
+    1: '.spirit_breaker_charge_of_darkness',
+    2: '.spirit_breaker_empowering_haste',
+    3: '.spirit_breaker_greater_bash',
+    4: '.spirit_breaker_nether_strike',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

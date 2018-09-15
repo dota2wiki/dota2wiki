@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-lion.png');
 
   @each $index, $item-selector in (
-    0: '.finger_of_death',
-    1: '.impale',
-    2: '.mana_drain',
-    3: '.voodoo_fish_green',
-    4: '.voodoo_fish',
-    5: '.voodoo',
-    6: '.demon_drain.mana_drain',
-    7: '.finger_of_death.finger_of_death_immortal',
+    0: '.lion_finger_of_death',
+    1: '.lion_impale',
+    2: '.lion_mana_drain',
+    3: '.lion_voodoo_fish_green',
+    4: '.lion_voodoo_fish',
+    5: '.lion_voodoo',
+    6: '.demon_drain.lion_mana_drain',
+    7: '.finger_of_death.lion_finger_of_death_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

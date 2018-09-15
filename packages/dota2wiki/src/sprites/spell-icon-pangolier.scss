@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-pangolier.png');
 
   @each $index, $item-selector in (
-    0: '.gyroshell',
-    1: '.gyroshell_stop',
-    2: '.heartpiercer',
-    3: '.shield_crash',
-    4: '.swashbuckle',
+    0: '.pangolier_gyroshell',
+    1: '.pangolier_gyroshell_stop',
+    2: '.pangolier_heartpiercer',
+    3: '.pangolier_shield_crash',
+    4: '.pangolier_swashbuckle',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

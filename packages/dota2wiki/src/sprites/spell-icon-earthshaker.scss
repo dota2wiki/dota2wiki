@@ -23,21 +23,21 @@
   background-image: resources('sprites/spell-icon-earthshaker.png');
 
   @each $index, $item-selector in (
-    0: '.aftershock_egset',
-    1: '.aftershock',
-    2: '.echo_slam_egset',
-    3: '.echo_slam',
-    4: '.enchant_totem_egset',
-    5: '.enchant_totem',
-    6: '.fissure_alt_gold',
-    7: '.fissure_alt',
-    8: '.fissure_egset',
-    9: '.fissure',
-    10: '.bracers_of_the_cavern_luminar.enchant_totem',
-    11: '.sltv__earthshaker_ability_icons.aftershock',
-    12: '.sltv__earthshaker_ability_icons.echo_slam',
-    13: '.sltv__earthshaker_ability_icons.enchant_totem',
-    14: '.sltv__earthshaker_ability_icons.fissure',
+    0: '.earthshaker_aftershock_egset',
+    1: '.earthshaker_aftershock',
+    2: '.earthshaker_echo_slam_egset',
+    3: '.earthshaker_echo_slam',
+    4: '.earthshaker_enchant_totem_egset',
+    5: '.earthshaker_enchant_totem',
+    6: '.earthshaker_fissure_alt_gold',
+    7: '.earthshaker_fissure_alt',
+    8: '.earthshaker_fissure_egset',
+    9: '.earthshaker_fissure',
+    10: '.bracers_of_the_cavern_luminar.earthshaker_enchant_totem',
+    11: '.sltv__earthshaker_ability_icons.earthshaker_aftershock',
+    12: '.sltv__earthshaker_ability_icons.earthshaker_echo_slam',
+    13: '.sltv__earthshaker_ability_icons.earthshaker_enchant_totem',
+    14: '.sltv__earthshaker_ability_icons.earthshaker_fissure',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

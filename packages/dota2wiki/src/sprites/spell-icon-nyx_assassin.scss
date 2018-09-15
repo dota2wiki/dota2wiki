@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-nyx_assassin.png');
 
   @each $index, $item-selector in (
-    0: '.burrow',
-    1: '.impale',
-    2: '.mana_burn',
-    3: '.spiked_carapace',
-    4: '.unburrow',
-    5: '.vendetta',
-    6: '.immortal.impale',
-    7: '.immortal_gold.impale',
+    0: '.nyx_assassin_burrow',
+    1: '.nyx_assassin_impale',
+    2: '.nyx_assassin_mana_burn',
+    3: '.nyx_assassin_spiked_carapace',
+    4: '.nyx_assassin_unburrow',
+    5: '.nyx_assassin_vendetta',
+    6: '.immortal.nyx_assassin_impale',
+    7: '.immortal_gold.nyx_assassin_impale',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

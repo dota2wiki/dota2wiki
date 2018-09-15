@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-enigma.png');
 
   @each $index, $item-selector in (
-    0: '.black_hole',
-    1: '.demonic_conversion_alt',
-    2: '.demonic_conversion',
-    3: '.malefice',
-    4: '.midnight_pulse',
-    5: '.worldchasm.black_hole_worldchasm',
+    0: '.enigma_black_hole',
+    1: '.enigma_demonic_conversion_alt',
+    2: '.enigma_demonic_conversion',
+    3: '.enigma_malefice',
+    4: '.enigma_midnight_pulse',
+    5: '.worldchasm.enigma_black_hole_worldchasm',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

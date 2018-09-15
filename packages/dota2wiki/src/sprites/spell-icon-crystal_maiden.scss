@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-crystal_maiden.png');
 
   @each $index, $item-selector in (
-    0: '.brilliance_aura',
-    1: '.crystal_nova_icecowl',
-    2: '.crystal_nova',
-    3: '.freezing_field_alt1',
-    4: '.freezing_field',
-    5: '.frostbite_immortal',
-    6: '.frostbite',
+    0: '.crystal_maiden_brilliance_aura',
+    1: '.crystal_maiden_crystal_nova_icecowl',
+    2: '.crystal_maiden_crystal_nova',
+    3: '.crystal_maiden_freezing_field_alt1',
+    4: '.crystal_maiden_freezing_field',
+    5: '.crystal_maiden_frostbite_immortal',
+    6: '.crystal_maiden_frostbite',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

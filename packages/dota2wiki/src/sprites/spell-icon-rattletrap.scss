@@ -23,10 +23,10 @@
   background-image: resources('sprites/spell-icon-rattletrap.png');
 
   @each $index, $item-selector in (
-    0: '.battery_assault',
-    1: '.hookshot',
-    2: '.power_cogs',
-    3: '.rocket_flare',
+    0: '.rattletrap_battery_assault',
+    1: '.rattletrap_hookshot',
+    2: '.rattletrap_power_cogs',
+    3: '.rattletrap_rocket_flare',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

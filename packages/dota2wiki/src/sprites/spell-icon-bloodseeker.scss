@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-bloodseeker.png');
 
   @each $index, $item-selector in (
-    0: '.blood_bath',
-    1: '.bloodrage',
-    2: '.rupture',
-    3: '.thirst',
-    4: '.bloodseeker_ti_immortal.thirst_alt.png',
-    5: '.bloodseeker_ti_immortal.thirst_alt',
-    6: '.thirst_of_eztshok.bloodrage',
+    0: '.bloodseeker_blood_bath',
+    1: '.bloodseeker_bloodrage',
+    2: '.bloodseeker_rupture',
+    3: '.bloodseeker_thirst',
+    4: '.bloodseeker_ti_immortal.bloodseeker_thirst_alt.png',
+    5: '.bloodseeker_ti_immortal.bloodseeker_thirst_alt',
+    6: '.thirst_of_eztshok.bloodseeker_bloodrage',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

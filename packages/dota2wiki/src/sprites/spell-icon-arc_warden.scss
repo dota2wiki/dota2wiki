@@ -23,10 +23,10 @@
   background-image: resources('sprites/spell-icon-arc_warden.png');
 
   @each $index, $item-selector in (
-    0: '.flux',
-    1: '.magnetic_field',
-    2: '.spark_wraith',
-    3: '.tempest_double',
+    0: '.arc_warden_flux',
+    1: '.arc_warden_magnetic_field',
+    2: '.arc_warden_spark_wraith',
+    3: '.arc_warden_tempest_double',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

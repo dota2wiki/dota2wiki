@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-terrorblade.png');
 
   @each $index, $item-selector in (
-    0: '.conjure_image_alt1',
-    1: '.conjure_image',
-    2: '.metamorphosis_alt1',
-    3: '.metamorphosis',
-    4: '.reflection_alt1',
-    5: '.reflection',
-    6: '.sunder_alt1',
-    7: '.sunder',
-    8: '.ti8_immortal_back.sunder_immortal',
+    0: '.terrorblade_conjure_image_alt1',
+    1: '.terrorblade_conjure_image',
+    2: '.terrorblade_metamorphosis_alt1',
+    3: '.terrorblade_metamorphosis',
+    4: '.terrorblade_reflection_alt1',
+    5: '.terrorblade_reflection',
+    6: '.terrorblade_sunder_alt1',
+    7: '.terrorblade_sunder',
+    8: '.ti8_immortal_back.terrorblade_sunder_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

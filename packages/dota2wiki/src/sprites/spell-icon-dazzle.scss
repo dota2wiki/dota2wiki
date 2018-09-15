@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-dazzle.png');
 
   @each $index, $item-selector in (
-    0: '.poison_touch',
-    1: '.shadow_wave',
-    2: '.shallow_grave',
-    3: '.weave',
+    0: '.dazzle_poison_touch',
+    1: '.dazzle_shadow_wave',
+    2: '.dazzle_shallow_grave',
+    3: '.dazzle_weave',
     4: '.darkclaw_acolyte_weapon.darkclaw_acolyte_poison_touch',
-    5: '.immortal.shallow_grave',
-    6: '.immortal_gold.shallow_grave',
+    5: '.immortal.dazzle_shallow_grave',
+    6: '.immortal_gold.dazzle_shallow_grave',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

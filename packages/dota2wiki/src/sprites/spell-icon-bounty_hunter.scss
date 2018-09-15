@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-bounty_hunter.png');
 
   @each $index, $item-selector in (
-    0: '.jinada',
-    1: '.shuriken_toss',
-    2: '.track',
-    3: '.twinblade_jinada',
-    4: '.twinblade_shuriken_toss',
-    5: '.twinblade_track',
-    6: '.twinblade_wind_walk',
-    7: '.wind_walk',
-    8: '.hunters_hoard.track',
+    0: '.bounty_hunter_jinada',
+    1: '.bounty_hunter_shuriken_toss',
+    2: '.bounty_hunter_track',
+    3: '.bounty_hunter_twinblade_jinada',
+    4: '.bounty_hunter_twinblade_shuriken_toss',
+    5: '.bounty_hunter_twinblade_track',
+    6: '.bounty_hunter_twinblade_wind_walk',
+    7: '.bounty_hunter_wind_walk',
+    8: '.hunters_hoard.bounty_hunter_track',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

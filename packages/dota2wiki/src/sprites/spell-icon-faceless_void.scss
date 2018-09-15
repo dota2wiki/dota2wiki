@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-faceless_void.png');
 
   @each $index, $item-selector in (
-    0: '.backtrack',
-    1: '.chronosphere',
-    2: '.time_dilation',
-    3: '.time_lock',
-    4: '.time_walk',
-    5: '.brancerofaeons.time_dilation_crimson',
-    6: '.brancerofaeons.time_dilation',
-    7: '.jewelofaeons.time_walk_1',
-    8: '.maceofaeons.chronosphere',
+    0: '.faceless_void_backtrack',
+    1: '.faceless_void_chronosphere',
+    2: '.faceless_void_time_dilation',
+    3: '.faceless_void_time_lock',
+    4: '.faceless_void_time_walk',
+    5: '.brancerofaeons.faceless_void_time_dilation_crimson',
+    6: '.brancerofaeons.faceless_void_time_dilation',
+    7: '.jewelofaeons.faceless_void_time_walk_1',
+    8: '.maceofaeons.faceless_void_chronosphere',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

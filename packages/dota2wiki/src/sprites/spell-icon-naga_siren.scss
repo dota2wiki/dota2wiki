@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-naga_siren.png');
 
   @each $index, $item-selector in (
-    0: '.ensnare',
-    1: '.mirror_image',
-    2: '.rip_tide',
-    3: '.rip_tide_ti8',
-    4: '.song_of_the_siren_cancel',
-    5: '.song_of_the_siren',
+    0: '.naga_siren_ensnare',
+    1: '.naga_siren_mirror_image',
+    2: '.naga_siren_rip_tide',
+    3: '.naga_siren_rip_tide_ti8',
+    4: '.naga_siren_song_of_the_siren_cancel',
+    5: '.naga_siren_song_of_the_siren',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

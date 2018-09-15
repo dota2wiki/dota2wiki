@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-tiny.png');
 
   @each $index, $item-selector in (
-    0: '.avalanche',
-    1: '.craggy_exterior',
-    2: '.grow',
-    3: '.toss',
-    4: '.toss_tree',
+    0: '.tiny_avalanche',
+    1: '.tiny_craggy_exterior',
+    2: '.tiny_grow',
+    3: '.tiny_toss',
+    4: '.tiny_toss_tree',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

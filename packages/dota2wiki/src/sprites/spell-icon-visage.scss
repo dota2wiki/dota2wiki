@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-visage.png');
 
   @each $index, $item-selector in (
-    0: '.grave_chill',
-    1: '.gravekeepers_cloak',
-    2: '.soul_assumption',
-    3: '.stone_form_self_cast',
-    4: '.summon_familiars_alt1',
-    5: '.summon_familiars',
-    6: '.summon_familiars_stone_form_alt1',
-    7: '.summon_familiars_stone_form',
+    0: '.visage_grave_chill',
+    1: '.visage_gravekeepers_cloak',
+    2: '.visage_soul_assumption',
+    3: '.visage_stone_form_self_cast',
+    4: '.visage_summon_familiars_alt1',
+    5: '.visage_summon_familiars',
+    6: '.visage_summon_familiars_stone_form_alt1',
+    7: '.visage_summon_familiars_stone_form',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

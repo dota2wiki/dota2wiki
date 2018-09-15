@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-batrider.png');
 
   @each $index, $item-selector in (
-    0: '.firefly',
-    1: '.flamebreak',
-    2: '.flaming_lasso',
-    3: '.sticky_napalm',
-    4: '.ti8_immortal_mount.firefly_immortal',
+    0: '.batrider_firefly',
+    1: '.batrider_flamebreak',
+    2: '.batrider_flaming_lasso',
+    3: '.batrider_sticky_napalm',
+    4: '.ti8_immortal_mount.batrider_firefly_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

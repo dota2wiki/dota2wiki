@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-vengefulspirit.png');
 
   @each $index, $item-selector in (
-    0: '.command_aura',
-    1: '.magic_missile',
-    2: '.nether_swap',
-    3: '.wave_of_terror',
-    4: '.huangs_umbra_icons.command_aura',
-    5: '.huangs_umbra_icons.magic_missile',
-    6: '.huangs_umbra_icons.nether_swap',
-    7: '.huangs_umbra_icons.wave_of_terror',
-    8: '.ti8_immortal_back.magic_missile_immortal_crimson',
-    9: '.ti8_immortal_back.magic_missile_immortal',
+    0: '.vengefulspirit_command_aura',
+    1: '.vengefulspirit_magic_missile',
+    2: '.vengefulspirit_nether_swap',
+    3: '.vengefulspirit_wave_of_terror',
+    4: '.huangs_umbra_icons.vengefulspirit_command_aura',
+    5: '.huangs_umbra_icons.vengefulspirit_magic_missile',
+    6: '.huangs_umbra_icons.vengefulspirit_nether_swap',
+    7: '.huangs_umbra_icons.vengefulspirit_wave_of_terror',
+    8: '.ti8_immortal_back.vengefulspirit_magic_missile_immortal_crimson',
+    9: '.ti8_immortal_back.vengefulspirit_magic_missile_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

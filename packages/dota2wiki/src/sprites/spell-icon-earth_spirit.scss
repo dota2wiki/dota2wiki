@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-earth_spirit.png');
 
   @each $index, $item-selector in (
-    0: '.boulder_smash',
-    1: '.geomagnetic_grip',
-    2: '.magnetize',
-    3: '.petrify',
-    4: '.rolling_boulder',
-    5: '.stone_caller',
-    6: '.jade_reckoning.rolling_boulder',
+    0: '.earth_spirit_boulder_smash',
+    1: '.earth_spirit_geomagnetic_grip',
+    2: '.earth_spirit_magnetize',
+    3: '.earth_spirit_petrify',
+    4: '.earth_spirit_rolling_boulder',
+    5: '.earth_spirit_stone_caller',
+    6: '.jade_reckoning.earth_spirit_rolling_boulder',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

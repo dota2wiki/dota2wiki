@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-treant.png');
 
   @each $index, $item-selector in (
-    0: '.eyes_in_the_forest',
-    1: '.leech_seed',
-    2: '.living_armor',
-    3: '.natures_guise',
-    4: '.overgrowth',
-    5: '.fungal_protector_icons.eyes_in_the_forest',
-    6: '.fungal_protector_icons.leech_seed',
-    7: '.fungal_protector_icons.living_armor',
-    8: '.fungal_protector_icons.natures_guise',
-    9: '.fungal_protector_icons.overgrowth',
-    10: '.treant_ti7_immortal.living_armor.png',
-    11: '.treant_ti7_immortal.living_armor_crimson',
-    12: '.treant_ti7_immortal.living_armor',
+    0: '.treant_eyes_in_the_forest',
+    1: '.treant_leech_seed',
+    2: '.treant_living_armor',
+    3: '.treant_natures_guise',
+    4: '.treant_overgrowth',
+    5: '.fungal_protector_icons.treant_eyes_in_the_forest',
+    6: '.fungal_protector_icons.treant_leech_seed',
+    7: '.fungal_protector_icons.treant_living_armor',
+    8: '.fungal_protector_icons.treant_natures_guise',
+    9: '.fungal_protector_icons.treant_overgrowth',
+    10: '.treant_ti7_immortal.treant_living_armor.png',
+    11: '.treant_ti7_immortal.treant_living_armor_crimson',
+    12: '.treant_ti7_immortal.treant_living_armor',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

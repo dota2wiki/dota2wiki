@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-phantom_lancer.png');
 
   @each $index, $item-selector in (
-    0: '.doppelwalk',
-    1: '.juxtapose',
-    2: '.phantom_edge',
-    3: '.spirit_lance',
-    4: '.sunwarrior_doppelwalk',
-    5: '.sunwarrior_juxtapose',
-    6: '.sunwarrior_phantom_edge',
-    7: '.sunwarrior_spirit_lance',
-    8: '.immortal.phantom_edge',
-    9: '.phantom_concord.spirit_lance',
+    0: '.phantom_lancer_doppelwalk',
+    1: '.phantom_lancer_juxtapose',
+    2: '.phantom_lancer_phantom_edge',
+    3: '.phantom_lancer_spirit_lance',
+    4: '.phantom_lancer_sunwarrior_doppelwalk',
+    5: '.phantom_lancer_sunwarrior_juxtapose',
+    6: '.phantom_lancer_sunwarrior_phantom_edge',
+    7: '.phantom_lancer_sunwarrior_spirit_lance',
+    8: '.immortal.phantom_lancer_phantom_edge',
+    9: '.phantom_concord.phantom_lancer_spirit_lance',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

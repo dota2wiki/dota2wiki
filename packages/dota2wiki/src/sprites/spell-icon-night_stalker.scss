@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-night_stalker.png');
 
   @each $index, $item-selector in (
-    0: '.crippling_fear',
-    1: '.darkness',
-    2: '.hunter_in_the_night',
-    3: '.void_alt',
-    4: '.void',
+    0: '.night_stalker_crippling_fear',
+    1: '.night_stalker_darkness',
+    2: '.night_stalker_hunter_in_the_night',
+    3: '.night_stalker_void_alt',
+    4: '.night_stalker_void',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

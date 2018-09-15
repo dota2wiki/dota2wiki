@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-tidehunter.png');
 
   @each $index, $item-selector in (
-    0: '.anchor_smash',
-    1: '.gush',
-    2: '.kraken_shell',
-    3: '.ravage',
-    4: '.diving_helmet.gush_gold',
-    5: '.diving_helmet.gush',
+    0: '.tidehunter_anchor_smash',
+    1: '.tidehunter_gush',
+    2: '.tidehunter_kraken_shell',
+    3: '.tidehunter_ravage',
+    4: '.diving_helmet.tidehunter_gush_gold',
+    5: '.diving_helmet.tidehunter_gush',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

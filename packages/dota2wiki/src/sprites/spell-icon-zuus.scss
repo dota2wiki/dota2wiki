@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-zuus.png');
 
   @each $index, $item-selector in (
-    0: '.arc_lightning',
-    1: '.cloud',
-    2: '.lightning_bolt_immortal',
-    3: '.lightning_bolt',
-    4: '.static_field_alt1',
-    5: '.static_field',
-    6: '.thundergods_wrath_alt1',
-    7: '.thundergods_wrath',
+    0: '.zuus_arc_lightning',
+    1: '.zuus_cloud',
+    2: '.zuus_lightning_bolt_immortal',
+    3: '.zuus_lightning_bolt',
+    4: '.zuus_static_field_alt1',
+    5: '.zuus_static_field',
+    6: '.zuus_thundergods_wrath_alt1',
+    7: '.zuus_thundergods_wrath',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

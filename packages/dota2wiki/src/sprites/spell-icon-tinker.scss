@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-tinker.png');
 
   @each $index, $item-selector in (
-    0: '.heat_seeking_missile',
-    1: '.laser',
-    2: '.march_of_the_machines',
-    3: '.rearm',
-    4: '.rollermawster.march_of_the_machines_1',
+    0: '.tinker_heat_seeking_missile',
+    1: '.tinker_laser',
+    2: '.tinker_march_of_the_machines',
+    3: '.tinker_rearm',
+    4: '.rollermawster.tinker_march_of_the_machines_1',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

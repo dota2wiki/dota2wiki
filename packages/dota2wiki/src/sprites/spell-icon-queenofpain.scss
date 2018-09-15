@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-queenofpain.png');
 
   @each $index, $item-selector in (
-    0: '.blink',
-    1: '.sanguine_blink',
-    2: '.sanguine_scream_of_pain',
-    3: '.sanguine_shadow_strike',
-    4: '.scream_of_pain',
-    5: '.shadow_strike',
-    6: '.sonic_wave',
+    0: '.queenofpain_blink',
+    1: '.queenofpain_sanguine_blink',
+    2: '.queenofpain_sanguine_scream_of_pain',
+    3: '.queenofpain_sanguine_shadow_strike',
+    4: '.queenofpain_scream_of_pain',
+    5: '.queenofpain_shadow_strike',
+    6: '.queenofpain_sonic_wave',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

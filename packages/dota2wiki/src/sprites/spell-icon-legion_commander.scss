@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-legion_commander.png');
 
   @each $index, $item-selector in (
-    0: '.duel_alt1',
-    1: '.duel',
-    2: '.moment_of_courage',
-    3: '.overwhelming_odds',
-    4: '.press_the_attack',
-    5: '.immortal.overwhelming_odds',
-    6: '.legacy_of_the_fallen_legion.press_the_attack',
+    0: '.legion_commander_duel_alt1',
+    1: '.legion_commander_duel',
+    2: '.legion_commander_moment_of_courage',
+    3: '.legion_commander_overwhelming_odds',
+    4: '.legion_commander_press_the_attack',
+    5: '.immortal.legion_commander_overwhelming_odds',
+    6: '.legacy_of_the_fallen_legion.legion_commander_press_the_attack',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

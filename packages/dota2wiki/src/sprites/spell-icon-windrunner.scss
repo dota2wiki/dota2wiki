@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-windrunner.png');
 
   @each $index, $item-selector in (
-    0: '.focusfire',
-    1: '.powershot',
-    2: '.shackleshot',
-    3: '.shackleshot_ti8immortal',
-    4: '.windrun',
-    5: '.windrun_sylvan',
-    6: '.peregrine_flight.powershot',
+    0: '.windrunner_focusfire',
+    1: '.windrunner_powershot',
+    2: '.windrunner_shackleshot',
+    3: '.windrunner_shackleshot_ti8immortal',
+    4: '.windrunner_windrun',
+    5: '.windrunner_windrun_sylvan',
+    6: '.peregrine_flight.windrunner_powershot',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-beastmaster.png');
 
   @each $index, $item-selector in (
-    0: '.boar_poison',
-    1: '.call_of_the_wild_hawk',
-    2: '.call_of_the_wild',
-    3: '.greater_boar_poison',
-    4: '.hawk_invisibility',
-    5: '.inner_beast',
-    6: '.primal_roar',
-    7: '.wild_axes',
-    8: '.immortal.primal_roar',
+    0: '.beastmaster_boar_poison',
+    1: '.beastmaster_call_of_the_wild_hawk',
+    2: '.beastmaster_call_of_the_wild',
+    3: '.beastmaster_greater_boar_poison',
+    4: '.beastmaster_hawk_invisibility',
+    5: '.beastmaster_inner_beast',
+    6: '.beastmaster_primal_roar',
+    7: '.beastmaster_wild_axes',
+    8: '.immortal.beastmaster_primal_roar',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

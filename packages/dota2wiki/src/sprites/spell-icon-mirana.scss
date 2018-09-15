@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-mirana.png');
 
   @each $index, $item-selector in (
-    0: '.arrow',
-    1: '.invis',
-    2: '.leap',
-    3: '.leap_ti8',
-    4: '.starfall',
-    5: '.pulsar_remnant.starfall',
+    0: '.mirana_arrow',
+    1: '.mirana_invis',
+    2: '.mirana_leap',
+    3: '.mirana_leap_ti8',
+    4: '.mirana_starfall',
+    5: '.pulsar_remnant.mirana_starfall',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

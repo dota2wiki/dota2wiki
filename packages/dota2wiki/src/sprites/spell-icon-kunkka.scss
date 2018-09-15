@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-kunkka.png');
 
   @each $index, $item-selector in (
-    0: '.divine_anchor_ghostship',
-    1: '.divine_anchor_tidebringer',
-    2: '.divine_anchor_torrent',
-    3: '.divine_anchor_x_marks',
-    4: '.ghostship_immortal',
-    5: '.ghostship',
-    6: '.return',
-    7: '.tidebringer',
-    8: '.torrent',
-    9: '.x_marks_the_spot',
-    10: '.ti8_immortal_weapon_retro.torrent_immortal_retro',
+    0: '.kunkka_divine_anchor_ghostship',
+    1: '.kunkka_divine_anchor_tidebringer',
+    2: '.kunkka_divine_anchor_torrent',
+    3: '.kunkka_divine_anchor_x_marks',
+    4: '.kunkka_ghostship_immortal',
+    5: '.kunkka_ghostship',
+    6: '.kunkka_return',
+    7: '.kunkka_tidebringer',
+    8: '.kunkka_torrent',
+    9: '.kunkka_x_marks_the_spot',
+    10: '.ti8_immortal_weapon_retro.kunkka_torrent_immortal_retro',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

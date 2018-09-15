@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-disruptor.png');
 
   @each $index, $item-selector in (
-    0: '.glimpse',
-    1: '.kinetic_field',
-    2: '.static_storm',
-    3: '.thunder_strike',
-    4: '.resistive_pinfold.kinetic_field',
-    5: '.ti8_immortal_weapon.thunder_strike_immortal',
+    0: '.disruptor_glimpse',
+    1: '.disruptor_kinetic_field',
+    2: '.disruptor_static_storm',
+    3: '.disruptor_thunder_strike',
+    4: '.resistive_pinfold.disruptor_kinetic_field',
+    5: '.ti8_immortal_weapon.disruptor_thunder_strike_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

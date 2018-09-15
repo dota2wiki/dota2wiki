@@ -23,11 +23,11 @@
   background-image: resources('sprites/spell-icon-clinkz.png');
 
   @each $index, $item-selector in (
-    0: '.death_pact',
-    1: '.searing_arrows_immortal',
-    2: '.searing_arrows',
-    3: '.strafe',
-    4: '.wind_walk',
+    0: '.clinkz_death_pact',
+    1: '.clinkz_searing_arrows_immortal',
+    2: '.clinkz_searing_arrows',
+    3: '.clinkz_strafe',
+    4: '.clinkz_wind_walk',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-death_prophet.png');
 
   @each $index, $item-selector in (
-    0: '.carrion_swarm_moth',
-    1: '.carrion_swarm',
-    2: '.exorcism',
-    3: '.silence',
-    4: '.spirit_siphon',
-    5: '.witchcraft',
-    6: '.awakened_thirst_ult_bat_icon.exorcism',
+    0: '.death_prophet_carrion_swarm_moth',
+    1: '.death_prophet_carrion_swarm',
+    2: '.death_prophet_exorcism',
+    3: '.death_prophet_silence',
+    4: '.death_prophet_spirit_siphon',
+    5: '.death_prophet_witchcraft',
+    6: '.awakened_thirst_ult_bat_icon.death_prophet_exorcism',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

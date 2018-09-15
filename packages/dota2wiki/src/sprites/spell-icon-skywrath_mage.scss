@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-skywrath_mage.png');
 
   @each $index, $item-selector in (
-    0: '.ancient_seal',
-    1: '.arcane_bolt',
-    2: '.concussive_shot',
-    3: '.mystic_flare_alt_gold',
-    4: '.mystic_flare_alt',
-    5: '.mystic_flare',
-    6: '.crested_dawn_icons.ancient_seal',
-    7: '.crested_dawn_icons.arcane_bolt',
-    8: '.crested_dawn_icons.concussive_shot',
-    9: '.crested_dawn_icons.mystic_flare',
+    0: '.skywrath_mage_ancient_seal',
+    1: '.skywrath_mage_arcane_bolt',
+    2: '.skywrath_mage_concussive_shot',
+    3: '.skywrath_mage_mystic_flare_alt_gold',
+    4: '.skywrath_mage_mystic_flare_alt',
+    5: '.skywrath_mage_mystic_flare',
+    6: '.crested_dawn_icons.skywrath_mage_ancient_seal',
+    7: '.crested_dawn_icons.skywrath_mage_arcane_bolt',
+    8: '.crested_dawn_icons.skywrath_mage_concussive_shot',
+    9: '.crested_dawn_icons.skywrath_mage_mystic_flare',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-weaver.png');
 
   @each $index, $item-selector in (
-    0: '.geminate_attack',
-    1: '.shukuchi',
-    2: '.the_swarm',
-    3: '.time_lapse',
-    4: '.crimson_pique.shukuchi',
-    5: '.immortal.geminate_attack_gold',
-    6: '.immortal.geminate_attack',
+    0: '.weaver_geminate_attack',
+    1: '.weaver_shukuchi',
+    2: '.weaver_the_swarm',
+    3: '.weaver_time_lapse',
+    4: '.crimson_pique.weaver_shukuchi',
+    5: '.immortal.weaver_geminate_attack_gold',
+    6: '.immortal.weaver_geminate_attack',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

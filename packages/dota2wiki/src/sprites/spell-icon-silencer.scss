@@ -23,17 +23,17 @@
   background-image: resources('sprites/spell-icon-silencer.png');
 
   @each $index, $item-selector in (
-    0: '.curse_of_the_silent',
-    1: '.gaives_of_wisdom',
-    2: '.glaives_of_wisdom',
-    3: '.global_silence',
-    4: '.last_word',
-    5: '.bts_silencer_ability.curse_of_the_silent',
-    6: '.bts_silencer_ability.glaives_of_wisdom',
-    7: '.bts_silencer_ability.global_silence',
-    8: '.bts_silencer_ability.last_word',
-    9: '.immortal.last_word',
-    10: '.ti8_immortal_weapon.glaives_of_wisdom_immortal',
+    0: '.silencer_curse_of_the_silent',
+    1: '.silencer_gaives_of_wisdom',
+    2: '.silencer_glaives_of_wisdom',
+    3: '.silencer_global_silence',
+    4: '.silencer_last_word',
+    5: '.bts_silencer_ability.silencer_curse_of_the_silent',
+    6: '.bts_silencer_ability.silencer_glaives_of_wisdom',
+    7: '.bts_silencer_ability.silencer_global_silence',
+    8: '.bts_silencer_ability.silencer_last_word',
+    9: '.immortal.silencer_last_word',
+    10: '.ti8_immortal_weapon.silencer_glaives_of_wisdom_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

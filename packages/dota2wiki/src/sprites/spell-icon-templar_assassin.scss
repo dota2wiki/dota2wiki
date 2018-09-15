@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-templar_assassin.png');
 
   @each $index, $item-selector in (
-    0: '.meld',
-    1: '.psi_blades',
-    2: '.psionic_trap',
-    3: '.refraction_damage',
-    4: '.refraction',
-    5: '.self_trap',
-    6: '.trap',
-    7: '.focal_resonance.meld',
-    8: '.focal_resonance.psi_blades',
+    0: '.templar_assassin_meld',
+    1: '.templar_assassin_psi_blades',
+    2: '.templar_assassin_psionic_trap',
+    3: '.templar_assassin_refraction_damage',
+    4: '.templar_assassin_refraction',
+    5: '.templar_assassin_self_trap',
+    6: '.templar_assassin_trap',
+    7: '.focal_resonance.templar_assassin_meld',
+    8: '.focal_resonance.templar_assassin_psi_blades',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

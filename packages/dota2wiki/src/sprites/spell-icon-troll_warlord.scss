@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-troll_warlord.png');
 
   @each $index, $item-selector in (
-    0: '.battle_trance',
-    1: '.berserkers_rage_active',
-    2: '.berserkers_rage',
-    3: '.fervor',
-    4: '.whirling_axes_melee',
-    5: '.whirling_axes_ranged',
-    6: '.immortal.berserkers_rage_active',
-    7: '.immortal.berserkers_rage',
+    0: '.troll_warlord_battle_trance',
+    1: '.troll_warlord_berserkers_rage_active',
+    2: '.troll_warlord_berserkers_rage',
+    3: '.troll_warlord_fervor',
+    4: '.troll_warlord_whirling_axes_melee',
+    5: '.troll_warlord_whirling_axes_ranged',
+    6: '.immortal.troll_warlord_berserkers_rage_active',
+    7: '.immortal.troll_warlord_berserkers_rage',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

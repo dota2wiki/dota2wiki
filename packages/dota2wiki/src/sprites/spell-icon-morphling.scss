@@ -23,16 +23,16 @@
   background-image: resources('sprites/spell-icon-morphling.png');
 
   @each $index, $item-selector in (
-    0: '.adaptive_strike_agi_ethereal_blade',
-    1: '.adaptive_strike_agi',
-    2: '.adaptive_strike_str',
-    3: '.hybrid',
-    4: '.morph_agi',
-    5: '.morph_replicate',
-    6: '.morph_str',
-    7: '.replicate',
-    8: '.waveform',
-    9: '.crown_of_tears.waveform',
+    0: '.morphling_adaptive_strike_agi_ethereal_blade',
+    1: '.morphling_adaptive_strike_agi',
+    2: '.morphling_adaptive_strike_str',
+    3: '.morphling_hybrid',
+    4: '.morphling_morph_agi',
+    5: '.morphling_morph_replicate',
+    6: '.morphling_morph_str',
+    7: '.morphling_replicate',
+    8: '.morphling_waveform',
+    9: '.crown_of_tears.morphling_waveform',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

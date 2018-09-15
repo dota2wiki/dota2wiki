@@ -23,19 +23,19 @@
   background-image: resources('sprites/spell-icon-phantom_assassin.png');
 
   @each $index, $item-selector in (
-    0: '.arcana_blur',
-    1: '.arcana_coup_de_grace',
-    2: '.arcana_phantom_strike',
-    3: '.arcana_stifling_dagger',
-    4: '.blur',
-    5: '.coup_de_grace',
-    6: '.phantom_strike',
-    7: '.stifling_dagger',
-    8: '.ravening_ability_icons.blur',
-    9: '.ravening_ability_icons.coup_de_grace',
-    10: '.ravening_ability_icons.phantom_strike',
-    11: '.ravening_ability_icons.stifling_dagger',
-    12: '.ti8_immortal_helmet.stifling_dagger_immortal',
+    0: '.phantom_assassin_arcana_blur',
+    1: '.phantom_assassin_arcana_coup_de_grace',
+    2: '.phantom_assassin_arcana_phantom_strike',
+    3: '.phantom_assassin_arcana_stifling_dagger',
+    4: '.phantom_assassin_blur',
+    5: '.phantom_assassin_coup_de_grace',
+    6: '.phantom_assassin_phantom_strike',
+    7: '.phantom_assassin_stifling_dagger',
+    8: '.ravening_ability_icons.phantom_assassin_blur',
+    9: '.ravening_ability_icons.phantom_assassin_coup_de_grace',
+    10: '.ravening_ability_icons.phantom_assassin_phantom_strike',
+    11: '.ravening_ability_icons.phantom_assassin_stifling_dagger',
+    12: '.ti8_immortal_helmet.phantom_assassin_stifling_dagger_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

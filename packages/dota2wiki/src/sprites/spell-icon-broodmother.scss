@@ -23,18 +23,18 @@
   background-image: resources('sprites/spell-icon-broodmother.png');
 
   @each $index, $item-selector in (
-    0: '.incapacitating_bite',
-    1: '.insatiable_hunger',
-    2: '.poison_sting',
-    3: '.spawn_spiderite',
-    4: '.spawn_spiderlings_immortal',
-    5: '.spawn_spiderlings',
-    6: '.spin_web_destroy',
-    7: '.spin_web',
-    8: '.virulent_matriarch.incapacitating_bite',
-    9: '.virulent_matriarch.insatiable_hunger',
-    10: '.virulent_matriarch.spawn_spiderlings',
-    11: '.virulent_matriarch.spin_web',
+    0: '.broodmother_incapacitating_bite',
+    1: '.broodmother_insatiable_hunger',
+    2: '.broodmother_poison_sting',
+    3: '.broodmother_spawn_spiderite',
+    4: '.broodmother_spawn_spiderlings_immortal',
+    5: '.broodmother_spawn_spiderlings',
+    6: '.broodmother_spin_web_destroy',
+    7: '.broodmother_spin_web',
+    8: '.virulent_matriarch.broodmother_incapacitating_bite',
+    9: '.virulent_matriarch.broodmother_insatiable_hunger',
+    10: '.virulent_matriarch.broodmother_spawn_spiderlings',
+    11: '.virulent_matriarch.broodmother_spin_web',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

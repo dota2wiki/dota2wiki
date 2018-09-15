@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-ancient_apparition.png');
 
   @each $index, $item-selector in (
-    0: '.chilling_touch',
-    1: '.cold_feet',
-    2: '.ice_blast',
-    3: '.ice_blast_release',
-    4: '.ice_vortex',
-    5: '.shatterblast_crown.ice_blast',
-    6: '.shatterblast_crown.ice_blast_release',
-    7: '.ti8_immortal_back.ice_vortex_immortal',
+    0: '.ancient_apparition_chilling_touch',
+    1: '.ancient_apparition_cold_feet',
+    2: '.ancient_apparition_ice_blast',
+    3: '.ancient_apparition_ice_blast_release',
+    4: '.ancient_apparition_ice_vortex',
+    5: '.shatterblast_crown.ancient_apparition_ice_blast',
+    6: '.shatterblast_crown.ancient_apparition_ice_blast_release',
+    7: '.ti8_immortal_back.ancient_apparition_ice_vortex_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

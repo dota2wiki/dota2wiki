@@ -23,14 +23,14 @@
   background-image: resources('sprites/spell-icon-storm_spirit.png');
 
   @each $index, $item-selector in (
-    0: '.ball_lightning_orchid',
-    1: '.ball_lightning',
-    2: '.electric_vortex',
-    3: '.overload',
-    4: '.overload_ti8_golden',
-    5: '.overload_ti8',
-    6: '.static_remnant',
-    7: '.ti8_retro_immortal.ball_lightning_orchid_retro',
+    0: '.storm_spirit_ball_lightning_orchid',
+    1: '.storm_spirit_ball_lightning',
+    2: '.storm_spirit_electric_vortex',
+    3: '.storm_spirit_overload',
+    4: '.storm_spirit_overload_ti8_golden',
+    5: '.storm_spirit_overload_ti8',
+    6: '.storm_spirit_static_remnant',
+    7: '.ti8_retro_immortal.storm_spirit_ball_lightning_orchid_retro',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

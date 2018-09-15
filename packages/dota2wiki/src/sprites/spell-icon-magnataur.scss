@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-magnataur.png');
 
   @each $index, $item-selector in (
-    0: '.empower',
-    1: '.reverse_polarity',
-    2: '.shockwave_alt',
-    3: '.shockwave',
-    4: '.skewer',
-    5: '.forgemaster_icons.empower',
-    6: '.forgemaster_icons.reverse_polarity',
-    7: '.forgemaster_icons.shockwave',
-    8: '.forgemaster_icons.skewer',
+    0: '.magnataur_empower',
+    1: '.magnataur_reverse_polarity',
+    2: '.magnataur_shockwave_alt',
+    3: '.magnataur_shockwave',
+    4: '.magnataur_skewer',
+    5: '.forgemaster_icons.magnataur_empower',
+    6: '.forgemaster_icons.magnataur_reverse_polarity',
+    7: '.forgemaster_icons.magnataur_shockwave',
+    8: '.forgemaster_icons.magnataur_skewer',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

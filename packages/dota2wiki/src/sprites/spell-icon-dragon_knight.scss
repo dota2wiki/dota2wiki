@@ -23,15 +23,15 @@
   background-image: resources('sprites/spell-icon-dragon_knight.png');
 
   @each $index, $item-selector in (
-    0: '.breathe_fire',
-    1: '.dragon_blood',
-    2: '.dragon_tail',
-    3: '.elder_dragon_form_iron_dragon',
-    4: '.elder_dragon_form',
-    5: '.fireborn_ability_icons.breathe_fire',
-    6: '.fireborn_ability_icons.dragon_blood',
-    7: '.fireborn_ability_icons.dragon_tail',
-    8: '.fireborn_ability_icons.elder_dragon_form',
+    0: '.dragon_knight_breathe_fire',
+    1: '.dragon_knight_dragon_blood',
+    2: '.dragon_knight_dragon_tail',
+    3: '.dragon_knight_elder_dragon_form_iron_dragon',
+    4: '.dragon_knight_elder_dragon_form',
+    5: '.fireborn_ability_icons.dragon_knight_breathe_fire',
+    6: '.fireborn_ability_icons.dragon_knight_dragon_blood',
+    7: '.fireborn_ability_icons.dragon_knight_dragon_tail',
+    8: '.fireborn_ability_icons.dragon_knight_elder_dragon_form',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

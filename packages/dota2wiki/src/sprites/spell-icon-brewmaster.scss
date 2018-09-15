@@ -23,20 +23,20 @@
   background-image: resources('sprites/spell-icon-brewmaster.png');
 
   @each $index, $item-selector in (
-    0: '.drunken_brawler_active',
-    1: '.drunken_brawler_crit',
-    2: '.drunken_brawler_miss',
-    3: '.drunken_brawler',
-    4: '.drunken_haze',
-    5: '.earth_hurl_boulder',
-    6: '.earth_pulverize',
-    7: '.earth_spell_immunity',
-    8: '.fire_permanent_immolation',
-    9: '.primal_split',
-    10: '.storm_cyclone',
-    11: '.storm_dispel_magic',
-    12: '.storm_wind_walk',
-    13: '.thunder_clap',
+    0: '.brewmaster_drunken_brawler_active',
+    1: '.brewmaster_drunken_brawler_crit',
+    2: '.brewmaster_drunken_brawler_miss',
+    3: '.brewmaster_drunken_brawler',
+    4: '.brewmaster_drunken_haze',
+    5: '.brewmaster_earth_hurl_boulder',
+    6: '.brewmaster_earth_pulverize',
+    7: '.brewmaster_earth_spell_immunity',
+    8: '.brewmaster_fire_permanent_immolation',
+    9: '.brewmaster_primal_split',
+    10: '.brewmaster_storm_cyclone',
+    11: '.brewmaster_storm_dispel_magic',
+    12: '.brewmaster_storm_wind_walk',
+    13: '.brewmaster_thunder_clap',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

@@ -23,13 +23,13 @@
   background-image: resources('sprites/spell-icon-viper.png');
 
   @each $index, $item-selector in (
-    0: '.corrosive_skin',
-    1: '.nethertoxin',
-    2: '.poison_attack',
-    3: '.viper_strike',
-    4: '.immortal.poison_attack_crimson',
-    5: '.immortal.poison_attack',
-    6: '.ti8_immortal_tail.nethertoxin_immortal',
+    0: '.viper_corrosive_skin',
+    1: '.viper_nethertoxin',
+    2: '.viper_poison_attack',
+    3: '.viper_viper_strike',
+    4: '.immortal.viper_poison_attack_crimson',
+    5: '.immortal.viper_poison_attack',
+    6: '.ti8_immortal_tail.viper_nethertoxin_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);

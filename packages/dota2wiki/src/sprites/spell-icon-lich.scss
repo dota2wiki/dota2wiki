@@ -23,12 +23,12 @@
   background-image: resources('sprites/spell-icon-lich.png');
 
   @each $index, $item-selector in (
-    0: '.chain_frost',
-    1: '.dark_ritual',
-    2: '.frost_armor',
-    3: '.frost_nova',
-    4: '.shearing_deposition.frost_nova',
-    5: '.ti8_immortal_wrist.chain_frost_immortal',
+    0: '.lich_chain_frost',
+    1: '.lich_dark_ritual',
+    2: '.lich_frost_armor',
+    3: '.lich_frost_nova',
+    4: '.shearing_deposition.lich_frost_nova',
+    5: '.ti8_immortal_wrist.lich_chain_frost_immortal',
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
