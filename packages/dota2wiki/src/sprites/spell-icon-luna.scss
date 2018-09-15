@@ -1,0 +1,42 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_luna {
+  $total:       10;
+  $cols:        10;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-luna.png');
+
+  @each $index, $item-selector in (
+    0: '.eclipse',
+    1: '.lucent_beam_alt2',
+    2: '.lucent_beam_alt',
+    3: '.lucent_beam',
+    4: '.lunar_blessing',
+    5: '.moon_glaive',
+    6: '.zodiac_sigils_skills.eclipse',
+    7: '.zodiac_sigils_skills.lucent_beam',
+    8: '.zodiac_sigils_skills.lunar_blessing',
+    9: '.zodiac_sigils_skills.moon_glaive',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

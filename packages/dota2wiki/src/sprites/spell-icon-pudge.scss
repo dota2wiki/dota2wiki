@@ -1,0 +1,57 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_pudge {
+  $total:       25;
+  $cols:        25;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-pudge.png');
+
+  @each $index, $item-selector in (
+    0: '.dismember',
+    1: '.flesh_heap',
+    2: '.meat_hook',
+    3: '.rot',
+    4: '.arcana.dismember_arcana',
+    5: '.arcana.dismember_arcana_style1',
+    6: '.arcana.flesh_heap_arcana',
+    7: '.arcana.flesh_heap_arcana_style1',
+    8: '.arcana.meat_hook_arcana',
+    9: '.arcana.meat_hook_arcana_style1',
+    10: '.arcana.rot_arcana',
+    11: '.arcana.rot_arcana_style1',
+    12: '.dotapit_s3_pudge.dismember',
+    13: '.dotapit_s3_pudge.flesh_heap',
+    14: '.dotapit_s3_pudge.meat_hook',
+    15: '.dotapit_s3_pudge.rot',
+    16: '.immortal.meat_hook',
+    17: '.immortal_gold.meat_hook',
+    18: '.scavenger_dragon_ability.dismember',
+    19: '.scavenger_dragon_ability.flesh_heap',
+    20: '.scavenger_dragon_ability.meat_hook',
+    21: '.scavenger_dragon_ability.rot',
+    22: '.ti7_pudge_immortal.rot_alt.png',
+    23: '.ti7_pudge_immortal.rot_alt2',
+    24: '.ti7_pudge_immortal.rot_alt',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

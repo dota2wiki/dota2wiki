@@ -1,0 +1,41 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_techies {
+  $total:       9;
+  $cols:        9;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-techies.png');
+
+  @each $index, $item-selector in (
+    0: '.focused_detonate',
+    1: '.land_mines',
+    2: '.minefield_sign',
+    3: '.minefield_sign_swine',
+    4: '.remote_mines',
+    5: '.remote_mines_self_detonate',
+    6: '.remote_swines',
+    7: '.stasis_trap',
+    8: '.suicide',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_warlock {
+  $total:       11;
+  $cols:        11;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-warlock.png');
+
+  @each $index, $item-selector in (
+    0: '.fatal_bonds',
+    1: '.golem_flaming_fists',
+    2: '.golem_permanent_immolation',
+    3: '.hellborn_upheaval',
+    4: '.rain_of_chaos',
+    5: '.shadow_word',
+    6: '.upheaval',
+    7: '.tools_hellsworn_icons.golem_flaming_fists',
+    8: '.tools_hellsworn_icons.golem_permanent_immolation',
+    9: '.tools_hellsworn_icons.rain_of_chaos',
+    10: '.wailing_inferno_icons.wailing_inferno_rain_of_chaos',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

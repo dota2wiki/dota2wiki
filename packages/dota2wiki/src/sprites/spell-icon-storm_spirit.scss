@@ -1,0 +1,40 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_storm_spirit {
+  $total:       8;
+  $cols:        8;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-storm_spirit.png');
+
+  @each $index, $item-selector in (
+    0: '.ball_lightning_orchid',
+    1: '.ball_lightning',
+    2: '.electric_vortex',
+    3: '.overload',
+    4: '.overload_ti8_golden',
+    5: '.overload_ti8',
+    6: '.static_remnant',
+    7: '.ti8_retro_immortal.ball_lightning_orchid_retro',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

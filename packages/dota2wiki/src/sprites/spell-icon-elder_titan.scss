@@ -1,0 +1,43 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_elder_titan {
+  $total:       11;
+  $cols:        11;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-elder_titan.png');
+
+  @each $index, $item-selector in (
+    0: '.ancestral_spirit',
+    1: '.earth_splitter',
+    2: '.echo_stomp',
+    3: '.echo_stomp_spirit',
+    4: '.natural_order',
+    5: '.natural_order_spirit',
+    6: '.return_spirit',
+    7: '.elder_titan_ti7_immortal.echo_stomp_alt.png',
+    8: '.elder_titan_ti7_immortal.echo_stomp_alt',
+    9: '.elder_titan_ti7_immortal.echo_stomp_spirit_alt.png',
+    10: '.elder_titan_ti7_immortal.echo_stomp_spirit_alt',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

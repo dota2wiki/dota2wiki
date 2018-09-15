@@ -1,15 +1,10 @@
 import * as fs from 'fs';
 import * as ps from 'path';
 import generateSprites, { SpritesOptions } from '@huiji/image/src/sprites';
-import { heroGroups } from '@dota2wiki/database';
-
-const context: string = ps.resolve(__dirname, '..');
-
-function pathResolve(...paths: string[]): string {
-  return ps.resolve(context, ...paths);
-}
+import { heroGroups, heroList } from '@dota2wiki/database';
 
 interface ScssOptions {
+  context: string;
   files: string[];
   columns: number;
   itemWidth: number;
@@ -21,6 +16,7 @@ interface ScssOptions {
 }
 
 async function generateScss({
+  context,
   files,
   columns,
   itemWidth,
@@ -59,7 +55,7 @@ ${selector} {
   background-image: resources('${resourcesKey}');
 
   @each $index, $item-selector in (
-${files.map((path, index) => `    ${index}: '.${itemSelector(path)}',`).join('\n')}
+${files.map((path, index) => `    ${index}: '${itemSelector(path)}',`).join('\n')}
   ) {
     &#{$item-selector} {
       background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
@@ -70,15 +66,24 @@ ${files.map((path, index) => `    ${index}: '.${itemSelector(path)}',`).join('\n
 `;
 
   return new Promise<void>((resolve, reject) => {
-    fs.writeFile(outputScss, content, error => (error ? reject(error) : resolve()));
+    fs.writeFile(
+      ps.resolve(context, outputScss),
+      content,
+      error => (error ? reject(error) : resolve()),
+    );
   });
 }
+
+type CombineOptions = SpritesOptions & ScssOptions;
+
+const context: string = ps.resolve(__dirname, '..');
 
 /**
  * Options
  */
-const optionsArray: (SpritesOptions & ScssOptions)[] = [
-  ...heroGroups.map<SpritesOptions & ScssOptions>(group => {
+const optionsArray: (CombineOptions)[] = [
+  // hero avatars horizontal
+  ...heroGroups.map<CombineOptions>(group => {
     return {
       context,
       patterns: group.heroes.map<string>(
@@ -95,13 +100,14 @@ const optionsArray: (SpritesOptions & ScssOptions)[] = [
       itemSelector: path => {
         const parts: string[] = path.split(/\/|\\/);
 
-        return parts[parts.length - 1].replace(/_png\.png$/, '');
+        return `.${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
       },
       resourcesKey: `sprites/hero-avatar-h-${group.primary}.png`,
-      outputScss: pathResolve(`src/sprites/hero-avatar-h-${group.primary}.scss`),
+      outputScss: `src/sprites/hero-avatar-h-${group.primary}.scss`,
     };
   }),
-  ...heroGroups.map<SpritesOptions & ScssOptions>(group => {
+  // hero avatars vertical
+  ...heroGroups.map<CombineOptions>(group => {
     return {
       context,
       patterns: group.heroes.map<string>(
@@ -118,19 +124,77 @@ const optionsArray: (SpritesOptions & ScssOptions)[] = [
       itemSelector: path => {
         const parts: string[] = path.split(/\/|\\/);
 
-        return parts[parts.length - 1].replace(/_png\.png$/, '');
+        return `.${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
       },
       resourcesKey: `sprites/hero-avatar-v-${group.primary}.png`,
-      outputScss: pathResolve(`src/sprites/hero-avatar-v-${group.primary}.scss`),
+      outputScss: `src/sprites/hero-avatar-v-${group.primary}.scss`,
+    };
+  }),
+  // hero icons
+  {
+    context,
+    patterns: ['src/assets/images/heroes/icons/*.png'],
+    columns: 16,
+
+    itemWidth: 32,
+    itemHeight: 32,
+    outputImage: 'src/assets/sprites/hero-icon.png',
+
+    files: [],
+    selector: '.dt-hero-icon',
+    itemSelector: path => {
+      const parts: string[] = path.split(/\/|\\/);
+
+      return `.${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
+    },
+    resourcesKey: 'sprites/hero-icon.png',
+    outputScss: 'src/sprites/hero-icon.scss',
+  },
+  // spell icons
+  ...heroList.map<CombineOptions>(hero => {
+    const heroName: string = hero.name.replace('npc_dota_hero_', '');
+
+    return {
+      context,
+      patterns: [
+        `src/assets/images/spellicons/${heroName}_*.png`,
+        `src/assets/images/spellicons/${heroName}/**/*.png`,
+      ],
+      columns: 0,
+
+      itemWidth: 128,
+      itemHeight: 128,
+      outputImage: `src/assets/sprites/spell-icon-${heroName}.png`,
+
+      files: [],
+      selector: `.dt-spell-icon.${hero.name}`,
+      itemSelector: path => {
+        const parts: string[] = path.replace(/.+spellicons\//, '').split(/\/|\\/);
+        let itemSelector: string = '';
+
+        if (parts.length > 1) {
+          itemSelector += '.';
+          itemSelector += parts[parts.length - 2];
+        }
+
+        itemSelector += '.';
+        itemSelector += parts[parts.length - 1].replace(`${heroName}_`, '');
+
+        return itemSelector.replace(/\_png.png/, '');
+      },
+      resourcesKey: `sprites/spell-icon-${heroName}.png`,
+      outputScss: `src/sprites/spell-icon-${heroName}.scss`,
     };
   }),
 ];
 
-optionsArray.forEach(options => {
-  generateSprites(options)
-    .then(files => {
-      options.files = files;
-      generateScss(options);
-    })
-    .catch(console.error);
-});
+(async () => {
+  for (const options of optionsArray) {
+    await generateSprites(options)
+      .then(files => {
+        options.files = files;
+        generateScss(options);
+      })
+      .catch(console.error);
+  }
+})();

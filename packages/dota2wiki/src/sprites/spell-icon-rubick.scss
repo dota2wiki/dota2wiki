@@ -1,0 +1,49 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_rubick {
+  $total:       17;
+  $cols:        17;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-rubick.png');
+
+  @each $index, $item-selector in (
+    0: '.empty1',
+    1: '.empty2',
+    2: '.fade_bolt',
+    3: '.null_field_offensive',
+    4: '.null_field',
+    5: '.spell_steal',
+    6: '.telekinesis_land',
+    7: '.telekinesis',
+    8: '.fantoccinis_dilemma.telekinesis',
+    9: '.harlequin_icons.fade_bolt',
+    10: '.harlequin_icons.null_field',
+    11: '.harlequin_icons.spell_steal',
+    12: '.harlequin_icons.telekinesis_land',
+    13: '.harlequin_icons.telekinesis',
+    14: '.staff_of_perplex.telekinesis_gold',
+    15: '.staff_of_perplex.telekinesis',
+    16: '.ti8_immortal_shoulder.fade_bolt_immortal',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

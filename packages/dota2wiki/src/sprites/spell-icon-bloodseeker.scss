@@ -1,0 +1,39 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_bloodseeker {
+  $total:       7;
+  $cols:        7;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-bloodseeker.png');
+
+  @each $index, $item-selector in (
+    0: '.blood_bath',
+    1: '.bloodrage',
+    2: '.rupture',
+    3: '.thirst',
+    4: '.bloodseeker_ti_immortal.thirst_alt.png',
+    5: '.bloodseeker_ti_immortal.thirst_alt',
+    6: '.thirst_of_eztshok.bloodrage',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_kunkka {
+  $total:       11;
+  $cols:        11;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-kunkka.png');
+
+  @each $index, $item-selector in (
+    0: '.divine_anchor_ghostship',
+    1: '.divine_anchor_tidebringer',
+    2: '.divine_anchor_torrent',
+    3: '.divine_anchor_x_marks',
+    4: '.ghostship_immortal',
+    5: '.ghostship',
+    6: '.return',
+    7: '.tidebringer',
+    8: '.torrent',
+    9: '.x_marks_the_spot',
+    10: '.ti8_immortal_weapon_retro.torrent_immortal_retro',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

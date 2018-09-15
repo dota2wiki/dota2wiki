@@ -1,0 +1,45 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_keeper_of_the_light {
+  $total:       13;
+  $cols:        13;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-keeper_of_the_light.png');
+
+  @each $index, $item-selector in (
+    0: '.blinding_light',
+    1: '.chakra_magic',
+    2: '.illuminate_end',
+    3: '.illuminate',
+    4: '.mana_leak',
+    5: '.recall',
+    6: '.spirit_form_illuminate_end',
+    7: '.spirit_form_illuminate',
+    8: '.spirit_form',
+    9: '.kotl_ti7_immortal.illuminate_alt.png',
+    10: '.kotl_ti7_immortal.illuminate_alt',
+    11: '.kotl_ti7_immortal.illuminate_end_alt.png',
+    12: '.kotl_ti7_immortal.illuminate_end_alt',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

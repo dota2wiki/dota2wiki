@@ -1,0 +1,41 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_dragon_knight {
+  $total:       9;
+  $cols:        9;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-dragon_knight.png');
+
+  @each $index, $item-selector in (
+    0: '.breathe_fire',
+    1: '.dragon_blood',
+    2: '.dragon_tail',
+    3: '.elder_dragon_form_iron_dragon',
+    4: '.elder_dragon_form',
+    5: '.fireborn_ability_icons.breathe_fire',
+    6: '.fireborn_ability_icons.dragon_blood',
+    7: '.fireborn_ability_icons.dragon_tail',
+    8: '.fireborn_ability_icons.elder_dragon_form',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_skeleton_king {
+  $total:       12;
+  $cols:        12;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-skeleton_king.png');
+
+  @each $index, $item-selector in (
+    0: '.hellfire_blast',
+    1: '.mortal_strike',
+    2: '.reincarnation',
+    3: '.vampiric_aura',
+    4: '.aspect_year_beast_icons.hellfire_blast',
+    5: '.aspect_year_beast_icons.mortal_strike',
+    6: '.aspect_year_beast_icons.reincarnation',
+    7: '.aspect_year_beast_icons.vampiric_aura',
+    8: '.blistering_shade.hellfire_blast',
+    9: '.ti8_immortal_weapon.mortal_strike_immortal_crimson',
+    10: '.ti8_immortal_weapon.mortal_strike_immortal_gold',
+    11: '.ti8_immortal_weapon.mortal_strike_immortal',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

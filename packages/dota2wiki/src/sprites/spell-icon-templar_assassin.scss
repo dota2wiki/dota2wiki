@@ -1,0 +1,41 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_templar_assassin {
+  $total:       9;
+  $cols:        9;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-templar_assassin.png');
+
+  @each $index, $item-selector in (
+    0: '.meld',
+    1: '.psi_blades',
+    2: '.psionic_trap',
+    3: '.refraction_damage',
+    4: '.refraction',
+    5: '.self_trap',
+    6: '.trap',
+    7: '.focal_resonance.meld',
+    8: '.focal_resonance.psi_blades',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

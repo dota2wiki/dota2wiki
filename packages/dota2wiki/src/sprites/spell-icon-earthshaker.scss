@@ -1,0 +1,47 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_earthshaker {
+  $total:       15;
+  $cols:        15;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-earthshaker.png');
+
+  @each $index, $item-selector in (
+    0: '.aftershock_egset',
+    1: '.aftershock',
+    2: '.echo_slam_egset',
+    3: '.echo_slam',
+    4: '.enchant_totem_egset',
+    5: '.enchant_totem',
+    6: '.fissure_alt_gold',
+    7: '.fissure_alt',
+    8: '.fissure_egset',
+    9: '.fissure',
+    10: '.bracers_of_the_cavern_luminar.enchant_totem',
+    11: '.sltv__earthshaker_ability_icons.aftershock',
+    12: '.sltv__earthshaker_ability_icons.echo_slam',
+    13: '.sltv__earthshaker_ability_icons.enchant_totem',
+    14: '.sltv__earthshaker_ability_icons.fissure',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

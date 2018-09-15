@@ -1,0 +1,40 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_visage {
+  $total:       8;
+  $cols:        8;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-visage.png');
+
+  @each $index, $item-selector in (
+    0: '.grave_chill',
+    1: '.gravekeepers_cloak',
+    2: '.soul_assumption',
+    3: '.stone_form_self_cast',
+    4: '.summon_familiars_alt1',
+    5: '.summon_familiars',
+    6: '.summon_familiars_stone_form_alt1',
+    7: '.summon_familiars_stone_form',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

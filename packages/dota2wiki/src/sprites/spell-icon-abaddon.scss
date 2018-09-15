@@ -1,0 +1,44 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_abaddon {
+  $total:       12;
+  $cols:        12;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-abaddon.png');
+
+  @each $index, $item-selector in (
+    0: '.aphotic_shield_alliance',
+    1: '.aphotic_shield',
+    2: '.borrowed_time_alliance',
+    3: '.borrowed_time',
+    4: '.death_coil_alliance',
+    5: '.death_coil',
+    6: '.frostmourne_alliance',
+    7: '.frostmourne',
+    8: '.mistral_fiend_icons.aphotic_shield',
+    9: '.mistral_fiend_icons.borrowed_time',
+    10: '.mistral_fiend_icons.death_coil',
+    11: '.mistral_fiend_icons.frostmourne',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_alchemist {
+  $total:       6;
+  $cols:        6;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-alchemist.png');
+
+  @each $index, $item-selector in (
+    0: '.acid_spray',
+    1: '.chemical_rage',
+    2: '.goblins_greed',
+    3: '.unstable_concoction',
+    4: '.unstable_concoction_throw',
+    5: '.midas_knuckles.goblins_greed',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

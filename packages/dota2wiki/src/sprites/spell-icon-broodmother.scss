@@ -1,0 +1,44 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_broodmother {
+  $total:       12;
+  $cols:        12;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-broodmother.png');
+
+  @each $index, $item-selector in (
+    0: '.incapacitating_bite',
+    1: '.insatiable_hunger',
+    2: '.poison_sting',
+    3: '.spawn_spiderite',
+    4: '.spawn_spiderlings_immortal',
+    5: '.spawn_spiderlings',
+    6: '.spin_web_destroy',
+    7: '.spin_web',
+    8: '.virulent_matriarch.incapacitating_bite',
+    9: '.virulent_matriarch.insatiable_hunger',
+    10: '.virulent_matriarch.spawn_spiderlings',
+    11: '.virulent_matriarch.spin_web',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

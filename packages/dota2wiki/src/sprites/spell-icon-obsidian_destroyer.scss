@@ -1,0 +1,43 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_obsidian_destroyer {
+  $total:       11;
+  $cols:        11;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-obsidian_destroyer.png');
+
+  @each $index, $item-selector in (
+    0: '.arcane_orb',
+    1: '.astral_imprisonment',
+    2: '.essence_aura',
+    3: '.sanity_eclipse',
+    4: '.lucent_gate_icons.arcane_orb',
+    5: '.lucent_gate_icons.astral_imprisonment',
+    6: '.lucent_gate_icons.essence_aura',
+    7: '.lucent_gate_icons.sanity_eclipse',
+    8: '.shards_of_exile.astral_imprisonment',
+    9: '.shards_of_exile.gold_astral_imprisonment',
+    10: '.ti8_immortal_wings.sanity_eclipse_immortal',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

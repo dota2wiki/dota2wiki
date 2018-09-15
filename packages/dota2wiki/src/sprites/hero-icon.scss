@@ -1,412 +1,162 @@
 /**
- * CSS Sprites: hero-icon, total: 130
+ * Auto generated sprites.
  */
 
-$hero-icon-width: 32;
-$hero-icon-height: 32;
+.dt-hero-icon {
+  $total:       130;
+  $cols:        16;
+  $rows:        9;
+  $item-width:  32;
+  $item-height: 32;
 
-@include comp('hero-icon') {
   display: inline-block;
-  font-size: px($hero-icon-height);
+  font-size: rem($item-height);
   line-height: 1;
   vertical-align: middle;
-  width: $hero-icon-width / $hero-icon-height * 1em;
+  width: $item-width / $item-height * 1em;
   height: 1em;
 
   background-repeat: no-repeat;
-  background-size: ($hero-icon-width / $hero-icon-height * 1em) auto;
+  background-size: auto (1em * $rows);
   background-position-x: 1em;
 
-  background-image: url('~@src/assets/sprites/hero-icon.png');
-  
-  &.npc_dota_hero_abaddon {
-    background-position-x: -0em;
-  }
-  &.npc_dota_hero_abyssal_underlord {
-    background-position-x: -1em;
-  }
-  &.npc_dota_hero_alchemist {
-    background-position-x: -2em;
-  }
-  &.npc_dota_hero_ancient_apparition {
-    background-position-x: -3em;
-  }
-  &.npc_dota_hero_antimage {
-    background-position-x: -4em;
-  }
-  &.npc_dota_hero_arc_warden {
-    background-position-x: -5em;
-  }
-  &.npc_dota_hero_axe {
-    background-position-x: -6em;
-  }
-  &.npc_dota_hero_bane {
-    background-position-x: -7em;
-  }
-  &.npc_dota_hero_batrider {
-    background-position-x: -8em;
-  }
-  &.npc_dota_hero_beastmaster {
-    background-position-x: -9em;
-  }
-  &.npc_dota_hero_bloodseeker {
-    background-position-x: -10em;
-  }
-  &.npc_dota_hero_bounty_hunter {
-    background-position-x: -11em;
-  }
-  &.npc_dota_hero_brewmaster {
-    background-position-x: -12em;
-  }
-  &.npc_dota_hero_bristleback {
-    background-position-x: -13em;
-  }
-  &.npc_dota_hero_broodmother {
-    background-position-x: -14em;
-  }
-  &.npc_dota_hero_centaur {
-    background-position-x: -15em;
-  }
-  &.npc_dota_hero_chaos_knight {
-    background-position-x: -16em;
-  }
-  &.npc_dota_hero_chen {
-    background-position-x: -17em;
-  }
-  &.npc_dota_hero_clinkz {
-    background-position-x: -18em;
-  }
-  &.npc_dota_hero_crystal_maiden_alt1 {
-    background-position-x: -19em;
-  }
-  &.npc_dota_hero_crystal_maiden {
-    background-position-x: -20em;
-  }
-  &.npc_dota_hero_dark_seer {
-    background-position-x: -21em;
-  }
-  &.npc_dota_hero_dark_willow {
-    background-position-x: -22em;
-  }
-  &.npc_dota_hero_dazzle {
-    background-position-x: -23em;
-  }
-  &.npc_dota_hero_death_prophet {
-    background-position-x: -24em;
-  }
-  &.npc_dota_hero_disruptor {
-    background-position-x: -25em;
-  }
-  &.npc_dota_hero_doom_bringer {
-    background-position-x: -26em;
-  }
-  &.npc_dota_hero_dragon_knight {
-    background-position-x: -27em;
-  }
-  &.npc_dota_hero_drow_ranger {
-    background-position-x: -28em;
-  }
-  &.npc_dota_hero_earth_spirit {
-    background-position-x: -29em;
-  }
-  &.npc_dota_hero_earthshaker {
-    background-position-x: -30em;
-  }
-  &.npc_dota_hero_elder_titan {
-    background-position-x: -31em;
-  }
-  &.npc_dota_hero_ember_spirit {
-    background-position-x: -32em;
-  }
-  &.npc_dota_hero_enchantress {
-    background-position-x: -33em;
-  }
-  &.npc_dota_hero_enigma {
-    background-position-x: -34em;
-  }
-  &.npc_dota_hero_faceless_void {
-    background-position-x: -35em;
-  }
-  &.npc_dota_hero_furion {
-    background-position-x: -36em;
-  }
-  &.npc_dota_hero_grimstroke {
-    background-position-x: -37em;
-  }
-  &.npc_dota_hero_gyrocopter {
-    background-position-x: -38em;
-  }
-  &.npc_dota_hero_huskar {
-    background-position-x: -39em;
-  }
-  &.npc_dota_hero_invoker {
-    background-position-x: -40em;
-  }
-  &.npc_dota_hero_jakiro {
-    background-position-x: -41em;
-  }
-  &.npc_dota_hero_juggernaut_alt1 {
-    background-position-x: -42em;
-  }
-  &.npc_dota_hero_juggernaut_alt2 {
-    background-position-x: -43em;
-  }
-  &.npc_dota_hero_juggernaut {
-    background-position-x: -44em;
-  }
-  &.npc_dota_hero_keeper_of_the_light {
-    background-position-x: -45em;
-  }
-  &.npc_dota_hero_kunkka {
-    background-position-x: -46em;
-  }
-  &.npc_dota_hero_legion_commander_alt1 {
-    background-position-x: -47em;
-  }
-  &.npc_dota_hero_legion_commander {
-    background-position-x: -48em;
-  }
-  &.npc_dota_hero_leshrac {
-    background-position-x: -49em;
-  }
-  &.npc_dota_hero_lich {
-    background-position-x: -50em;
-  }
-  &.npc_dota_hero_life_stealer {
-    background-position-x: -51em;
-  }
-  &.npc_dota_hero_lina_alt1 {
-    background-position-x: -52em;
-  }
-  &.npc_dota_hero_lina {
-    background-position-x: -53em;
-  }
-  &.npc_dota_hero_lion {
-    background-position-x: -54em;
-  }
-  &.npc_dota_hero_lone_druid {
-    background-position-x: -55em;
-  }
-  &.npc_dota_hero_luna {
-    background-position-x: -56em;
-  }
-  &.npc_dota_hero_lycan {
-    background-position-x: -57em;
-  }
-  &.npc_dota_hero_magnataur {
-    background-position-x: -58em;
-  }
-  &.npc_dota_hero_medusa {
-    background-position-x: -59em;
-  }
-  &.npc_dota_hero_meepo {
-    background-position-x: -60em;
-  }
-  &.npc_dota_hero_mirana {
-    background-position-x: -61em;
-  }
-  &.npc_dota_hero_monkey_king_alt1 {
-    background-position-x: -62em;
-  }
-  &.npc_dota_hero_monkey_king {
-    background-position-x: -63em;
-  }
-  &.npc_dota_hero_morphling {
-    background-position-x: -64em;
-  }
-  &.npc_dota_hero_naga_siren {
-    background-position-x: -65em;
-  }
-  &.npc_dota_hero_necrolyte {
-    background-position-x: -66em;
-  }
-  &.npc_dota_hero_nevermore_alt1 {
-    background-position-x: -67em;
-  }
-  &.npc_dota_hero_nevermore {
-    background-position-x: -68em;
-  }
-  &.npc_dota_hero_night_stalker {
-    background-position-x: -69em;
-  }
-  &.npc_dota_hero_nyx_assassin {
-    background-position-x: -70em;
-  }
-  &.npc_dota_hero_obsidian_destroyer {
-    background-position-x: -71em;
-  }
-  &.npc_dota_hero_ogre_magi {
-    background-position-x: -72em;
-  }
-  &.npc_dota_hero_omniknight {
-    background-position-x: -73em;
-  }
-  &.npc_dota_hero_oracle {
-    background-position-x: -74em;
-  }
-  &.npc_dota_hero_pangolier {
-    background-position-x: -75em;
-  }
-  &.npc_dota_hero_phantom_assassin_alt1 {
-    background-position-x: -76em;
-  }
-  &.npc_dota_hero_phantom_assassin {
-    background-position-x: -77em;
-  }
-  &.npc_dota_hero_phantom_lancer {
-    background-position-x: -78em;
-  }
-  &.npc_dota_hero_phoenix {
-    background-position-x: -79em;
-  }
-  &.npc_dota_hero_puck {
-    background-position-x: -80em;
-  }
-  &.npc_dota_hero_pudge_alt1 {
-    background-position-x: -81em;
-  }
-  &.npc_dota_hero_pudge_alt2 {
-    background-position-x: -82em;
-  }
-  &.npc_dota_hero_pudge {
-    background-position-x: -83em;
-  }
-  &.npc_dota_hero_pugna {
-    background-position-x: -84em;
-  }
-  &.npc_dota_hero_queenofpain {
-    background-position-x: -85em;
-  }
-  &.npc_dota_hero_rattletrap {
-    background-position-x: -86em;
-  }
-  &.npc_dota_hero_razor {
-    background-position-x: -87em;
-  }
-  &.npc_dota_hero_riki {
-    background-position-x: -88em;
-  }
-  &.npc_dota_hero_rubick {
-    background-position-x: -89em;
-  }
-  &.npc_dota_hero_sand_king {
-    background-position-x: -90em;
-  }
-  &.npc_dota_hero_shadow_demon {
-    background-position-x: -91em;
-  }
-  &.npc_dota_hero_shadow_shaman {
-    background-position-x: -92em;
-  }
-  &.npc_dota_hero_shredder {
-    background-position-x: -93em;
-  }
-  &.npc_dota_hero_silencer {
-    background-position-x: -94em;
-  }
-  &.npc_dota_hero_skeleton_king {
-    background-position-x: -95em;
-  }
-  &.npc_dota_hero_skywrath_mage {
-    background-position-x: -96em;
-  }
-  &.npc_dota_hero_slardar {
-    background-position-x: -97em;
-  }
-  &.npc_dota_hero_slark {
-    background-position-x: -98em;
-  }
-  &.npc_dota_hero_sniper {
-    background-position-x: -99em;
-  }
-  &.npc_dota_hero_spectre {
-    background-position-x: -100em;
-  }
-  &.npc_dota_hero_spirit_breaker {
-    background-position-x: -101em;
-  }
-  &.npc_dota_hero_storm_spirit {
-    background-position-x: -102em;
-  }
-  &.npc_dota_hero_sven {
-    background-position-x: -103em;
-  }
-  &.npc_dota_hero_techies_alt1 {
-    background-position-x: -104em;
-  }
-  &.npc_dota_hero_techies {
-    background-position-x: -105em;
-  }
-  &.npc_dota_hero_templar_assassin {
-    background-position-x: -106em;
-  }
-  &.npc_dota_hero_terrorblade_alt1 {
-    background-position-x: -107em;
-  }
-  &.npc_dota_hero_terrorblade {
-    background-position-x: -108em;
-  }
-  &.npc_dota_hero_tidehunter {
-    background-position-x: -109em;
-  }
-  &.npc_dota_hero_tinker {
-    background-position-x: -110em;
-  }
-  &.npc_dota_hero_tiny {
-    background-position-x: -111em;
-  }
-  &.npc_dota_hero_treant {
-    background-position-x: -112em;
-  }
-  &.npc_dota_hero_troll_warlord {
-    background-position-x: -113em;
-  }
-  &.npc_dota_hero_tusk {
-    background-position-x: -114em;
-  }
-  &.npc_dota_hero_undying {
-    background-position-x: -115em;
-  }
-  &.npc_dota_hero_ursa {
-    background-position-x: -116em;
-  }
-  &.npc_dota_hero_vengefulspirit {
-    background-position-x: -117em;
-  }
-  &.npc_dota_hero_venomancer {
-    background-position-x: -118em;
-  }
-  &.npc_dota_hero_viper {
-    background-position-x: -119em;
-  }
-  &.npc_dota_hero_visage {
-    background-position-x: -120em;
-  }
-  &.npc_dota_hero_warlock {
-    background-position-x: -121em;
-  }
-  &.npc_dota_hero_weaver {
-    background-position-x: -122em;
-  }
-  &.npc_dota_hero_windrunner {
-    background-position-x: -123em;
-  }
-  &.npc_dota_hero_winter_wyvern {
-    background-position-x: -124em;
-  }
-  &.npc_dota_hero_wisp_alt {
-    background-position-x: -125em;
-  }
-  &.npc_dota_hero_wisp {
-    background-position-x: -126em;
-  }
-  &.npc_dota_hero_witch_doctor {
-    background-position-x: -127em;
-  }
-  &.npc_dota_hero_zuus_alt1 {
-    background-position-x: -128em;
-  }
-  &.npc_dota_hero_zuus {
-    background-position-x: -129em;
+  background-image: resources('sprites/hero-icon.png');
+
+  @each $index, $item-selector in (
+    0: '.npc_dota_hero_abaddon',
+    1: '.npc_dota_hero_abyssal_underlord',
+    2: '.npc_dota_hero_alchemist',
+    3: '.npc_dota_hero_ancient_apparition',
+    4: '.npc_dota_hero_antimage',
+    5: '.npc_dota_hero_arc_warden',
+    6: '.npc_dota_hero_axe',
+    7: '.npc_dota_hero_bane',
+    8: '.npc_dota_hero_batrider',
+    9: '.npc_dota_hero_beastmaster',
+    10: '.npc_dota_hero_bloodseeker',
+    11: '.npc_dota_hero_bounty_hunter',
+    12: '.npc_dota_hero_brewmaster',
+    13: '.npc_dota_hero_bristleback',
+    14: '.npc_dota_hero_broodmother',
+    15: '.npc_dota_hero_centaur',
+    16: '.npc_dota_hero_chaos_knight',
+    17: '.npc_dota_hero_chen',
+    18: '.npc_dota_hero_clinkz',
+    19: '.npc_dota_hero_crystal_maiden_alt1',
+    20: '.npc_dota_hero_crystal_maiden',
+    21: '.npc_dota_hero_dark_seer',
+    22: '.npc_dota_hero_dark_willow',
+    23: '.npc_dota_hero_dazzle',
+    24: '.npc_dota_hero_death_prophet',
+    25: '.npc_dota_hero_disruptor',
+    26: '.npc_dota_hero_doom_bringer',
+    27: '.npc_dota_hero_dragon_knight',
+    28: '.npc_dota_hero_drow_ranger',
+    29: '.npc_dota_hero_earth_spirit',
+    30: '.npc_dota_hero_earthshaker',
+    31: '.npc_dota_hero_elder_titan',
+    32: '.npc_dota_hero_ember_spirit',
+    33: '.npc_dota_hero_enchantress',
+    34: '.npc_dota_hero_enigma',
+    35: '.npc_dota_hero_faceless_void',
+    36: '.npc_dota_hero_furion',
+    37: '.npc_dota_hero_grimstroke',
+    38: '.npc_dota_hero_gyrocopter',
+    39: '.npc_dota_hero_huskar',
+    40: '.npc_dota_hero_invoker',
+    41: '.npc_dota_hero_jakiro',
+    42: '.npc_dota_hero_juggernaut_alt1',
+    43: '.npc_dota_hero_juggernaut_alt2',
+    44: '.npc_dota_hero_juggernaut',
+    45: '.npc_dota_hero_keeper_of_the_light',
+    46: '.npc_dota_hero_kunkka',
+    47: '.npc_dota_hero_legion_commander_alt1',
+    48: '.npc_dota_hero_legion_commander',
+    49: '.npc_dota_hero_leshrac',
+    50: '.npc_dota_hero_lich',
+    51: '.npc_dota_hero_life_stealer',
+    52: '.npc_dota_hero_lina_alt1',
+    53: '.npc_dota_hero_lina',
+    54: '.npc_dota_hero_lion',
+    55: '.npc_dota_hero_lone_druid',
+    56: '.npc_dota_hero_luna',
+    57: '.npc_dota_hero_lycan',
+    58: '.npc_dota_hero_magnataur',
+    59: '.npc_dota_hero_medusa',
+    60: '.npc_dota_hero_meepo',
+    61: '.npc_dota_hero_mirana',
+    62: '.npc_dota_hero_monkey_king_alt1',
+    63: '.npc_dota_hero_monkey_king',
+    64: '.npc_dota_hero_morphling',
+    65: '.npc_dota_hero_naga_siren',
+    66: '.npc_dota_hero_necrolyte',
+    67: '.npc_dota_hero_nevermore_alt1',
+    68: '.npc_dota_hero_nevermore',
+    69: '.npc_dota_hero_night_stalker',
+    70: '.npc_dota_hero_nyx_assassin',
+    71: '.npc_dota_hero_obsidian_destroyer',
+    72: '.npc_dota_hero_ogre_magi',
+    73: '.npc_dota_hero_omniknight',
+    74: '.npc_dota_hero_oracle',
+    75: '.npc_dota_hero_pangolier',
+    76: '.npc_dota_hero_phantom_assassin_alt1',
+    77: '.npc_dota_hero_phantom_assassin',
+    78: '.npc_dota_hero_phantom_lancer',
+    79: '.npc_dota_hero_phoenix',
+    80: '.npc_dota_hero_puck',
+    81: '.npc_dota_hero_pudge_alt1',
+    82: '.npc_dota_hero_pudge_alt2',
+    83: '.npc_dota_hero_pudge',
+    84: '.npc_dota_hero_pugna',
+    85: '.npc_dota_hero_queenofpain',
+    86: '.npc_dota_hero_rattletrap',
+    87: '.npc_dota_hero_razor',
+    88: '.npc_dota_hero_riki',
+    89: '.npc_dota_hero_rubick',
+    90: '.npc_dota_hero_sand_king',
+    91: '.npc_dota_hero_shadow_demon',
+    92: '.npc_dota_hero_shadow_shaman',
+    93: '.npc_dota_hero_shredder',
+    94: '.npc_dota_hero_silencer',
+    95: '.npc_dota_hero_skeleton_king',
+    96: '.npc_dota_hero_skywrath_mage',
+    97: '.npc_dota_hero_slardar',
+    98: '.npc_dota_hero_slark',
+    99: '.npc_dota_hero_sniper',
+    100: '.npc_dota_hero_spectre',
+    101: '.npc_dota_hero_spirit_breaker',
+    102: '.npc_dota_hero_storm_spirit',
+    103: '.npc_dota_hero_sven',
+    104: '.npc_dota_hero_techies_alt1',
+    105: '.npc_dota_hero_techies',
+    106: '.npc_dota_hero_templar_assassin',
+    107: '.npc_dota_hero_terrorblade_alt1',
+    108: '.npc_dota_hero_terrorblade',
+    109: '.npc_dota_hero_tidehunter',
+    110: '.npc_dota_hero_tinker',
+    111: '.npc_dota_hero_tiny',
+    112: '.npc_dota_hero_treant',
+    113: '.npc_dota_hero_troll_warlord',
+    114: '.npc_dota_hero_tusk',
+    115: '.npc_dota_hero_undying',
+    116: '.npc_dota_hero_ursa',
+    117: '.npc_dota_hero_vengefulspirit',
+    118: '.npc_dota_hero_venomancer',
+    119: '.npc_dota_hero_viper',
+    120: '.npc_dota_hero_visage',
+    121: '.npc_dota_hero_warlock',
+    122: '.npc_dota_hero_weaver',
+    123: '.npc_dota_hero_windrunner',
+    124: '.npc_dota_hero_winter_wyvern',
+    125: '.npc_dota_hero_wisp_alt',
+    126: '.npc_dota_hero_wisp',
+    127: '.npc_dota_hero_witch_doctor',
+    128: '.npc_dota_hero_zuus_alt1',
+    129: '.npc_dota_hero_zuus',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
   }
 }

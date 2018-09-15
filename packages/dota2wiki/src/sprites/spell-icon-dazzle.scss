@@ -1,0 +1,39 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_dazzle {
+  $total:       7;
+  $cols:        7;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-dazzle.png');
+
+  @each $index, $item-selector in (
+    0: '.poison_touch',
+    1: '.shadow_wave',
+    2: '.shallow_grave',
+    3: '.weave',
+    4: '.darkclaw_acolyte_weapon.darkclaw_acolyte_poison_touch',
+    5: '.immortal.shallow_grave',
+    6: '.immortal_gold.shallow_grave',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

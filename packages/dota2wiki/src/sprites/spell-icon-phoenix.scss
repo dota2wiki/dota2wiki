@@ -1,0 +1,41 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_phoenix {
+  $total:       9;
+  $cols:        9;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-phoenix.png');
+
+  @each $index, $item-selector in (
+    0: '.fire_spirits',
+    1: '.icarus_dive',
+    2: '.icarus_dive_stop',
+    3: '.launch_fire_spirit',
+    4: '.sun_ray',
+    5: '.sun_ray_stop',
+    6: '.sun_ray_toggle_move',
+    7: '.supernova',
+    8: '.solar_forge.sun_ray',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

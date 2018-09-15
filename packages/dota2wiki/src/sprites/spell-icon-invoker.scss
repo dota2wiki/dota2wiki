@@ -1,0 +1,57 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_invoker {
+  $total:       25;
+  $cols:        25;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-invoker.png');
+
+  @each $index, $item-selector in (
+    0: '.alacrity',
+    1: '.attribute_bonus',
+    2: '.chaos_meteor',
+    3: '.cold_snap',
+    4: '.deafening_blast',
+    5: '.emp',
+    6: '.empty1',
+    7: '.empty2',
+    8: '.exort',
+    9: '.forge_spirit',
+    10: '.ghost_walk',
+    11: '.ice_wall',
+    12: '.invoke',
+    13: '.quas',
+    14: '.sun_strike',
+    15: '.tornado',
+    16: '.wex',
+    17: '.dark_artistry.deafening_blast',
+    18: '.dark_artistry.tornado',
+    19: '.esl_ablityicons_relicsoftheilluminatedseer.forge_spirit',
+    20: '.immortal.alacrity',
+    21: '.magus_apex.exort',
+    22: '.magus_apex.quas',
+    23: '.magus_apex.sun_strike',
+    24: '.magus_apex.wex',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

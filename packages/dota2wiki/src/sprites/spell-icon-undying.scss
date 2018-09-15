@@ -1,0 +1,40 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_undying {
+  $total:       8;
+  $cols:        8;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-undying.png');
+
+  @each $index, $item-selector in (
+    0: '.decay',
+    1: '.flesh_golem',
+    2: '.soul_rip',
+    3: '.tombstone_alt_gold',
+    4: '.tombstone_alt',
+    5: '.tombstone',
+    6: '.tombstone_zombie_deathstrike',
+    7: '.pale_augur.decay',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

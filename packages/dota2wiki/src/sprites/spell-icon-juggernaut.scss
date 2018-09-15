@@ -1,0 +1,49 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_juggernaut {
+  $total:       17;
+  $cols:        17;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-juggernaut.png');
+
+  @each $index, $item-selector in (
+    0: '.blade_dance_arcana',
+    1: '.blade_dance',
+    2: '.blade_fury_arcana',
+    3: '.blade_fury',
+    4: '.healing_ward_arcana',
+    5: '.healing_ward',
+    6: '.omni_slash_arcana',
+    7: '.omni_slash',
+    8: '.bladekeeper.blade_dance',
+    9: '.bladekeeper.blade_fury',
+    10: '.bladekeeper.healing_ward',
+    11: '.bladekeeper.omni_slash',
+    12: '.fortunes_tout.healing_ward',
+    13: '.fortunes_tout_gold.healing_ward',
+    14: '.ti8_immortal_weapon.blade_fury_immortal_crimson',
+    15: '.ti8_immortal_weapon.blade_fury_immortal_gold',
+    16: '.ti8_immortal_weapon.blade_fury_immortal',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}

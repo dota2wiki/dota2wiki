@@ -1,0 +1,56 @@
+/**
+ * Auto generated sprites.
+ */
+
+.dt-spell-icon.npc_dota_hero_life_stealer {
+  $total:       24;
+  $cols:        24;
+  $rows:        1;
+  $item-width:  128;
+  $item-height: 128;
+
+  display: inline-block;
+  font-size: rem($item-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-width / $item-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto (1em * $rows);
+  background-position-x: 1em;
+
+  background-image: resources('sprites/spell-icon-life_stealer.png');
+
+  @each $index, $item-selector in (
+    0: '.assimilate_eject',
+    1: '.assimilate',
+    2: '.consume',
+    3: '.control',
+    4: '.empty_1',
+    5: '.empty_2',
+    6: '.empty_3',
+    7: '.empty_4',
+    8: '.feast',
+    9: '.infest',
+    10: '.open_wounds',
+    11: '.rage_immortal_gold',
+    12: '.rage_immortal',
+    13: '.rage',
+    14: '.bloody_ripper_abilityicons.consume',
+    15: '.bloody_ripper_abilityicons.feast',
+    16: '.bloody_ripper_abilityicons.infest',
+    17: '.bloody_ripper_abilityicons.open_wounds',
+    18: '.bloody_ripper_abilityicons.rage',
+    19: '.promo_bloody_ripper_abilityicons.consume',
+    20: '.promo_bloody_ripper_abilityicons.feast',
+    21: '.promo_bloody_ripper_abilityicons.infest',
+    22: '.promo_bloody_ripper_abilityicons.open_wounds',
+    23: '.promo_bloody_ripper_abilityicons.rage',
+  ) {
+    &#{$item-selector} {
+      background-position-x: (-1em * $item-width / $item-height) * ($index % $cols);
+      background-position-y: -1em * (floor(($index + 1) / $cols) - 1 + if(($index + 1) % $cols > 0, 1, 0));
+    }
+  }
+}
