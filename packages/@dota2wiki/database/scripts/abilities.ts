@@ -93,6 +93,9 @@ export default async function genAbilities(
           DOTA_ABILITY_TYPE_ULTIMATE: AbilityType.DOTA_ABILITY_TYPE_ULTIMATE,
         },
       ],
+      hotKeyOverride: valveData.has('HotKeyOverride')
+        ? ['string', 'HotKeyOverride']
+        : 'skip',
 
       targetTeam: ['enum', 'AbilityUnitTargetTeam', AbilityUnitTargetTeam],
       targetType: ['enum', 'AbilityUnitTargetType', AbilityUnitTargetType],
@@ -104,6 +107,9 @@ export default async function genAbilities(
       damageType: ['enum', 'AbilityUnitDamageType', AbilityUnitDamageType],
 
       maxLevel: ['number', 'MaxLevel'],
+      requiredLevel: valveData.has('RequiredLevel')
+        ? ['number', 'RequiredLevel']
+        : 'skip',
       fightRecapLevel: ['number', 'FightRecapLevel'],
 
       isGrantedByScepter: ['boolean', 'HasScepterUpgrade'],

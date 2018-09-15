@@ -167,6 +167,7 @@ import { ModelBase } from './base';
 export interface Ability extends ModelBase {
   readonly type: AbilityType;
   readonly behavior: AbilityBehavior;
+  readonly hotKeyOverride?: string;
 
   readonly targetTeam: AbilityUnitTargetTeam;
   readonly targetType: AbilityUnitTargetType;
@@ -178,6 +179,7 @@ export interface Ability extends ModelBase {
   readonly damageType: AbilityUnitDamageType;
 
   readonly maxLevel: number;
+  readonly requiredLevel?: number;
   readonly fightRecapLevel: number;
 
   readonly isGrantedByScepter: boolean;
