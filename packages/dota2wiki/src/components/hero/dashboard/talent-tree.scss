@@ -153,10 +153,10 @@ $talent-tree-badge-transition-duration: 240ms;
 
     @keyframes talent-tree-badge-leaf-breath {
       from {
-        filter: drop-shadow(0 0 rem(2) $glow-color);
+        filter: drop-shadow(0 0 rem(2) $color-glow);
       }
       to {
-        filter: drop-shadow(0 0 rem(3) $glow-color);
+        filter: drop-shadow(0 0 rem(3) $color-glow);
       }
     }
 
@@ -196,7 +196,7 @@ $talent-tree-badge-transition-duration: 240ms;
     right: 0;
     width: rem(2);
     margin: auto;
-    background: linear-gradient(to top, $highlight-color, $glow-color);
+    background: linear-gradient(to top, $color-highlight, $color-glow);
 
     @for $count from 0 through 4 {
       @include when($count) {
@@ -206,10 +206,10 @@ $talent-tree-badge-transition-duration: 240ms;
 
     @keyframes talent-tree-badge-progress-breath {
       from {
-        box-shadow: (0 0 rem(2) $glow-color, 0 0 rem(3) rgba($glow-color, 0.5));
+        box-shadow: (0 0 rem(2) $color-glow, 0 0 rem(3) rgba($color-glow, 0.5));
       }
       to {
-        box-shadow: (0 0 rem(4) $glow-color, 0 0 rem(6) rgba($glow-color, 0.5));
+        box-shadow: (0 0 rem(4) $color-glow, 0 0 rem(6) rgba($color-glow, 0.5));
       }
     }
     animation: talent-tree-badge-progress-breath 1s ease infinite alternate;
@@ -249,8 +249,8 @@ $talent-tree-badge-transition-duration: 240ms;
           @include elem('item-inner') {
             background: radial-gradient(
               circle at if($position == 'left', 80%, 20%),
-              rgba($highlight-color, 0.5) 10%,
-              rgba($glow-color, 0.3) 70%
+              rgba($color-highlight, 0.5) 10%,
+              rgba($color-glow, 0.3) 70%
             );
           }
         }

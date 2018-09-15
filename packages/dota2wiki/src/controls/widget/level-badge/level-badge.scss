@@ -2,6 +2,8 @@
  * Component: LevelBadge
  */
 @include comp('level-badge') {
+  $bar-width: 4;
+
   width: rem($level-size);
   height: rem($level-size);
 
@@ -11,18 +13,17 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: rem(4);
-  border: rem(1) solid transparent;
+  padding: rem($bar-width);
 
   border-radius: 50%;
 
-  color: $highlight-color;
+  color: $color-highlight;
   box-shadow: raise-shadow();
 
   font-weight: bold;
   font-size: rem($level-size / 2.5);
   line-height: 1;
-  text-shadow: (0 0 rem(12) $glow-color, 0 0 rem(8) $glow-color, 0 0 rem(4) $glow-color);
+  text-shadow: (0 0 rem(12) $color-glow, 0 0 rem(8) $color-glow, 0 0 rem(4) $color-glow);
 
   @include elem('inner') {
     width: 100%;
@@ -45,7 +46,6 @@
       )
     ) {
       background-color: theme($theme, 'bg', 'high');
-      border-color: theme($theme, 'bg', 'lower');
 
       @include elem('inner') {
         background: theme($theme, 'bg', 'lower');
