@@ -8,7 +8,7 @@
     "url": "https://github.com/dota2wiki/dota2wiki"
   },
   "workspaces": [
-    "!packages/@huiji/*",
+    "packages/@huiji/*",
     "packages/@dota2wiki/*",
     "packages/dota2wiki"
   ],

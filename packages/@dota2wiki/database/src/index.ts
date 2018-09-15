@@ -2,15 +2,27 @@
  * Database base on DOTA2 built-in data, for dota2wiki
  */
 
+import Vue, { PluginFunction } from 'vue';
+
 export * from './models/hero';
 export * from './models/ability';
 export * from './models/talent';
 
 import { Hero, HeroGroup, Attribute } from './models/hero';
 import { Ability } from './models/ability';
+import { Talent } from './models/talent';
 
 import heroes from './db/heroes';
 import abilities from './db/abilities';
+import talents from './db/talents';
+
+declare module 'vue/types/vue' {
+  interface Vue {
+    $db: Database;
+  }
+}
+
+let $$Vue: typeof Vue | undefined;
 
 export interface Database {
   readonly heroMap: Readonly<Record<string, Hero>>;
@@ -21,6 +33,10 @@ export interface Database {
   readonly abilityMap: Readonly<Record<string, Ability>>;
   readonly abilityList: ReadonlyArray<Ability>;
   readonly abilityNames: ReadonlyArray<string>;
+
+  readonly talentMap: Readonly<Record<string, Talent>>;
+  readonly talentList: ReadonlyArray<Talent>;
+  readonly talentNames: ReadonlyArray<string>;
 }
 
 const compareId: (a: { id: number }, b: { id: number }) => number = (a, b) => a.id - b.id;
@@ -38,8 +54,14 @@ export const heroGroups: HeroGroup[] = [
 }));
 
 export const abilityMap: Readonly<Record<string, Ability>> = abilities;
-export const abilityList: Ability[] = Object.values(abilityMap).sort(compareId);
-export const abilityNames: string[] = abilityList.map(a => a.name);
+export const abilityList: ReadonlyArray<Ability> = Object.values(abilityMap).sort(
+  compareId,
+);
+export const abilityNames: ReadonlyArray<string> = abilityList.map(a => a.name);
+
+export const talentMap: Readonly<Record<string, Talent>> = talents;
+export const talentList: ReadonlyArray<Talent> = Object.values(talentMap).sort(compareId);
+export const talentNames: ReadonlyArray<string> = talentList.map(t => t.name);
 
 const db: Database = {
   heroMap,
@@ -50,17 +72,11 @@ const db: Database = {
   abilityMap,
   abilityList,
   abilityNames,
+
+  talentMap,
+  talentList,
+  talentNames,
 };
-
-import Vue, { PluginFunction } from 'vue';
-
-declare module 'vue/types/vue' {
-  interface Vue {
-    $db: Database;
-  }
-}
-
-let $$Vue: typeof Vue | undefined;
 
 const install: PluginFunction<undefined> = $Vue => {
   if ($$Vue && $$Vue === $Vue) {

@@ -7,7 +7,6 @@ import * as fs from 'fs';
 import * as path from 'path';
 import genHeroes from './heroes';
 import genAbilities from './abilities';
-import { Ability } from '../src/models/ability';
 import { Hero } from '../src/models/hero';
 import { save } from '@dota2wiki/vdf';
 import chalk from 'chalk';
