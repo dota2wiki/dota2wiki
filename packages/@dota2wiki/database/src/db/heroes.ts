@@ -1124,7 +1124,7 @@ export default {
       },
       "agility": {
         "base": 29,
-        "gain": 2.8
+        "gain": 2.6
       },
       "intelligence": {
         "base": 19,
@@ -1901,7 +1901,7 @@ export default {
     },
     "mobility": {
       "capabilities": 1,
-      "speed": 295,
+      "speed": 290,
       "turnRate": 0.6,
       "hasAggressiveStance": false
     },
@@ -2082,7 +2082,7 @@ export default {
       "primary": 2,
       "strength": {
         "base": 21,
-        "gain": 2.3
+        "gain": 2.1
       },
       "agility": {
         "base": 11,
@@ -5230,7 +5230,7 @@ export default {
       "special_bonus_evasion_20",
       "special_bonus_unique_clinkz_1",
       "special_bonus_attack_range_100",
-      "special_bonus_hp_regen_20",
+      "special_bonus_hp_regen_16",
       "special_bonus_unique_clinkz_2",
       "special_bonus_unique_clinkz_3"
     ],
@@ -5254,7 +5254,7 @@ export default {
     "attributes": {
       "primary": 1,
       "strength": {
-        "base": 14,
+        "base": 12,
         "gain": 1.9
       },
       "agility": {
@@ -5444,21 +5444,21 @@ export default {
     "attributes": {
       "primary": 2,
       "strength": {
-        "base": 19,
-        "gain": 1.3
+        "base": 16,
+        "gain": 1.5
       },
       "agility": {
         "base": 19,
         "gain": 1.8
       },
       "intelligence": {
-        "base": 19,
+        "base": 17,
         "gain": 3.1
       }
     },
     "mobility": {
       "capabilities": 1,
-      "speed": 325,
+      "speed": 320,
       "turnRate": 0.5,
       "hasAggressiveStance": false
     },
@@ -5897,9 +5897,9 @@ export default {
       "weaver_time_lapse"
     ],
     "talents": [
-      "special_bonus_mana_break_20",
+      "special_bonus_strength_7",
       "special_bonus_exp_boost_35",
-      "special_bonus_strength_12",
+      "special_bonus_mana_break_20",
       "special_bonus_unique_weaver_1",
       "special_bonus_unique_weaver_3",
       "special_bonus_unique_weaver_4",
@@ -5934,7 +5934,7 @@ export default {
         "gain": 3.1
       },
       "intelligence": {
-        "base": 15,
+        "base": 13,
         "gain": 1.8
       }
     },
@@ -6281,8 +6281,8 @@ export default {
     ],
     "talents": [
       "special_bonus_hp_regen_5",
+      "special_bonus_all_stats_4",
       "special_bonus_unique_spectre_2",
-      "special_bonus_all_stats_8",
       "special_bonus_unique_spectre",
       "special_bonus_hp_500",
       "special_bonus_unique_spectre_3",

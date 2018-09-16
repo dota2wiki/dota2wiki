@@ -492,6 +492,18 @@ export default {
       }
     ]
   },
+  "special_bonus_hp_regen_16": {
+    "id": 7188,
+    "name": "special_bonus_hp_regen_16",
+    "special": [
+      {
+        "key": "value",
+        "value": [
+          16
+        ]
+      }
+    ]
+  },
   "special_bonus_hp_regen_20": {
     "id": 6079,
     "name": "special_bonus_hp_regen_20",
@@ -768,6 +780,18 @@ export default {
       }
     ]
   },
+  "special_bonus_all_stats_4": {
+    "id": 5920,
+    "name": "special_bonus_all_stats_4",
+    "special": [
+      {
+        "key": "value",
+        "value": [
+          4
+        ]
+      }
+    ]
+  },
   "special_bonus_all_stats_5": {
     "id": 5921,
     "name": "special_bonus_all_stats_5",
@@ -776,18 +800,6 @@ export default {
         "key": "value",
         "value": [
           5
-        ]
-      }
-    ]
-  },
-  "special_bonus_all_stats_8": {
-    "id": 5923,
-    "name": "special_bonus_all_stats_8",
-    "special": [
-      {
-        "key": "value",
-        "value": [
-          8
         ]
       }
     ]
@@ -920,18 +932,6 @@ export default {
         "key": "value",
         "value": [
           10
-        ]
-      }
-    ]
-  },
-  "special_bonus_strength_12": {
-    "id": 5928,
-    "name": "special_bonus_strength_12",
-    "special": [
-      {
-        "key": "value",
-        "value": [
-          12
         ]
       }
     ]
@@ -3925,7 +3925,7 @@ export default {
       {
         "key": "value",
         "value": [
-          50
+          40
         ]
       }
     ]
@@ -4513,7 +4513,7 @@ export default {
       {
         "key": "value",
         "value": [
-          4
+          3
         ]
       }
     ]
@@ -5233,7 +5233,7 @@ export default {
       {
         "key": "value",
         "value": [
-          8
+          6
         ]
       }
     ]
@@ -5641,7 +5641,7 @@ export default {
       {
         "key": "value",
         "value": [
-          170
+          155
         ]
       }
     ]

@@ -7612,10 +7612,7 @@ export default {
       ],
       "sharedCooldown": "0",
       "damage": [
-        50,
-        100,
-        150,
-        200
+        100
       ],
       "manaCost": [
         95,
@@ -7636,11 +7633,14 @@ export default {
       {
         "key": "blast_stun_duration",
         "value": [
+          1.1,
+          1.4,
+          1.7,
           2
         ]
       },
       {
-        "key": "tooltip_slow_duration",
+        "key": "blast_dot_duration",
         "value": [
           2
         ]
@@ -7652,18 +7652,12 @@ export default {
         ]
       },
       {
-        "key": "blast_dot_duration",
-        "value": [
-          4
-        ]
-      },
-      {
         "key": "blast_dot_damage",
         "value": [
-          20,
-          35,
+          10,
+          30,
           50,
-          65
+          70
         ],
         "talent": "special_bonus_unique_wraith_king_3"
       }
@@ -8791,10 +8785,10 @@ export default {
       {
         "key": "static_remnant_damage",
         "value": [
-          140,
-          180,
-          220,
-          260
+          120,
+          160,
+          200,
+          240
         ],
         "talent": "special_bonus_unique_storm_spirit_5"
       }
@@ -11280,7 +11274,7 @@ export default {
       {
         "key": "magic_missile_speed",
         "value": [
-          1250
+          900
         ]
       },
       {
@@ -11881,10 +11875,10 @@ export default {
       {
         "key": "mana_regen",
         "value": [
-          0.8,
-          1,
-          1.2,
-          1.4
+          0.7,
+          0.9,
+          1.1,
+          1.3
         ]
       },
       {
@@ -19686,10 +19680,10 @@ export default {
       {
         "key": "end_distance",
         "value": [
-          500,
-          500,
-          500,
-          500
+          600,
+          700,
+          800,
+          900
         ]
       },
       {
@@ -22330,7 +22324,7 @@ export default {
         0
       ],
       "manaCost": [
-        10
+        12
       ],
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
@@ -24734,9 +24728,9 @@ export default {
         0
       ],
       "coolDown": [
-        35,
-        30,
-        25,
+        44,
+        36,
+        28,
         20
       ],
       "duration": [
@@ -25049,8 +25043,8 @@ export default {
         0
       ],
       "coolDown": [
-        60,
-        50,
+        70,
+        55,
         40
       ],
       "duration": [
@@ -26572,7 +26566,7 @@ export default {
       {
         "key": "radius",
         "value": [
-          375
+          500
         ]
       },
       {
@@ -26656,9 +26650,9 @@ export default {
       {
         "key": "damage_reflection_pct",
         "value": [
-          10,
-          14,
-          18,
+          7,
+          12,
+          17,
           22
         ],
         "talent": "special_bonus_unique_spectre_5"
@@ -26731,8 +26725,8 @@ export default {
       ],
       "manaCost": [
         150,
-        150,
-        150
+        200,
+        250
       ],
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
@@ -28353,10 +28347,10 @@ export default {
       ],
       "sharedCooldown": "0",
       "damage": [
-        90,
-        140,
-        190,
-        240
+        50,
+        100,
+        150,
+        200
       ],
       "manaCost": [
         75,
@@ -28544,9 +28538,9 @@ export default {
       {
         "key": "damage_per_stack",
         "value": [
-          15,
-          20,
-          25,
+          12,
+          18,
+          24,
           30
         ],
         "talent": "special_bonus_unique_ursa"
@@ -28615,8 +28609,8 @@ export default {
       {
         "key": "enrage_multiplier",
         "value": [
-          1.5,
-          1.75,
+          1.4,
+          1.7,
           2
         ]
       },
@@ -31210,10 +31204,10 @@ export default {
         0
       ],
       "manaCost": [
-        105,
-        115,
         125,
-        135
+        130,
+        135,
+        140
       ],
       "modifierSupportValue": 0.5,
       "modifierSupportBonus": 0
@@ -31395,9 +31389,9 @@ export default {
       {
         "key": "damage",
         "value": [
-          150,
-          200,
-          250,
+          120,
+          180,
+          240,
           300
         ]
       },
@@ -31465,9 +31459,9 @@ export default {
         0
       ],
       "manaCost": [
-        250,
-        375,
-        500
+        300,
+        450,
+        600
       ],
       "modifierSupportValue": 0.5,
       "modifierSupportBonus": 0
@@ -49769,10 +49763,10 @@ export default {
       {
         "key": "latch_damage",
         "value": [
-          140,
-          180,
-          220,
-          260
+          125,
+          150,
+          175,
+          200
         ]
       },
       {
@@ -49857,8 +49851,8 @@ export default {
         "key": "attack_damage",
         "value": [
           60,
-          120,
-          180
+          110,
+          160
         ]
       },
       {
@@ -50020,10 +50014,10 @@ export default {
         0
       ],
       "coolDown": [
-        30,
-        24,
-        18,
-        12
+        32,
+        26,
+        20,
+        14
       ],
       "duration": [
         0,
@@ -50145,10 +50139,10 @@ export default {
       {
         "key": "stun_duration",
         "value": [
-          2,
-          2.5,
-          3,
-          3.5
+          1.75,
+          2.25,
+          2.75,
+          3.25
         ]
       },
       {
@@ -50642,9 +50636,9 @@ export default {
       {
         "key": "chain_duration",
         "value": [
-          4,
           6,
-          8
+          8,
+          10
         ]
       },
       {
