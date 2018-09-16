@@ -1,0 +1,13 @@
+/**
+ * Component: AbilityBoard
+ */
+@include comp('ability-board') {
+  $icon-size: 64;
+
+  @include elem('icon-control') {
+  }
+
+  @include elem('icon') {
+    font-size: rem($icon-size);
+  }
+}

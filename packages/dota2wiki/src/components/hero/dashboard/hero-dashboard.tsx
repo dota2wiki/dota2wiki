@@ -9,6 +9,7 @@ import {
   Watch,
 } from 'vue-property-decorator';
 import { CLevelInput } from './level-input';
+import { CAbilityBoard } from './ability-board';
 import { CTalentTree } from './talent-tree';
 import { CHeroStats } from './hero-stats';
 
@@ -18,6 +19,7 @@ import { CHeroStats } from './hero-stats';
 @Component({
   components: {
     CLevelInput,
+    CAbilityBoard,
     CTalentTree,
     CHeroStats,
   },
@@ -41,9 +43,12 @@ export class CHeroDashboard extends Vue {
       <vd-swimlane staticClass="c-hero-dashboard">
         <vd-container>
           <vd-flexbox direction="column" align="stretch" gap>
+            <vd-flexbox>
+              <c-level-input value={this.level} onChange={this.onLevelChange} />
+            </vd-flexbox>
             <vd-flexbox gap>
               <vd-flexbox flex={{ ltLg: 100 }}>
-                <c-level-input value={this.level} onChange={this.onLevelChange} />
+                <c-ability-board name={this.name} />
               </vd-flexbox>
               <vd-flexbox flex={{ ltLg: 100 }}>
                 <c-talent-tree
