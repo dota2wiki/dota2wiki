@@ -39,27 +39,45 @@ export class CAbilityBoard extends Vue {
           {this.$locale.dict['DOTA_HeroGuideViewer_Skill_Comments_Title']}
         </vd-card-header>
         <vd-card-content>
-          <vd-flexbox direction="column" gap>
+          <vd-flexbox direction="column" align="stretch" gap>
             <vd-flexbox gap>
               {this.defaultAbilities.map(ability => (
                 <vd-flexbox flex="none">
-                  <vd-popover>
-                    <div slot="trigger" staticClass="c-ability-board_icon-container">
-                      <i
-                        staticClass="c-ability-board_icon dt-spell-icon"
-                        class={[this.name, ability.name]}
-                      />
-                    </div>
-                    <div>
-                      <div
-                        domPropsInnerHTML={
-                          this.$locale.dict[`DOTA_Tooltip_ability_${ability.name}`]
-                        }
-                      />
-                    </div>
-                  </vd-popover>
+                  <div staticClass="c-ability-board_icon-container">
+                    <i
+                      staticClass="c-ability-board_icon dt-spell-icon"
+                      class={[this.name, ability.name]}
+                    />
+                  </div>
                 </vd-flexbox>
               ))}
+            </vd-flexbox>
+            <vd-flexbox gap justify="end">
+              <vd-flexbox flex="none">
+                <vd-popover
+                  title={
+                    this.$locale.dict[
+                      `DOTA_Tooltip_ability_${this.defaultAbilities[0].name}`
+                    ]
+                  }
+                >
+                  <div slot="trigger" staticClass="c-ability-board_icon-container">
+                    <i
+                      staticClass="c-ability-board_icon dt-spell-icon"
+                      class={[this.name, this.defaultAbilities[0].name]}
+                    />
+                  </div>
+                  <div
+                    domPropsInnerHTML={
+                      this.$locale.dict[
+                        `DOTA_Tooltip_ability_${
+                          this.defaultAbilities[0].name
+                        }_Description`
+                      ]
+                    }
+                  />
+                </vd-popover>
+              </vd-flexbox>
             </vd-flexbox>
             <vd-flexbox gap>
               {this.hiddenAbilities.map(ability => (
