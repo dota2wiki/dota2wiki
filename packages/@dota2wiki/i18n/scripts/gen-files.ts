@@ -145,6 +145,10 @@ async function generateLocale(options: Options): Promise<void> {
       };
     }
 
+    Object.entries(dict).forEach(
+      ([key, value]) => (dict[key] = value.replace(/\\n/g, '<br/>')),
+    );
+
     const content: string = JSON.stringify(dict, undefined, '  ');
 
     fs.writeFileSync(
