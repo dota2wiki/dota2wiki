@@ -138,28 +138,10 @@ export interface StatsData {
 }
 
 //
-// Special
-// ------------------------------------------------------------
-
-export enum SpecialBonusOperation {
-  SPECIAL_BONUS_SUBTRACT,
-  SPECIAL_BONUS_MULTIPLY,
-}
-
-export interface SpecialItem {
-  readonly key: string;
-  readonly value: number[];
-  readonly levelKey?: string;
-  readonly talent?: string;
-  readonly talentField?: string;
-  readonly talentOperation?: SpecialBonusOperation;
-}
-
-//
 // Aggregation
 // ------------------------------------------------------------
 
-import { ModelBase } from './base';
+import { ModelBase, ModifyLike } from './base';
 
 export const ULTIMATE_REQUIRED_LEVEL: 6 = 6;
 export const ULTIMATE_LEVELS_BETWEEN_UPGRADES: 6 = 6;
@@ -167,7 +149,7 @@ export const ULTIMATE_LEVELS_BETWEEN_UPGRADES: 6 = 6;
 /**
  * Data structure for abilities.
  */
-export interface Ability extends ModelBase {
+export interface Ability extends ModelBase, ModifyLike {
   readonly linkedAbility?: string;
 
   readonly type: AbilityType;
@@ -192,5 +174,4 @@ export interface Ability extends ModelBase {
   readonly hasScepterUpgrade: boolean;
 
   readonly stats: StatsData;
-  readonly special: SpecialItem[];
 }

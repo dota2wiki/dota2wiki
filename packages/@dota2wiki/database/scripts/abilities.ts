@@ -10,6 +10,7 @@ import {
   toNumberArray,
   toBoolean,
 } from '@dota2wiki/vdf';
+import { SpecialItem, SpecialBonusOperation } from '../src/models/base';
 import { Hero } from '../src/models/hero';
 import { Talent } from '../src/models/talent';
 import {
@@ -23,8 +24,6 @@ import {
   AbilityUnitDamageType,
   SpellImmunityType,
   StatsData,
-  SpecialItem,
-  SpecialBonusOperation,
 } from '../src/models/ability';
 
 //

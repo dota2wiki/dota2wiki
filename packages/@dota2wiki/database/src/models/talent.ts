@@ -1,9 +1,6 @@
-import { ModelBase } from './base';
-import { SpecialItem } from './ability';
+import { ModelBase, ModifyLike } from './base';
 
 /**
  * Data structure for talent.
  */
-export interface Talent extends ModelBase {
-  readonly special: SpecialItem[];
-}
+export interface Talent extends ModelBase, ModifyLike {}
