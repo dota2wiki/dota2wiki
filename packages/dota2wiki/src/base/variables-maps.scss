@@ -3,7 +3,7 @@
 $color-map-theme-dark: (
   fg-emphasize:       #ffffff,
   fg-normal:          #e1e1e1,
-  fg-sub:             #a4b5ba,
+  fg-sub:             #9ab0cd,
   fg-placeholder:     #849093,
   fg-disabled:        #676e70,
 
@@ -15,7 +15,7 @@ $color-map-theme-dark: (
   bg-hover:           #353b42,
   bg-disabled:        #525659,
 
-  bd-normal:          #353b42, // same as bg-hover
+  bd-normal:          #3b3f40, // same as bg-hover
   bd-disabled:        #676e70, // same as fg-disabled
   bd-focus:           #43484b,
 );
