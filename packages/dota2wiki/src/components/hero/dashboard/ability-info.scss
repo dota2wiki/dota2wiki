@@ -1,0 +1,35 @@
+/**
+ * Component: AbilityInfo
+ */
+@include comp('ability-info') {
+  width: rem($screen-width-mobile);
+  font-size: rem(font-size('small'));
+
+  @include elem('divider') {
+    margin: 0 rem(gap('xsmall'));
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+
+      @include elem('notes') {
+        color: theme($theme, 'fg', 'disabled');
+      }
+
+      @include elem('label') {
+        color: theme($theme, 'fg', 'sub');
+      }
+      @include elem('content') {
+        color: theme($theme, 'fg', 'disabled');
+      }
+    }
+  }
+}

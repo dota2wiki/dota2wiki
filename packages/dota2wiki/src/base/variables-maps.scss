@@ -5,18 +5,18 @@ $color-map-theme-dark: (
   fg-normal:          #e1e1e1,
   fg-sub:             #9ab0cd,
   fg-placeholder:     #849093,
-  fg-disabled:        #676e70,
+  fg-disabled:        #838c8f,
 
   bg-higher:          #43474a,
   bg-high:            #313436,
   bg-normal:          #282b2d,
   bg-low:             #202224,
   bg-lower:           #161719,
-  bg-hover:           #353b42,
+  bg-hover:           #3b3f40,
   bg-disabled:        #525659,
 
   bd-normal:          #3b3f40, // same as bg-hover
-  bd-disabled:        #676e70, // same as fg-disabled
+  bd-disabled:        #838c8f, // same as fg-disabled
   bd-focus:           #43484b,
 );
 
