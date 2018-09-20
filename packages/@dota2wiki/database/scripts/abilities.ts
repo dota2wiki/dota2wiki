@@ -151,7 +151,7 @@ export default async function genAbilities(
               let levelKey: string | undefined;
               let talent: string | undefined;
               let talentField: string | undefined;
-              let talentOperation: SpecialBonusOperation;
+              let talentOperation: SpecialBonusOperation | undefined;
               Object.entries(itemRaw).forEach(([keyRaw, valueRaw]) => {
                 switch (keyRaw) {
                   case 'var_type':
@@ -181,9 +181,15 @@ export default async function genAbilities(
                 special.push({
                   key,
                   value,
+                  levelKey,
                   talent,
                   talentField,
+                  talentOperation,
                 });
+              } else {
+                console.info(
+                  chalk.yellowBright(`Invalid special item key:${key} or value:${value}`),
+                );
               }
             });
         }

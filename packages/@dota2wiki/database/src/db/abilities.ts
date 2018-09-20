@@ -7426,7 +7426,8 @@ export default {
         "value": [
           5
         ],
-        "talent": "special_bonus_unique_razor_4"
+        "talent": "special_bonus_unique_razor_4",
+        "talentOperation": 0
       },
       {
         "key": "slow_duration",
@@ -14772,7 +14773,8 @@ export default {
         "value": [
           2
         ],
-        "talent": "special_bonus_unique_sniper_4"
+        "talent": "special_bonus_unique_sniper_4",
+        "talentOperation": 0
       },
       {
         "key": "scepter_radius",
@@ -16648,7 +16650,8 @@ export default {
           325,
           450
         ],
-        "talent": "special_bonus_unique_venomancer"
+        "talent": "special_bonus_unique_venomancer",
+        "talentOperation": 1
       },
       {
         "key": "ward_damage_tooltip",
@@ -16658,7 +16661,8 @@ export default {
           31,
           40
         ],
-        "talent": "special_bonus_unique_venomancer"
+        "talent": "special_bonus_unique_venomancer",
+        "talentOperation": 1
       },
       {
         "key": "ward_hp",
@@ -19443,7 +19447,8 @@ export default {
           8,
           10
         ],
-        "talent": "special_bonus_unique_dragon_knight"
+        "talent": "special_bonus_unique_dragon_knight",
+        "talentOperation": 1
       },
       {
         "key": "bonus_armor",
@@ -19453,7 +19458,8 @@ export default {
           9,
           12
         ],
-        "talent": "special_bonus_unique_dragon_knight"
+        "talent": "special_bonus_unique_dragon_knight",
+        "talentOperation": 1
       }
     ]
   },
@@ -30089,6 +30095,7 @@ export default {
           6,
           6.5
         ],
+        "levelKey": "quaslevel",
         "talent": "special_bonus_unique_invoker_7"
       },
       {
@@ -30108,7 +30115,8 @@ export default {
           0.63,
           0.6,
           0.57
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "freeze_damage",
@@ -30121,7 +30129,8 @@ export default {
           42,
           49,
           56
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "damage_trigger",
@@ -30207,7 +30216,8 @@ export default {
           -45,
           -50,
           -55
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "self_slow",
@@ -30220,7 +30230,8 @@ export default {
           20,
           30,
           40
-        ]
+        ],
+        "levelKey": "wexlevel"
       },
       {
         "key": "aura_fade_time",
@@ -30294,7 +30305,8 @@ export default {
           2800,
           3200,
           3600
-        ]
+        ],
+        "levelKey": "wexlevel"
       },
       {
         "key": "travel_speed",
@@ -30332,6 +30344,7 @@ export default {
           2.6,
           2.9
         ],
+        "levelKey": "quaslevel",
         "talent": "special_bonus_unique_invoker_8"
       },
       {
@@ -30350,7 +30363,8 @@ export default {
           0,
           0,
           0
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "wex_damage",
@@ -30363,7 +30377,8 @@ export default {
           270,
           315,
           360
-        ]
+        ],
+        "levelKey": "wexlevel"
       }
     ]
   },
@@ -30424,7 +30439,8 @@ export default {
         "key": "delay",
         "value": [
           2.9
-        ]
+        ],
+        "levelKey": "wexlevel"
       },
       {
         "key": "area_of_effect",
@@ -30443,7 +30459,8 @@ export default {
           475,
           550,
           625
-        ]
+        ],
+        "levelKey": "wexlevel"
       },
       {
         "key": "damage_per_mana_pct",
@@ -30518,6 +30535,7 @@ export default {
           100,
           115
         ],
+        "levelKey": "wexlevel",
         "talent": "special_bonus_unique_invoker_5"
       },
       {
@@ -30532,6 +30550,7 @@ export default {
           100,
           115
         ],
+        "levelKey": "exortlevel",
         "talent": "special_bonus_unique_invoker_5"
       },
       {
@@ -30618,7 +30637,8 @@ export default {
           1245,
           1410,
           1575
-        ]
+        ],
+        "levelKey": "wexlevel"
       },
       {
         "key": "travel_speed",
@@ -30656,6 +30676,7 @@ export default {
           162.5,
           180
         ],
+        "levelKey": "exortlevel",
         "talent": "special_bonus_unique_invoker_6"
       },
       {
@@ -30675,7 +30696,8 @@ export default {
           29,
           32.5,
           36
-        ]
+        ],
+        "levelKey": "exortlevel"
       }
     ]
   },
@@ -30755,7 +30777,8 @@ export default {
           412.5,
           475,
           537.5
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "vision_distance",
@@ -30835,7 +30858,8 @@ export default {
           72,
           82,
           92
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "spirit_mana",
@@ -30848,7 +30872,8 @@ export default {
           350,
           400,
           450
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "spirit_armor",
@@ -30861,7 +30886,8 @@ export default {
           5,
           6,
           7
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "spirit_attack_range",
@@ -30874,7 +30900,8 @@ export default {
           625,
           690,
           755
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "spirit_hp",
@@ -30887,7 +30914,8 @@ export default {
           800,
           900,
           1000
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "spirit_duration",
@@ -30900,7 +30928,8 @@ export default {
           70,
           80,
           90
-        ]
+        ],
+        "levelKey": "quaslevel"
       }
     ]
   },
@@ -30968,7 +30997,8 @@ export default {
           10.5,
           12,
           13.5
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "slow",
@@ -30981,7 +31011,8 @@ export default {
           -120,
           -140,
           -160
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "slow_duration",
@@ -31000,7 +31031,8 @@ export default {
           36,
           42,
           48
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "wall_place_distance",
@@ -31122,7 +31154,8 @@ export default {
           240,
           280,
           320
-        ]
+        ],
+        "levelKey": "exortlevel"
       },
       {
         "key": "knockback_duration",
@@ -31135,7 +31168,8 @@ export default {
           1.5,
           1.75,
           2
-        ]
+        ],
+        "levelKey": "quaslevel"
       },
       {
         "key": "disarm_duration",
@@ -31148,7 +31182,8 @@ export default {
           5,
           5.75,
           6.5
-        ]
+        ],
+        "levelKey": "wexlevel"
       }
     ]
   },
@@ -45712,7 +45747,8 @@ export default {
         "value": [
           38
         ],
-        "talent": "special_bonus_unique_ember_spirit_5"
+        "talent": "special_bonus_unique_ember_spirit_5",
+        "talentOperation": 0
       },
       {
         "key": "damage",
@@ -50237,7 +50273,8 @@ export default {
           240,
           300
         ],
-        "talent": "special_bonus_unique_grimstroke_2"
+        "talent": "special_bonus_unique_grimstroke_2",
+        "talentOperation": 1
       },
       {
         "key": "bonus_damage_per_target",
@@ -50247,7 +50284,8 @@ export default {
           32,
           40
         ],
-        "talent": "special_bonus_unique_grimstroke_2"
+        "talent": "special_bonus_unique_grimstroke_2",
+        "talentOperation": 1
       },
       {
         "key": "movement_slow_pct",
