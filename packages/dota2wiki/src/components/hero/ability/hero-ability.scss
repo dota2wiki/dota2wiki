@@ -1,0 +1,13 @@
+/**
+ * Component: HeroAbility
+ */
+@include comp('hero-ability') {
+  $icon-size: 64;
+
+  position: relative;
+  flex: 1;
+
+  @include elem('icon') {
+    font-size: rem($icon-size);
+  }
+}

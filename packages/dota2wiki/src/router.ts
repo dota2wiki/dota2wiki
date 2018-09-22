@@ -52,10 +52,10 @@ export default new VueRouter({
                 import(/* webpackChunkName: "view-hero-dashboard" */ '@src/views/hero/dashboard'),
             },
             {
-              path: 'abilities',
-              name: 'hero-abilities',
+              path: 'ability/:abilityName',
+              name: 'hero-ability',
               component: async () =>
-                import(/* webpackChunkName: "view-hero-abilities" */ '@src/views/hero/abilities'),
+                import(/* webpackChunkName: "view-hero-ability" */ '@src/views/hero/ability'),
             },
           ],
         },

@@ -1,0 +1,31 @@
+/**
+ * Component: AbilityDetail
+ */
+@include comp('ability-detail') {
+  @include elem('name') {
+    font-size: rem(24);
+    font-weight: normal;
+    line-height: 1;
+  }
+
+  @include elem('lore') {
+    font-size: rem(font-size('small'));
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+
+      @include elem('name') {
+        color: theme($theme, 'fg', 'emphasize');
+      }
+      @include elem('lore') {
+        color: theme($theme, 'fg', 'sub');
+      }
+    }
+  }
+}

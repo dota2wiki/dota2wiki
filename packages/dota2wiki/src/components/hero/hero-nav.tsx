@@ -34,7 +34,9 @@ export class CHeroNav extends Vue {
             flex="none"
             tag="a"
             router-link
-            to={`/${this.$locale.language}/hero/${this.name}/abilities`}
+            to={`/${this.$locale.language}/hero/${this.name}/ability/${
+              this.$db.heroMap[this.name].abilities[0]
+            }`}
           >
             {this.$locale.dict['DOTA_Abilities']}
           </vd-flexbox>
