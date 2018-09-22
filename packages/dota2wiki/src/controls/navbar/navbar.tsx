@@ -61,27 +61,21 @@ export class CNavbar extends Vue {
   @Watch('$route', { immediate: true })
   private watchRoute(): void {
     this.navItems.forEach(item => {
-      const expected: string[] = [
-        ...(item.expected ? item.expected : []),
-        ...(item.children
-          ? item.children.reduce<string[]>((r, c) => {
-              r.push(...(c.expected || []));
-
-              return r;
-            }, [])
-          : []),
-      ];
-
-      item.matched = !!expected.find(e => !!this.$route.matched.find(m => m.name === e));
-
       if (item.children) {
         item.children.forEach(
           child =>
             (child.matched =
               !!child.expected &&
-              !!child.expected.find(e => !!this.$route.matched.find(m => m.name === e))),
+              !!child.expected.find(
+                e => !!this.$route.matched.find(m => m.meta.group === e),
+              )),
         );
       }
+
+      item.matched = item.children
+        ? !!item.children.find(child => child.matched)
+        : !!item.expected &&
+          !!item.expected.find(e => !!this.$route.matched.find(c => c.meta.group === e));
     });
 
     this.selectedIndex = this.navItems.findIndex(item => item.matched);

@@ -40,35 +40,33 @@ export class CHeroDashboard extends Vue {
 
   private render(h: CreateElement): VNode {
     return (
-      <vd-swimlane staticClass="c-hero-dashboard">
-        <vd-container>
-          <vd-flexbox direction="column" align="stretch" gap>
-            <vd-flexbox>
-              <c-level-input value={this.level} onChange={this.onLevelChange} />
+      <div staticClass="c-hero-dashboard">
+        <vd-flexbox direction="column" align="stretch" gap>
+          <vd-flexbox>
+            <c-level-input value={this.level} onChange={this.onLevelChange} />
+          </vd-flexbox>
+          <vd-flexbox gap>
+            <vd-flexbox flex={{ ltLg: 100 }}>
+              <c-ability-board name={this.name} />
             </vd-flexbox>
-            <vd-flexbox gap>
-              <vd-flexbox flex={{ ltLg: 100 }}>
-                <c-ability-board name={this.name} />
-              </vd-flexbox>
-              <vd-flexbox flex={{ ltLg: 100 }}>
-                <c-talent-tree
-                  name={this.name}
-                  level={this.level}
-                  selected-talents={this.selectedTalents}
-                  onChange={this.onSelectedTalentsChange}
-                />
-              </vd-flexbox>
-            </vd-flexbox>
-            <vd-flexbox>
-              <c-hero-stats
+            <vd-flexbox flex={{ ltLg: 100 }}>
+              <c-talent-tree
                 name={this.name}
                 level={this.level}
                 selected-talents={this.selectedTalents}
+                onChange={this.onSelectedTalentsChange}
               />
             </vd-flexbox>
           </vd-flexbox>
-        </vd-container>
-      </vd-swimlane>
+          <vd-flexbox>
+            <c-hero-stats
+              name={this.name}
+              level={this.level}
+              selected-talents={this.selectedTalents}
+            />
+          </vd-flexbox>
+        </vd-flexbox>
+      </div>
     );
   }
 }

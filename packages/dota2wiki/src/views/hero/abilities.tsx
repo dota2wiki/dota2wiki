@@ -10,11 +10,11 @@ import {
 } from 'vue-property-decorator';
 
 /**
- * Component: Ability
+ * Component: Abilities
  */
 @Component
-export default class VAbility extends Vue {
+export default class VAbilities extends Vue {
   private render(h: CreateElement): VNode {
-    return <div staticClass="v-ability">{this.$slots.default}</div>;
+    return <div staticClass="v-abilities">{this.$slots.default}</div>;
   }
 }

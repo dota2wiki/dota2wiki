@@ -14,6 +14,7 @@
 
   @include elem('content') {
     width: 100%;
+    padding: rem($swimlane-padding) 0;
   }
 
   @each $theme in $type-theme {
