@@ -201,6 +201,7 @@ const optionsList: Options[] = [
       /^DOTA_AttackCapability_/,
       /^DOTA_HUD_/,
       'dota_hero',
+      'DOTA_Abilities',
       'DOTA_StatBranch_TooltipTitle',
       'dota_settings_help_tips_reset',
 

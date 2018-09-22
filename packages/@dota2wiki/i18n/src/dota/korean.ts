@@ -7897,6 +7897,7 @@ const dict: Record<string, string> = {
   "DOTA_Tooltip_modifier_item_buff_ward": "관찰 와드",
   "DOTA_Tooltip_modifier_item_ward_true_sight": "감시 와드",
   "DOTA_Tooltip_modifier_halloffame_glow": "우승자의 오라",
+  "DOTA_Abilities": "기술",
   "npc_dota_hero_none": "--",
   "npc_dota_hero_queenofpain": "고통의 여왕",
   "npc_dota_hero_antimage": "항마사",

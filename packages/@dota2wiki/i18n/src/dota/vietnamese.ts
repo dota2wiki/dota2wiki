@@ -7897,6 +7897,7 @@ const dict: Record<string, string> = {
   "DOTA_Tooltip_modifier_item_buff_ward": "Mắt quan sát",
   "DOTA_Tooltip_modifier_item_ward_true_sight": "Mắt xanh",
   "DOTA_Tooltip_modifier_halloffame_glow": "Hào quang vô địch",
+  "DOTA_Abilities": "KỸ NĂNG",
   "npc_dota_hero_none": "--",
   "npc_dota_hero_queenofpain": "Queen of Pain",
   "npc_dota_hero_antimage": "Anti-Mage",

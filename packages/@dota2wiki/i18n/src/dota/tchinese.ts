@@ -7897,6 +7897,7 @@ const dict: Record<string, string> = {
   "DOTA_Tooltip_modifier_item_buff_ward": "偵察守衛",
   "DOTA_Tooltip_modifier_item_ward_true_sight": "崗哨守衛",
   "DOTA_Tooltip_modifier_halloffame_glow": "冠軍光環",
+  "DOTA_Abilities": "技能",
   "npc_dota_hero_none": "--",
   "npc_dota_hero_queenofpain": "痛苦女王",
   "npc_dota_hero_antimage": "敵法僧",
