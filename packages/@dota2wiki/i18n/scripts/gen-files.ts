@@ -145,8 +145,13 @@ async function generateLocale(options: Options): Promise<void> {
       };
     }
 
+    // resolve line breaking and color
     Object.entries(dict).forEach(
-      ([key, value]) => (dict[key] = value.replace(/\\n/g, '<br/>')),
+      ([key, value]) =>
+        (dict[key] = value
+          .replace(/\\n/g, '<br/>')
+          .replace(/<font/g, '<span')
+          .replace(/<\/font>/g, '</span>')),
     );
 
     const content: string = JSON.stringify(dict, undefined, '  ');
