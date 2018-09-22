@@ -1,5 +1,6 @@
-// tslint:disable-next-line:no-import-side-effect
+// tslint:disable:no-import-side-effect
 import '@src/main.scss';
+import '@src/register-hooks';
 
 import Vue from 'vue';
 
