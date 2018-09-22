@@ -1,0 +1,7 @@
+/**
+ * Component: HeroNav
+ */
+@include comp('hero-nav') {
+  position: relative;
+  flex: 1;
+}

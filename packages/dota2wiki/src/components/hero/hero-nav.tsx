@@ -23,6 +23,7 @@ export class CHeroNav extends Vue {
         <vd-flexbox gap="small">
           <vd-flexbox
             flex="none"
+            tag="a"
             router-link
             to={`/${this.$locale.language}/hero/${this.name}`}
           >
@@ -31,6 +32,7 @@ export class CHeroNav extends Vue {
           <vd-flexbox flex="none">/</vd-flexbox>
           <vd-flexbox
             flex="none"
+            tag="a"
             router-link
             to={`/${this.$locale.language}/hero/${this.name}/abilities`}
           >

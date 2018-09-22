@@ -39,14 +39,26 @@ export default class VHero extends Vue {
       <div staticClass="v-hero">
         <vd-swimlane>
           <vd-container>
-            <c-hero-change />
-            <c-hero-portrait key={this.heroName} name={this.heroName} />
+            <vd-flexbox direction="column" align="stretch" gap>
+              <vd-flexbox>
+                <c-hero-change />
+              </vd-flexbox>
+              <vd-flexbox>
+                <c-hero-portrait key={this.heroName} name={this.heroName} />
+              </vd-flexbox>
+            </vd-flexbox>
           </vd-container>
         </vd-swimlane>
         <vd-swimlane>
           <vd-container>
-            <c-hero-nav name={this.heroName} />
-            <router-view />
+            <vd-flexbox direction="column" align="stretch" gap>
+              <vd-flexbox>
+                <c-hero-nav name={this.heroName} />
+              </vd-flexbox>
+              <vd-flexbox>
+                <router-view />
+              </vd-flexbox>
+            </vd-flexbox>
           </vd-container>
         </vd-swimlane>
       </div>

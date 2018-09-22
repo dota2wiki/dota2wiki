@@ -33,7 +33,7 @@ export class CHeroChange extends Vue {
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="c-hero-change">
-        <vd-flexbox>
+        <vd-flexbox gap="small">
           <vd-flexbox justify="start">
             <router-link to={{ params: { heroName: this.previous } }}>
               &lt;&nbsp;

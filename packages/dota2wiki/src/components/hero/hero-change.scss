@@ -3,8 +3,5 @@
  */
 @include comp('hero-change') {
   position: relative;
-
-  padding: rem(gap('small'));
-  font-size: rem(font-size('small'));
-  line-height: 1;
+  flex: 1;
 }

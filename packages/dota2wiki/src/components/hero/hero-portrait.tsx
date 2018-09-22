@@ -77,36 +77,43 @@ export class CHeroPortrait extends Vue implements ThemeComponent {
   // tslint:disable:react-a11y-img-has-alt
   private render(h: CreateElement): VNode {
     return (
-      <div staticClass="c-hero-portrait" class={this.classes}>
-        <vd-flexbox gap align="stretch">
-          <vd-flexbox flex="none">
-            <div staticClass="c-hero-portrait_avatar">
-              <video staticClass="c-hero-portrait_avatar-video" muted autoplay loop>
-                <source
-                  src={this.$resources[`videos/heroes/${this.name}.webm`]}
-                  type="video/webm"
-                />
-              </video>
-            </div>
+      <vd-card
+        staticClass="c-hero-portrait"
+        class={this.classes}
+        bordered
+      >
+        <div staticClass="c-hero-portrait_background" />
+        <vd-card-content>
+          <vd-flexbox gap align="stretch">
+            <vd-flexbox flex="none">
+              <div staticClass="c-hero-portrait_avatar">
+                <video staticClass="c-hero-portrait_avatar-video" muted autoplay loop>
+                  <source
+                    src={this.$resources[`videos/heroes/${this.name}.webm`]}
+                    type="video/webm"
+                  />
+                </video>
+              </div>
+            </vd-flexbox>
+            <vd-flexbox direction="column" justify="end" align="stretch" gap>
+              <vd-flexbox tag="h1" staticClass="c-hero-portrait_name" flex="none">
+                {this.$locale.dict[this.name]}
+              </vd-flexbox>
+              <vd-flexbox staticClass="c-hero-portrait_roles" flex="none" gap>
+                <vd-flexbox flex="none">{this.attackCapability}</vd-flexbox>
+                {(Object.entries(this.hero.roles) as [keyof RoleData, number][])
+                  .sort(sortRole)
+                  .map(this.roleRender)}
+                <vd-flexbox />
+                <vd-flexbox />
+              </vd-flexbox>
+              <vd-flexbox tag="p" staticClass="c-hero-portrait_hype" flex="none">
+                {this.$locale.dict[`${this.name}_hype`]}
+              </vd-flexbox>
+            </vd-flexbox>
           </vd-flexbox>
-          <vd-flexbox direction="column" justify="end" align="stretch" gap>
-            <vd-flexbox tag="h1" staticClass="c-hero-portrait_name" flex="none">
-              {this.$locale.dict[this.name]}
-            </vd-flexbox>
-            <vd-flexbox staticClass="c-hero-portrait_roles" flex="none" gap>
-              <vd-flexbox flex="none">{this.attackCapability}</vd-flexbox>
-              {(Object.entries(this.hero.roles) as [keyof RoleData, number][])
-                .sort(sortRole)
-                .map(this.roleRender)}
-              <vd-flexbox />
-              <vd-flexbox />
-            </vd-flexbox>
-            <vd-flexbox tag="p" staticClass="c-hero-portrait_hype" flex="none">
-              {this.$locale.dict[`${this.name}_hype`]}
-            </vd-flexbox>
-          </vd-flexbox>
-        </vd-flexbox>
-      </div>
+        </vd-card-content>
+      </vd-card>
     );
   }
 }

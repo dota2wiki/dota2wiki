@@ -2,22 +2,22 @@
 
 $color-map-theme-dark: (
   fg-emphasize:       #ffffff,
-  fg-normal:          #e1e1e1,
-  fg-sub:             #9ab0cd,
-  fg-placeholder:     #849093,
-  fg-disabled:        #838c8f,
+  fg-normal:          #d6d7d8,
+  fg-sub:             #8e9399,
+  fg-placeholder:     #9d9fa2,
+  fg-disabled:        #7b7e83,
 
-  bg-higher:          #43474a,
-  bg-high:            #313436,
-  bg-normal:          #282b2d,
-  bg-low:             #202224,
-  bg-lower:           #161719,
-  bg-hover:           #3b3f40,
-  bg-disabled:        #525659,
+  bg-higher:          #1d2633,
+  bg-high:            #19212c,
+  bg-normal:          #151b25,
+  bg-low:             #11161e,
+  bg-lower:           #0d1116,
+  bg-hover:           #4a515c,
+  bg-disabled:        #4a515c,
 
-  bd-normal:          #3b3f40, // same as bg-hover
-  bd-disabled:        #838c8f, // same as fg-disabled
-  bd-focus:           #43484b,
+  bd-normal:          #4a515c, // same as bg-hover
+  bd-disabled:        #7b7e83, // same as fg-disabled
+  bd-focus:           #4a515c,
 );
 
 // tone

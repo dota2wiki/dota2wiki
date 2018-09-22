@@ -3,20 +3,19 @@
  */
 @include comp('hero-portrait') {
   position: relative;
+  flex: 1;
 
-  width: 100%;
-
-  @include elem('background-container') {
+  @include elem('background') {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  @include elem('background') {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+    background: center / cover no-repeat;
+    background-image: resources(
+      'images/backgrounds/background_play_button_large_2x_png.png'
+    );
   }
 
   $avatar-height: rem($hero-video-size);
@@ -91,5 +90,9 @@
         color: theme($theme, 'fg', 'sub');
       }
     }
+  }
+
+  @include elem('roles') {
+    color: $color-label;
   }
 }
