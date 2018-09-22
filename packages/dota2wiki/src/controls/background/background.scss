@@ -19,7 +19,7 @@
     left: rem(-$blur-amount);
     right: rem(-$blur-amount);
 
-    background: center / cover repeat;
+    background: fixed no-repeat;
   }
 
   @each $token,
