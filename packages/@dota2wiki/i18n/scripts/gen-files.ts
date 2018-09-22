@@ -149,9 +149,12 @@ async function generateLocale(options: Options): Promise<void> {
     Object.entries(dict).forEach(
       ([key, value]) =>
         (dict[key] = value
-          .replace(/\\n/g, '<br/>')
-          .replace(/<font/g, '<span')
-          .replace(/<\/font>/g, '</span>')),
+          .replace(/(\\?\\n)|\n/g, '<br/>')
+          .replace(/\\"/g, '"')
+          .replace(/<font[ ]+color=['"]([#A-Fa-f\d]+)['"]/g, '<span style="color:$1"')
+          .replace(/<\/font>/g, '</span>')
+          .replace(/<h1>/g, '<strong>')
+          .replace(/<\/h1>/g, '</strong>')),
     );
 
     const content: string = JSON.stringify(dict, undefined, '  ');
