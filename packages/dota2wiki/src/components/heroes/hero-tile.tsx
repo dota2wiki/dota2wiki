@@ -36,7 +36,7 @@ export class CHeroTile extends Vue {
     return (
       <router-link
         staticClass="c-hero-tile"
-        to={{ name: 'hero', params: { name: this.name } }}
+        to={`/${this.$locale.language}/hero/${this.name}`}
         data-hero-name={this.name}
         nativeOnMouseenter={this.onMouseEnter}
         nativeOnMouseleave={this.onMouseLeave}

@@ -17,7 +17,7 @@ import locale from '@src/locale';
 import router from './router';
 import store from './store';
 
-import VApp from '@src/views/app';
+import VApp from '@src/app';
 
 Vue.config.productionTip = false;
 

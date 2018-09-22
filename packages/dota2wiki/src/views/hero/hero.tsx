@@ -22,13 +22,16 @@ import { CHeroDetail } from '@src/components/hero/hero-detail';
 export default class VHero extends Vue {
   private mounted(): void {
     this.$dt_background.token =
-      this.$db.heroMap[this.$route.params.name].team === Team.good ? 'good' : 'bad';
+      this.$db.heroMap[this.$route.params.heroName].team === Team.good ? 'good' : 'bad';
   }
 
   private render(h: CreateElement): VNode {
     return (
       <div staticClass="v-hero">
-        <c-hero-detail key={this.$route.params.name} name={this.$route.params.name} />
+        <c-hero-detail
+          key={this.$route.params.heroName}
+          name={this.$route.params.heroName}
+        />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import VIndex from 'dota2wiki/src/views';
+import views from 'dota2wiki/src/views';
 
 Vue.use(VueRouter);
 
@@ -17,7 +17,7 @@ export default new VueRouter({
     },
     {
       path: '/:language',
-      component: VIndex,
+      component: views,
       children: [
         {
           path: '',
@@ -29,25 +29,31 @@ export default new VueRouter({
           path: 'heroes',
           name: 'heroes',
           component: async () =>
-            import(/* webpackChunkName: "view-hero" */ '@src/views/heroes'),
+            import(/* webpackChunkName: "view-heroes" */ '@src/views/hero/heroes'),
         },
         {
-          path: 'hero/:name',
+          path: 'hero/:heroName',
           name: 'hero',
           component: async () =>
-            import(/* webpackChunkName: "view-hero" */ '@src/views/hero'),
+            import(/* webpackChunkName: "view-hero" */ '@src/views/hero/hero'),
+        },
+        {
+          path: 'hero/:heroName/ability/:abilityName',
+          name: 'hero',
+          component: async () =>
+            import(/* webpackChunkName: "view-ability" */ '@src/views/hero/ability'),
         },
         {
           path: 'items',
           name: 'items',
           component: async () =>
-            import(/* webpackChunkName: "view-item" */ '@src/views/items'),
+            import(/* webpackChunkName: "view-items" */ '@src/views/item/items'),
         },
         {
           path: 'item/:name',
           name: 'item',
           component: async () =>
-            import(/* webpackChunkName: "view-item" */ '@src/views/item'),
+            import(/* webpackChunkName: "view-item" */ '@src/views/item/item'),
         },
       ],
     },
