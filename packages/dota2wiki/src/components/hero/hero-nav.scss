@@ -2,6 +2,92 @@
  * Component: HeroNav
  */
 @include comp('hero-nav') {
+  $transition-duration: 180ms;
+
   position: relative;
   flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: stretch;
+
+  height: rem($card-header-height);
+  border: rem($border-base) solid transparent;
+
+  font-size: rem($card-header-font-size);
+
+  @include elem('background') {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: $opacity-half;
+  }
+
+  @include elem('indicator') {
+    position: absolute;
+    bottom: rem(-$border-base);
+    left: 0;
+    right: 0;
+    width: 0;
+    height: rem($border-base * 2);
+    margin: 0 auto;
+
+    background-color: tone();
+
+    transition: width ease-in-out $transition-duration;
+  }
+
+  @include elem('item') {
+    position: relative;
+    flex: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    padding: 0 rem($gap-base);
+    border: rem($border-base) solid transparent, 0;
+
+    transition: color ease-in-out $transition-duration;
+
+    @include when('active') {
+      @include elem('indicator') {
+        width: 100%;
+      }
+    }
+    &:hover {
+      @include elem('indicator') {
+        width: 100%;
+      }
+    }
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      border-color: theme($theme, 'bd');
+
+      @include elem('background') {
+        background-color: theme($theme, 'bg', 'lower');
+      }
+
+      @include elem('item') {
+        color: theme($theme, 'fg', 'sub');
+        &:hover {
+          color: theme($theme, 'fg', 'emphasize');
+        }
+        @include when('active') {
+          color: theme($theme, 'fg', 'emphasize');
+        }
+      }
+    }
+  }
 }
