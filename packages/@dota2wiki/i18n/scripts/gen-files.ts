@@ -211,8 +211,7 @@ const optionsList: Options[] = [
       /^DOTA_HeroGuide_/,
       /^DOTA_HeroGuideViewer_/,
 
-      /^DOTA_Tooltip_ability/,
-      /^DOTA_Tooltip_modifier_/,
+      /^DOTA_Tooltip/,
       /^dota_ability_variable_/,
 
       /^DOTA_SHOP/,
