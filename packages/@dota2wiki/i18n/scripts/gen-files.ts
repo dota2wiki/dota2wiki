@@ -200,10 +200,6 @@ const optionsList: Options[] = [
       /^DOTA_HeroRole_/,
       /^DOTA_AttackCapability_/,
       /^DOTA_HUD_/,
-      'dota_hero',
-      'DOTA_Abilities',
-      'DOTA_StatBranch_TooltipTitle',
-      'dota_settings_help_tips_reset',
 
       /^DOTA_HeroGrid_/,
       /^DOTA_HeroStats_/,
@@ -215,6 +211,23 @@ const optionsList: Options[] = [
       /^dota_ability_variable_/,
 
       /^DOTA_SHOP/,
+
+      'dota_settings_game',
+      'dota_settings_audio',
+      'dota_settings_video',
+
+      'dota_radiant',
+      'dota_dire',
+
+      'UI_Ultimate',
+      'dota_hero',
+      'DOTA_Abilities',
+      'DOTA_LevelUp',
+      'DOTA_LevelUp_Req',
+
+      'DOTA_StatBranch_TooltipTitle',
+
+      'dota_settings_help_tips_reset',
     ],
     excludes: [/_cny_/, /_cny2015_/],
   },

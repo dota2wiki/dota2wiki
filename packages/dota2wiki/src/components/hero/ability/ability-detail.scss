@@ -12,6 +12,16 @@
     font-size: rem(font-size('small'));
   }
 
+  @include elem('content', 'divider') {
+    padding: 0 rem(gap('xsmall'));
+  }
+
+  @include elem('divider') {
+    &:last-child {
+      display: none;
+    }
+  }
+
   @each $theme in $type-theme {
     @include prop(
       (
@@ -23,9 +33,18 @@
       @include elem('name') {
         color: theme($theme, 'fg', 'emphasize');
       }
-      @include elem('lore') {
+
+      @include elem('description') {
+        color: theme($theme);
+      }
+
+      @include elem('lore', 'note') {
         color: theme($theme, 'fg', 'sub');
       }
     }
+  }
+
+  @include elem('label') {
+    color: $color-label;
   }
 }

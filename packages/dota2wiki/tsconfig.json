@@ -11,5 +11,5 @@
       "void-ui": ["void-ui/void-ui.ts"]
     }
   },
-  "include": ["src", "scripts", "void-ui"]
+  "include": ["src", "void-ui"]
 }
