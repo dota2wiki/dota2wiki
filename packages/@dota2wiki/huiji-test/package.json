@@ -1,0 +1,24 @@
+{
+  "name": "@dota2wiki/huiji-test",
+  "version": "0.0.1",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/dota2wiki/dota2wiki"
+  },
+  "keywords": [
+    "dota2"
+  ],
+  "author": "duduluu <duduluu@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "ts": "ts-node -r tsconfig-paths/register -P ../../../tsconfig.scripts.json",
+    "gen-files": "yarn ts scripts/gen-files.ts",
+    "clean:dist": "rimraf ./dist",
+    "build": "yarn clean:dist && tsc -p ./tsconfig.esm.json",
+    "lint": "tslint -c ./tslint.project.json -p ./tsconfig.project.json",
+    "test:unit": "jest --maxWorkers=4"
+  },
+  "devDependencies": {
+    "@dota2wiki/vdf": "^1.0.0"
+  }
+}
