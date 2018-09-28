@@ -27,6 +27,7 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
+    "@huiji/gen-files": "^1.0.0",
     "@types/chalk": "^2.2.0",
     "@types/globby": "^8.0.0",
     "@types/jest": "^23.3.1",
