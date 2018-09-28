@@ -9,12 +9,12 @@ default: &default
   docker:
     - image: circleci/node:latest
 
-require_install: &require_install
+require_frame: &require_frame
   requires:
-    - install
+    - frame
 
 jobs:
-  install:
+  frame:
     <<: *default
     steps:
       - checkout
@@ -40,7 +40,7 @@ jobs:
     <<: *default
     steps:
       - attach_workspace:
-          at: ~/project
+          at: ~/
       - add_ssh_keys:
           fingerprints:
             - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
@@ -61,14 +61,14 @@ workflows:
   version: 2
   workflow:
     jobs:
-      - install:
+      - frame:
           filters:
             branches:
               only:
                 - master
       - build:
           requires:
-            - install
+            - frame
           filters:
             branches:
               only: master
