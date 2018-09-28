@@ -13,7 +13,7 @@
     "packages/dota2wiki"
   ],
   "scripts": {
-    "void-ui": "git clone --single-branch -b dev git@github.com:HuijiFE/void-ui.git void-ui && cd packages && ln -s ../void-ui/packages/void-ui/ void-ui && cd ..",
+    "void-ui": "rimraf void-ui && git clone --single-branch -b dev git@github.com:HuijiFE/void-ui.git void-ui && cd packages && ln -s ../void-ui/packages/void-ui/ void-ui && cd ..",
     "frame": "yarn install && yarn void-ui",
     "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",
     "test": "jest",
@@ -34,6 +34,7 @@
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^10.9.4",
     "chalk": "^2.4.1",
+    "cross-env": "^5.2.0",
     "globby": "^8.0.1",
     "jest": "^23.5.0",
     "mkdirp": "^0.5.1",

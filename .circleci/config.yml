@@ -1,0 +1,74 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+default: &default
+  working_directory: ~/project/void-ui
+  docker:
+    - image: circleci/node:latest
+
+require_install: &require_install
+  requires:
+    - install
+
+jobs:
+  install:
+    <<: *default
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-void-ui-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - v1-void-ui-{{ .Branch }}-
+            - v1-void-ui-
+      - run: yarn frame
+      - save_cache:
+          paths:
+            - node_modules/
+            - ~/.cache
+          key: v1-void-ui-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - project/void-ui
+
+  build:
+    <<: *default
+    steps:
+      - attach_workspace:
+          at: ~/
+      - add_ssh_keys:
+          fingerprints:
+            - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
+      - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - run: yarn build
+      - run: cd packages/dota2wiki
+      - run: yarn build:gh-pages
+      - run: yarn gen-pages
+      - run: |
+          cd dist
+          git init
+          git config user.email dota2wiki@outlook.com
+          git config user.name dota2wiki-bot
+          git remote add origin git@github.com:dota2wiki/dota2wiki.github.io.git
+          git add .
+          git commit -m "auto deploy"
+          git push origin master --force
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - install:
+          filters:
+            branches:
+              only:
+                - master
+      - build-docs:
+          requires:
+            - install
+          filters:
+            branches:
+              only: master

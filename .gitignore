@@ -12,6 +12,7 @@
 
 # tmp directories
 .tmp/
+.tmp.*
 
 # Logs
 logs

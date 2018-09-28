@@ -3,8 +3,22 @@ const Config = require('webpack-chain');
 const webpack = require('webpack');
 const chalk = require('chalk');
 
+/**
+ * @type {'gh-pages' | 'cloud' | 'huiji'}
+ */
+const platform = process.env.PLATFORM || 'gh-pages';
+
+/**
+ * @type {Record<'gh-pages' | 'cloud' | 'huiji', string>}
+ */
+const dictBaseUrl = {
+  'gh-pages': '/',
+  cloud: 'https://static.duduluu.com/dota2wiki.duduluu.com/',
+  huiji: 'https://static.duduluu.com/dota2.huijiwiki.com/',
+};
+
 const options = {
-  baseUrl: '/wiki/',
+  baseUrl: dictBaseUrl[platform],
   assetsDir: 'static',
   filenameHashing: true,
 
