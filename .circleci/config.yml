@@ -23,12 +23,13 @@ jobs:
             - v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - v1-{{ .Branch }}-
             - v1-
-      - run: yarn frame
+      - run: yarn --network-timeout 600000
       - save_cache:
           paths:
             - node_modules/
             - ~/.cache
           key: v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run: yarn void-ui
       - run: yarn build
       - persist_to_workspace:
           root: ~/
@@ -39,16 +40,15 @@ jobs:
     <<: *default
     steps:
       - attach_workspace:
-          at: ~/project/packages/dota2wiki
+          at: ~/project
       - add_ssh_keys:
           fingerprints:
             - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
-      - run: pwd
       - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
-      - run: yarn build:gh-pages
-      - run: yarn gen-pages
+      - run: yarn --cwd packages/dota2wiki build:gh-pages
+      - run: yarn --cwd packages/dota2wiki gen-pages
       - run: |
-          cd dist
+          cd packages/dota2wiki/dist
           git init
           git config user.email dota2wiki@outlook.com
           git config user.name dota2wiki-bot
