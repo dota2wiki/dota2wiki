@@ -8,6 +8,7 @@
     "gen-files": "yarn ts scripts/gen-files.ts",
     "gen-sprites": "yarn ts scripts/gen-sprites.ts",
     "gen-pages": "yarn ts scripts/gen-pages.ts",
+    "purge": "yarn ts scripts/purge.ts",
     "print-static": "yarn ts scripts/print-static.ts",
     "serve": "vue-cli-service serve",
     "build:gh-pages": "cross-env PLATFORM=gh-pages vue-cli-service build",
