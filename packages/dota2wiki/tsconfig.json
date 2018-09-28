@@ -8,8 +8,8 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],
-      "void-ui": ["void-ui/void-ui.ts"]
+      "void-ui": ["../void-ui/src/index.ts"]
     }
   },
-  "include": ["src", "void-ui"]
+  "include": ["src", "../void-ui/src"]
 }

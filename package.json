@@ -13,6 +13,8 @@
     "packages/dota2wiki"
   ],
   "scripts": {
+    "void-ui": "git clone --single-branch -b dev git@github.com:HuijiFE/void-ui.git void-ui && cd packages && ln -s ../void-ui/packages/void-ui/ void-ui && cd ..",
+    "frame": "yarn install && yarn void-ui",
     "ts": "ts-node -r tsconfig-paths/register -P tsconfig.scripts.json",
     "test": "jest",
     "serve": "yarn --cwd packages/dota2wiki serve",

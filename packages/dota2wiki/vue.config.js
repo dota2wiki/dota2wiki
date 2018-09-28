@@ -33,7 +33,7 @@ const options = {
     config.resolve.alias
       .delete('@')
       .set('@src', resolve('src'))
-      .set('void-ui$', resolve('void-ui/void-ui.ts'));
+      .set('void-ui$', resolve('../void-ui/src/index.ts'));
 
     // js --------------------------------------------------------
 
