@@ -3,6 +3,9 @@ const Config = require('webpack-chain');
 const webpack = require('webpack');
 const chalk = require('chalk');
 const express = require('express');
+const os = require('os');
+
+console.log(chalk.cyanBright(`\nCPUs: ${os.cpus().length}\n`));
 
 /**
  * @type {'gh-pages' | 'cloud' | 'huiji'}
@@ -44,10 +47,6 @@ const options = {
     // base --------------------------------------------------------
 
     config.resolve.symlinks(false);
-    // config.module.noParse(
-    //   /^(vue|vue-router|vuex|vuex-router-sync|@dota2wiki\/i18n\/dist\/esm\/dota\/[a-z]+)$/,
-    // );
-    // config.module.rule('js').exclude.add(filepath => /@dota2wiki/.test(filepath));
 
     config.resolve.alias
       .delete('@')
@@ -150,7 +149,7 @@ const options = {
     },
   },
 
-  parallel: true,
+  parallel: false,
 };
 
 module.exports = options;
