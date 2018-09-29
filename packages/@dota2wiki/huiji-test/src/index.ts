@@ -1,5 +1,5 @@
 /**
- * {{Html:TestApp}}
+ * MediaWiki:Common.js
  */
 
 const wikiBody: Element | null = document.querySelector('#wiki-body');
