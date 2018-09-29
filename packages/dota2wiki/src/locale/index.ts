@@ -12,13 +12,14 @@ function transformResponse(raw: string): Record<string, string> {
 const dicts: Record<string, AsyncDict> = {};
 Object.entries(dota).forEach(([language, hash]) => {
   dicts[language] = async () => {
-    const { data } = await axios.get<Record<string, string>>(
-      `${baseUrl}static/i18n/dota/${language}${isProduction ? `.${hash}` : ''}.json5`,
-      {
-        timeout: 5000,
-        transformResponse,
-      },
-    );
+    const url: string = `${baseUrl}static/i18n/dota/${language}${
+      isProduction ? `.${hash}` : ''
+    }.json5`;
+    console.log(url);
+    const { data } = await axios.get<Record<string, string>>(url, {
+      timeout: 5000,
+      transformResponse,
+    });
 
     return { default: data };
   };
