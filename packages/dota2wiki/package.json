@@ -7,7 +7,8 @@
     "ts": "ts-node -r tsconfig-paths/register -P ../../tsconfig.scripts.json",
     "gen-files": "yarn ts scripts/gen-files.ts",
     "gen-sprites": "yarn ts scripts/gen-sprites.ts",
-    "gen-pages": "yarn ts scripts/gen-pages.ts",
+    "copy-i18n": "yarn ts scripts/copy-i18n.ts",
+    "gen-pages": "rimraf ./dist/wiki && yarn ts scripts/gen-pages.ts",
     "purge": "yarn ts scripts/purge.ts",
     "print-static": "yarn ts scripts/print-static.ts",
     "serve": "vue-cli-service serve",
@@ -21,8 +22,10 @@
   },
   "dependencies": {
     "@dota2wiki/database": "1.7.1",
-    "@dota2wiki/i18n": "1.4.5",
+    "@dota2wiki/i18n": "2.0.0",
     "@huiji/vue-locale": "^1.1.1",
+    "@types/json5": "^0.0.30",
+    "json5": "^2.1.0",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
@@ -31,7 +34,6 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
-    "@huiji/gen-files": "^1.0.0",
     "@types/jest": "^23.1.4",
     "@types/webpack": "^4.4.12",
     "@types/webpack-chain": "^4.8.1",

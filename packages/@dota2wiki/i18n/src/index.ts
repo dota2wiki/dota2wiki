@@ -3,3 +3,4 @@
  */
 
 export * from './languages';
+export { default as dota } from './dota';

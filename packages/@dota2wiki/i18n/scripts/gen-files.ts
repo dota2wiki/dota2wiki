@@ -2,9 +2,11 @@
 
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 import mkdirp from 'mkdirp';
 import globby from 'globby';
 import chalk from 'chalk';
+import JSON5 from 'json5';
 import * as database from '@dota2wiki/database';
 import { load, save } from '@dota2wiki/vdf';
 import { allLanguages } from '../src/languages';
@@ -18,34 +20,6 @@ interface Options {
   output: string;
   includes: (string | RegExp)[];
   excludes: (string | RegExp)[];
-}
-
-let allLanguage: string[];
-
-async function getAllLanguages(): Promise<string[]> {
-  const files: string[] = await globby(resolve('assets/dota_*.txt'));
-
-  const result: string[] = await Promise.all(
-    files.map(f =>
-      (async (): Promise<string> => {
-        const raw: any = await load(f);
-
-        return (raw.lang.Language as string).toLowerCase();
-      })(),
-    ),
-  );
-
-  result.sort();
-
-  allLanguage = [...new Set(['english', ...result])];
-
-  const content: string = result.map(lang => `'${lang}'`).join(', ');
-  fs.writeFileSync(
-    resolve('../src/languages.ts'),
-    `// tslint:disable\n\nexport const allLanguages: string[] = [${content}]`,
-  );
-
-  return result;
 }
 
 /**
@@ -88,7 +62,7 @@ async function generateLocale(options: Options): Promise<void> {
   }
 
   await Promise.all(
-    allLanguage
+    allLanguages
       .map(lang => options.files.map(prefix => loadVdf(prefix, lang)))
       .reduce<Promise<void>[]>((result, cur) => {
         result.push(...cur);
@@ -102,7 +76,7 @@ async function generateLocale(options: Options): Promise<void> {
   async function outputSrc(
     language: string,
     rawDict: Record<string, string>,
-  ): Promise<void> {
+  ): Promise<string> {
     let dict: Record<string, string> = {};
 
     Object.entries(rawDict).forEach(([key, text]) => {
@@ -158,35 +132,42 @@ async function generateLocale(options: Options): Promise<void> {
           .replace(/<\/h1>/g, '</strong>')),
     );
 
-    const content: string = JSON.stringify(dict, undefined, '  ');
+    const content: string = JSON5.stringify(dict);
 
-    fs.writeFileSync(
-      `${output}/${language}.ts`,
-      `// tslint:disable\n\nconst dict: Record<string, string> = ${content}\n\n export default dict`,
-    );
+    fs.writeFileSync(`${output}/${language}.json5`, content);
 
     console.info(
       chalk.cyanBright('Output:'),
       chalk.greenBright(`${output}/${language}.ts`),
     );
+
+    const hash: string = crypto
+      .createHash('sha512')
+      .update(content)
+      .digest('hex');
+    console.info(hash);
+
+    return hash;
   }
 
-  await outputSrc('english', map['english']);
+  const temp: [string, string][] = [];
+  temp.push(['english', await outputSrc('english', map['english'])]);
   await Promise.all(
     Object.entries(map)
       .filter(([lang]) => lang !== 'english')
-      .map(
-        ([language, rawDict]): Promise<void> => {
-          return outputSrc(language, rawDict);
-        },
-      ),
+      .map(async ([language, rawDict]) => {
+        temp.push([language, await outputSrc(language, rawDict)]);
+      }),
   );
-}
 
-function flat(result: string[], cur: string[]): string[] {
-  result.push(...cur);
-
-  return result;
+  const manifest: Record<string, string> = {};
+  temp
+    .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+    .forEach(([language, hash]) => (manifest[language] = hash));
+  fs.writeFileSync(
+    resolve(`${output}/index.ts`),
+    `// tslint:disable\n\nexport default ${JSON.stringify(manifest, undefined, '  ')};\n`,
+  );
 }
 
 const optionsList: Options[] = [
@@ -234,7 +215,4 @@ const optionsList: Options[] = [
   },
 ];
 
-getAllLanguages()
-  .then(result => console.info(result))
-  .then(() => Promise.all(optionsList.map(generateLocale)))
-  .catch(console.error);
+Promise.all(optionsList.map(generateLocale)).catch(console.error);

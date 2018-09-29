@@ -1,13 +1,15 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import Vuex, { Store } from 'vuex';
 
 Vue.use(Vuex);
 
 /**
- * Store
+ * Store factory
  */
-export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-});
+export default function createStore(): Store<{}> {
+  return new Vuex.Store({
+    state: {},
+    mutations: {},
+    actions: {},
+  });
+}

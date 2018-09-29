@@ -1,7 +1,8 @@
 /**
  * Generate files
  */
-import { GenFilesOptions, genFiles } from '@huiji/gen-files';
+import { GenFilesOptions, genFiles } from '@huiji/shared-utils';
+import { allLanguages } from '@dota2wiki/i18n';
 
 const optionsList: GenFilesOptions[] = [
   // assets

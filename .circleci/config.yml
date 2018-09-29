@@ -46,6 +46,7 @@ jobs:
             - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
       - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
       - run: yarn --cwd packages/dota2wiki build:gh-pages
+      - run: yarn --cwd packages/dota2wiki copy-i18n
       - run: yarn --cwd packages/dota2wiki gen-pages
       - run: |
           cd packages/dota2wiki/dist
