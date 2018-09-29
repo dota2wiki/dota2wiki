@@ -1,12 +1,13 @@
 // tslint:disable:no-any
 
-import * as fs from 'fs';
-import * as path from 'path';
-import * as mkdirp from 'mkdirp';
-import * as globby from 'globby';
+import fs from 'fs';
+import path from 'path';
+import mkdirp from 'mkdirp';
+import globby from 'globby';
 import chalk from 'chalk';
 import * as database from '@dota2wiki/database';
 import { load, save } from '@dota2wiki/vdf';
+import { allLanguages } from '../src/languages';
 
 function resolve(...paths: string[]): string {
   return path.resolve(__dirname, ...paths);

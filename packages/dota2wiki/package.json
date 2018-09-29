@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@dota2wiki/database": "1.7.1",
-    "@dota2wiki/i18n": "1.4.4",
+    "@dota2wiki/i18n": "1.4.5",
     "@huiji/vue-locale": "^1.1.1",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.17",
