@@ -15,13 +15,12 @@ Object.entries(dota).forEach(([language, hash]) => {
     const url: string = `${baseUrl}static/i18n/dota/${language}${
       isProduction ? `.${hash}` : ''
     }.json5`;
-    console.log(url);
-    const { data } = await axios.get<Record<string, string>>(url, {
+    const { data: dict } = await axios.get<Record<string, string>>(url, {
       timeout: 5000,
       transformResponse,
     });
 
-    return { default: data };
+    return dict;
   };
 });
 

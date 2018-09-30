@@ -34,6 +34,8 @@
     "@types/jest": "^23.3.1",
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^10.9.4",
+    "@types/webpack": "^4.4.12",
+    "@types/webpack-chain": "^4.8.1",
     "axios": "^0.18.0",
     "chalk": "^2.4.1",
     "cross-env": "^5.2.0",
