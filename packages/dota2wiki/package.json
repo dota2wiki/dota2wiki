@@ -22,10 +22,8 @@
   },
   "dependencies": {
     "@dota2wiki/database": "1.7.1",
-    "@dota2wiki/i18n": "2.0.1",
+    "@dota2wiki/i18n": "2.0.2",
     "@huiji/vue-locale": "^1.1.1",
-    "@types/json5": "^0.0.30",
-    "json5": "^2.1.0",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
