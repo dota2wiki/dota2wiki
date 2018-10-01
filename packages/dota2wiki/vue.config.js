@@ -1,4 +1,6 @@
+const fs = require('fs');
 const path = require('path');
+const { genPathResolve } = require('@huiji/shared-utils');
 const Config = require('webpack-chain');
 const webpack = require('webpack');
 const chalk = require('chalk');
@@ -139,13 +141,30 @@ const options = {
      * @param {express.Application} app
      */
     before(app) {
-      app.use(
-        `${options.baseUrl}${options.assetsDir}/i18n`,
-        express.static('../@dota2wiki/i18n/src', {
-          setHeaders: response =>
-            response.setHeader('Content-Type', 'text/plain; charset=utf-8'),
-        }),
+      const resolveDict = genPathResolve(__dirname, '../@dota2wiki/i18n/src');
+
+      const router = express.Router();
+      router.get(
+        `${options.baseUrl}${options.assetsDir}/i18n/:category/:file`,
+        (request, response) => {
+          const language = request.params.file.split('.')[0];
+          const dictPath = resolveDict(request.params.category, `${language}.json5`);
+          fs.exists(dictPath, exists => {
+            if (exists) {
+              fs.readFile(dictPath, { encoding: 'utf-8' }, (readFileError, content) => {
+                if (readFileError) {
+                  throw readFileError;
+                }
+                response.send(content);
+              });
+            } else {
+              response.status(404).send('Dict Not Found');
+            }
+          });
+        },
       );
+
+      app.use(router);
     },
   },
 
