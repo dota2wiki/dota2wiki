@@ -48,15 +48,17 @@ jobs:
       - run: yarn --cwd packages/dota2wiki build:gh-pages
       - run: yarn --cwd packages/dota2wiki copy-i18n
       - run: yarn --cwd packages/dota2wiki gen-pages
-      - run: |
-          cd packages/dota2wiki/dist
-          git init
-          git config user.email dota2wiki@outlook.com
-          git config user.name dota2wiki-bot
-          git remote add origin git@github.com:dota2wiki/dota2wiki.github.io.git
-          git add .
-          git commit -m "auto deploy"
-          git push origin master --force
+      - run:
+          name: deploy to dota2wiki.github.io
+          command: |
+            cd packages/dota2wiki/dist
+            git init
+            git config user.email dota2wiki@outlook.com
+            git config user.name dota2wiki-bot
+            git remote add origin git@github.com:dota2wiki/dota2wiki.github.io.git
+            git add .
+            git commit -m "auto deploy"
+            git push origin master --force
 
 workflows:
   version: 2
