@@ -160,7 +160,7 @@
 "#npc_dota_hero_terrorblade"	"Terrorblade"
 "#npc_dota_hero_oracle"	"Oracle"
 "#npc_dota_hero_techies"	"Techies"
-"#npc_dota_hero_target_dummy"	"Mục tiêu bù nhìn"
+"#npc_dota_hero_target_dummy"	"Bù nhìn"
 "#npc_dota_hero_winter_wyvern"	"Winter Wyvern"
 "#npc_dota_hero_arc_warden"	"Arc Warden"
 "#npc_dota_hero_monkey_king"	"Monkey King"
@@ -199,5 +199,6 @@
 "#game_mode_24"	"Đột biến"
 "#DOTA_RP_PLAYING_EVENT_MATCH"	"Đang chơi {%param0%}"
 "#DOTA_EventGameName_International2018"	"The Underhollow"
+"#npc_dota_hero_grimstroke"	"Grimstroke"
 }
 }
