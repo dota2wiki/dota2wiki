@@ -23,6 +23,6 @@
     "test:unit": "jest --maxWorkers=4"
   },
   "devDependencies": {
-    "@dota2wiki/vdf": "^1.0.0"
+    "@dota2wiki/vdf": "^1.0.2"
   }
 }

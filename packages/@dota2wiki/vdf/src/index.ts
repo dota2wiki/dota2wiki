@@ -2,7 +2,7 @@
 
 import fs from 'fs';
 import icu from 'detect-character-encoding';
-import vdf from '@node-steam/vdf';
+import * as vdf from '@node-steam/vdf';
 import chalk from 'chalk';
 
 type TypeOfResult =
