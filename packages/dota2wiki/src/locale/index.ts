@@ -14,7 +14,7 @@ Object.entries(dota).forEach(([language, hash]) => {
   dicts[language] = async () => {
     const url: string = `${baseUrl}static/i18n/dota/${language}${
       isProduction ? `.${hash}` : ''
-    }.json5`;
+    }.json`;
     const { data: dict } = await axios.get<Record<string, string>>(url, {
       timeout: 5000,
       transformResponse,

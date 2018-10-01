@@ -14,7 +14,7 @@ mkdirp.sync(resolve('dist/static/i18n/dota/'));
 Object.entries(dota).forEach(([language, hash]) => {
   fs.copyFile(
     resolve(`../@dota2wiki/i18n/src/dota/${language}.json5`),
-    resolve(`dist/static/i18n/dota/${language}.${hash}.json5`),
+    resolve(`dist/static/i18n/dota/${language}.${hash}.json`),
     error => {
       if (error) {
         throw error;
