@@ -23,7 +23,8 @@ async function generatePages(): Promise<void> {
       add(language, ...paths);
     }
 
-    addPath('home');
+    // home
+    addPath('');
 
     addPath('heroes');
     heroList.forEach(hero => {
