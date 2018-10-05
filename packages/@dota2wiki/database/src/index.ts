@@ -42,6 +42,8 @@ export interface Database {
   readonly talentNames: ReadonlyArray<string>;
 
   readonly itemMap: Readonly<Record<string, Item>>;
+  readonly itemList: ReadonlyArray<Item>;
+  readonly itemNames: ReadonlyArray<string>;
 }
 
 const compareId: (a: { id: number }, b: { id: number }) => number = (a, b) => a.id - b.id;
@@ -69,6 +71,8 @@ export const talentList: ReadonlyArray<Talent> = Object.values(talentMap).sort(c
 export const talentNames: ReadonlyArray<string> = talentList.map(t => t.name);
 
 export const itemMap: Readonly<Record<string, Item>> = items;
+export const itemList: ReadonlyArray<Item> = Object.values(itemMap).sort(compareId);
+export const itemNames: ReadonlyArray<string> = itemList.map(t => t.name);
 
 const db: Database = {
   heroMap,
@@ -85,6 +89,8 @@ const db: Database = {
   talentNames,
 
   itemMap,
+  itemList,
+  itemNames,
 };
 
 const install: PluginFunction<undefined> = $Vue => {
