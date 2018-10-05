@@ -20,22 +20,18 @@ export default class VItems extends Vue {
 
   private render(h: CreateElement): VNode {
     return (
-      <div staticClass="v-items">
+      <div staticClass="v-items" style="font-size: 12px">
         <vd-swimlane>
           <vd-container>
-            <vd-flexbox direction="column" gap>
-              {this.$db.heroGroups.map(group => (
-                <vd-flexbox gap="small">
-                  {group.heroes.map(hero => (
-                    <vd-flexbox flex="none">
-                      <i
-                        staticClass="dt-hero-avatar-h"
-                        class={[group.primary, hero.name]}
-                      />
-                    </vd-flexbox>
-                  ))}
-                </vd-flexbox>
-              ))}
+            <vd-flexbox gap="small">
+              {this.$db.itemNames
+                .filter(item => !item.startsWith('item_recipe'))
+                .map(item => (
+                  <vd-flexbox flex="none" direction="column">
+                    <i staticClass="dt-item-icon" class={item} />
+                    <span>{this.$locale.dict[`DOTA_Tooltip_Ability_${item}`]}</span>
+                  </vd-flexbox>
+                ))}
             </vd-flexbox>
           </vd-container>
         </vd-swimlane>
