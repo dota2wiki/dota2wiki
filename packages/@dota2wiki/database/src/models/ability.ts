@@ -1,5 +1,31 @@
 // tslint:disable:no-reserved-keywords no-bitwise
 
+//
+// Special
+// ------------------------------------------------------------
+
+export enum SpecialBonusOperation {
+  SPECIAL_BONUS_SUBTRACT,
+  SPECIAL_BONUS_MULTIPLY,
+}
+
+export interface SpecialItem {
+  readonly key: string;
+  readonly value: number[];
+  readonly levelKey?: string;
+  readonly talent?: string;
+  readonly talentField?: string;
+  readonly talentOperation?: SpecialBonusOperation;
+}
+
+export interface ModifyLike {
+  readonly special: SpecialItem[];
+}
+
+//
+// Ability
+// ------------------------------------------------------------
+
 export enum AbilityType {
   DOTA_ABILITY_TYPE_BASIC,
   DOTA_ABILITY_TYPE_ULTIMATE,
@@ -87,6 +113,7 @@ export enum AbilityUnitTargetFlag {
   DOTA_UNIT_TARGET_FLAG_OUT_OF_WORLD              = 1 << 16,
   DOTA_UNIT_TARGET_FLAG_PLAYER_CONTROLLED         = 1 << 17,
   DOTA_UNIT_TARGET_FLAG_RANGED_ONLY               = 1 << 18,
+  DOTA_UNIT_TARGET_FLAG_PREFER_ENEMIES            = 1 << 19,
 }
 
 export enum SpellImmunityType {
@@ -141,7 +168,7 @@ export interface StatsData {
 // Aggregation
 // ------------------------------------------------------------
 
-import { ModelBase, ModifyLike } from './base';
+import { ModelBase } from './base';
 
 export const ULTIMATE_REQUIRED_LEVEL: 6 = 6;
 export const ULTIMATE_LEVELS_BETWEEN_UPGRADES: 6 = 6;

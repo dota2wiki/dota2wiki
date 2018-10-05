@@ -1,4 +1,5 @@
-import { ModelBase, ModifyLike } from './base';
+import { ModelBase } from './base';
+import { ModifyLike } from './ability';
 
 /**
  * Data structure for talent.

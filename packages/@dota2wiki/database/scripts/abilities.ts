@@ -10,10 +10,10 @@ import {
   toNumberArray,
   toBoolean,
 } from '@dota2wiki/vdf';
-import { SpecialItem, SpecialBonusOperation } from '../src/models/base';
 import { Hero } from '../src/models/hero';
-import { Talent } from '../src/models/talent';
 import {
+  SpecialItem,
+  SpecialBonusOperation,
   Ability,
   AbilityType,
   AbilityBehavior,
@@ -25,6 +25,8 @@ import {
   SpellImmunityType,
   StatsData,
 } from '../src/models/ability';
+import { Talent } from '../src/models/talent';
+import { Item } from '../src/models/item';
 
 //
 // Aggregation
@@ -35,180 +37,190 @@ import {
  */
 // tslint:disable:max-func-body-length
 export default async function genAbilities(
-  path: string,
   heroes: Record<string, Hero>,
-): Promise<[Record<string, Ability>, Record<string, Talent>]> {
-  const DOTAAbilities: any = (await load(path)).DOTAAbilities;
-  const allHeroAbilityNames: Set<string> = new Set(
-    Object.values(heroes).reduce<string[]>((abilities, hero) => {
-      abilities.push(...hero.abilities);
+  pathAbilities: string,
+  pathItems: string,
+): Promise<[Record<string, Ability>, Record<string, Talent>, Record<string, Item>]> {
+  const [
+    { DOTAAbilities: rawAbilities },
+    { DOTAAbilities: rawItems },
+  ] = await Promise.all([load(pathAbilities), load(pathItems)]);
 
-      return abilities;
+  const allHeroAbilityNames: Set<string> = new Set(
+    Object.values(heroes).reduce<string[]>((abilityNames, hero) => {
+      abilityNames.push(...hero.abilities);
+
+      return abilityNames;
     }, []),
   );
   const allHeroTalentNames: Set<string> = new Set(
-    Object.values(heroes).reduce<string[]>((abilities, hero) => {
-      abilities.push(...hero.talents);
+    Object.values(heroes).reduce<string[]>((result, hero) => {
+      result.push(...hero.talents);
 
-      return abilities;
+      return result;
     }, []),
   );
 
-  const spider: EnumSpider = new EnumSpider(
-    'AbilityType',
-    'AbilityBehavior',
-    'AbilityUnitTargetTeam',
-    'AbilityUnitTargetType',
-    'AbilityUnitTargetFlags',
-    'SpellImmunityType',
-    'SpellDispellableType',
-    'AbilityUnitDamageType',
-  );
-  Object.values(DOTAAbilities).forEach(raw => spider.walk(raw));
-  spider.print();
+  // const spider: EnumSpider = new EnumSpider(
+  //   'AbilityType',
+  //   'AbilityBehavior',
+  //   'AbilityUnitTargetTeam',
+  //   'AbilityUnitTargetType',
+  //   'AbilityUnitTargetFlags',
+  //   'SpellImmunityType',
+  //   'SpellDispellableType',
+  //   'AbilityUnitDamageType',
+  // );
+  // Object.values(DOTAAbilities).forEach(raw => spider.walk(raw));
+  // spider.print();
 
-  const base: any = DOTAAbilities.ability_base;
+  const base: any = rawAbilities.ability_base;
 
   const abilities: Record<string, Ability> = {};
   const talents: Record<string, Talent> = {};
+  const items: Record<string, Item> = {};
 
-  Object.entries(DOTAAbilities).forEach(([name, raw]: [string, any]) => {
-    if (!allHeroAbilityNames.has(name) && !allHeroTalentNames.has(name)) {
-      return;
-    }
+  [...Object.entries(rawAbilities), ...Object.entries(rawItems)].forEach(
+    ([name, raw]: [string, any]) => {
+      const valveData: ValveData = new ValveData({ ...base, ...raw });
 
-    const valveData: ValveData = new ValveData({ ...base, ...raw });
+      const data: Ability = valveData.mapGet<Ability>({
+        id: ['number', 'ID'],
+        name: () => name,
 
-    const data: Ability = valveData.mapGet<Ability>({
-      id: ['number', 'ID'],
-      name: () => name,
+        linkedAbility: valveData.has('LinkedAbility')
+          ? ['string', 'LinkedAbility']
+          : 'skip',
 
-      linkedAbility: valveData.has('LinkedAbility')
-        ? ['string', 'LinkedAbility']
-        : 'skip',
+        type: ['enum', 'AbilityType', AbilityType],
+        behavior: [
+          'enum',
+          'AbilityBehavior',
+          {
+            ...AbilityBehavior,
+            DOTA_ABILITY_TYPE_ULTIMATE: AbilityType.DOTA_ABILITY_TYPE_ULTIMATE,
+          },
+        ],
+        hotKeyOverride: valveData.has('HotKeyOverride')
+          ? ['string', 'HotKeyOverride']
+          : 'skip',
 
-      type: ['enum', 'AbilityType', AbilityType],
-      behavior: [
-        'enum',
-        'AbilityBehavior',
-        {
-          ...AbilityBehavior,
-          DOTA_ABILITY_TYPE_ULTIMATE: AbilityType.DOTA_ABILITY_TYPE_ULTIMATE,
-        },
-      ],
-      hotKeyOverride: valveData.has('HotKeyOverride')
-        ? ['string', 'HotKeyOverride']
-        : 'skip',
+        targetTeam: ['enum', 'AbilityUnitTargetTeam', AbilityUnitTargetTeam],
+        targetType: ['enum', 'AbilityUnitTargetType', AbilityUnitTargetType],
+        targetFlag: ['enum', 'AbilityUnitTargetFlags', AbilityUnitTargetFlag],
 
-      targetTeam: ['enum', 'AbilityUnitTargetTeam', AbilityUnitTargetTeam],
-      targetType: ['enum', 'AbilityUnitTargetType', AbilityUnitTargetType],
-      targetFlag: ['enum', 'AbilityUnitTargetFlags', AbilityUnitTargetFlag],
+        spellImmunityType: ['enum', 'SpellImmunityType', SpellImmunityType],
+        spellDispellableType: ['enum', 'SpellDispellableType', SpellDispellableType],
 
-      spellImmunityType: ['enum', 'SpellImmunityType', SpellImmunityType],
-      spellDispellableType: ['enum', 'SpellDispellableType', SpellDispellableType],
+        damageType: ['enum', 'AbilityUnitDamageType', AbilityUnitDamageType],
 
-      damageType: ['enum', 'AbilityUnitDamageType', AbilityUnitDamageType],
+        maxLevel: ['number', 'MaxLevel'],
+        levelsBetweenUpgrades: valveData.has('LevelsBetweenUpgrades')
+          ? ['number', 'LevelsBetweenUpgrades']
+          : 'skip',
+        requiredLevel: valveData.has('RequiredLevel')
+          ? ['number', 'RequiredLevel']
+          : 'skip',
+        fightRecapLevel: ['number', 'FightRecapLevel'],
 
-      maxLevel: ['number', 'MaxLevel'],
-      levelsBetweenUpgrades: valveData.has('LevelsBetweenUpgrades')
-        ? ['number', 'LevelsBetweenUpgrades']
-        : 'skip',
-      requiredLevel: valveData.has('RequiredLevel')
-        ? ['number', 'RequiredLevel']
-        : 'skip',
-      fightRecapLevel: ['number', 'FightRecapLevel'],
+        isGrantedByScepter: ['boolean', 'HasScepterUpgrade'],
+        hasScepterUpgrade: ['boolean', 'HasScepterUpgrade'],
 
-      isGrantedByScepter: ['boolean', 'HasScepterUpgrade'],
-      hasScepterUpgrade: ['boolean', 'HasScepterUpgrade'],
+        stats: () =>
+          valveData.mapGet<StatsData>({
+            castRange: ['number[]', 'AbilityCastRange'],
+            castRangeBuffer: ['number', 'AbilityCastRangeBuffer'],
+            castPoint: ['number[]', 'AbilityCastPoint'],
 
-      stats: () =>
-        valveData.mapGet<StatsData>({
-          castRange: ['number[]', 'AbilityCastRange'],
-          castRangeBuffer: ['number', 'AbilityCastRangeBuffer'],
-          castPoint: ['number[]', 'AbilityCastPoint'],
+            channelTime: ['number[]', 'AbilityChannelTime'],
+            coolDown: ['number[]', 'AbilityCooldown'],
+            duration: ['number[]', 'AbilityDuration'],
+            sharedCooldown: ['string', 'AbilitySharedCooldown'],
 
-          channelTime: ['number[]', 'AbilityChannelTime'],
-          coolDown: ['number[]', 'AbilityCooldown'],
-          duration: ['number[]', 'AbilityDuration'],
-          sharedCooldown: ['string', 'AbilitySharedCooldown'],
+            damage: ['number[]', 'AbilityDamage'],
+            manaCost: ['number[]', 'AbilityManaCost'],
 
-          damage: ['number[]', 'AbilityDamage'],
-          manaCost: ['number[]', 'AbilityManaCost'],
+            modifierSupportValue: ['number', 'AbilityModifierSupportValue'],
+            modifierSupportBonus: ['number', 'AbilityModifierSupportBonus'],
+          }),
 
-          modifierSupportValue: ['number', 'AbilityModifierSupportValue'],
-          modifierSupportBonus: ['number', 'AbilityModifierSupportBonus'],
-        }),
+        special: () => {
+          const special: SpecialItem[] = [];
 
-      special: () => {
-        const special: SpecialItem[] = [];
-
-        if (raw.AbilitySpecial) {
-          Object.entries(raw.AbilitySpecial)
-            .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
-            .forEach(([index, itemRaw]) => {
-              let key: string | undefined;
-              let value: number[] | undefined;
-              let levelKey: string | undefined;
-              let talent: string | undefined;
-              let talentField: string | undefined;
-              let talentOperation: SpecialBonusOperation | undefined;
-              Object.entries(itemRaw).forEach(([keyRaw, valueRaw]) => {
-                switch (keyRaw) {
-                  case 'var_type':
-                    return;
-                  case 'levelkey':
-                    return (levelKey = valueRaw);
-                  case 'LinkedSpecialBonus':
-                    return (talent = valueRaw);
-                  case 'LinkedSpecialBonusField':
-                    return (talentField = valueRaw);
-                  case 'LinkedSpecialBonusOperation':
-                    return (talentOperation = (SpecialBonusOperation as any)[valueRaw]);
-                  case 'CalculateSpellDamageTooltip':
-                    return toBoolean(valueRaw);
-                  default:
-                    if (key) {
-                      // this means that there are multi key value pair in special
-                      console.info(
-                        chalk.yellowBright(`Unknown key in ability special: ${keyRaw}`),
-                      );
-                    }
-                    key = keyRaw;
-                    value = toNumberArray(valueRaw);
+          if (raw.AbilitySpecial) {
+            Object.entries(raw.AbilitySpecial)
+              .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+              .forEach(([index, itemRaw]) => {
+                let key: string | undefined;
+                let value: number[] | undefined;
+                let levelKey: string | undefined;
+                let talent: string | undefined;
+                let talentField: string | undefined;
+                let talentOperation: SpecialBonusOperation | undefined;
+                Object.entries(itemRaw).forEach(([keyRaw, valueRaw]) => {
+                  switch (keyRaw) {
+                    case 'var_type':
+                    case 'var_Type':
+                      return;
+                    case 'levelkey':
+                      return (levelKey = valueRaw);
+                    case 'LinkedSpecialBonus':
+                      return (talent = valueRaw);
+                    case 'LinkedSpecialBonusField':
+                      return (talentField = valueRaw);
+                    case 'LinkedSpecialBonusOperation':
+                      return (talentOperation = (SpecialBonusOperation as any)[valueRaw]);
+                    case 'CalculateSpellDamageTooltip':
+                      return toBoolean(valueRaw);
+                    default:
+                      if (key) {
+                        // this means that there are multi key value pair in special
+                        console.info(
+                          chalk.yellowBright(`Unknown key in ability special: ${keyRaw}`),
+                        );
+                      }
+                      key = keyRaw;
+                      value = toNumberArray(valueRaw);
+                  }
+                });
+                if (key && value) {
+                  special.push({
+                    key,
+                    value,
+                    levelKey,
+                    talent,
+                    talentField,
+                    talentOperation,
+                  });
+                } else {
+                  console.info(
+                    chalk.yellowBright(
+                      `Invalid special item key:${key} or value:${value}`,
+                    ),
+                  );
                 }
               });
-              if (key && value) {
-                special.push({
-                  key,
-                  value,
-                  levelKey,
-                  talent,
-                  talentField,
-                  talentOperation,
-                });
-              } else {
-                console.info(
-                  chalk.yellowBright(`Invalid special item key:${key} or value:${value}`),
-                );
-              }
-            });
-        }
+          }
 
-        return special;
-      },
-    });
+          return special;
+        },
+      });
 
-    if (allHeroAbilityNames.has(name)) {
-      abilities[name] = data;
-    }
-    if (allHeroTalentNames.has(name)) {
-      talents[name] = {
-        id: data.id,
-        name: data.name,
-        special: data.special,
-      };
-    }
-  });
+      if (allHeroAbilityNames.has(name)) {
+        return (abilities[name] = data);
+      }
+      if (allHeroTalentNames.has(name)) {
+        return (talents[name] = {
+          id: data.id,
+          name: data.name,
+          special: data.special,
+        });
+      }
+      if (name.startsWith('item_')) {
+        return (items[name] = data);
+      }
+    },
+  );
 
-  return [abilities, talents];
+  return [abilities, talents, items];
 }

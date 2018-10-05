@@ -7,14 +7,17 @@ import Vue, { PluginFunction } from 'vue';
 export * from './models/hero';
 export * from './models/ability';
 export * from './models/talent';
+export * from './models/item';
 
 import { Hero, HeroGroup, Attribute } from './models/hero';
 import { Ability } from './models/ability';
 import { Talent } from './models/talent';
+import { Item } from './models/item';
 
 import heroes from './db/heroes';
 import abilities from './db/abilities';
 import talents from './db/talents';
+import items from './db/items';
 
 declare module 'vue/types/vue' {
   interface Vue {
@@ -37,6 +40,8 @@ export interface Database {
   readonly talentMap: Readonly<Record<string, Talent>>;
   readonly talentList: ReadonlyArray<Talent>;
   readonly talentNames: ReadonlyArray<string>;
+
+  readonly itemMap: Readonly<Record<string, Item>>;
 }
 
 const compareId: (a: { id: number }, b: { id: number }) => number = (a, b) => a.id - b.id;
@@ -63,6 +68,8 @@ export const talentMap: Readonly<Record<string, Talent>> = talents;
 export const talentList: ReadonlyArray<Talent> = Object.values(talentMap).sort(compareId);
 export const talentNames: ReadonlyArray<string> = talentList.map(t => t.name);
 
+export const itemMap: Readonly<Record<string, Item>> = items;
+
 const db: Database = {
   heroMap,
   heroList,
@@ -76,6 +83,8 @@ const db: Database = {
   talentMap,
   talentList,
   talentNames,
+
+  itemMap,
 };
 
 const install: PluginFunction<undefined> = $Vue => {

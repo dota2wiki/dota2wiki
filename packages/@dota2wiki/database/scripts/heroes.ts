@@ -320,16 +320,16 @@ function getOtherData(data: ValveData): OtherData {
  * Build hero data.
  */
 export default async function genHeros(path: string): Promise<Record<string, Hero>> {
-  const DOTAHeroes: any = (await load(path)).DOTAHeroes;
+  const { DOTAHeroes } = await load(path);
 
-  const spider: EnumSpider = new EnumSpider(
-    'Team',
-    'AttackCapabilities',
-    'AttributePrimary',
-    'MovementCapabilities',
-  );
-  Object.values(DOTAHeroes).forEach(raw => spider.walk(raw));
-  spider.print();
+  // const spider: EnumSpider = new EnumSpider(
+  //   'Team',
+  //   'AttackCapabilities',
+  //   'AttributePrimary',
+  //   'MovementCapabilities',
+  // );
+  // Object.values(DOTAHeroes).forEach(raw => spider.walk(raw));
+  // spider.print();
 
   const base: any = DOTAHeroes.npc_dota_hero_base;
   const result: Record<string, Hero> = {};
