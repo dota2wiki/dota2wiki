@@ -50,7 +50,7 @@ ${selector} {
 
   background-repeat: no-repeat;
   background-size: auto (1em * $rows);
-  background-position-x: 1em;
+  background-position-x: $item-width / $item-height * 1em;
 
   background-image: resources('${resourcesKey}');
 
