@@ -1882,6 +1882,7 @@ export default {
   'sprites/hero-avatar-v-intelligence.png'                                                                           : require('@src/assets/sprites/hero-avatar-v-intelligence.png'),
   'sprites/hero-avatar-v-strength.png'                                                                               : require('@src/assets/sprites/hero-avatar-v-strength.png'),
   'sprites/hero-icon.png'                                                                                            : require('@src/assets/sprites/hero-icon.png'),
+  'sprites/item-icon.png'                                                                                            : require('@src/assets/sprites/item-icon.png'),
   'sprites/spell-icon-abaddon.png'                                                                                   : require('@src/assets/sprites/spell-icon-abaddon.png'),
   'sprites/spell-icon-abyssal_underlord.png'                                                                         : require('@src/assets/sprites/spell-icon-abyssal_underlord.png'),
   'sprites/spell-icon-alchemist.png'                                                                                 : require('@src/assets/sprites/spell-icon-alchemist.png'),
