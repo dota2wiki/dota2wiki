@@ -21,8 +21,5 @@
     "build": "yarn clean:dist && tsc -p ./tsconfig.cjs.json && tsc -p ./tsconfig.esm.json",
     "lint": "tslint -c ./tslint.project.json -p ./tsconfig.project.json",
     "test:unit": "jest --maxWorkers=4"
-  },
-  "devDependencies": {
-    "@dota2wiki/vdf": "^1.0.2"
   }
 }

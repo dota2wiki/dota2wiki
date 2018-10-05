@@ -21,8 +21,6 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
-    "@dota2wiki/database": "1.7.1",
-    "@dota2wiki/i18n": "2.0.2",
     "@huiji/vue-locale": "^1.1.1",
     "normalize.css": "^8.0.0",
     "vue": "^2.5.17",
