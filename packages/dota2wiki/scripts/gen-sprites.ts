@@ -204,7 +204,7 @@ const optionsArray: CombineOptions[] = [
     itemSelector: path => {
       const parts: string[] = path.split(/\/|\\/);
 
-      return `.${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
+      return `.item_${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
     },
     resourcesKey: 'sprites/item-icon.png',
     outputScss: 'src/sprites/item-icon.scss',
