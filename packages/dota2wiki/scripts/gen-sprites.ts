@@ -81,7 +81,7 @@ const context: string = ps.resolve(__dirname, '..');
 /**
  * Options
  */
-const optionsArray: (CombineOptions)[] = [
+const optionsArray: CombineOptions[] = [
   // hero avatars horizontal
   ...heroGroups.map<CombineOptions>(group => {
     return {
@@ -186,6 +186,29 @@ const optionsArray: (CombineOptions)[] = [
       outputScss: `src/sprites/spell-icon-${heroName}.scss`,
     };
   }),
+  // item icons
+  {
+    context,
+    patterns: [
+      'src/assets/images/items/*.png',
+      '!src/assets/images/items/mjollnir_arc.*.png',
+    ],
+    columns: 16,
+
+    itemWidth: 88,
+    itemHeight: 64,
+    outputImage: 'src/assets/sprites/item-icon.png',
+
+    files: [],
+    selector: '.dt-item-icon',
+    itemSelector: path => {
+      const parts: string[] = path.split(/\/|\\/);
+
+      return `.${parts[parts.length - 1].replace(/_png\.png$/, '')}`;
+    },
+    resourcesKey: 'sprites/item-icon.png',
+    outputScss: 'src/sprites/item-icon.scss',
+  },
 ];
 
 (async () => {
