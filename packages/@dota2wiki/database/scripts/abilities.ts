@@ -7,8 +7,9 @@ import {
   ValveData,
   TypeMap,
   EnumSpider,
-  toNumberArray,
+  toArray,
   toBoolean,
+  toNumberArray,
   toStringArray,
 } from '@dota2wiki/vdf';
 import { Hero } from '../src/models/hero';
@@ -276,16 +277,9 @@ export default async function genAbilities(
             requirements: valveData.has('ItemRequirements')
               ? () => {
                   if (valveData.has('ItemRequirements')) {
-                    const result: string[][] = [];
-                    Object.entries(valveData.data.ItemRequirements).forEach(
-                      ([key, value]) => {
-                        const index: number = Number.parseInt(key, 10);
-                        const array: string[] = toStringArray(value);
-                        result[index] = array;
-                      },
+                    return toArray<string>(valveData.data.ItemRequirements).map(value =>
+                      toStringArray(value),
                     );
-
-                    return result;
                   }
 
                   return undefined;

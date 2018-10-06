@@ -1808,7 +1808,6 @@ export default {
       "isRecipe": true,
       "result": "item_moon_shard",
       "requirements": [
-        null,
         [
           "item_hyperstone",
           "item_hyperstone"
@@ -4314,7 +4313,6 @@ export default {
       "isRecipe": true,
       "result": "item_magic_wand",
       "requirements": [
-        null,
         [
           "item_magic_stick",
           "item_branches",
@@ -5462,7 +5460,6 @@ export default {
       "isRecipe": true,
       "result": "item_ward_dispenser",
       "requirements": [
-        null,
         [
           "item_ward_sentry",
           "item_ward_observer"
@@ -6175,7 +6172,6 @@ export default {
       "isRecipe": true,
       "result": "item_travel_boots",
       "requirements": [
-        null,
         [
           "item_boots"
         ]
@@ -6277,7 +6273,6 @@ export default {
       "isRecipe": true,
       "result": "item_travel_boots_2",
       "requirements": [
-        null,
         [
           "item_travel_boots",
           "item_recipe_travel_boots"
@@ -6596,7 +6591,6 @@ export default {
       "isRecipe": true,
       "result": "item_phase_boots",
       "requirements": [
-        null,
         [
           "item_boots",
           "item_blades_of_attack",
@@ -7984,7 +7978,6 @@ export default {
       "isRecipe": true,
       "result": "item_power_treads",
       "requirements": [
-        null,
         [
           "item_boots",
           "item_gloves",
@@ -8222,7 +8215,6 @@ export default {
       "isRecipe": true,
       "result": "item_hand_of_midas",
       "requirements": [
-        null,
         [
           "item_gloves"
         ]
@@ -8436,7 +8428,6 @@ export default {
       "isRecipe": true,
       "result": "item_oblivion_staff",
       "requirements": [
-        null,
         [
           "item_quarterstaff",
           "item_sobi_mask",
@@ -8663,7 +8654,6 @@ export default {
       "isRecipe": true,
       "result": "item_pers",
       "requirements": [
-        null,
         [
           "item_ring_of_health",
           "item_void_stone"
@@ -9114,7 +9104,6 @@ export default {
       "isRecipe": true,
       "result": "item_bracer",
       "requirements": [
-        null,
         [
           "item_circlet",
           "item_gauntlets"
@@ -9334,7 +9323,6 @@ export default {
       "isRecipe": true,
       "result": "item_wraith_band",
       "requirements": [
-        null,
         [
           "item_circlet",
           "item_slippers"
@@ -9554,7 +9542,6 @@ export default {
       "isRecipe": true,
       "result": "item_null_talisman",
       "requirements": [
-        null,
         [
           "item_circlet",
           "item_mantle"
@@ -9774,7 +9761,6 @@ export default {
       "isRecipe": true,
       "result": "item_mekansm",
       "requirements": [
-        null,
         [
           "item_headdress",
           "item_buckler"
@@ -10019,7 +10005,6 @@ export default {
       "isRecipe": true,
       "result": "item_vladmir",
       "requirements": [
-        null,
         [
           "item_headdress",
           "item_ring_of_basilius",
@@ -10270,7 +10255,6 @@ export default {
       "isRecipe": true,
       "result": "item_buckler",
       "requirements": [
-        null,
         [
           "item_chainmail",
           "item_branches"
@@ -10500,7 +10484,6 @@ export default {
       "isRecipe": true,
       "result": "item_ring_of_basilius",
       "requirements": [
-        null,
         [
           "item_sobi_mask",
           "item_ring_of_protection"
@@ -10731,7 +10714,6 @@ export default {
       "isRecipe": true,
       "result": "item_pipe",
       "requirements": [
-        null,
         [
           "item_hood_of_defiance",
           "item_headdress"
@@ -10997,7 +10979,6 @@ export default {
       "isRecipe": true,
       "result": "item_urn_of_shadows",
       "requirements": [
-        null,
         [
           "item_infused_raindrop",
           "item_circlet",
@@ -11253,7 +11234,6 @@ export default {
       "isRecipe": true,
       "result": "item_headdress",
       "requirements": [
-        null,
         [
           "item_ring_of_regen",
           "item_branches"
@@ -11473,7 +11453,6 @@ export default {
       "isRecipe": true,
       "result": "item_sheepstick",
       "requirements": [
-        null,
         [
           "item_mystic_staff",
           "item_ultimate_orb",
@@ -11709,7 +11688,6 @@ export default {
       "isRecipe": true,
       "result": "item_orchid",
       "requirements": [
-        null,
         [
           "item_oblivion_staff",
           "item_oblivion_staff"
@@ -11946,7 +11924,6 @@ export default {
       "isRecipe": true,
       "result": "item_bloodthorn",
       "requirements": [
-        null,
         [
           "item_orchid",
           "item_lesser_crit"
@@ -12207,7 +12184,6 @@ export default {
       "isRecipe": true,
       "result": "item_echo_sabre",
       "requirements": [
-        null,
         [
           "item_ogre_axe",
           "item_oblivion_staff"
@@ -12456,7 +12432,6 @@ export default {
       "isRecipe": true,
       "result": "item_cyclone",
       "requirements": [
-        null,
         [
           "item_staff_of_wizardry",
           "item_void_stone",
@@ -12686,7 +12661,6 @@ export default {
       "isRecipe": true,
       "result": "item_aether_lens",
       "requirements": [
-        null,
         [
           "item_energy_booster",
           "item_void_stone"
@@ -12906,7 +12880,6 @@ export default {
       "isRecipe": true,
       "result": "item_force_staff",
       "requirements": [
-        null,
         [
           "item_staff_of_wizardry",
           "item_ring_of_regen"
@@ -13123,7 +13096,6 @@ export default {
       "isRecipe": true,
       "result": "item_hurricane_pike",
       "requirements": [
-        null,
         [
           "item_wraith_band",
           "item_force_staff",
@@ -13389,7 +13361,6 @@ export default {
       "isRecipe": true,
       "result": "item_dagon",
       "requirements": [
-        null,
         [
           "item_staff_of_wizardry",
           "item_null_talisman"
@@ -13492,8 +13463,6 @@ export default {
       "isRecipe": true,
       "result": "item_dagon_2",
       "requirements": [
-        null,
-        null,
         [
           "item_dagon",
           "item_recipe_dagon"
@@ -13596,8 +13565,6 @@ export default {
       "isRecipe": true,
       "result": "item_dagon_3",
       "requirements": [
-        null,
-        null,
         [
           "item_dagon_2",
           "item_recipe_dagon"
@@ -13700,8 +13667,6 @@ export default {
       "isRecipe": true,
       "result": "item_dagon_4",
       "requirements": [
-        null,
-        null,
         [
           "item_dagon_3",
           "item_recipe_dagon"
@@ -13804,8 +13769,6 @@ export default {
       "isRecipe": true,
       "result": "item_dagon_5",
       "requirements": [
-        null,
-        null,
         [
           "item_dagon_4",
           "item_recipe_dagon"
@@ -14685,7 +14648,6 @@ export default {
       "isRecipe": true,
       "result": "item_necronomicon",
       "requirements": [
-        null,
         [
           "item_sobi_mask",
           "item_sobi_mask",
@@ -14789,7 +14751,6 @@ export default {
       "isRecipe": true,
       "result": "item_necronomicon_2",
       "requirements": [
-        null,
         [
           "item_necronomicon",
           "item_recipe_necronomicon"
@@ -14892,7 +14853,6 @@ export default {
       "isRecipe": true,
       "result": "item_necronomicon_3",
       "requirements": [
-        null,
         [
           "item_necronomicon_2",
           "item_recipe_necronomicon"
@@ -15616,7 +15576,6 @@ export default {
       "isRecipe": true,
       "result": "item_ultimate_scepter",
       "requirements": [
-        null,
         [
           "item_point_booster",
           "item_staff_of_wizardry",
@@ -15840,7 +15799,6 @@ export default {
       "isRecipe": true,
       "result": "item_refresher",
       "requirements": [
-        null,
         [
           "item_pers",
           "item_pers"
@@ -16044,7 +16002,6 @@ export default {
       "isRecipe": true,
       "result": "item_assault",
       "requirements": [
-        null,
         [
           "item_platemail",
           "item_hyperstone",
@@ -16282,7 +16239,6 @@ export default {
       "isRecipe": true,
       "result": "item_heart",
       "requirements": [
-        null,
         [
           "item_reaver",
           "item_vitality_booster",
@@ -16511,7 +16467,6 @@ export default {
       "isRecipe": true,
       "result": "item_black_king_bar",
       "requirements": [
-        null,
         [
           "item_ogre_axe",
           "item_mithril_hammer"
@@ -16858,7 +16813,6 @@ export default {
       "isRecipe": true,
       "result": "item_shivas_guard",
       "requirements": [
-        null,
         [
           "item_platemail",
           "item_mystic_staff"
@@ -17107,7 +17061,6 @@ export default {
       "isRecipe": true,
       "result": "item_bloodstone",
       "requirements": [
-        null,
         [
           "item_pers",
           "item_soul_booster"
@@ -17357,7 +17310,6 @@ export default {
       "isRecipe": true,
       "result": "item_sphere",
       "requirements": [
-        null,
         [
           "item_ultimate_orb",
           "item_pers"
@@ -17588,7 +17540,6 @@ export default {
       "isRecipe": true,
       "result": "item_lotus_orb",
       "requirements": [
-        null,
         [
           "item_pers",
           "item_platemail",
@@ -17823,7 +17774,6 @@ export default {
       "isRecipe": true,
       "result": "item_meteor_hammer",
       "requirements": [
-        null,
         [
           "item_ogre_axe",
           "item_staff_of_wizardry",
@@ -18097,7 +18047,6 @@ export default {
       "isRecipe": true,
       "result": "item_nullifier",
       "requirements": [
-        null,
         [
           "item_relic",
           "item_helm_of_iron_will"
@@ -18330,7 +18279,6 @@ export default {
       "isRecipe": true,
       "result": "item_aeon_disk",
       "requirements": [
-        null,
         [
           "item_vitality_booster",
           "item_energy_booster"
@@ -18558,7 +18506,6 @@ export default {
       "isRecipe": true,
       "result": "item_kaya",
       "requirements": [
-        null,
         [
           "item_staff_of_wizardry",
           "item_robe"
@@ -19054,7 +19001,6 @@ export default {
       "isRecipe": true,
       "result": "item_spirit_vessel",
       "requirements": [
-        null,
         [
           "item_urn_of_shadows",
           "item_vitality_booster",
@@ -19345,7 +19291,6 @@ export default {
       "isRecipe": true,
       "result": "item_vanguard",
       "requirements": [
-        null,
         [
           "item_ring_of_health",
           "item_vitality_booster",
@@ -19577,7 +19522,6 @@ export default {
       "isRecipe": true,
       "result": "item_crimson_guard",
       "requirements": [
-        null,
         [
           "item_vanguard",
           "item_buckler"
@@ -19861,7 +19805,6 @@ export default {
       "isRecipe": true,
       "result": "item_blade_mail",
       "requirements": [
-        null,
         [
           "item_broadsword",
           "item_chainmail",
@@ -20082,7 +20025,6 @@ export default {
       "isRecipe": true,
       "result": "item_soul_booster",
       "requirements": [
-        null,
         [
           "item_vitality_booster",
           "item_energy_booster",
@@ -20297,7 +20239,6 @@ export default {
       "isRecipe": true,
       "result": "item_hood_of_defiance",
       "requirements": [
-        null,
         [
           "item_ring_of_health",
           "item_cloak",
@@ -20522,7 +20463,6 @@ export default {
       "isRecipe": true,
       "result": "item_rapier",
       "requirements": [
-        null,
         [
           "item_relic",
           "item_demon_edge"
@@ -20727,7 +20667,6 @@ export default {
       "isRecipe": true,
       "result": "item_monkey_king_bar",
       "requirements": [
-        null,
         [
           "item_demon_edge",
           "item_javelin",
@@ -20953,7 +20892,6 @@ export default {
       "isRecipe": true,
       "result": "item_radiance",
       "requirements": [
-        null,
         [
           "item_relic"
         ]
@@ -21181,7 +21119,6 @@ export default {
       "isRecipe": true,
       "result": "item_butterfly",
       "requirements": [
-        null,
         [
           "item_eagle",
           "item_talisman_of_evasion",
@@ -21417,7 +21354,6 @@ export default {
       "isRecipe": true,
       "result": "item_greater_crit",
       "requirements": [
-        null,
         [
           "item_lesser_crit",
           "item_demon_edge"
@@ -21641,7 +21577,6 @@ export default {
       "isRecipe": true,
       "result": "item_basher",
       "requirements": [
-        null,
         [
           "item_mithril_hammer",
           "item_belt_of_strength"
@@ -21881,7 +21816,6 @@ export default {
       "isRecipe": true,
       "result": "item_bfury",
       "requirements": [
-        null,
         [
           "item_demon_edge",
           "item_pers",
@@ -22156,7 +22090,6 @@ export default {
       "isRecipe": true,
       "result": "item_manta",
       "requirements": [
-        null,
         [
           "item_yasha",
           "item_ultimate_orb"
@@ -22471,7 +22404,6 @@ export default {
       "isRecipe": true,
       "result": "item_lesser_crit",
       "requirements": [
-        null,
         [
           "item_broadsword",
           "item_blades_of_attack"
@@ -22695,7 +22627,6 @@ export default {
       "isRecipe": true,
       "result": "item_dragon_lance",
       "requirements": [
-        null,
         [
           "item_ogre_axe",
           "item_boots_of_elves",
@@ -22913,7 +22844,6 @@ export default {
       "isRecipe": true,
       "result": "item_armlet",
       "requirements": [
-        null,
         [
           "item_helm_of_iron_will",
           "item_gloves",
@@ -23180,7 +23110,6 @@ export default {
       "isRecipe": true,
       "result": "item_invis_sword",
       "requirements": [
-        null,
         [
           "item_shadow_amulet",
           "item_claymore"
@@ -23412,7 +23341,6 @@ export default {
       "isRecipe": true,
       "result": "item_silver_edge",
       "requirements": [
-        null,
         [
           "item_invis_sword",
           "item_ultimate_orb"
@@ -23662,7 +23590,6 @@ export default {
       "isRecipe": true,
       "result": "item_sange_and_yasha",
       "requirements": [
-        null,
         [
           "item_yasha",
           "item_sange"
@@ -23931,7 +23858,6 @@ export default {
       "isRecipe": true,
       "result": "item_satanic",
       "requirements": [
-        null,
         [
           "item_lifesteal",
           "item_claymore",
@@ -24168,7 +24094,6 @@ export default {
       "isRecipe": true,
       "result": "item_mjollnir",
       "requirements": [
-        null,
         [
           "item_maelstrom",
           "item_hyperstone"
@@ -24462,7 +24387,6 @@ export default {
       "isRecipe": true,
       "result": "item_skadi",
       "requirements": [
-        null,
         [
           "item_ultimate_orb",
           "item_ultimate_orb",
@@ -24710,7 +24634,6 @@ export default {
       "isRecipe": true,
       "result": "item_sange",
       "requirements": [
-        null,
         [
           "item_ogre_axe",
           "item_belt_of_strength"
@@ -24959,7 +24882,6 @@ export default {
       "isRecipe": true,
       "result": "item_helm_of_the_dominator",
       "requirements": [
-        null,
         [
           "item_gloves",
           "item_headdress",
@@ -25201,7 +25123,6 @@ export default {
       "isRecipe": true,
       "result": "item_maelstrom",
       "requirements": [
-        null,
         [
           "item_mithril_hammer",
           "item_javelin"
@@ -25444,7 +25365,6 @@ export default {
       "isRecipe": true,
       "result": "item_desolator",
       "requirements": [
-        null,
         [
           "item_mithril_hammer",
           "item_mithril_hammer",
@@ -25663,7 +25583,6 @@ export default {
       "isRecipe": true,
       "result": "item_yasha",
       "requirements": [
-        null,
         [
           "item_blade_of_alacrity",
           "item_boots_of_elves"
@@ -25882,7 +25801,6 @@ export default {
       "isRecipe": true,
       "result": "item_mask_of_madness",
       "requirements": [
-        null,
         [
           "item_lifesteal",
           "item_quarterstaff"
@@ -26118,7 +26036,6 @@ export default {
       "isRecipe": true,
       "result": "item_diffusal_blade",
       "requirements": [
-        null,
         [
           "item_blade_of_alacrity",
           "item_blade_of_alacrity",
@@ -26376,7 +26293,6 @@ export default {
       "isRecipe": true,
       "result": "item_ethereal_blade",
       "requirements": [
-        null,
         [
           "item_eagle",
           "item_ghost"
@@ -26635,7 +26551,6 @@ export default {
       "isRecipe": true,
       "result": "item_soul_ring",
       "requirements": [
-        null,
         [
           "item_ring_of_regen",
           "item_gauntlets",
@@ -26860,7 +26775,6 @@ export default {
       "isRecipe": true,
       "result": "item_arcane_boots",
       "requirements": [
-        null,
         [
           "item_boots",
           "item_energy_booster"
@@ -27079,7 +26993,6 @@ export default {
       "isRecipe": true,
       "result": "item_octarine_core",
       "requirements": [
-        null,
         [
           "item_mystic_staff",
           "item_soul_booster"
@@ -27556,7 +27469,6 @@ export default {
       "isRecipe": true,
       "result": "item_ancient_janggo",
       "requirements": [
-        null,
         [
           "item_sobi_mask",
           "item_bracer",
@@ -27816,7 +27728,6 @@ export default {
       "isRecipe": true,
       "result": "item_medallion_of_courage",
       "requirements": [
-        null,
         [
           "item_chainmail",
           "item_sobi_mask",
@@ -28045,7 +27956,6 @@ export default {
       "isRecipe": true,
       "result": "item_solar_crest",
       "requirements": [
-        null,
         [
           "item_medallion_of_courage",
           "item_talisman_of_evasion"
@@ -28507,7 +28417,6 @@ export default {
       "isRecipe": true,
       "result": "item_veil_of_discord",
       "requirements": [
-        null,
         [
           "item_helm_of_iron_will",
           "item_null_talisman",
@@ -28755,7 +28664,6 @@ export default {
       "isRecipe": true,
       "result": "item_guardian_greaves",
       "requirements": [
-        null,
         [
           "item_mekansm",
           "item_arcane_boots"
@@ -29029,7 +28937,6 @@ export default {
       "isRecipe": true,
       "result": "item_rod_of_atos",
       "requirements": [
-        null,
         [
           "item_staff_of_wizardry",
           "item_bracer",
@@ -29482,7 +29389,6 @@ export default {
       "isRecipe": true,
       "result": "item_abyssal_blade",
       "requirements": [
-        null,
         [
           "item_basher",
           "item_vanguard"
@@ -29758,7 +29664,6 @@ export default {
       "isRecipe": true,
       "result": "item_heavens_halberd",
       "requirements": [
-        null,
         [
           "item_sange",
           "item_talisman_of_evasion"
@@ -30022,7 +29927,6 @@ export default {
       "isRecipe": true,
       "result": "item_ring_of_aquila",
       "requirements": [
-        null,
         [
           "item_wraith_band",
           "item_ring_of_basilius"
@@ -30269,7 +30173,6 @@ export default {
       "isRecipe": true,
       "result": "item_tranquil_boots",
       "requirements": [
-        null,
         [
           "item_boots",
           "item_wind_lace",
@@ -30633,7 +30536,6 @@ export default {
       "isRecipe": true,
       "result": "item_glimmer_cape",
       "requirements": [
-        null,
         [
           "item_shadow_amulet",
           "item_cloak"
