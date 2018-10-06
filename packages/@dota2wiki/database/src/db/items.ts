@@ -76,8 +76,10 @@ export default {
       "shopTags": [
         "teleport"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "blink dagger"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -179,8 +181,10 @@ export default {
         "damage",
         "tutorial"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "blades of attack"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -281,8 +285,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "broadsword"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -383,8 +389,10 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "chainmail"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -485,8 +493,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "claymore"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -594,8 +604,10 @@ export default {
         "armor",
         "regen_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "helm of iron will"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -702,8 +714,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "javelin"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -804,8 +818,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "mithril hammer"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -906,8 +922,10 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "platemail"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1015,8 +1033,10 @@ export default {
         "damage",
         "attack_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "quarterstaff"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1126,8 +1146,11 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "qb",
+        "quelling blade"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1228,8 +1251,10 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "faerie fire"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -1354,8 +1379,10 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "raindrop"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -1468,8 +1495,10 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "wind lace"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1570,8 +1599,11 @@ export default {
       "shopTags": [
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "rop",
+        "ring of protection"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1684,8 +1716,10 @@ export default {
       "shopTags": [
         "block"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "stout shield"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -1906,8 +1940,10 @@ export default {
       "shopTags": [
         "attack_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "moon shard"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2008,8 +2044,10 @@ export default {
       "shopTags": [
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "gauntlets of strength"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2110,8 +2148,10 @@ export default {
       "shopTags": [
         "agi"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "slippers of agility"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2212,8 +2252,10 @@ export default {
       "shopTags": [
         "int"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "mantle of intelligence"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2322,8 +2364,11 @@ export default {
         "int",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "gg branch",
+        "iron branch"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2424,8 +2469,10 @@ export default {
       "shopTags": [
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "belt of strength"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2526,8 +2573,10 @@ export default {
       "shopTags": [
         "agi"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "band of elvenskin"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2628,8 +2677,10 @@ export default {
       "shopTags": [
         "int"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "robe of the magi"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2732,8 +2783,10 @@ export default {
         "int",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "circlet"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2834,8 +2887,10 @@ export default {
       "shopTags": [
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "ogre club"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -2936,8 +2991,10 @@ export default {
       "shopTags": [
         "agi"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "blade of alacrity"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3038,8 +3095,10 @@ export default {
       "shopTags": [
         "int"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "staff of wizardry"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3142,8 +3201,10 @@ export default {
         "int",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "ultimate orb"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3244,8 +3305,10 @@ export default {
       "shopTags": [
         "attack_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "gloves of haste"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3352,8 +3415,10 @@ export default {
       "shopTags": [
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "morbid mask"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3454,8 +3519,10 @@ export default {
       "shopTags": [
         "regen_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "ror"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3556,8 +3623,10 @@ export default {
       "shopTags": [
         "regen_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "sage's mask"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3658,8 +3727,10 @@ export default {
       "shopTags": [
         "move_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "boots of speed"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3760,8 +3831,10 @@ export default {
       "shopTags": [
         "see_invis"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "gem of true sight"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": false,
@@ -3774,7 +3847,7 @@ export default {
       "stackable": false,
       "droppable": true,
       "killable": false,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 0,
       "requiresCharges": false,
@@ -3868,8 +3941,10 @@ export default {
       "shopTags": [
         "magic_resist"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "cloak"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -3970,8 +4045,10 @@ export default {
       "shopTags": [
         "evasion"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "talisman of evasion"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -4075,7 +4152,7 @@ export default {
       "shopTags": [
         "0"
       ],
-      "quality": "undefined",
+      "quality": "consumable",
       "aliases": [],
       "permanent": false,
       "purchasable": false,
@@ -4189,8 +4266,10 @@ export default {
         "boost_health",
         "boost_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "magic stick"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -4415,8 +4494,10 @@ export default {
         "agi",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "magic wand"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -4529,8 +4610,10 @@ export default {
         "str",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "ghost scepter"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -4640,8 +4723,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "clarity"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -4751,8 +4836,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "enchanted mango"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": false,
@@ -4862,8 +4949,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "healing salve"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -4970,8 +5059,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "dust of appearance"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -4984,7 +5075,7 @@ export default {
       "stackable": true,
       "droppable": true,
       "killable": true,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 2,
       "requiresCharges": false,
@@ -5090,8 +5181,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "bottle"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -5210,8 +5303,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "observer ward"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -5224,7 +5319,7 @@ export default {
       "stackable": true,
       "droppable": true,
       "killable": true,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 1,
       "requiresCharges": false,
@@ -5336,8 +5431,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "sentry ward"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -5350,7 +5447,7 @@ export default {
       "stackable": true,
       "droppable": true,
       "killable": true,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 1,
       "requiresCharges": false,
@@ -5607,8 +5704,10 @@ export default {
     "info": {
       "cost": 175,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "ward"
+      ],
       "permanent": true,
       "purchasable": false,
       "sellable": true,
@@ -5730,8 +5829,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "tango"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -5844,7 +5945,7 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
+      "quality": "consumable",
       "aliases": [],
       "permanent": false,
       "purchasable": false,
@@ -5939,8 +6040,12 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "donkey",
+        "chicken",
+        "animal courier"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": false,
@@ -5953,7 +6058,7 @@ export default {
       "stackable": false,
       "droppable": true,
       "killable": false,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 0,
       "requiresCharges": false,
@@ -6048,8 +6153,12 @@ export default {
         "consumable",
         "tutorial"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "tp",
+        "town portal scroll",
+        "teleport"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -6357,8 +6466,12 @@ export default {
         "teleport",
         "move_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "bot",
+        "boots of travel",
+        "tp"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -6467,8 +6580,12 @@ export default {
         "teleport",
         "move_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "bot",
+        "boots of travel",
+        "tp"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -6725,8 +6842,10 @@ export default {
         "move_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "phase boots"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -6827,8 +6946,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "demon edge"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -6929,8 +7050,10 @@ export default {
       "shopTags": [
         "agi"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "eaglesong"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7031,8 +7154,10 @@ export default {
       "shopTags": [
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "reaver"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7133,8 +7258,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "sacred relic"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7235,8 +7362,10 @@ export default {
       "shopTags": [
         "attack_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "hyperstone"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7337,8 +7466,11 @@ export default {
       "shopTags": [
         "regen_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "roh",
+        "ring of health"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7439,8 +7571,10 @@ export default {
       "shopTags": [
         "regen_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "void stone"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7541,8 +7675,10 @@ export default {
       "shopTags": [
         "int"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "mystic staff"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7643,8 +7779,10 @@ export default {
       "shopTags": [
         "mana_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "energy booster"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7752,8 +7890,10 @@ export default {
         "mana_pool",
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "point booster"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -7854,8 +7994,10 @@ export default {
       "shopTags": [
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "secret_shop",
+      "aliases": [
+        "vitality booster"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8091,8 +8233,10 @@ export default {
         "agi",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "power treads"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8187,7 +8331,9 @@ export default {
         "0"
       ],
       "quality": "undefined",
-      "aliases": [],
+      "aliases": [
+        "hom"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8304,8 +8450,10 @@ export default {
         "attack_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "hand of midas"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8530,8 +8678,10 @@ export default {
         "attack_speed",
         "regen_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "oblivion staff"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8741,8 +8891,10 @@ export default {
         "regen_health",
         "regen_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "perseverance"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -8980,8 +9132,11 @@ export default {
         "agi",
         "block"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "pms",
+        "poor man's shield"
+      ],
       "permanent": true,
       "purchasable": false,
       "sellable": true,
@@ -9199,8 +9354,10 @@ export default {
         "agi",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "bracer"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -9418,8 +9575,10 @@ export default {
         "agi",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "wraith band"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -9637,8 +9796,10 @@ export default {
         "agi",
         "str"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "null talisman"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -9881,8 +10042,11 @@ export default {
         "armor",
         "boost_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "mechanism",
+        "mekansm"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -9896,7 +10060,7 @@ export default {
       "droppable": true,
       "killable": true,
       "support": false,
-      "alertable": false,
+      "alertable": true,
       "initialCharges": 0,
       "requiresCharges": false,
       "displayCharges": false,
@@ -10131,8 +10295,11 @@ export default {
         "armor",
         "regen_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "vladmir's offering",
+        "vlads"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -10360,8 +10527,10 @@ export default {
         "armor",
         "boost_armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "buckler"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -10590,8 +10759,11 @@ export default {
         "regen_mana",
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "rob",
+        "ring of basilius"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -10855,8 +11027,10 @@ export default {
         "regen_health",
         "boost_magic_resist"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "pipe of insight"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -10870,7 +11044,7 @@ export default {
       "droppable": true,
       "killable": true,
       "support": false,
-      "alertable": false,
+      "alertable": true,
       "initialCharges": 0,
       "requiresCharges": false,
       "displayCharges": false,
@@ -11110,8 +11284,10 @@ export default {
         "str",
         "boost_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "urn of shadows"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -11329,8 +11505,10 @@ export default {
         "agi",
         "regen_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "headdress"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -11564,8 +11742,12 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "hex",
+        "sheepstick",
+        "scythe of vyse"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -11800,8 +11982,10 @@ export default {
         "damage",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "orchid malevolence"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -12060,8 +12244,10 @@ export default {
         "damage",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "orchid malevolence"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -12308,8 +12494,10 @@ export default {
         "damage",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "echo sabre"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -12537,8 +12725,11 @@ export default {
         "move_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "cyclone euls",
+        "eul's scepter of divinity"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -12756,8 +12947,10 @@ export default {
         "move_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "aether lens"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -12972,8 +13165,11 @@ export default {
         "attack_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "fs",
+        "force staff"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -13237,8 +13433,11 @@ export default {
         "attack_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "fs",
+        "force staff"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -13898,8 +14097,10 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "dagon 1"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -14056,8 +14257,10 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "dagon 2"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -14213,8 +14416,10 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "dagon 3"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -14369,8 +14574,10 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "dagon 4"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -14524,8 +14731,10 @@ export default {
         "agi",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "dagon 5"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -15035,8 +15244,10 @@ export default {
         "hard_to_tag",
         "see_invis"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "necronomicon 1"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -15244,8 +15455,10 @@ export default {
         "hard_to_tag",
         "see_invis"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "necronomicon 2"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -15452,8 +15665,10 @@ export default {
         "hard_to_tag",
         "see_invis"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "necronomicon 3"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -15675,8 +15890,13 @@ export default {
         "health_pool",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "ags",
+        "ultimate",
+        "aghanim's scepter",
+        "ags"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -15878,8 +16098,10 @@ export default {
         "regen_mana",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "refresher orb"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -16115,8 +16337,11 @@ export default {
         "armor",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "ac",
+        "assault cuirass"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -16343,8 +16568,11 @@ export default {
         "regen_health",
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "hot",
+        "heart of tarrasque"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -16575,8 +16803,11 @@ export default {
         "damage",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "bkb",
+        "black king bar"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -16689,7 +16920,7 @@ export default {
       "shopTags": [
         "0"
       ],
-      "quality": "undefined",
+      "quality": "artifact",
       "aliases": [],
       "permanent": true,
       "purchasable": false,
@@ -16937,8 +17168,11 @@ export default {
         "armor",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "shiva's guard",
+        "shivas"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -17186,8 +17420,11 @@ export default {
         "mana_pool",
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "bs",
+        "bloodstone"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -17416,8 +17653,11 @@ export default {
         "int",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "ls",
+        "linken's sphere"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -17650,8 +17890,11 @@ export default {
         "int",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "ls",
+        "lotus orb"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -17923,8 +18166,11 @@ export default {
     "info": {
       "cost": 2625,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "mh",
+        "meteor hammer"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -18155,8 +18401,11 @@ export default {
     "info": {
       "cost": 4700,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "nlf",
+        "nullifier"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -18382,8 +18631,11 @@ export default {
         "regen_health",
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "ad",
+        "aeon disk"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -18599,8 +18851,11 @@ export default {
         "int",
         "mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "ky",
+        "kaya"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -18877,7 +19132,7 @@ export default {
       "shopTags": [
         "0"
       ],
-      "quality": "undefined",
+      "quality": "consumable",
       "aliases": [],
       "permanent": false,
       "purchasable": false,
@@ -19167,8 +19422,11 @@ export default {
     "info": {
       "cost": 2975,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "sv",
+        "spirit vessel"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -19398,8 +19656,11 @@ export default {
         "block",
         "health_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "vg",
+        "vanguard"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -19681,7 +19942,7 @@ export default {
         "block",
         "health_pool"
       ],
-      "quality": "undefined",
+      "quality": "epic",
       "aliases": [],
       "permanent": true,
       "purchasable": true,
@@ -19696,7 +19957,7 @@ export default {
       "droppable": true,
       "killable": true,
       "support": false,
-      "alertable": false,
+      "alertable": true,
       "initialCharges": 0,
       "requiresCharges": false,
       "displayCharges": false,
@@ -19901,8 +20162,12 @@ export default {
         "int",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "bm",
+        "blade mail",
+        "blademail"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -20115,8 +20380,10 @@ export default {
         "health_pool",
         "mana_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "soul booster"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -20339,8 +20606,10 @@ export default {
         "regen_health",
         "magic_resist"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "hood of defiance"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -20543,8 +20812,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "divine rapier"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": false,
@@ -20768,8 +21039,11 @@ export default {
         "attack_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "mkb",
+        "monkey king bar"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -20995,8 +21269,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "radiance"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -21230,8 +21506,11 @@ export default {
         "evasion",
         "attack_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "bfly",
+        "butterfly"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -21453,8 +21732,10 @@ export default {
         "damage",
         "crit"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "daedalus"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -21692,8 +21973,10 @@ export default {
         "str",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "skull basher"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -21966,8 +22249,11 @@ export default {
         "mana_regen",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "bf",
+        "battle fury"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -22280,8 +22566,10 @@ export default {
         "move_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "manta style"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -22503,8 +22791,10 @@ export default {
         "damage",
         "crit"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "crystalys"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -22720,8 +23010,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "dragon lance"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -22986,8 +23278,10 @@ export default {
         "regen_health",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "armlet of mordiggian"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -23217,8 +23511,13 @@ export default {
         "movespeed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "sb",
+        "invis",
+        "shadow blade",
+        "silver edge"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -23466,8 +23765,12 @@ export default {
         "movespeed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "sb",
+        "invis",
+        "shadow blade"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -23734,8 +24037,13 @@ export default {
         "attack_speed",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "sny",
+        "s&y",
+        "sy",
+        "sange and yasha"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -23970,8 +24278,10 @@ export default {
         "unique",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "satanic"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -24263,8 +24573,10 @@ export default {
         "attack_speed",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "mjollnir"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -24510,8 +24822,11 @@ export default {
         "health_pool",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "eos",
+        "eye of skadi"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -24758,8 +25073,10 @@ export default {
         "str",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "sange"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -24999,8 +25316,11 @@ export default {
         "unique",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "hotd",
+        "helm of the dominator"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -25241,8 +25561,10 @@ export default {
         "attack_speed",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "maelstrom"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -25459,8 +25781,10 @@ export default {
         "damage",
         "unique"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "desolator"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -25677,8 +26001,10 @@ export default {
         "attack_speed",
         "move_speed"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "yasha"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -25912,8 +26238,11 @@ export default {
         "unique",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "mom",
+        "mask of madness"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -26165,8 +26494,10 @@ export default {
         "unique",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "diffusal blade 1"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -26427,8 +26758,12 @@ export default {
         "int",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "eb",
+        "ethereal blade",
+        "eblade"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -26651,8 +26986,10 @@ export default {
         "regen_health",
         "boost_mana"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "soul ring"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -26869,8 +27206,12 @@ export default {
         "boost_mana",
         "mana_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "mana",
+        "mb",
+        "arcane boots"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -26884,7 +27225,7 @@ export default {
       "droppable": true,
       "killable": true,
       "support": false,
-      "alertable": false,
+      "alertable": true,
       "initialCharges": 0,
       "requiresCharges": false,
       "displayCharges": false,
@@ -27111,8 +27452,12 @@ export default {
         "boost_mana",
         "mana_pool"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "mana",
+        "mb",
+        "octarine core"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -27237,8 +27582,11 @@ export default {
       "shopTags": [
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "oov",
+        "orb of venom"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -27345,8 +27693,10 @@ export default {
       "shopTags": [
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "blight stone"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -27604,8 +27954,10 @@ export default {
         "attack_speed",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "drum of endurance"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -27832,8 +28184,10 @@ export default {
         "regen_mana",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "medallion of courage"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -28071,8 +28425,10 @@ export default {
         "regen_mana",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "solar crest"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -28188,8 +28544,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "smoke of deceit"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -28202,8 +28560,8 @@ export default {
       "stackable": true,
       "droppable": true,
       "killable": true,
-      "support": false,
-      "alertable": false,
+      "support": true,
+      "alertable": true,
       "initialCharges": 1,
       "requiresCharges": false,
       "displayCharges": true,
@@ -28293,8 +28651,10 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "consumable",
+      "aliases": [
+        "tome of knowledge"
+      ],
       "permanent": false,
       "purchasable": true,
       "sellable": true,
@@ -28307,7 +28667,7 @@ export default {
       "stackable": true,
       "droppable": true,
       "killable": true,
-      "support": false,
+      "support": true,
       "alertable": false,
       "initialCharges": 1,
       "requiresCharges": false,
@@ -28540,8 +28900,11 @@ export default {
         "regen_health",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "vod",
+        "veil of discord"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -28813,8 +29176,10 @@ export default {
         "regen_health",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "guardian greaves"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -28828,7 +29193,7 @@ export default {
       "droppable": true,
       "killable": true,
       "support": false,
-      "alertable": false,
+      "alertable": true,
       "initialCharges": 0,
       "requiresCharges": false,
       "displayCharges": false,
@@ -29034,8 +29399,10 @@ export default {
         "int",
         "regen_health"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "rod of atos"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -29265,8 +29632,10 @@ export default {
       "shopTags": [
         "damage"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "common",
+      "aliases": [
+        "quelling blade"
+      ],
       "permanent": true,
       "purchasable": false,
       "sellable": true,
@@ -29540,8 +29909,10 @@ export default {
         "str",
         "hard_to_tag"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "epic",
+      "aliases": [
+        "abyssal blade"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -29803,8 +30174,10 @@ export default {
         "damage",
         "evasion"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "artifact",
+      "aliases": [
+        "heaven's halberd"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30049,8 +30422,11 @@ export default {
       "shopTags": [
         "0"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "roa",
+        "ring of aquila"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30304,8 +30680,10 @@ export default {
         "regen_health",
         "armor"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "tranquil boots"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30413,7 +30791,9 @@ export default {
         "0"
       ],
       "quality": "undefined",
-      "aliases": [],
+      "aliases": [
+        "shadow amulet"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30646,8 +31026,10 @@ export default {
       "shopTags": [
         "0"
       ],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "rare",
+      "aliases": [
+        "glimmer cape"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30740,8 +31122,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30834,8 +31218,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -30928,8 +31314,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -31022,8 +31410,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -31116,8 +31506,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -31210,8 +31602,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -31304,8 +31698,10 @@ export default {
     "info": {
       "cost": 0,
       "shopTags": [],
-      "quality": "undefined",
-      "aliases": [],
+      "quality": "component",
+      "aliases": [
+        "paint"
+      ],
       "permanent": true,
       "purchasable": true,
       "sellable": true,
@@ -31396,7 +31792,7 @@ export default {
       "shopTags": [
         "consumable"
       ],
-      "quality": "undefined",
+      "quality": "consumable",
       "aliases": [],
       "permanent": false,
       "purchasable": false,
@@ -31668,7 +32064,7 @@ export default {
     "info": {
       "cost": 1000,
       "shopTags": [],
-      "quality": "undefined",
+      "quality": "rare",
       "aliases": [],
       "permanent": true,
       "purchasable": false,

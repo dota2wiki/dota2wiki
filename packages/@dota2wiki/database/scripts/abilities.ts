@@ -230,8 +230,8 @@ export default async function genAbilities(
           info: valveData.mapGet<ItemInfo>({
             cost: ['number', 'ItemCost'],
             shopTags: ['string[]', 'ItemShopTags'],
-            quality: ['string', ''],
-            aliases: ['string[]', ''],
+            quality: ['string', 'ItemQuality'],
+            aliases: ['string[]', 'ItemAliases'],
 
             permanent: ['boolean', 'ItemPermanent'],
             purchasable: ['boolean', 'ItemPurchasable'],
@@ -246,8 +246,8 @@ export default async function genAbilities(
             stackable: ['boolean', 'ItemStackable'],
             droppable: ['boolean', 'ItemDroppable'],
             killable: ['boolean', 'ItemKillable'],
-            support: ['boolean', ''],
-            alertable: ['boolean', ''],
+            support: ['boolean', 'ItemSupport'],
+            alertable: ['boolean', 'ItemAlertable'],
 
             initialCharges: ['number', 'ItemInitialCharges'],
             requiresCharges: ['boolean', 'ItemRequiresCharges'],
