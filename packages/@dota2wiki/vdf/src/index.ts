@@ -288,19 +288,20 @@ export class ValveData {
   }
 
   public get<T extends keyof TypeMap>(type: T, field: string): TypeMap[T] {
+    const value: any = this.data[field];
     switch (type) {
       case 'boolean':
-        return toBoolean(this.data[field]);
+        return toBoolean(value);
       case 'string':
-        return toString(this.data[field]);
+        return toString(value);
       case 'number':
-        return toNumber(this.data[field]);
+        return toNumber(value);
       case 'string[]':
-        return toStringArray(this.data[field]);
+        return toStringArray(value);
       case 'number[]':
-        return toNumberArray(this.data[field]);
+        return toNumberArray(value);
       case 'color':
-        return toColorText(this.data[field]);
+        return toColorText(value);
 
       default:
     }
@@ -310,12 +311,16 @@ export class ValveData {
   public getEnum<E extends number = number>(field: string, map: any): E {
     // tslint:disable-next-line:typedef
     const reject = () =>
-      new Error(`data['${field}']='${this.data[field]}' cannot be converted to enum.`);
-    if (this.data[field] === undefined || this.data[field] === null) {
+      new Error(`data['${field}']='${value}' cannot be converted to enum.`);
+
+    const value: any = this.data[field];
+
+    if (value === undefined || value === null || value === 0 || value === '') {
       return 0 as E;
     }
-    if (typeof this.data[field] === 'string') {
-      const inter: E[] = splitToEnumText(this.data[field]).map(item => map[item]);
+
+    if (typeof value === 'string') {
+      const inter: E[] = splitToEnumText(value).map(item => map[item]);
       if (inter.length === 0) {
         throw reject();
       }
@@ -325,9 +330,7 @@ export class ValveData {
         throw reject();
       }
       if (types.includes('string')) {
-        throw new Error(
-          `data['${field}']='${this.data[field]}' cannot be converted to flag enum.`,
-        );
+        throw new Error(`data['${field}']='${value}' cannot be converted to flag enum.`);
       }
 
       if (inter.length === 1) {
