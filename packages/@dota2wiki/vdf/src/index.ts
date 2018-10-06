@@ -62,6 +62,13 @@ export async function save(path: string, data: any): Promise<void> {
   });
 }
 
+export function toArray<T = any>(raw: any): T[] {
+  return Object.entries(raw)
+    .map<[number, T]>(([key, value]: [string, any]) => [parseInt(key, 10) - 1, value])
+    .sort(([a], [b]) => a - b)
+    .map(([key, value]) => value);
+}
+
 export function toBoolean(value: any): boolean {
   if (typeof value === 'string') {
     const rawValue: string = value.trim();
