@@ -18,33 +18,9 @@ import heroes from './db/heroes';
 import abilities from './db/abilities';
 import talents from './db/talents';
 import items from './db/items';
-
-declare module 'vue/types/vue' {
-  interface Vue {
-    $db: Database;
-  }
-}
+import shops from './db/shops';
 
 let $$Vue: typeof Vue | undefined;
-
-export interface Database {
-  readonly heroMap: Readonly<Record<string, Hero>>;
-  readonly heroList: ReadonlyArray<Hero>;
-  readonly heroNames: ReadonlyArray<string>;
-  readonly heroGroups: ReadonlyArray<HeroGroup>;
-
-  readonly abilityMap: Readonly<Record<string, Ability>>;
-  readonly abilityList: ReadonlyArray<Ability>;
-  readonly abilityNames: ReadonlyArray<string>;
-
-  readonly talentMap: Readonly<Record<string, Talent>>;
-  readonly talentList: ReadonlyArray<Talent>;
-  readonly talentNames: ReadonlyArray<string>;
-
-  readonly itemMap: Readonly<Record<string, Item>>;
-  readonly itemList: ReadonlyArray<Item>;
-  readonly itemNames: ReadonlyArray<string>;
-}
 
 const compareId: (a: { id: number }, b: { id: number }) => number = (a, b) => a.id - b.id;
 
@@ -74,7 +50,10 @@ export const itemMap: Readonly<Record<string, Item>> = items;
 export const itemList: ReadonlyArray<Item> = Object.values(itemMap).sort(compareId);
 export const itemNames: ReadonlyArray<string> = itemList.map(t => t.name);
 
-const db: Database = {
+export const shopMap: Readonly<Record<string, ReadonlyArray<string>>> = shops;
+
+// tslint:disable-next-line:typedef
+const db = {
   heroMap,
   heroList,
   heroNames,
@@ -91,7 +70,17 @@ const db: Database = {
   itemMap,
   itemList,
   itemNames,
+
+  shopMap,
 };
+
+export type Database = Readonly<typeof db>;
+
+declare module 'vue/types/vue' {
+  interface Vue {
+    $db: Database;
+  }
+}
 
 const install: PluginFunction<undefined> = $Vue => {
   if ($$Vue && $$Vue === $Vue) {

@@ -8,15 +8,18 @@ import path from 'path';
 import chalk from 'chalk';
 import { genPathResolve } from '@huiji/shared-utils';
 import { save, load, EnumSpider } from '@dota2wiki/vdf';
+import { Hero } from '../src/models/hero';
 import genHeroes from './heroes';
 import genAbilities from './abilities';
-import { Hero } from '../src/models/hero';
+import genShops from './shops';
 
 const resolvePath: (...paths: string[]) => string = genPathResolve(__dirname, '..');
 
 const fileHeroes: string = resolvePath('scripts/assets/npc/npc_heroes.txt');
 const fileAbilities: string = resolvePath('scripts/assets/npc/npc_abilities.txt');
 const fileItems: string = resolvePath('scripts/assets/npc/items.txt');
+const fileShopTags: string = resolvePath('scripts/assets/shop_tags.txt');
+const fileShops: string = resolvePath('scripts/assets/shops.txt');
 
 const spider: EnumSpider = new EnumSpider(
   'Team',
@@ -151,6 +154,7 @@ async function generate(): Promise<void> {
     fileAbilities,
     fileItems,
   );
+  const shops: Record<string, string[]> = await genShops(fileShopTags, fileShops);
 
   await Promise.all(
     ([
@@ -158,6 +162,7 @@ async function generate(): Promise<void> {
       [resolvePath('src/db/abilities.ts'), abilities],
       [resolvePath('src/db/talents.ts'), talents],
       [resolvePath('src/db/items.ts'), items],
+      [resolvePath('src/db/shops.ts'), shops],
     ] as [string, any][]).map(async ([output, data]) => {
       try {
         await save(output, data);
