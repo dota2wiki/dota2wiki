@@ -70,7 +70,40 @@ export default {
           960
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2250,
+      "shopTags": [
+        "teleport"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_blades_of_attack": {
     "id": 2,
@@ -139,7 +172,41 @@ export default {
           9
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 430,
+      "shopTags": [
+        "damage",
+        "tutorial"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_broadsword": {
     "id": 3,
@@ -208,7 +275,40 @@ export default {
           18
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1200,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_chainmail": {
     "id": 4,
@@ -277,7 +377,40 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 550,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_claymore": {
     "id": 5,
@@ -346,7 +479,40 @@ export default {
           21
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1400,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_helm_of_iron_will": {
     "id": 6,
@@ -421,7 +587,41 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 900,
+      "shopTags": [
+        "armor",
+        "regen_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_javelin": {
     "id": 7,
@@ -496,7 +696,40 @@ export default {
           100
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1100,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_mithril_hammer": {
     "id": 8,
@@ -565,7 +798,40 @@ export default {
           24
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1600,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_platemail": {
     "id": 9,
@@ -634,7 +900,40 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1400,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_quarterstaff": {
     "id": 10,
@@ -709,7 +1008,41 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 875,
+      "shopTags": [
+        "damage",
+        "attack_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_quelling_blade": {
     "id": 11,
@@ -787,7 +1120,40 @@ export default {
           450
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 200,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_faerie_fire": {
     "id": 237,
@@ -856,7 +1222,40 @@ export default {
           85
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 70,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": true,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_infused_raindrop": {
     "id": 265,
@@ -949,7 +1348,40 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 225,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 5,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_wind_lace": {
     "id": 244,
@@ -1030,7 +1462,40 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 250,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ring_of_protection": {
     "id": 12,
@@ -1099,7 +1564,40 @@ export default {
           2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 175,
+      "shopTags": [
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_stout_shield": {
     "id": 182,
@@ -1180,7 +1678,40 @@ export default {
           50
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 200,
+      "shopTags": [
+        "block"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_moon_shard": {
     "id": 246,
@@ -1242,7 +1773,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_moon_shard",
+      "requirements": [
+        null,
+        [
+          "item_hyperstone",
+          "item_hyperstone"
+        ]
+      ]
+    }
   },
   "item_moon_shard": {
     "id": 247,
@@ -1329,7 +1901,40 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4000,
+      "shopTags": [
+        "attack_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_gauntlets": {
     "id": 13,
@@ -1398,7 +2003,40 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 135,
+      "shopTags": [
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_slippers": {
     "id": 14,
@@ -1467,7 +2105,40 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 135,
+      "shopTags": [
+        "agi"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_mantle": {
     "id": 15,
@@ -1536,7 +2207,40 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 135,
+      "shopTags": [
+        "int"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_branches": {
     "id": 16,
@@ -1611,7 +2315,42 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 50,
+      "shopTags": [
+        "agi",
+        "int",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_belt_of_strength": {
     "id": 17,
@@ -1680,7 +2419,40 @@ export default {
           6
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 450,
+      "shopTags": [
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_boots_of_elves": {
     "id": 18,
@@ -1749,7 +2521,40 @@ export default {
           6
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 450,
+      "shopTags": [
+        "agi"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_robe": {
     "id": 19,
@@ -1818,7 +2623,40 @@ export default {
           6
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 450,
+      "shopTags": [
+        "int"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_circlet": {
     "id": 20,
@@ -1887,7 +2725,42 @@ export default {
           2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 165,
+      "shopTags": [
+        "agi",
+        "int",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ogre_axe": {
     "id": 21,
@@ -1956,7 +2829,40 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_blade_of_alacrity": {
     "id": 22,
@@ -2025,7 +2931,40 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "agi"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_staff_of_wizardry": {
     "id": 23,
@@ -2094,7 +3033,40 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "int"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ultimate_orb": {
     "id": 24,
@@ -2163,7 +3135,42 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2150,
+      "shopTags": [
+        "agi",
+        "int",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_gloves": {
     "id": 25,
@@ -2232,7 +3239,40 @@ export default {
           20
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "attack_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_lifesteal": {
     "id": 26,
@@ -2307,7 +3347,40 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1100,
+      "shopTags": [
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ring_of_regen": {
     "id": 27,
@@ -2376,7 +3449,40 @@ export default {
           1.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 300,
+      "shopTags": [
+        "regen_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_sobi_mask": {
     "id": 28,
@@ -2445,7 +3551,40 @@ export default {
           0.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 325,
+      "shopTags": [
+        "regen_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_boots": {
     "id": 29,
@@ -2514,7 +3653,40 @@ export default {
           50
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "move_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_gem": {
     "id": 30,
@@ -2583,7 +3755,40 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 900,
+      "shopTags": [
+        "see_invis"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": false,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_cloak": {
     "id": 31,
@@ -2658,7 +3863,40 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 550,
+      "shopTags": [
+        "magic_resist"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_talisman_of_evasion": {
     "id": 32,
@@ -2727,7 +3965,40 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1400,
+      "shopTags": [
+        "evasion"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_cheese": {
     "id": 33,
@@ -2799,7 +4070,40 @@ export default {
           1500
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_magic_stick": {
     "id": 34,
@@ -2877,7 +4181,43 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 200,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "boost_health",
+        "boost_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": true,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_magic_wand": {
     "id": 35,
@@ -2939,7 +4279,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 150,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_magic_wand",
+      "requirements": [
+        null,
+        [
+          "item_magic_stick",
+          "item_branches",
+          "item_branches"
+        ]
+      ]
+    }
   },
   "item_magic_wand": {
     "id": 36,
@@ -3023,7 +4405,46 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 450,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "boost_health",
+        "boost_mana",
+        "int",
+        "agi",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": true,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ghost": {
     "id": 37,
@@ -3101,7 +4522,43 @@ export default {
           -40
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1500,
+      "shopTags": [
+        "int",
+        "agi",
+        "str",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_clarity": {
     "id": 38,
@@ -3179,7 +4636,40 @@ export default {
           250
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 50,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_enchanted_mango": {
     "id": 216,
@@ -3257,7 +4747,40 @@ export default {
           400
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 70,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_flask": {
     "id": 39,
@@ -3335,7 +4858,40 @@ export default {
           250
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 110,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_dust": {
     "id": 40,
@@ -3410,7 +4966,40 @@ export default {
           -20
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 180,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 2,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_bottle": {
     "id": 41,
@@ -3497,7 +5086,40 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 650,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": true
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 3,
+      "requiresCharges": false,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ward_observer": {
     "id": 42,
@@ -3584,7 +5206,40 @@ export default {
           500
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 75,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 3,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ward_sentry": {
     "id": 43,
@@ -3677,7 +5332,40 @@ export default {
           500
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 100,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 3,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_ward_dispenser": {
     "id": 217,
@@ -3739,7 +5427,60 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ward_dispenser",
+      "requirements": [
+        null,
+        [
+          "item_ward_sentry",
+          "item_ward_observer"
+        ],
+        [
+          "item_ward_sentry",
+          "item_ward_dispenser"
+        ],
+        [
+          "item_ward_dispenser",
+          "item_ward_observer"
+        ],
+        [
+          "item_ward_dispenser",
+          "item_ward_dispenser"
+        ]
+      ]
+    }
   },
   "item_ward_dispenser": {
     "id": 218,
@@ -3865,7 +5606,38 @@ export default {
           500
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 175,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 3,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_tango": {
     "id": 44,
@@ -3955,7 +5727,40 @@ export default {
           165
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 90,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 3,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_tango_single": {
     "id": 241,
@@ -4036,7 +5841,40 @@ export default {
           165
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 30,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": false,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_courier": {
     "id": 45,
@@ -4098,7 +5936,40 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 50,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": false,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_tpscroll": {
     "id": 46,
@@ -4173,7 +6044,41 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 50,
+      "shopTags": [
+        "consumable",
+        "tutorial"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_travel_boots": {
     "id": 47,
@@ -4235,7 +6140,47 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 2000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_travel_boots",
+      "requirements": [
+        null,
+        [
+          "item_boots"
+        ]
+      ]
+    }
   },
   "item_recipe_travel_boots_2": {
     "id": 219,
@@ -4297,7 +6242,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_travel_boots_2",
+      "requirements": [
+        null,
+        [
+          "item_travel_boots",
+          "item_recipe_travel_boots"
+        ]
+      ]
+    }
   },
   "item_travel_boots": {
     "id": 48,
@@ -4369,7 +6355,45 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2500,
+      "shopTags": [
+        "teleport",
+        "move_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 2,
+      "baseLevel": 1,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_travel_boots"
+      ],
+      "upgradeRecipe": "item_recipe_travel_boots",
+      "isRecipe": false
+    }
   },
   "item_travel_boots_2": {
     "id": 220,
@@ -4441,7 +6465,41 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4500,
+      "shopTags": [
+        "teleport",
+        "move_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 2,
+      "baseLevel": 2,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_phase_boots": {
     "id": 49,
@@ -4503,7 +6561,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_phase_boots",
+      "requirements": [
+        null,
+        [
+          "item_boots",
+          "item_blades_of_attack",
+          "item_blades_of_attack"
+        ]
+      ]
+    }
   },
   "item_phase_boots": {
     "id": 50,
@@ -4623,7 +6723,42 @@ export default {
           0
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1360,
+      "shopTags": [
+        "damage",
+        "move_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_demon_edge": {
     "id": 51,
@@ -4692,7 +6827,40 @@ export default {
           42
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2200,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_eagle": {
     "id": 52,
@@ -4761,7 +6929,40 @@ export default {
           25
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3200,
+      "shopTags": [
+        "agi"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_reaver": {
     "id": 53,
@@ -4830,7 +7031,40 @@ export default {
           25
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3000,
+      "shopTags": [
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_relic": {
     "id": 54,
@@ -4899,7 +7133,40 @@ export default {
           60
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3800,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_hyperstone": {
     "id": 55,
@@ -4968,7 +7235,40 @@ export default {
           55
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2000,
+      "shopTags": [
+        "attack_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_ring_of_health": {
     "id": 56,
@@ -5037,7 +7337,40 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 850,
+      "shopTags": [
+        "regen_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": true
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_void_stone": {
     "id": 57,
@@ -5106,7 +7439,40 @@ export default {
           1
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 850,
+      "shopTags": [
+        "regen_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": true,
+        "global": true
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_mystic_staff": {
     "id": 58,
@@ -5175,7 +7541,40 @@ export default {
           25
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2700,
+      "shopTags": [
+        "int"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_energy_booster": {
     "id": 59,
@@ -5244,7 +7643,40 @@ export default {
           250
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 900,
+      "shopTags": [
+        "mana_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_point_booster": {
     "id": 60,
@@ -5319,7 +7751,41 @@ export default {
           175
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1200,
+      "shopTags": [
+        "mana_pool",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_vitality_booster": {
     "id": 61,
@@ -5388,7 +7854,40 @@ export default {
           250
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1100,
+      "shopTags": [
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": true,
+        "secret": true,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_power_treads": {
     "id": 62,
@@ -5450,7 +7949,59 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_power_treads",
+      "requirements": [
+        null,
+        [
+          "item_boots",
+          "item_gloves",
+          "item_belt_of_strength"
+        ],
+        [
+          "item_boots",
+          "item_gloves",
+          "item_robe"
+        ],
+        [
+          "item_boots",
+          "item_gloves",
+          "item_boots_of_elves"
+        ]
+      ]
+    }
   },
   "item_power_treads": {
     "id": 63,
@@ -5537,7 +8088,44 @@ export default {
           0
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1450,
+      "shopTags": [
+        "attack_speed",
+        "move_speed",
+        "int",
+        "agi",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_hand_of_midas": {
     "id": 64,
@@ -5599,7 +8187,47 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1650,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_hand_of_midas",
+      "requirements": [
+        null,
+        [
+          "item_gloves"
+        ]
+      ]
+    }
   },
   "item_hand_of_midas": {
     "id": 65,
@@ -5677,7 +8305,41 @@ export default {
           600
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2150,
+      "shopTags": [
+        "attack_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_oblivion_staff": {
     "id": 66,
@@ -5739,7 +8401,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_oblivion_staff",
+      "requirements": [
+        null,
+        [
+          "item_quarterstaff",
+          "item_sobi_mask",
+          "item_robe"
+        ]
+      ]
+    }
   },
   "item_oblivion_staff": {
     "id": 67,
@@ -5826,7 +8530,43 @@ export default {
           0.75
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1650,
+      "shopTags": [
+        "damage",
+        "int",
+        "attack_speed",
+        "regen_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_pers": {
     "id": 68,
@@ -5888,7 +8628,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_pers",
+      "requirements": [
+        null,
+        [
+          "item_ring_of_health",
+          "item_void_stone"
+        ]
+      ]
+    }
   },
   "item_pers": {
     "id": 69,
@@ -5963,7 +8744,41 @@ export default {
           1.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1700,
+      "shopTags": [
+        "regen_health",
+        "regen_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 1,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_poor_mans_shield": {
     "id": 70,
@@ -6025,7 +8840,42 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": true,
+      "result": "item_poor_mans_shield",
+      "requirements": []
+    }
   },
   "item_poor_mans_shield": {
     "id": 71,
@@ -6133,7 +8983,41 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "agi",
+        "block"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_recipe_bracer": {
     "id": 72,
@@ -6195,7 +9079,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 165,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_bracer",
+      "requirements": [
+        null,
+        [
+          "item_circlet",
+          "item_gauntlets"
+        ]
+      ]
+    }
   },
   "item_bracer": {
     "id": 73,
@@ -6276,7 +9201,43 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 465,
+      "shopTags": [
+        "damage",
+        "int",
+        "agi",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_wraith_band": {
     "id": 74,
@@ -6338,7 +9299,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 165,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_wraith_band",
+      "requirements": [
+        null,
+        [
+          "item_circlet",
+          "item_slippers"
+        ]
+      ]
+    }
   },
   "item_wraith_band": {
     "id": 75,
@@ -6419,7 +9421,43 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 465,
+      "shopTags": [
+        "damage",
+        "int",
+        "agi",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_null_talisman": {
     "id": 76,
@@ -6481,7 +9519,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 165,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_null_talisman",
+      "requirements": [
+        null,
+        [
+          "item_circlet",
+          "item_mantle"
+        ]
+      ]
+    }
   },
   "item_null_talisman": {
     "id": 77,
@@ -6562,7 +9641,43 @@ export default {
           7
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 465,
+      "shopTags": [
+        "damage",
+        "int",
+        "agi",
+        "str"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_mekansm": {
     "id": 78,
@@ -6624,7 +9739,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 900,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_mekansm",
+      "requirements": [
+        null,
+        [
+          "item_headdress",
+          "item_buckler"
+        ]
+      ]
+    }
   },
   "item_mekansm": {
     "id": 79,
@@ -6729,7 +9885,44 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2350,
+      "shopTags": [
+        "agi",
+        "int",
+        "str",
+        "armor",
+        "boost_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_vladmir": {
     "id": 80,
@@ -6791,7 +9984,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_vladmir",
+      "requirements": [
+        null,
+        [
+          "item_headdress",
+          "item_ring_of_basilius",
+          "item_lifesteal"
+        ]
+      ]
+    }
   },
   "item_vladmir": {
     "id": 81,
@@ -6902,7 +10137,43 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2250,
+      "shopTags": [
+        "lifesteal",
+        "damage",
+        "armor",
+        "regen_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_buckler": {
     "id": 85,
@@ -6964,7 +10235,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 200,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_buckler",
+      "requirements": [
+        null,
+        [
+          "item_chainmail",
+          "item_branches"
+        ]
+      ]
+    }
   },
   "item_buckler": {
     "id": 86,
@@ -7057,7 +10369,41 @@ export default {
           25
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 800,
+      "shopTags": [
+        "armor",
+        "boost_armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_ring_of_basilius": {
     "id": 87,
@@ -7119,7 +10465,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ring_of_basilius",
+      "requirements": [
+        null,
+        [
+          "item_sobi_mask",
+          "item_ring_of_protection"
+        ]
+      ]
+    }
   },
   "item_ring_of_basilius": {
     "id": 88,
@@ -7212,7 +10599,42 @@ export default {
           2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "damage",
+        "regen_mana",
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_pipe": {
     "id": 89,
@@ -7274,7 +10696,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 800,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_pipe",
+      "requirements": [
+        null,
+        [
+          "item_hood_of_defiance",
+          "item_headdress"
+        ]
+      ]
+    }
   },
   "item_pipe": {
     "id": 90,
@@ -7403,7 +10866,41 @@ export default {
           400
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3150,
+      "shopTags": [
+        "regen_health",
+        "boost_magic_resist"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_urn_of_shadows": {
     "id": 91,
@@ -7465,7 +10962,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 310,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_urn_of_shadows",
+      "requirements": [
+        null,
+        [
+          "item_infused_raindrop",
+          "item_circlet",
+          "item_ring_of_protection"
+        ]
+      ]
+    }
   },
   "item_urn_of_shadows": {
     "id": 92,
@@ -7582,7 +11121,42 @@ export default {
           950
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 875,
+      "shopTags": [
+        "regen_mana",
+        "str",
+        "boost_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": true,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_headdress": {
     "id": 93,
@@ -7644,7 +11218,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 300,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_headdress",
+      "requirements": [
+        null,
+        [
+          "item_ring_of_regen",
+          "item_branches"
+        ]
+      ]
+    }
   },
   "item_headdress": {
     "id": 94,
@@ -7725,7 +11340,43 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 650,
+      "shopTags": [
+        "str",
+        "int",
+        "agi",
+        "regen_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_sheepstick": {
     "id": 95,
@@ -7787,7 +11438,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_sheepstick",
+      "requirements": [
+        null,
+        [
+          "item_mystic_staff",
+          "item_ultimate_orb",
+          "item_void_stone"
+        ]
+      ]
+    }
   },
   "item_sheepstick": {
     "id": 96,
@@ -7883,7 +11576,43 @@ export default {
           800
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5700,
+      "shopTags": [
+        "int",
+        "regen_mana",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_orchid": {
     "id": 97,
@@ -7945,7 +11674,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 775,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_orchid",
+      "requirements": [
+        null,
+        [
+          "item_oblivion_staff",
+          "item_oblivion_staff"
+        ]
+      ]
+    }
   },
   "item_orchid": {
     "id": 98,
@@ -8041,7 +11811,45 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4075,
+      "shopTags": [
+        "int",
+        "attack_speed",
+        "damage",
+        "regen_mana",
+        "damage",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_bloodthorn": {
     "id": 245,
@@ -8103,7 +11911,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_bloodthorn",
+      "requirements": [
+        null,
+        [
+          "item_orchid",
+          "item_lesser_crit"
+        ]
+      ]
+    }
   },
   "item_bloodthorn": {
     "id": 250,
@@ -8223,7 +12072,45 @@ export default {
           100
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 7205,
+      "shopTags": [
+        "int",
+        "attack_speed",
+        "damage",
+        "regen_mana",
+        "damage",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_echo_sabre": {
     "id": 251,
@@ -8285,7 +12172,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_echo_sabre",
+      "requirements": [
+        null,
+        [
+          "item_ogre_axe",
+          "item_oblivion_staff"
+        ]
+      ]
+    }
   },
   "item_echo_sabre": {
     "id": 252,
@@ -8393,7 +12321,45 @@ export default {
           0.8
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2650,
+      "shopTags": [
+        "int",
+        "attack_speed",
+        "damage",
+        "regen_mana",
+        "damage",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_cyclone": {
     "id": 99,
@@ -8455,7 +12421,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 650,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_cyclone",
+      "requirements": [
+        null,
+        [
+          "item_staff_of_wizardry",
+          "item_void_stone",
+          "item_wind_lace"
+        ]
+      ]
+    }
   },
   "item_cyclone": {
     "id": 100,
@@ -8545,7 +12553,43 @@ export default {
           50
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2750,
+      "shopTags": [
+        "int",
+        "regen_mana",
+        "move_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_aether_lens": {
     "id": 233,
@@ -8607,7 +12651,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 600,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_aether_lens",
+      "requirements": [
+        null,
+        [
+          "item_energy_booster",
+          "item_void_stone"
+        ]
+      ]
+    }
   },
   "item_aether_lens": {
     "id": 232,
@@ -8688,7 +12773,43 @@ export default {
           250
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2350,
+      "shopTags": [
+        "int",
+        "regen_mana",
+        "move_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_force_staff": {
     "id": 101,
@@ -8750,7 +12871,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 950,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_force_staff",
+      "requirements": [
+        null,
+        [
+          "item_staff_of_wizardry",
+          "item_ring_of_regen"
+        ]
+      ]
+    }
   },
   "item_force_staff": {
     "id": 102,
@@ -8828,7 +12990,43 @@ export default {
           750
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2250,
+      "shopTags": [
+        "int",
+        "damage",
+        "attack_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_hurricane_pike": {
     "id": 262,
@@ -8890,7 +13088,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_hurricane_pike",
+      "requirements": [
+        null,
+        [
+          "item_wraith_band",
+          "item_force_staff",
+          "item_dragon_lance"
+        ]
+      ]
+    }
   },
   "item_hurricane_pike": {
     "id": 263,
@@ -9016,7 +13256,43 @@ export default {
           800
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4615,
+      "shopTags": [
+        "int",
+        "damage",
+        "attack_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_dagon": {
     "id": 103,
@@ -9078,7 +13354,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1250,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dagon",
+      "requirements": [
+        null,
+        [
+          "item_staff_of_wizardry",
+          "item_null_talisman"
+        ]
+      ]
+    }
   },
   "item_recipe_dagon_2": {
     "id": 197,
@@ -9140,7 +13457,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dagon_2",
+      "requirements": [
+        null,
+        null,
+        [
+          "item_dagon",
+          "item_recipe_dagon"
+        ]
+      ]
+    }
   },
   "item_recipe_dagon_3": {
     "id": 198,
@@ -9202,7 +13561,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dagon_3",
+      "requirements": [
+        null,
+        null,
+        [
+          "item_dagon_2",
+          "item_recipe_dagon"
+        ]
+      ]
+    }
   },
   "item_recipe_dagon_4": {
     "id": 199,
@@ -9264,7 +13665,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dagon_4",
+      "requirements": [
+        null,
+        null,
+        [
+          "item_dagon_3",
+          "item_recipe_dagon"
+        ]
+      ]
+    }
   },
   "item_recipe_dagon_5": {
     "id": 200,
@@ -9326,7 +13769,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dagon_5",
+      "requirements": [
+        null,
+        null,
+        [
+          "item_dagon_4",
+          "item_recipe_dagon"
+        ]
+      ]
+    }
   },
   "item_dagon": {
     "id": 104,
@@ -9440,7 +13925,51 @@ export default {
           120
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2715,
+      "shopTags": [
+        "damage",
+        "int",
+        "str",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 5,
+      "baseLevel": 1,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_dagon",
+        "item_dagon_2",
+        "item_dagon_3",
+        "item_dagon_4"
+      ],
+      "upgradeRecipe": "item_recipe_dagon",
+      "isRecipe": false
+    }
   },
   "item_dagon_2": {
     "id": 201,
@@ -9554,7 +14083,50 @@ export default {
           140
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3965,
+      "shopTags": [
+        "damage",
+        "int",
+        "str",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 5,
+      "baseLevel": 2,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_dagon_2",
+        "item_dagon_3",
+        "item_dagon_4"
+      ],
+      "upgradeRecipe": "item_recipe_dagon",
+      "isRecipe": false
+    }
   },
   "item_dagon_3": {
     "id": 202,
@@ -9668,7 +14240,49 @@ export default {
           160
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5215,
+      "shopTags": [
+        "damage",
+        "int",
+        "str",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 5,
+      "baseLevel": 3,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_dagon_3",
+        "item_dagon_4"
+      ],
+      "upgradeRecipe": "item_recipe_dagon",
+      "isRecipe": false
+    }
   },
   "item_dagon_4": {
     "id": 203,
@@ -9782,7 +14396,48 @@ export default {
           180
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 6465,
+      "shopTags": [
+        "damage",
+        "int",
+        "str",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 5,
+      "baseLevel": 4,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_dagon_4"
+      ],
+      "upgradeRecipe": "item_recipe_dagon",
+      "isRecipe": false
+    }
   },
   "item_dagon_5": {
     "id": 204,
@@ -9896,7 +14551,44 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 7715,
+      "shopTags": [
+        "damage",
+        "int",
+        "str",
+        "agi",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 5,
+      "baseLevel": 5,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_necronomicon": {
     "id": 105,
@@ -9958,7 +14650,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1300,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_necronomicon",
+      "requirements": [
+        null,
+        [
+          "item_sobi_mask",
+          "item_sobi_mask",
+          "item_belt_of_strength"
+        ]
+      ]
+    }
   },
   "item_recipe_necronomicon_2": {
     "id": 191,
@@ -10020,7 +14754,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 2,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_necronomicon_2",
+      "requirements": [
+        null,
+        [
+          "item_necronomicon",
+          "item_recipe_necronomicon"
+        ]
+      ]
+    }
   },
   "item_recipe_necronomicon_3": {
     "id": 192,
@@ -10082,7 +14857,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 3,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_necronomicon_3",
+      "requirements": [
+        null,
+        [
+          "item_necronomicon_2",
+          "item_recipe_necronomicon"
+        ]
+      ]
+    }
   },
   "item_necronomicon": {
     "id": 106,
@@ -10250,7 +15066,48 @@ export default {
           9
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2400,
+      "shopTags": [
+        "int",
+        "str",
+        "hard_to_tag",
+        "see_invis"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 3,
+      "baseLevel": 1,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_necronomicon",
+        "item_necronomicon_2"
+      ],
+      "upgradeRecipe": "item_recipe_necronomicon",
+      "isRecipe": false
+    }
   },
   "item_necronomicon_2": {
     "id": 193,
@@ -10418,7 +15275,47 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3700,
+      "shopTags": [
+        "int",
+        "str",
+        "hard_to_tag",
+        "see_invis"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 3,
+      "baseLevel": 2,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_necronomicon_2"
+      ],
+      "upgradeRecipe": "item_recipe_necronomicon",
+      "isRecipe": false
+    }
   },
   "item_necronomicon_3": {
     "id": 194,
@@ -10586,7 +15483,43 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5000,
+      "shopTags": [
+        "int",
+        "str",
+        "hard_to_tag",
+        "see_invis"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 3,
+      "baseLevel": 3,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_ultimate_scepter": {
     "id": 107,
@@ -10648,7 +15581,50 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ultimate_scepter",
+      "requirements": [
+        null,
+        [
+          "item_point_booster",
+          "item_staff_of_wizardry",
+          "item_ogre_axe",
+          "item_blade_of_alacrity"
+        ]
+      ]
+    }
   },
   "item_ultimate_scepter": {
     "id": 108,
@@ -10729,7 +15705,45 @@ export default {
           175
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4200,
+      "shopTags": [
+        "int",
+        "str",
+        "agi",
+        "mana_pool",
+        "health_pool",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_refresher": {
     "id": 109,
@@ -10791,7 +15805,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1700,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_refresher",
+      "requirements": [
+        null,
+        [
+          "item_pers",
+          "item_pers"
+        ]
+      ]
+    }
   },
   "item_refresher": {
     "id": 110,
@@ -10857,7 +15912,42 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5100,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_assault": {
     "id": 111,
@@ -10919,7 +16009,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1300,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_assault",
+      "requirements": [
+        null,
+        [
+          "item_platemail",
+          "item_hyperstone",
+          "item_chainmail"
+        ]
+      ]
+    }
   },
   "item_assault": {
     "id": 112,
@@ -11018,7 +16150,42 @@ export default {
           -5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5250,
+      "shopTags": [
+        "attack_speed",
+        "armor",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_heart": {
     "id": 113,
@@ -11080,7 +16247,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_heart",
+      "requirements": [
+        null,
+        [
+          "item_reaver",
+          "item_vitality_booster",
+          "item_vitality_booster"
+        ]
+      ]
+    }
   },
   "item_heart": {
     "id": 114,
@@ -11170,7 +16379,42 @@ export default {
           7
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5200,
+      "shopTags": [
+        "str",
+        "regen_health",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_black_king_bar": {
     "id": 115,
@@ -11232,7 +16476,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1375,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_black_king_bar",
+      "requirements": [
+        null,
+        [
+          "item_ogre_axe",
+          "item_mithril_hammer"
+        ]
+      ]
+    }
   },
   "item_black_king_bar": {
     "id": 116,
@@ -11327,7 +16612,42 @@ export default {
           30
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3975,
+      "shopTags": [
+        "str",
+        "damage",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_aegis": {
     "id": 117,
@@ -11408,7 +16728,40 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": false,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_shivas_guard": {
     "id": 118,
@@ -11470,7 +16823,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 650,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_shivas_guard",
+      "requirements": [
+        null,
+        [
+          "item_platemail",
+          "item_mystic_staff"
+        ]
+      ]
+    }
   },
   "item_shivas_guard": {
     "id": 119,
@@ -11581,7 +16975,42 @@ export default {
           350
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4750,
+      "shopTags": [
+        "int",
+        "armor",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_bloodstone": {
     "id": 120,
@@ -11643,7 +17072,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_bloodstone",
+      "requirements": [
+        null,
+        [
+          "item_pers",
+          "item_soul_booster"
+        ]
+      ]
+    }
   },
   "item_bloodstone": {
     "id": 121,
@@ -11754,7 +17224,43 @@ export default {
           0.35
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4900,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "mana_pool",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 14,
+      "requiresCharges": false,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_sphere": {
     "id": 122,
@@ -11816,7 +17322,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1200,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_sphere",
+      "requirements": [
+        null,
+        [
+          "item_ultimate_orb",
+          "item_pers"
+        ]
+      ]
+    }
   },
   "item_sphere": {
     "id": 123,
@@ -11906,7 +17453,45 @@ export default {
           700
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5050,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "str",
+        "agi",
+        "int",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_lotus_orb": {
     "id": 221,
@@ -11968,7 +17553,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_lotus_orb",
+      "requirements": [
+        null,
+        [
+          "item_pers",
+          "item_platemail",
+          "item_energy_booster"
+        ]
+      ]
+    }
   },
   "item_lotus_orb": {
     "id": 226,
@@ -12061,7 +17688,45 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4000,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "str",
+        "agi",
+        "int",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_meteor_hammer": {
     "id": 222,
@@ -12123,7 +17788,50 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_meteor_hammer",
+      "requirements": [
+        null,
+        [
+          "item_ogre_axe",
+          "item_staff_of_wizardry",
+          "item_ring_of_regen",
+          "item_sobi_mask"
+        ]
+      ]
+    }
   },
   "item_meteor_hammer": {
     "id": 223,
@@ -12261,7 +17969,38 @@ export default {
           150
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2625,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_nullifier": {
     "id": 224,
@@ -12323,7 +18062,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_nullifier",
+      "requirements": [
+        null,
+        [
+          "item_relic",
+          "item_helm_of_iron_will"
+        ]
+      ]
+    }
   },
   "item_nullifier": {
     "id": 225,
@@ -12422,7 +18202,38 @@ export default {
           0.4
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4700,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_aeon_disk": {
     "id": 255,
@@ -12484,7 +18295,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1350,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_aeon_disk",
+      "requirements": [
+        null,
+        [
+          "item_vitality_booster",
+          "item_energy_booster"
+        ]
+      ]
+    }
   },
   "item_aeon_disk": {
     "id": 256,
@@ -12574,7 +18426,42 @@ export default {
           2.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3350,
+      "shopTags": [
+        "str",
+        "regen_health",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_kaya": {
     "id": 258,
@@ -12636,7 +18523,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_kaya",
+      "requirements": [
+        null,
+        [
+          "item_staff_of_wizardry",
+          "item_robe"
+        ]
+      ]
+    }
   },
   "item_kaya": {
     "id": 259,
@@ -12717,7 +18645,41 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1950,
+      "shopTags": [
+        "int",
+        "mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_trident": {
     "id": 275,
@@ -12779,7 +18741,38 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_combo_breaker": {
     "id": 276,
@@ -12841,7 +18834,38 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_refresher_shard": {
     "id": 260,
@@ -12900,7 +18924,40 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_spirit_vessel": {
     "id": 266,
@@ -12962,7 +19019,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 750,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_spirit_vessel",
+      "requirements": [
+        null,
+        [
+          "item_urn_of_shadows",
+          "item_vitality_booster",
+          "item_wind_lace"
+        ]
+      ]
+    }
   },
   "item_spirit_vessel": {
     "id": 267,
@@ -13118,7 +19217,38 @@ export default {
           1
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2975,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": true,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_vanguard": {
     "id": 124,
@@ -13180,7 +19310,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_vanguard",
+      "requirements": [
+        null,
+        [
+          "item_ring_of_health",
+          "item_vitality_booster",
+          "item_stout_shield"
+        ]
+      ]
+    }
   },
   "item_vanguard": {
     "id": 125,
@@ -13273,7 +19445,42 @@ export default {
           50
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2150,
+      "shopTags": [
+        "regen_health",
+        "block",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_crimson_guard": {
     "id": 243,
@@ -13335,7 +19542,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 600,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_crimson_guard",
+      "requirements": [
+        null,
+        [
+          "item_vanguard",
+          "item_buckler"
+        ]
+      ]
+    }
   },
   "item_crimson_guard": {
     "id": 242,
@@ -13479,7 +19727,44 @@ export default {
           46
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3550,
+      "shopTags": [
+        "armor",
+        "boost_armor",
+        "regen_health",
+        "block",
+        "health_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_blade_mail": {
     "id": 126,
@@ -13541,7 +19826,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_blade_mail",
+      "requirements": [
+        null,
+        [
+          "item_broadsword",
+          "item_chainmail",
+          "item_robe"
+        ]
+      ]
+    }
   },
   "item_blade_mail": {
     "id": 127,
@@ -13622,7 +19949,43 @@ export default {
           4.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2200,
+      "shopTags": [
+        "damage",
+        "armor",
+        "int",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_soul_booster": {
     "id": 128,
@@ -13684,7 +20047,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_soul_booster",
+      "requirements": [
+        null,
+        [
+          "item_vitality_booster",
+          "item_energy_booster",
+          "item_point_booster"
+        ]
+      ]
+    }
   },
   "item_soul_booster": {
     "id": 129,
@@ -13759,7 +20164,43 @@ export default {
           425
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3200,
+      "shopTags": [
+        "regen_health",
+        "regen_mana",
+        "health_pool",
+        "mana_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_hood_of_defiance": {
     "id": 130,
@@ -13821,7 +20262,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_hood_of_defiance",
+      "requirements": [
+        null,
+        [
+          "item_ring_of_health",
+          "item_cloak",
+          "item_ring_of_regen"
+        ]
+      ]
+    }
   },
   "item_hood_of_defiance": {
     "id": 131,
@@ -13908,7 +20391,41 @@ export default {
           12
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1700,
+      "shopTags": [
+        "regen_health",
+        "magic_resist"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_rapier": {
     "id": 132,
@@ -13970,7 +20487,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_rapier",
+      "requirements": [
+        null,
+        [
+          "item_relic",
+          "item_demon_edge"
+        ]
+      ]
+    }
   },
   "item_rapier": {
     "id": 133,
@@ -14039,7 +20597,40 @@ export default {
           330
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 6000,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": false,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": false,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_monkey_king_bar": {
     "id": 134,
@@ -14101,7 +20692,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_monkey_king_bar",
+      "requirements": [
+        null,
+        [
+          "item_demon_edge",
+          "item_javelin",
+          "item_quarterstaff"
+        ]
+      ]
+    }
   },
   "item_monkey_king_bar": {
     "id": 135,
@@ -14188,7 +20821,42 @@ export default {
           100
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4175,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_radiance": {
     "id": 136,
@@ -14250,7 +20918,47 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1350,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_radiance",
+      "requirements": [
+        null,
+        [
+          "item_relic"
+        ]
+      ]
+    }
   },
   "item_radiance": {
     "id": 137,
@@ -14343,7 +21051,40 @@ export default {
           700
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5150,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_butterfly": {
     "id": 138,
@@ -14405,7 +21146,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_butterfly",
+      "requirements": [
+        null,
+        [
+          "item_eagle",
+          "item_talisman_of_evasion",
+          "item_quarterstaff"
+        ]
+      ]
+    }
   },
   "item_butterfly": {
     "id": 139,
@@ -14501,7 +21284,43 @@ export default {
           2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5475,
+      "shopTags": [
+        "agi",
+        "damage",
+        "evasion",
+        "attack_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_greater_crit": {
     "id": 140,
@@ -14563,7 +21382,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_greater_crit",
+      "requirements": [
+        null,
+        [
+          "item_lesser_crit",
+          "item_demon_edge"
+        ]
+      ]
+    }
   },
   "item_greater_crit": {
     "id": 141,
@@ -14650,7 +21510,41 @@ export default {
           135
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5330,
+      "shopTags": [
+        "damage",
+        "crit"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_basher": {
     "id": 142,
@@ -14712,7 +21606,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_basher",
+      "requirements": [
+        null,
+        [
+          "item_mithril_hammer",
+          "item_belt_of_strength"
+        ]
+      ]
+    }
   },
   "item_basher": {
     "id": 143,
@@ -14814,7 +21749,42 @@ export default {
           100
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3050,
+      "shopTags": [
+        "damage",
+        "str",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_bfury": {
     "id": 144,
@@ -14876,7 +21846,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 300,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_bfury",
+      "requirements": [
+        null,
+        [
+          "item_demon_edge",
+          "item_pers",
+          "item_quelling_blade"
+        ]
+      ]
+    }
   },
   "item_bfury": {
     "id": 145,
@@ -15011,7 +22023,43 @@ export default {
           25
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4400,
+      "shopTags": [
+        "damage",
+        "health_regen",
+        "mana_regen",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_manta": {
     "id": 146,
@@ -15073,7 +22121,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_manta",
+      "requirements": [
+        null,
+        [
+          "item_yasha",
+          "item_ultimate_orb"
+        ]
+      ]
+    }
   },
   "item_manta": {
     "id": 147,
@@ -15247,7 +22336,45 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4800,
+      "shopTags": [
+        "agi",
+        "str",
+        "int",
+        "attack_speed",
+        "move_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_lesser_crit": {
     "id": 148,
@@ -15309,7 +22436,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_lesser_crit",
+      "requirements": [
+        null,
+        [
+          "item_broadsword",
+          "item_blades_of_attack"
+        ]
+      ]
+    }
   },
   "item_lesser_crit": {
     "id": 149,
@@ -15396,7 +22564,41 @@ export default {
           75
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2130,
+      "shopTags": [
+        "damage",
+        "crit"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_dragon_lance": {
     "id": 234,
@@ -15458,7 +22660,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_dragon_lance",
+      "requirements": [
+        null,
+        [
+          "item_ogre_axe",
+          "item_boots_of_elves",
+          "item_boots_of_elves"
+        ]
+      ]
+    }
   },
   "item_dragon_lance": {
     "id": 236,
@@ -15539,7 +22783,40 @@ export default {
           140
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1900,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_armlet": {
     "id": 150,
@@ -15601,7 +22878,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 550,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_armlet",
+      "requirements": [
+        null,
+        [
+          "item_helm_of_iron_will",
+          "item_gloves",
+          "item_blades_of_attack"
+        ]
+      ]
+    }
   },
   "item_armlet": {
     "id": 151,
@@ -15727,7 +23046,44 @@ export default {
           0.036
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2380,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "armor",
+        "regen_health",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_invis_sword": {
     "id": 183,
@@ -15789,7 +23145,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_invis_sword",
+      "requirements": [
+        null,
+        [
+          "item_shadow_amulet",
+          "item_claymore"
+        ]
+      ]
+    }
   },
   "item_invis_sword": {
     "id": 152,
@@ -15882,7 +23279,43 @@ export default {
           175
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2800,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "movespeed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_silver_edge": {
     "id": 248,
@@ -15944,7 +23377,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 600,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_silver_edge",
+      "requirements": [
+        null,
+        [
+          "item_invis_sword",
+          "item_ultimate_orb"
+        ]
+      ]
+    }
   },
   "item_silver_edge": {
     "id": 249,
@@ -16055,7 +23529,43 @@ export default {
           4
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5550,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "movespeed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_sange_and_yasha": {
     "id": 153,
@@ -16117,7 +23627,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_sange_and_yasha",
+      "requirements": [
+        null,
+        [
+          "item_yasha",
+          "item_sange"
+        ]
+      ]
+    }
   },
   "item_sange_and_yasha": {
     "id": 154,
@@ -16246,7 +23797,44 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4300,
+      "shopTags": [
+        "damage",
+        "str",
+        "agi",
+        "attack_speed",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_satanic": {
     "id": 155,
@@ -16308,7 +23896,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_satanic",
+      "requirements": [
+        null,
+        [
+          "item_lifesteal",
+          "item_claymore",
+          "item_reaver"
+        ]
+      ]
+    }
   },
   "item_satanic": {
     "id": 156,
@@ -16404,7 +24034,44 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5500,
+      "shopTags": [
+        "damage",
+        "str",
+        "armor",
+        "unique",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 2,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_mjollnir": {
     "id": 157,
@@ -16466,7 +24133,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 900,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_mjollnir",
+      "requirements": [
+        null,
+        [
+          "item_maelstrom",
+          "item_hyperstone"
+        ]
+      ]
+    }
   },
   "item_mjollnir": {
     "id": 158,
@@ -16622,7 +24330,42 @@ export default {
           800
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5600,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_skadi": {
     "id": 159,
@@ -16684,7 +24427,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_skadi",
+      "requirements": [
+        null,
+        [
+          "item_ultimate_orb",
+          "item_ultimate_orb",
+          "item_point_booster"
+        ]
+      ]
+    }
   },
   "item_skadi": {
     "id": 160,
@@ -16789,7 +24574,46 @@ export default {
           2.5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5500,
+      "shopTags": [
+        "agi",
+        "str",
+        "int",
+        "hard_to_tag",
+        "mana_pool",
+        "health_pool",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_sange": {
     "id": 161,
@@ -16851,7 +24675,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 700,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_sange",
+      "requirements": [
+        null,
+        [
+          "item_ogre_axe",
+          "item_belt_of_strength"
+        ]
+      ]
+    }
   },
   "item_sange": {
     "id": 162,
@@ -16962,7 +24827,42 @@ export default {
           5
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2150,
+      "shopTags": [
+        "damage",
+        "str",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_helm_of_the_dominator": {
     "id": 163,
@@ -17024,7 +24924,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_helm_of_the_dominator",
+      "requirements": [
+        null,
+        [
+          "item_gloves",
+          "item_headdress",
+          "item_ring_of_health"
+        ]
+      ]
+    }
   },
   "item_helm_of_the_dominator": {
     "id": 164,
@@ -17126,7 +25068,43 @@ export default {
           200
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2000,
+      "shopTags": [
+        "damage",
+        "armor",
+        "unique",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_maelstrom": {
     "id": 165,
@@ -17188,7 +25166,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_maelstrom",
+      "requirements": [
+        null,
+        [
+          "item_mithril_hammer",
+          "item_javelin"
+        ]
+      ]
+    }
   },
   "item_maelstrom": {
     "id": 166,
@@ -17293,7 +25312,42 @@ export default {
           0.2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2700,
+      "shopTags": [
+        "damage",
+        "attack_speed",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_desolator": {
     "id": 167,
@@ -17355,7 +25409,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_desolator",
+      "requirements": [
+        null,
+        [
+          "item_mithril_hammer",
+          "item_mithril_hammer",
+          "item_blight_stone"
+        ]
+      ]
+    }
   },
   "item_desolator": {
     "id": 168,
@@ -17436,7 +25532,41 @@ export default {
           15
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3500,
+      "shopTags": [
+        "damage",
+        "unique"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_yasha": {
     "id": 169,
@@ -17498,7 +25628,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 700,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_yasha",
+      "requirements": [
+        null,
+        [
+          "item_blade_of_alacrity",
+          "item_boots_of_elves"
+        ]
+      ]
+    }
   },
   "item_yasha": {
     "id": 170,
@@ -17579,7 +25750,42 @@ export default {
           8
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2150,
+      "shopTags": [
+        "agi",
+        "attack_speed",
+        "move_speed"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_mask_of_madness": {
     "id": 171,
@@ -17641,7 +25847,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_mask_of_madness",
+      "requirements": [
+        null,
+        [
+          "item_lifesteal",
+          "item_quarterstaff"
+        ]
+      ]
+    }
   },
   "item_mask_of_madness": {
     "id": 172,
@@ -17740,7 +25987,41 @@ export default {
           8
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1975,
+      "shopTags": [
+        "unique",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_diffusal_blade": {
     "id": 173,
@@ -17802,7 +26083,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 700,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_diffusal_blade",
+      "requirements": [
+        null,
+        [
+          "item_blade_of_alacrity",
+          "item_blade_of_alacrity",
+          "item_robe"
+        ]
+      ]
+    }
   },
   "item_diffusal_blade": {
     "id": 174,
@@ -17916,7 +26239,47 @@ export default {
           600
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3150,
+      "shopTags": [
+        "agi",
+        "int",
+        "unique",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "upgradesItems": [
+        "item_diffusal_blade"
+      ],
+      "upgradeRecipe": "item_recipe_diffusal_blade",
+      "isRecipe": false
+    }
   },
   "item_recipe_ethereal_blade": {
     "id": 175,
@@ -17978,7 +26341,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ethereal_blade",
+      "requirements": [
+        null,
+        [
+          "item_eagle",
+          "item_ghost"
+        ]
+      ]
+    }
   },
   "item_ethereal_blade": {
     "id": 176,
@@ -18098,7 +26502,43 @@ export default {
           800
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 4700,
+      "shopTags": [
+        "agi",
+        "str",
+        "int",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_soul_ring": {
     "id": 177,
@@ -18160,7 +26600,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 200,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_soul_ring",
+      "requirements": [
+        null,
+        [
+          "item_ring_of_regen",
+          "item_gauntlets",
+          "item_gauntlets"
+        ]
+      ]
+    }
   },
   "item_soul_ring": {
     "id": 178,
@@ -18247,7 +26729,41 @@ export default {
           10
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 770,
+      "shopTags": [
+        "regen_health",
+        "boost_mana"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_arcane_boots": {
     "id": 179,
@@ -18309,7 +26825,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_arcane_boots",
+      "requirements": [
+        null,
+        [
+          "item_boots",
+          "item_energy_booster"
+        ]
+      ]
+    }
   },
   "item_arcane_boots": {
     "id": 180,
@@ -18390,7 +26947,42 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1400,
+      "shopTags": [
+        "move_speed",
+        "boost_mana",
+        "mana_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_octarine_core": {
     "id": 228,
@@ -18452,7 +27044,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_octarine_core",
+      "requirements": [
+        null,
+        [
+          "item_mystic_staff",
+          "item_soul_booster"
+        ]
+      ]
+    }
   },
   "item_octarine_core": {
     "id": 235,
@@ -18557,7 +27190,42 @@ export default {
           7
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5900,
+      "shopTags": [
+        "move_speed",
+        "boost_mana",
+        "mana_pool"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_orb_of_venom": {
     "id": 181,
@@ -18650,7 +27318,40 @@ export default {
           3
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 275,
+      "shopTags": [
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_blight_stone": {
     "id": 240,
@@ -18725,7 +27426,40 @@ export default {
           8
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 300,
+      "shopTags": [
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_ancient_janggo": {
     "id": 184,
@@ -18787,7 +27521,52 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 575,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ancient_janggo",
+      "requirements": [
+        null,
+        [
+          "item_sobi_mask",
+          "item_bracer",
+          "item_wind_lace"
+        ],
+        [
+          "item_ancient_janggo"
+        ]
+      ]
+    }
   },
   "item_ancient_janggo": {
     "id": 185,
@@ -18901,7 +27680,46 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1615,
+      "shopTags": [
+        "str",
+        "agi",
+        "int",
+        "damage",
+        "move_speed",
+        "attack_speed",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 6,
+      "requiresCharges": true,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_medallion_of_courage": {
     "id": 186,
@@ -18963,7 +27781,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_medallion_of_courage",
+      "requirements": [
+        null,
+        [
+          "item_chainmail",
+          "item_sobi_mask",
+          "item_blight_stone"
+        ]
+      ]
+    }
   },
   "item_medallion_of_courage": {
     "id": 187,
@@ -19053,7 +27913,42 @@ export default {
           1000
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1175,
+      "shopTags": [
+        "armor",
+        "regen_mana",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_solar_crest": {
     "id": 227,
@@ -19115,7 +28010,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_solar_crest",
+      "requirements": [
+        null,
+        [
+          "item_medallion_of_courage",
+          "item_talisman_of_evasion"
+        ]
+      ]
+    }
   },
   "item_solar_crest": {
     "id": 229,
@@ -19217,7 +28153,42 @@ export default {
           1000
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2575,
+      "shopTags": [
+        "armor",
+        "regen_mana",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_smoke_of_deceit": {
     "id": 188,
@@ -19301,7 +28272,40 @@ export default {
           35
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 80,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_tome_of_knowledge": {
     "id": 257,
@@ -19373,7 +28377,40 @@ export default {
           135
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 150,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": true,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_veil_of_discord": {
     "id": 189,
@@ -19435,7 +28472,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 500,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_veil_of_discord",
+      "requirements": [
+        null,
+        [
+          "item_helm_of_iron_will",
+          "item_null_talisman",
+          "item_null_talisman"
+        ]
+      ]
+    }
   },
   "item_veil_of_discord": {
     "id": 190,
@@ -19543,7 +28622,43 @@ export default {
           1000
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2330,
+      "shopTags": [
+        "int",
+        "armor",
+        "regen_health",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_guardian_greaves": {
     "id": 230,
@@ -19605,7 +28720,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1700,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_guardian_greaves",
+      "requirements": [
+        null,
+        [
+          "item_mekansm",
+          "item_arcane_boots"
+        ]
+      ]
+    }
   },
   "item_guardian_greaves": {
     "id": 231,
@@ -19740,7 +28896,43 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 5450,
+      "shopTags": [
+        "int",
+        "armor",
+        "regen_health",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_rod_of_atos": {
     "id": 205,
@@ -19802,7 +28994,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1000,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_rod_of_atos",
+      "requirements": [
+        null,
+        [
+          "item_staff_of_wizardry",
+          "item_bracer",
+          "item_bracer"
+        ]
+      ]
+    }
   },
   "item_rod_of_atos": {
     "id": 206,
@@ -19886,7 +29120,41 @@ export default {
           1150
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 2930,
+      "shopTags": [
+        "int",
+        "regen_health"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_iron_talon": {
     "id": 238,
@@ -19948,7 +29216,41 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": true,
+      "requirements": []
+    }
   },
   "item_iron_talon": {
     "id": 239,
@@ -20050,7 +29352,40 @@ export default {
           350
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "damage"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_recipe_abyssal_blade": {
     "id": 207,
@@ -20112,7 +29447,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 1550,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_abyssal_blade",
+      "requirements": [
+        null,
+        [
+          "item_basher",
+          "item_vanguard"
+        ]
+      ]
+    }
   },
   "item_abyssal_blade": {
     "id": 208,
@@ -20250,7 +29626,42 @@ export default {
           140
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 6750,
+      "shopTags": [
+        "damage",
+        "str",
+        "hard_to_tag"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_heavens_halberd": {
     "id": 209,
@@ -20312,7 +29723,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_heavens_halberd",
+      "requirements": [
+        null,
+        [
+          "item_sange",
+          "item_talisman_of_evasion"
+        ]
+      ]
+    }
   },
   "item_heavens_halberd": {
     "id": 210,
@@ -20438,7 +29890,42 @@ export default {
           600
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 3550,
+      "shopTags": [
+        "str",
+        "damage",
+        "evasion"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 3,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_ring_of_aquila": {
     "id": 211,
@@ -20500,7 +29987,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_ring_of_aquila",
+      "requirements": [
+        null,
+        [
+          "item_wraith_band",
+          "item_ring_of_basilius"
+        ]
+      ]
+    }
   },
   "item_ring_of_aquila": {
     "id": 212,
@@ -20611,7 +30139,40 @@ export default {
           2
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 965,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_tranquil_boots": {
     "id": 213,
@@ -20673,7 +30234,49 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_tranquil_boots",
+      "requirements": [
+        null,
+        [
+          "item_boots",
+          "item_wind_lace",
+          "item_ring_of_regen"
+        ]
+      ]
+    }
   },
   "item_tranquil_boots": {
     "id": 214,
@@ -20790,7 +30393,42 @@ export default {
           65
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1050,
+      "shopTags": [
+        "move_speed",
+        "regen_health",
+        "armor"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": true,
+      "shareability": 0,
+      "declarations": 2,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_shadow_amulet": {
     "id": 215,
@@ -20865,7 +30503,40 @@ export default {
           600
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1400,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_recipe_glimmer_cape": {
     "id": 253,
@@ -20927,7 +30598,48 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": true,
+      "result": "item_glimmer_cape",
+      "requirements": [
+        null,
+        [
+          "item_shadow_amulet",
+          "item_cloak"
+        ]
+      ]
+    }
   },
   "item_glimmer_cape": {
     "id": 254,
@@ -21026,7 +30738,40 @@ export default {
           180
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1950,
+      "shopTags": [
+        "0"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 1,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_river_painter": {
     "id": 1021,
@@ -21089,7 +30834,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter2": {
     "id": 1022,
@@ -21152,7 +30928,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter3": {
     "id": 1023,
@@ -21215,7 +31022,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter4": {
     "id": 1024,
@@ -21278,7 +31116,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter5": {
     "id": 1025,
@@ -21341,7 +31210,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter6": {
     "id": 1026,
@@ -21404,7 +31304,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_river_painter7": {
     "id": 1027,
@@ -21467,7 +31398,38 @@ export default {
           900
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": true,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": true,
+      "isRecipe": false
+    }
   },
   "item_mutation_tombstone": {
     "id": 1028,
@@ -21526,7 +31488,40 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [
+        "consumable"
+      ],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": false,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": true,
+      "droppable": true,
+      "killable": false,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 1,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 2,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_super_blink": {
     "id": 1029,
@@ -21592,7 +31587,38 @@ export default {
           960
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_pocket_tower": {
     "id": 1030,
@@ -21645,7 +31671,38 @@ export default {
       "modifierSupportValue": 1,
       "modifierSupportBonus": 0
     },
-    "special": []
+    "special": [],
+    "info": {
+      "cost": 0,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   },
   "item_pocket_roshan": {
     "id": 1032,
@@ -21705,6 +31762,37 @@ export default {
           60
         ]
       }
-    ]
+    ],
+    "info": {
+      "cost": 1000,
+      "shopTags": [],
+      "quality": "undefined",
+      "aliases": [],
+      "permanent": true,
+      "purchasable": false,
+      "sellable": true,
+      "shops": {
+        "side": false,
+        "secret": false,
+        "global": false
+      },
+      "disassemblable": false,
+      "stackable": false,
+      "droppable": true,
+      "killable": true,
+      "support": false,
+      "alertable": false,
+      "initialCharges": 0,
+      "requiresCharges": false,
+      "displayCharges": false,
+      "hideCharges": false,
+      "shareability": 0,
+      "declarations": 0,
+      "maxUpgradeLevel": 0,
+      "baseLevel": 0,
+      "fightRecapLevel": 0,
+      "isObsolete": false,
+      "isRecipe": false
+    }
   }
 }

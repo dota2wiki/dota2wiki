@@ -32,6 +32,8 @@ const spider: EnumSpider = new EnumSpider(
   'SpellDispellableType',
   'AbilityUnitDamageType',
   'ItemShareability',
+  'ItemDeclarations',
+  'ItemDisassembleRule',
 );
 
 function walkProps(dataArray: any[]): string[] {

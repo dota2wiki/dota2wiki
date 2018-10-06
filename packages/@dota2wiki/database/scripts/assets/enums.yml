@@ -141,3 +141,18 @@ ItemShareability:
     - ITEM_PARTIALLY_SHAREABLE
     - ITEM_FULLY_SHAREABLE
     - ITEM_FULLY_SHAREABLE_STACKING
+
+ItemDeclarations:
+  count: 3
+  flag: true
+  items:
+    - DECLARE_PURCHASES_TO_TEAMMATES
+    - DECLARE_PURCHASES_IN_SPEECH
+    - DECLARE_PURCHASES_TO_SPECTATORS
+
+ItemDisassembleRule:
+  count: 2
+  flag: false
+  items:
+    - DOTA_ITEM_DISASSEMBLE_NEVER
+    - DOTA_ITEM_DISASSEMBLE_ALWAYS

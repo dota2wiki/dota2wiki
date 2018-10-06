@@ -9,6 +9,7 @@ import {
   EnumSpider,
   toNumberArray,
   toBoolean,
+  toStringArray,
 } from '@dota2wiki/vdf';
 import { Hero } from '../src/models/hero';
 import {
@@ -26,7 +27,13 @@ import {
   StatsData,
 } from '../src/models/ability';
 import { Talent } from '../src/models/talent';
-import { Item } from '../src/models/item';
+import {
+  Item,
+  ItemInfo,
+  ShopsInfo,
+  ItemShareability,
+  ItemDeclarations,
+} from '../src/models/item';
 
 //
 // Aggregation
@@ -217,7 +224,75 @@ export default async function genAbilities(
         });
       }
       if (name.startsWith('item_')) {
-        return (items[name] = data);
+        return (items[name] = {
+          ...data,
+          info: valveData.mapGet<ItemInfo>({
+            cost: ['number', 'ItemCost'],
+            shopTags: ['string[]', 'ItemShopTags'],
+            quality: ['string', ''],
+            aliases: ['string[]', ''],
+
+            permanent: ['boolean', 'ItemPermanent'],
+            purchasable: ['boolean', 'ItemPurchasable'],
+            sellable: ['boolean', 'ItemSellable'],
+            shops: () =>
+              valveData.mapGet<ShopsInfo>({
+                side: ['boolean', 'SideShop'],
+                secret: ['boolean', 'SecretShop'],
+                global: ['boolean', 'GlobalShop'],
+              }),
+            disassemblable: ['boolean', 'ItemDisassemblable'],
+            stackable: ['boolean', 'ItemStackable'],
+            droppable: ['boolean', 'ItemDroppable'],
+            killable: ['boolean', 'ItemKillable'],
+            support: ['boolean', ''],
+            alertable: ['boolean', ''],
+
+            initialCharges: ['number', 'ItemInitialCharges'],
+            requiresCharges: ['boolean', 'ItemRequiresCharges'],
+            displayCharges: ['boolean', 'ItemDisplayCharges'],
+            hideCharges: ['boolean', 'ItemHideCharges'],
+
+            shareability: ['enum', 'ItemShareability', ItemShareability],
+            declarations: ['enum', 'ItemDeclarations', ItemDeclarations],
+
+            maxUpgradeLevel: ['number', 'MaxUpgradeLevel'],
+            baseLevel: ['number', 'ItemBaseLevel'],
+
+            fightRecapLevel: ['number', 'FightRecapLevel'],
+
+            isObsolete: ['boolean', 'IsObsolete'],
+
+            upgradesItems: valveData.has('UpgradesItems')
+              ? ['string[]', 'UpgradesItems']
+              : 'skip',
+            upgradeRecipe: valveData.has('UpgradeRecipe')
+              ? ['string', 'UpgradeRecipe']
+              : 'skip',
+
+            // recipe
+            isRecipe: ['boolean', 'ItemRecipe'],
+            result: valveData.has('ItemResult') ? ['string', 'ItemResult'] : 'skip',
+            requirements: valveData.has('ItemRequirements')
+              ? () => {
+                  if (valveData.has('ItemRequirements')) {
+                    const result: string[][] = [];
+                    Object.entries(valveData.data.ItemRequirements).forEach(
+                      ([key, value]) => {
+                        const index: number = Number.parseInt(key, 10);
+                        const array: string[] = toStringArray(value);
+                        result[index] = array;
+                      },
+                    );
+
+                    return result;
+                  }
+
+                  return undefined;
+                }
+              : 'skip',
+          }),
+        });
       }
     },
   );
