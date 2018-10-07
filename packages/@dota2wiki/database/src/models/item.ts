@@ -71,3 +71,16 @@ export interface ItemInfo {
 export interface Item extends Ability {
   info: ItemInfo;
 }
+
+export interface ItemGroup {
+  category: string;
+  items: ReadonlyArray<Item>;
+}
+
+export interface ItemGroupMap {
+  basics: ReadonlyArray<ItemGroup>;
+  upgrades: ReadonlyArray<ItemGroup>;
+  recipes: ReadonlyArray<Item>;
+  others: ReadonlyArray<Item>;
+  obsolete: ReadonlyArray<Item>;
+}
