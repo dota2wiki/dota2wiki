@@ -8,11 +8,16 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { CItemWall } from '@src/components/item/item-wall';
 
 /**
  * Component: Items
  */
-@Component
+@Component({
+  components: {
+    CItemWall,
+  },
+})
 export default class VItems extends Vue {
   private mounted(): void {
     this.$dt_background.token = 'fall';
@@ -20,21 +25,8 @@ export default class VItems extends Vue {
 
   private render(h: CreateElement): VNode {
     return (
-      <div staticClass="v-items" style="font-size: 12px">
-        <vd-swimlane>
-          <vd-container>
-            <vd-flexbox gap="small">
-              {this.$db.itemNames
-                .filter(item => !item.startsWith('item_recipe'))
-                .map(item => (
-                  <vd-flexbox flex="none" direction="column">
-                    <i staticClass="dt-item-icon" class={item} />
-                    <span>{this.$locale.dict[`DOTA_Tooltip_Ability_${item}`]}</span>
-                  </vd-flexbox>
-                ))}
-            </vd-flexbox>
-          </vd-container>
-        </vd-swimlane>
+      <div staticClass="v-items">
+        <c-item-wall />
       </div>
     );
   }

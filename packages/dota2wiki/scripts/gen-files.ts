@@ -76,6 +76,11 @@ const optionsList: GenFilesOptions[] = [
     comments: ['All controls style.'],
   },
   {
+    patterns: ['src/components/data/**/*.(tsx|ts)'],
+    output: 'src/components/data/all.ts',
+    comments: ['All data components.'],
+  },
+  {
     patterns: ['src/components/**/*.scss'],
     output: 'src/components/all.scss',
     comments: ['All components style.'],

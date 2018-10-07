@@ -7,6 +7,7 @@
  * All components style.
  */
 
+@import './data/item-icon';
 @import './hero/ability/ability-detail';
 @import './hero/ability/hero-ability';
 @import './hero/dashboard/ability-board';
@@ -19,3 +20,5 @@
 @import './hero/hero-portrait';
 @import './heroes/hero-tile';
 @import './heroes/heroes-wall';
+@import './item/item-tile';
+@import './item/item-wall';

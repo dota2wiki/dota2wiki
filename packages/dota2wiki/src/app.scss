@@ -13,6 +13,7 @@
   }
 
   @include elem('content') {
+    // position: relative;
     width: 100%;
     padding: rem($swimlane-padding) 0;
   }

@@ -1,0 +1,47 @@
+/**
+ * Component: ItemIcon
+ */
+@include comp('item-icon') {
+  display: flex;
+  font-size: rem($item-icon-height);
+  line-height: 1;
+  vertical-align: middle;
+  width: $item-icon-width / $item-icon-height * 1em;
+  height: 1em;
+
+  background-repeat: no-repeat;
+  background-size: auto 1em;
+
+  @include when('item') {
+    background-image: resources('images/items/default_png.png');
+  }
+  @include when('recipe') {
+    background-image: resources('images/items/recipe_png.png');
+  }
+
+  @include elem('recipe-mask') {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    filter: contrast(0.9);
+    background-color: #d8984b;
+    mask-image: resources('images/items/recipe_opacity_mask_nopurchase_psd.png');
+  }
+
+  @include elem('recipe-result') {
+    border-radius: rem(1);
+
+    transform-style: preserve-3d;
+    transform: rotateZ(-8deg) rotateY(30deg) scale(0.7)
+      translate3d(2 / $item-icon-width * 100%, 1 / $item-icon-height * 100%, 0);
+
+    filter: brightness(2) saturate(0.25);
+    mix-blend-mode: multiply;
+    mask-image: resources('images/masks/softedge_box_png.png');
+  }
+
+  @include elem('recipe-result', 'icon') {
+    font-size: inherit;
+  }
+}

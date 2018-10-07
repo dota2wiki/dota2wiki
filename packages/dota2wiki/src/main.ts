@@ -10,9 +10,8 @@ Vue.use(VoidUI, {
 });
 
 import { installComponents } from '@src/utils/vue-utils';
-
-import * as components from '@src/controls/all';
-installComponents(Vue, components);
+import * as controls from '@src/controls/all';
+import * as dataComponents from '@src/components/data/all';
 
 import createLocale from '@src/locale';
 import createRouter from '@src/router';
@@ -30,16 +29,26 @@ export interface AppWrapper {
   router: VueRouter;
   store: Store<{}>;
   app: Vue;
-  load(language: string): Promise<void>;
 }
 
 /**
  * App factory
  */
-function createApp(): AppWrapper {
+async function createApp(): Promise<AppWrapper> {
   const locale: VueLocale = createLocale();
   const router: VueRouter = createRouter();
   const store: Store<{}> = createStore();
+
+  await Promise.all([
+    import(/* webpackChunkName: "assets" */ '@src/assets').then(({ default: assets }) =>
+      Vue.use(assets),
+    ),
+    import(/* webpackChunkName: "database" */ '@dota2wiki/database').then(
+      ({ default: database }) => Vue.use(database),
+    ),
+  ]);
+  installComponents(Vue, controls);
+  installComponents(Vue, dataComponents);
 
   const app: Vue = new Vue({
     locale,
@@ -48,33 +57,20 @@ function createApp(): AppWrapper {
     render: h => h(VApp),
   });
 
-  const load: (language: string) => Promise<void> = async language => {
-    await Promise.all([
-      locale.selectLanguage(language),
-      import(/* webpackChunkName: "assets" */ '@src/assets').then(({ default: assets }) =>
-        Vue.use(assets),
-      ),
-      import(/* webpackChunkName: "database" */ '@dota2wiki/database').then(
-        ({ default: database }) => Vue.use(database),
-      ),
-    ]);
-  };
-
   return {
     locale,
     router,
     store,
     app,
-    load,
   };
 }
 
-{
-  const { locale, router, store, app, load } = createApp();
+(async () => {
+  const { locale, router, store, app } = await createApp();
 
   router.onReady(async () => {
-    await load(router.currentRoute.params.language);
+    await locale.selectLanguage(router.currentRoute.params.language);
 
     app.$mount('#app');
   });
-}
+})();
