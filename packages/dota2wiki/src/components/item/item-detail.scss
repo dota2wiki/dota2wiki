@@ -1,0 +1,45 @@
+/**
+ * Component: ItemDetail
+ */
+@include comp('item-detail') {
+  position: relative;
+
+  @include elem('icon') {
+    box-shadow: raise-shadow();
+  }
+
+  @include elem('label') {
+    font-weight: normal;
+    font-size: rem(font-size('xlarge'));
+    line-height: 1;
+  }
+
+  @include elem('lore') {
+    font-size: rem($font-size-base);
+  }
+
+  @include elem('description', 'notes') {
+    flex: 1;
+  }
+
+  @include elem('notes') {
+    padding: rem(gap('small'));
+  }
+
+  @each $theme in $type-theme {
+    @include prop(
+      (
+        'theme': $theme,
+      )
+    ) {
+      color: theme($theme);
+
+      @include elem('label') {
+        color: theme($theme, 'fg', 'emphasize');
+      }
+      @include elem('lore') {
+        color: theme($theme, 'fg', 'sub');
+      }
+    }
+  }
+}

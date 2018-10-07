@@ -1,0 +1,38 @@
+@include define-atom('label') {
+  color: $color-label;
+}
+
+@include define-atom('value-wrapper') {
+  //
+}
+
+@include define-atom('value') {
+  font-weight: bold;
+}
+
+@include define-atom('divider') {
+  padding: rem(gap('xsmall'));
+  &:last-child {
+    display: none;
+  }
+}
+
+@include define-atom('percent') {
+  font-weight: bold;
+}
+
+@each $theme in $type-theme {
+  .#{class-prop('theme', $theme)} {
+    @include atom('value-wrapper') {
+      color: theme($theme, 'fg', 'sub');
+    }
+    @include atom('value') {
+      @include when('active') {
+        color: theme($theme, 'fg', 'emphasize');
+      }
+    }
+    @include atom('percent') {
+      color: theme($theme, 'fg', 'emphasize');
+    }
+  }
+}

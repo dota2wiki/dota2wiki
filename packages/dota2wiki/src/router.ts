@@ -70,7 +70,7 @@ export default function createRouter(): VueRouter {
               import(/* webpackChunkName: "view-items" */ '@src/views/item/items'),
           },
           {
-            path: 'item/:name',
+            path: 'item/:itemName',
             name: 'item',
             meta: {
               group: 'item',

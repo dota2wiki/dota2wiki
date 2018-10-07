@@ -9,12 +9,22 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
+import { ClassName, Theme, ThemeComponent } from 'void-ui';
 
 /**
  * Component: Ability
  */
 @Component
-export class CAbility extends Vue {
+export class CAbility extends Vue implements ThemeComponent {
+  @Prop({ type: String })
+  public readonly theme?: Theme;
+  public get themeValue(): Theme {
+    return this.theme || this.$vd_theme.theme || 'lite';
+  }
+  public get classes(): ClassName {
+    return [`cp-theme_${this.themeValue}`];
+  }
+
   @Prop({ type: String, required: true })
   public readonly name!: string;
 

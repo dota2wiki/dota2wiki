@@ -18,11 +18,15 @@ import { Item } from '@dota2wiki/database';
 export class CItemTile extends CItem {
   private render(h: CreateElement): VNode {
     return (
-      <div staticClass="c-item-tile" data-name={this.name}>
+      <router-link
+        staticClass="c-item-tile"
+        data-name={this.name}
+        to={`/${this.$locale.language}/item/${this.name}`}
+        title={this.label}
+      >
         <c-item-icon name={this.name} />
-        <div>{this.name}</div>
-        <div>{this.label}</div>
-      </div>
+        <span staticClass="c-item-tile_label">{this.label}</span>
+      </router-link>
     );
   }
 }

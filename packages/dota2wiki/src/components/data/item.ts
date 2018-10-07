@@ -10,6 +10,7 @@ import {
 } from 'vue-property-decorator';
 import { CAbility } from './ability';
 import { Item } from '@dota2wiki/database';
+import { ClassName } from 'void-ui';
 
 /**
  * Component: Item
@@ -29,7 +30,7 @@ export class CItem extends CAbility {
     const result: string[] = [];
     for (let index: number = 0; index < 10; index++) {
       const text: string | undefined = this.$locale.dict[
-        `DOTA_Tooltip_item_${name}_Note${index}`
+        `DOTA_Tooltip_ability_${name}_Note${index}`
       ];
       if (text) {
         result.push(text);
@@ -39,5 +40,14 @@ export class CItem extends CAbility {
     }
 
     return result;
+  }
+
+  public get classes(): ClassName {
+    return [
+      `cp-theme_${this.themeValue}`,
+      {
+        'is-level': !!this.model.info.baseLevel,
+      },
+    ];
   }
 }

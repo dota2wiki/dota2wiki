@@ -5,6 +5,8 @@ import JSON5 from 'json5';
 import { dota } from '@dota2wiki/i18n';
 import { isProduction, baseUrl } from '../utils/env';
 
+export * from './formatter';
+
 function transformResponse(raw: string): Record<string, string> {
   return JSON5.parse(raw);
 }
@@ -19,6 +21,14 @@ Object.entries(dota).forEach(([language, hash]) => {
       timeout: 5000,
       transformResponse,
     });
+
+    console.log(
+      Object.keys(dict)
+        .filter(key => /^dota_ability_variable_/.test(key))
+        .sort()
+        .reverse()
+        .join('\n'),
+    );
 
     return dict;
   };
