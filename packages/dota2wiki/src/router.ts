@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import views from 'dota2wiki/src/views';
+import { platform } from '@src/utils/env';
 
 Vue.use(VueRouter);
 
@@ -9,13 +10,9 @@ Vue.use(VueRouter);
  */
 export default function createRouter(): VueRouter {
   return new VueRouter({
-    mode: 'history',
-    base: 'wiki',
+    mode: platform === 'huiji' ? 'hash' : 'history',
+    base: platform === 'huiji' ? undefined : 'wiki',
     routes: [
-      {
-        path: '/',
-        redirect: '/schinese',
-      },
       {
         path: '/:language',
         component: views,
@@ -79,6 +76,10 @@ export default function createRouter(): VueRouter {
               import(/* webpackChunkName: "view-item" */ '@src/views/item/item'),
           },
         ],
+      },
+      {
+        path: '*',
+        redirect: '/schinese',
       },
     ],
   });
