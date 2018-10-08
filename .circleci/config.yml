@@ -72,6 +72,7 @@ jobs:
       - run:
           name: deploy to dota2wiki.duduluu.com
           command: |
+            sudo apt install rsync
             rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
             scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
 
@@ -85,6 +86,7 @@ jobs:
       - run:
           name: deploy to dota2.huijiwiki.com
           command: |
+            sudo apt install rsync
             rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
             scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
 
