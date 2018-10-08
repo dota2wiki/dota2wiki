@@ -2,6 +2,8 @@
 import '@src/main.scss';
 import '@src/register-hooks';
 
+import { platform } from '@src/utils/env';
+
 import Vue from 'vue';
 
 import VoidUI from 'void-ui';
@@ -71,6 +73,14 @@ async function createApp(): Promise<AppWrapper> {
   router.onReady(async () => {
     await locale.selectLanguage(router.currentRoute.params.language);
 
+    if (platform === 'huiji') {
+      const wikiBody: Element | null = document.querySelector('#wiki-body');
+      if (wikiBody) {
+        const element: HTMLElement = document.createElement('div');
+        element.setAttribute('id', 'app');
+        (wikiBody.parentNode as Node).insertBefore(element, wikiBody);
+      }
+    }
     app.$mount('#app');
   });
 })();
