@@ -5,6 +5,8 @@
   "scripts": {
     "link": "ln -s ../../../../huiji/void-ui/lib/ void-ui",
     "ts": "ts-node -r tsconfig-paths/register -P ../../tsconfig.scripts.json",
+    "try": "yarn ts scripts/huiji/test.ts",
+    "hj-upload": "yarn ts scripts/huiji/upload.ts",
     "gen-files": "yarn ts scripts/gen-files.ts",
     "gen-sprites": "yarn ts scripts/gen-sprites.ts",
     "copy-i18n": "yarn ts scripts/copy-i18n.ts",

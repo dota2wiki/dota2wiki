@@ -23,6 +23,6 @@
     "sourceMap": true,
     "baseUrl": "."
   },
-  "include": ["packages/**/src", "packages/**/scripts"],
+  "include": ["packages/**/src", "packages/**/scripts", "scripts", "typings"],
   "exclude": ["node_modules", "packages/**/dist"]
 }

@@ -8,7 +8,7 @@
     "url": "https://github.com/dota2wiki/dota2wiki"
   },
   "workspaces": [
-    "packages/@huiji/*",
+    "packages/@types/*",
     "packages/@dota2wiki/*",
     "packages/dota2wiki"
   ],
@@ -24,8 +24,8 @@
     "build": "yarn build:vdf && yarn build:database && yarn build:i18n"
   },
   "dependencies": {
-    "vue": "^2.5.17",
-    "json5": "^2.1.0"
+    "json5": "^2.1.0",
+    "vue": "^2.5.17"
   },
   "devDependencies": {
     "@huiji/shared-utils": "^1.0.0",
@@ -44,6 +44,8 @@
     "globby": "^8.0.1",
     "jest": "^23.5.0",
     "mkdirp": "^0.5.1",
+    "mwbot": "^1.0.10",
+    "nodemw": "^0.12.2",
     "rimraf": "^2.6.2",
     "ts-jest": "^23.1.4",
     "ts-node": "^7.0.1",
