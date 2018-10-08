@@ -8,6 +8,7 @@
     "baseUrl": ".",
     "paths": {
       "@src/*": ["src/*"],
+      "@assets-all": ["src/assets/all.ts"],
       "void-ui": ["../void-ui/src/index.ts"]
     }
   },

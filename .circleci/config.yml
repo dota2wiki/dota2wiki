@@ -18,6 +18,10 @@ jobs:
     <<: *default
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
+      - run: ssh-keyscan github.com dota2wiki.duduluu.com >> ~/.ssh/known_hosts
       - restore_cache:
           keys:
             - v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -35,23 +39,21 @@ jobs:
           root: ~/
           paths:
             - project
+            - .ssh
 
-  build:
+  build-gh-pages:
     <<: *default
     steps:
       - attach_workspace:
           at: ~/
-      - add_ssh_keys:
-          fingerprints:
-            - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
-      - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
+
       - run: yarn --cwd packages/dota2wiki build:gh-pages
       - run: yarn --cwd packages/dota2wiki copy-i18n
       - run: yarn --cwd packages/dota2wiki gen-pages
       - run:
           name: deploy to dota2wiki.github.io
+          working_directory: packages/dota2wiki/dist
           command: |
-            cd packages/dota2wiki/dist
             git init
             git config user.email dota2wiki@outlook.com
             git config user.name dota2wiki-bot
@@ -59,6 +61,32 @@ jobs:
             git add .
             git commit -m "auto deploy"
             git push origin master --force
+
+  build-cloud:
+    <<: *default
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn --cwd packages/dota2wiki build:cloud
+      - run: yarn --cwd packages/dota2wiki copy-i18n
+      - run:
+          name: deploy to dota2wiki.duduluu.com
+          command: |
+            rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
+            scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
+
+  build-huiji:
+    <<: *default
+    steps:
+      - attach_workspace:
+          at: ~/
+      - run: yarn --cwd packages/dota2wiki build:huiji
+      - run: yarn --cwd packages/dota2wiki copy-i18n
+      - run:
+          name: deploy to dota2.huijiwiki.com
+          command: |
+            rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
+            scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
 
 workflows:
   version: 2
@@ -69,7 +97,19 @@ workflows:
             branches:
               only:
                 - master
-      - build:
+      - build-gh-pages:
+          requires:
+            - frame
+          filters:
+            branches:
+              only: master
+      - build-cloud:
+          requires:
+            - frame
+          filters:
+            branches:
+              only: master
+      - build-huiji:
           requires:
             - frame
           filters:

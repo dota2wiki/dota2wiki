@@ -1,4 +1,4 @@
-@import './all';
+@import '~@assets-all-scss';
 
 @function resources($key) {
   $result: map-get($assets-map, $key);

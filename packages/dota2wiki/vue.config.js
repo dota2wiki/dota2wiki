@@ -9,10 +9,23 @@ const os = require('os');
 
 console.log(chalk.cyanBright(`\nCPUs: ${os.cpus().length}\n`));
 
+const isProd = process.env.NODE_ENV === 'production';
+
 /**
  * @type {'gh-pages' | 'cloud' | 'huiji'}
  */
-const platform = process.env.PLATFORM || 'gh-pages';
+const platform = process.env.VUE_APP_PLATFORM || 'gh-pages';
+switch (platform) {
+  case 'gh-pages':
+  case 'cloud':
+  case 'huiji':
+    break;
+
+  default:
+    throw Error(
+      `Invalid platform "${platform}", the environment variable VUE_APP_PLATFORM must be one of 'gh-pages', 'cloud', 'huiji'.`,
+    );
+}
 
 /**
  * @type {Record<'gh-pages' | 'cloud' | 'huiji', string>}
@@ -24,7 +37,7 @@ const dictBaseUrl = {
 };
 
 const options = {
-  baseUrl: dictBaseUrl[platform],
+  baseUrl: isProd ? dictBaseUrl[platform] : '/',
   assetsDir: 'static',
   filenameHashing: true,
 
@@ -36,7 +49,6 @@ const options = {
     const resolve = (...paths) => path.resolve(context, ...paths);
     const getAssetPath = require('@vue/cli-service/lib/util/getAssetPath');
 
-    const isProd = process.env.NODE_ENV === 'production';
     const isLegacyBundle =
       process.env.VUE_CLI_MODERN_MODE && !process.env.VUE_CLI_MODERN_BUILD;
 
@@ -53,6 +65,14 @@ const options = {
     config.resolve.alias
       .delete('@')
       .set('@src', resolve('src'))
+      .set(
+        '@assets-all',
+        resolve(platform === 'huiji' ? 'src/assets/all-hj.ts' : 'src/assets/all.ts'),
+      )
+      .set(
+        '@assets-all-scss',
+        resolve(platform === 'huiji' ? 'src/assets/all-hj.scss' : 'src/assets/all.scss'),
+      )
       .set('void-ui$', resolve('../void-ui/src/index.ts'));
 
     // js --------------------------------------------------------

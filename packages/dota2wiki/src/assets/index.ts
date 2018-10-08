@@ -1,5 +1,5 @@
 import Vue, { PluginFunction } from 'vue';
-import all from '@src/assets/all';
+import all from '@assets-all';
 
 let $$Vue: typeof Vue | undefined;
 
