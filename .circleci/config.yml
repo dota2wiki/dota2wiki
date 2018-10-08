@@ -73,8 +73,8 @@ jobs:
           name: deploy to dota2wiki.duduluu.com
           command: |
             sudo apt install rsync
-            rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
-            scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
+            rsync -avr --ignore-existing packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com
+            scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2wiki.duduluu.com || echo "skip dirs for scp"
 
   build-huiji:
     <<: *default
@@ -87,8 +87,8 @@ jobs:
           name: deploy to dota2.huijiwiki.com
           command: |
             sudo apt install rsync
-            rsync -avr packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
-            scp packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
+            rsync -avr --ignore-existing packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
+            scp  packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com || echo "skip dirs for scp"
 
 workflows:
   version: 2
