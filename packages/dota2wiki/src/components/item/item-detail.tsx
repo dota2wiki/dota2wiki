@@ -50,11 +50,11 @@ export class CItemDetail extends CItem {
 
           {this.notes.length > 0 && (
             <vd-flexbox>
-              {this.notes.map(note => (
-                <vd-note half-transparent raise bordered title={'提示'}>
+              <vd-note half-transparent raise bordered title={'提示'}>
+                {this.notes.map(note => (
                   <p domPropsInnerHTML={note} />
-                </vd-note>
-              ))}
+                ))}
+              </vd-note>
             </vd-flexbox>
           )}
 
