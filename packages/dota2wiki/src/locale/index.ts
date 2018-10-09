@@ -22,14 +22,6 @@ Object.entries(dota).forEach(([language, hash]) => {
       transformResponse,
     });
 
-    console.log(
-      Object.keys(dict)
-        .filter(key => /^dota_ability_variable_/.test(key))
-        .sort()
-        .reverse()
-        .join('\n'),
-    );
-
     return dict;
   };
 });

@@ -22,6 +22,42 @@ interface Options {
   excludes: (string | RegExp)[];
 }
 
+function postMisc(dict: Record<string, string>): void {
+  // resolve line breaking and color
+  Object.entries(dict).forEach(
+    ([key, value]) =>
+      (dict[key] = value
+        .replace(/(\\?\\n)|\n/g, '<br/>')
+        .replace(/\\"/g, '"')
+        .replace(/<font[ ]+color=['"]([#A-Fa-f\d]+)['"]/g, '<span style="color:$1"')
+        .replace(/<\/font>/g, '</span>')
+        .replace(/<h1>/g, '<strong>')
+        .replace(/<\/h1>/g, '</strong>')),
+  );
+}
+
+function postVariables(dict: Record<string, string>): void {
+  // resolve variable signs, e.g. $attack, $armor
+  const injects: [RegExp, string][] = Object.keys(dict)
+    .filter(key => /^dota_ability_variable_/.test(key))
+    .sort()
+    .reverse() // must reverse, cause such as '$attack_range' must be processed before '$attack'
+    .map<[RegExp, string]>(key => [
+      new RegExp(`\\$${key.replace(/^dota_ability_variable_/, '')}`, 'g'),
+      dict[key],
+    ]);
+
+  Object.entries(dict).forEach(([key, value]) => {
+    if (value.includes('$')) {
+      let inter: string = value;
+      injects.forEach(
+        ([regex, replaceValue]) => (inter = inter.replace(regex, replaceValue)),
+      );
+      dict[key] = inter;
+    }
+  });
+}
+
 /**
  * Generate Localization files
  */
@@ -120,17 +156,8 @@ async function generateLocale(options: Options): Promise<void> {
       };
     }
 
-    // resolve line breaking and color
-    Object.entries(dict).forEach(
-      ([key, value]) =>
-        (dict[key] = value
-          .replace(/(\\?\\n)|\n/g, '<br/>')
-          .replace(/\\"/g, '"')
-          .replace(/<font[ ]+color=['"]([#A-Fa-f\d]+)['"]/g, '<span style="color:$1"')
-          .replace(/<\/font>/g, '</span>')
-          .replace(/<h1>/g, '<strong>')
-          .replace(/<\/h1>/g, '</strong>')),
-    );
+    postMisc(dict);
+    postVariables(dict);
 
     const content: string = JSON5.stringify(dict);
 
