@@ -9,19 +9,11 @@ default: &default
   docker:
     - image: circleci/node:latest
 
-require_frame: &require_frame
-  requires:
-    - frame
-
 jobs:
   frame:
     <<: *default
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
-      - run: ssh-keyscan github.com dota2wiki.duduluu.com >> ~/.ssh/known_hosts
       - restore_cache:
           keys:
             - v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
@@ -35,6 +27,10 @@ jobs:
           key: v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run: yarn void-ui
       - run: yarn build
+      - add_ssh_keys:
+          fingerprints:
+            - df:10:f6:55:bb:04:b7:11:37:5f:4c:cf:57:f3:f4:5d
+      - run: ssh-keyscan github.com dota2wiki.duduluu.com >> ~/.ssh/known_hosts
       - persist_to_workspace:
           root: ~/
           paths:
@@ -46,7 +42,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/
-
       - run: yarn --cwd packages/dota2wiki build:gh-pages
       - run: yarn --cwd packages/dota2wiki copy-i18n
       - run: yarn --cwd packages/dota2wiki gen-pages
@@ -90,6 +85,13 @@ jobs:
             rsync -avr --ignore-existing packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com
             scp  packages/dota2wiki/dist/* ubuntu@dota2wiki.duduluu.com:/var/sites/dota2.huijiwiki.com || echo "skip dirs for scp"
 
+master_job: &master_job
+  requires:
+    - frame
+  filters:
+    branches:
+      only: master
+
 workflows:
   version: 2
   workflow:
@@ -100,20 +102,8 @@ workflows:
               only:
                 - master
       - build-gh-pages:
-          requires:
-            - frame
-          filters:
-            branches:
-              only: master
+          <<: *master_job
       - build-cloud:
-          requires:
-            - frame
-          filters:
-            branches:
-              only: master
+          <<: *master_job
       - build-huiji:
-          requires:
-            - frame
-          filters:
-            branches:
-              only: master
+          <<: *master_job
