@@ -1,5 +1,6 @@
 @include define-atom('label') {
   color: $color-label;
+  margin-right: rem(gap('small'));
 }
 
 @include define-atom('value-wrapper') {
@@ -11,7 +12,7 @@
 }
 
 @include define-atom('divider') {
-  padding: rem(gap('xsmall'));
+  padding: rem(gap('small') / 2);
   &:last-child {
     display: none;
   }
@@ -24,7 +25,10 @@
 @each $theme in $type-theme {
   .#{class-prop('theme', $theme)} {
     @include atom('value-wrapper') {
-      color: theme($theme, 'fg', 'sub');
+      color: theme($theme, 'fg', 'emphasize');
+      @include when('level') {
+        color: theme($theme, 'fg', 'sub');
+      }
     }
     @include atom('value') {
       @include when('active') {

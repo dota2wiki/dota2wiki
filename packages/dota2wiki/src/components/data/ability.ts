@@ -58,4 +58,12 @@ export class CAbility extends Vue implements ThemeComponent {
 
     return result;
   }
+  public get special(): { label: string; values: number[] }[] {
+    return this.model.special.map(specialItem => ({
+      label:
+        this.$locale.dict[`DOTA_Tooltip_ability_${this.name}_${specialItem.key}`] ||
+        `${this.name}_${specialItem.key}`,
+      values: specialItem.value,
+    }));
+  }
 }

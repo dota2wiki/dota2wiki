@@ -8,6 +8,8 @@
  */
 
 export default {
+  'all-hj.scss'                                                                                                      : require('@src/assets/all-hj.scss'),
+  'all-hj.ts'                                                                                                        : require('@src/assets/all-hj.ts'),
   'bg/direancient_loadingscreen.jpg'                                                                                 : require('@src/assets/bg/direancient_loadingscreen.jpg'),
   'bg/fall_major_2016_loadscreen_1.jpg'                                                                              : require('@src/assets/bg/fall_major_2016_loadscreen_1.jpg'),
   'bg/jollyroger_loading.jpg'                                                                                        : require('@src/assets/bg/jollyroger_loading.jpg'),

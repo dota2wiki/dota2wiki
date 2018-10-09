@@ -5,7 +5,7 @@ const titleRegex: RegExp = /<strong>[^<\/?strong>]+<\/strong>/g;
 /**
  * Format description
  */
-export function formatDescription(
+export function formatDescriptionItem(
   description: string,
   special: SpecialItem[],
   level: number = 0,
@@ -19,12 +19,10 @@ export function formatDescription(
   special.forEach(item => {
     inter = inter.replace(
       new RegExp(`%${item.key}%`, 'g'),
-      `<span class="ca-value-wrapper">${item.value
+      `<span class="ca-value-wrapper${level ? ' is-level' : ''}">${item.value
         .map(
           (v, i) =>
-            `<span class="ca-value${
-              !level || i + 1 === level ? ' is-active' : ''
-            }">${v}</span>`,
+            `<span class="ca-value${i + 1 === level ? ' is-active' : ''}">${v}</span>`,
         )
         .join('<i class="ca-divider">/</i>')}</span>`,
     );
@@ -46,9 +44,21 @@ export function formatDescription(
  * Format special items
  */
 export function formatValues(
-  key: string,
-  value: number[],
+  label: string,
+  values: number[],
   format: 'int' | 'float' = 'float',
-): { key: string; value: string[] }[] {
-  return [];
+): { label: string; values: string[] } {
+  const firstChar: string = label.substring(0, 1);
+  const prefix: string = firstChar === '+' ? '+' : '';
+  const unit: string = firstChar === '%' ? '%' : '';
+
+  const valuesFormat: (value: number) => string =
+    format === 'int'
+      ? value => `${prefix}${Math.floor(value)}${unit}`
+      : value => `${prefix}${value.toFixed(2)}${unit}`;
+
+  return {
+    label: prefix || unit ? label.substring(1) : label,
+    values: values.map(valuesFormat),
+  };
 }

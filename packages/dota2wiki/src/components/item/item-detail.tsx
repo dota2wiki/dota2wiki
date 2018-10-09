@@ -8,8 +8,8 @@ import {
   Provide,
   Watch,
 } from 'vue-property-decorator';
-import { formatDescription } from '@src/locale';
 import { CItem } from '@src/components/data/item';
+import { formatValues } from '@src/locale';
 
 /**
  * Component: ItemDetail
@@ -40,15 +40,9 @@ export class CItemDetail extends CItem {
 
           {this.description && (
             <vd-flexbox gap align="stretch">
-              {formatDescription(
-                this.description,
-                this.model.special,
-                this.model.info.baseLevel,
-              ).map(card => (
+              {this.renderDescription().map(section => (
                 <vd-flexbox align="stretch" flex={{ ltMd: 100 }}>
-                  <vd-card half-transparent raise bordered title={card.title}>
-                    <vd-card-content domPropsInnerHTML={card.content} />
-                  </vd-card>
+                  {section}
                 </vd-flexbox>
               ))}
             </vd-flexbox>
@@ -56,13 +50,11 @@ export class CItemDetail extends CItem {
 
           {this.notes.length > 0 && (
             <vd-flexbox>
-              <vd-card half-transparent raise bordered title={''}>
-                <vd-card-content>
-                  {this.notes.map(note => (
-                    <div domPropsInnerHTML={note} />
-                  ))}
-                </vd-card-content>
-              </vd-card>
+              {this.notes.map(note => (
+                <vd-note half-transparent raise bordered title={'提示'}>
+                  <p domPropsInnerHTML={note} />
+                </vd-note>
+              ))}
             </vd-flexbox>
           )}
 
@@ -73,7 +65,7 @@ export class CItemDetail extends CItem {
               bordered
               title={this.$locale.dict['DOTA_HeroLoadout_Stats']}
             >
-              <vd-card-content />
+              <vd-card-content>{this.renderSpecial()}</vd-card-content>
             </vd-card>
           </vd-flexbox>
         </vd-flexbox>
